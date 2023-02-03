@@ -1,0 +1,32 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 14249,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 4400
+		},
+		{
+			"name": "SocialProfile-dbg.controller.js",
+			"size": 7234,
+			"isDebug": true
+		},
+		{
+			"name": "SocialProfile-dbg.view.js",
+			"size": 6239,
+			"isDebug": true
+		},
+		{
+			"name": "SocialProfile.controller.js",
+			"size": 3725
+		},
+		{
+			"name": "SocialProfile.view.js",
+			"size": 3414
+		}
+	]
+}

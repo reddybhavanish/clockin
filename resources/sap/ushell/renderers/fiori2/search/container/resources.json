@@ -1,0 +1,99 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "App-dbg.controller.js",
+			"size": 1988,
+			"isDebug": true
+		},
+		{
+			"name": "App-dbg.view.js",
+			"size": 13693,
+			"isDebug": true
+		},
+		{
+			"name": "App.controller.js",
+			"size": 1197
+		},
+		{
+			"name": "App.view.js",
+			"size": 5715
+		},
+		{
+			"name": "Component-dbg.js",
+			"size": 1019,
+			"isDebug": true
+		},
+		{
+			"name": "Component-preload.js",
+			"size": 139,
+			"merged": true
+		},
+		{
+			"name": "Component.html",
+			"size": 2454
+		},
+		{
+			"name": "Component.js",
+			"size": 625
+		},
+		{
+			"name": "ComponentControl-dbg.js",
+			"size": 6555,
+			"isDebug": true
+		},
+		{
+			"name": "ComponentControl.js",
+			"size": 2956
+		},
+		{
+			"name": "ComponentIndexScript-dbg.js",
+			"size": 2453,
+			"isDebug": true
+		},
+		{
+			"name": "ComponentIndexScript.js",
+			"size": 1488
+		},
+		{
+			"name": "ComponentScript-dbg.js",
+			"size": 4150,
+			"isDebug": true
+		},
+		{
+			"name": "ComponentScript.js",
+			"size": 2413
+		},
+		{
+			"name": "ComponentService-dbg.js",
+			"size": 3343,
+			"isDebug": true
+		},
+		{
+			"name": "ComponentService.js",
+			"size": 1316
+		},
+		{
+			"name": "Search-dbg.controller.js",
+			"size": 956,
+			"isDebug": true
+		},
+		{
+			"name": "Search-dbg.view.js",
+			"size": 57759,
+			"isDebug": true
+		},
+		{
+			"name": "Search.controller.js",
+			"size": 717
+		},
+		{
+			"name": "Search.view.js",
+			"size": 22228
+		},
+		{
+			"name": "index.html",
+			"size": 1263
+		}
+	]
+}

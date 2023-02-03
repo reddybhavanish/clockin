@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/GroupListItem</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/launchpad/GroupListItem</documentation>
+    <baseType>sap.m/ListItemBase</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc"/>
+        <property name="defaultGroup" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="show" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="groupId" type="sap.ui.core/string" group="Misc"/>
+        <property name="index" type="sap.ui.core/int" group="Misc"/>
+        <property name="numberOfTiles" type="sap.ui.core/int" defaultValue="0" group="Misc"/>
+        <property name="isGroupVisible" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false"/>
+        <event name="afterRendering" allowPreventDefault="false"/>
+    </events>
+</control>

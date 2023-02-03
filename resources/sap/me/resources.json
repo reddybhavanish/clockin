@@ -1,0 +1,870 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1867
+		},
+		{
+			"name": ".theming",
+			"size": 72
+		},
+		{
+			"name": "Calendar-dbg.js",
+			"module": "sap/me/Calendar.js",
+			"size": 27383,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/CalendarRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "Calendar.control",
+			"size": 9037,
+			"designtime": true
+		},
+		{
+			"name": "Calendar.js",
+			"module": "sap/me/Calendar.js",
+			"size": 12452,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/CalendarRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "CalendarDate-dbg.js",
+			"module": "sap/me/CalendarDate.js",
+			"size": 7869,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/date/UniversalDate.js"
+			]
+		},
+		{
+			"name": "CalendarDate.js",
+			"module": "sap/me/CalendarDate.js",
+			"size": 2228,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/date/UniversalDate.js"
+			]
+		},
+		{
+			"name": "CalendarDesign.type",
+			"size": 718,
+			"designtime": true
+		},
+		{
+			"name": "CalendarEventType.type",
+			"size": 1217,
+			"designtime": true
+		},
+		{
+			"name": "CalendarLegend-dbg.js",
+			"module": "sap/me/CalendarLegend.js",
+			"size": 8283,
+			"isDebug": true,
+			"required": [
+				"sap/m/Label.js",
+				"sap/me/CalendarLegendRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "CalendarLegend.control",
+			"size": 3757,
+			"designtime": true
+		},
+		{
+			"name": "CalendarLegend.js",
+			"module": "sap/me/CalendarLegend.js",
+			"size": 4794,
+			"required": [
+				"sap/m/Label.js",
+				"sap/me/CalendarLegendRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "CalendarLegendRenderer-dbg.js",
+			"module": "sap/me/CalendarLegendRenderer.js",
+			"size": 2814,
+			"isDebug": true
+		},
+		{
+			"name": "CalendarLegendRenderer.js",
+			"module": "sap/me/CalendarLegendRenderer.js",
+			"size": 1389
+		},
+		{
+			"name": "CalendarRenderer-dbg.js",
+			"module": "sap/me/CalendarRenderer.js",
+			"size": 8155,
+			"isDebug": true,
+			"required": [
+				"sap/me/CalendarDate.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "CalendarRenderer.js",
+			"module": "sap/me/CalendarRenderer.js",
+			"size": 3314,
+			"required": [
+				"sap/me/CalendarDate.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "CalendarSelectionMode.type",
+			"size": 822,
+			"designtime": true
+		},
+		{
+			"name": "OverlapCalendar-dbg.js",
+			"module": "sap/me/OverlapCalendar.js",
+			"size": 23926,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Label.js",
+				"sap/me/Calendar.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/OverlapCalendarRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "OverlapCalendar.control",
+			"size": 3826,
+			"designtime": true
+		},
+		{
+			"name": "OverlapCalendar.js",
+			"module": "sap/me/OverlapCalendar.js",
+			"size": 10202,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Label.js",
+				"sap/me/Calendar.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/OverlapCalendarRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "OverlapCalendarEvent-dbg.js",
+			"module": "sap/me/OverlapCalendarEvent.js",
+			"size": 2288,
+			"isDebug": true,
+			"required": [
+				"sap/me/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "OverlapCalendarEvent.control",
+			"size": 2055,
+			"designtime": true
+		},
+		{
+			"name": "OverlapCalendarEvent.js",
+			"module": "sap/me/OverlapCalendarEvent.js",
+			"size": 859,
+			"required": [
+				"sap/me/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "OverlapCalendarRenderer-dbg.js",
+			"module": "sap/me/OverlapCalendarRenderer.js",
+			"size": 4122,
+			"isDebug": true
+		},
+		{
+			"name": "OverlapCalendarRenderer.js",
+			"module": "sap/me/OverlapCalendarRenderer.js",
+			"size": 2181
+		},
+		{
+			"name": "ProgressIndicator-dbg.js",
+			"module": "sap/me/ProgressIndicator.js",
+			"size": 7091,
+			"isDebug": true,
+			"required": [
+				"sap/me/ProgressIndicatorRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ProgressIndicator.control",
+			"size": 2282,
+			"designtime": true
+		},
+		{
+			"name": "ProgressIndicator.js",
+			"module": "sap/me/ProgressIndicator.js",
+			"size": 3090,
+			"required": [
+				"sap/me/ProgressIndicatorRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ProgressIndicatorRenderer-dbg.js",
+			"module": "sap/me/ProgressIndicatorRenderer.js",
+			"size": 3984,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/base/util/Version.js"
+			]
+		},
+		{
+			"name": "ProgressIndicatorRenderer.js",
+			"module": "sap/me/ProgressIndicatorRenderer.js",
+			"size": 1995,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/base/util/Version.js"
+			]
+		},
+		{
+			"name": "TabContainer-dbg.js",
+			"module": "sap/me/TabContainer.js",
+			"size": 8938,
+			"isDebug": true,
+			"required": [
+				"sap/m/Label.js",
+				"sap/m/ScrollContainer.js",
+				"sap/me/TabContainerRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "TabContainer.control",
+			"size": 3649,
+			"designtime": true
+		},
+		{
+			"name": "TabContainer.js",
+			"module": "sap/me/TabContainer.js",
+			"size": 5107,
+			"required": [
+				"sap/m/Label.js",
+				"sap/m/ScrollContainer.js",
+				"sap/me/TabContainerRenderer.js",
+				"sap/me/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "TabContainerRenderer-dbg.js",
+			"module": "sap/me/TabContainerRenderer.js",
+			"size": 3437,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/Version.js"
+			]
+		},
+		{
+			"name": "TabContainerRenderer.js",
+			"module": "sap/me/TabContainerRenderer.js",
+			"size": 1824,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/Version.js"
+			]
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/me/library.js",
+			"size": 2975,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/me/library-h2-preload.js",
+			"size": 3864,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/base/util/Version.js",
+				"sap/m/Label.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			],
+			"included": [
+				"sap/me/library.js",
+				"sap/me/manifest.json",
+				"sap/me/Calendar.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/CalendarLegend.js",
+				"sap/me/CalendarLegendRenderer.js",
+				"sap/me/CalendarRenderer.js",
+				"sap/me/OverlapCalendar.js",
+				"sap/me/OverlapCalendarEvent.js",
+				"sap/me/OverlapCalendarRenderer.js",
+				"sap/me/ProgressIndicator.js",
+				"sap/me/ProgressIndicatorRenderer.js",
+				"sap/me/TabContainer.js",
+				"sap/me/TabContainerRenderer.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 692,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/me/library-preload.js",
+			"size": 50844,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/base/util/Version.js",
+				"sap/m/Label.js",
+				"sap/m/ScrollContainer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/date/UniversalDate.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			],
+			"included": [
+				"sap/me/Calendar.js",
+				"sap/me/CalendarDate.js",
+				"sap/me/CalendarLegend.js",
+				"sap/me/CalendarLegendRenderer.js",
+				"sap/me/CalendarRenderer.js",
+				"sap/me/OverlapCalendar.js",
+				"sap/me/OverlapCalendarEvent.js",
+				"sap/me/OverlapCalendarRenderer.js",
+				"sap/me/ProgressIndicator.js",
+				"sap/me/ProgressIndicatorRenderer.js",
+				"sap/me/TabContainer.js",
+				"sap/me/TabContainerRenderer.js",
+				"sap/me/library.js",
+				"sap/me/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 51712,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/me/library.js",
+			"size": 817,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/me/manifest.json",
+			"size": 1299
+		},
+		{
+			"name": "resources.json",
+			"size": 5446
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/Calendar.css",
+			"size": 1285,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/CalendarLegend.css",
+			"size": 1979,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/OverlapCalendar.css",
+			"size": 2154,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.css",
+			"size": 109,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.source.less",
+			"size": 79704,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 4007,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton-RTL.css",
+			"size": 3898,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton.css",
+			"size": 3891,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 4000,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 6061,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 344,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/shared.css",
+			"size": 67,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/Calendar.css",
+			"size": 10102,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/CalendarLegend.css",
+			"size": 2627,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/OverlapCalendar.css",
+			"size": 9906,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/ProgressIndicator.css",
+			"size": 3854,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/TabContainer.css",
+			"size": 2908,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.css",
+			"size": 388,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.source.less",
+			"size": 82962,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/img-RTL/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/img/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 57943,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"size": 42,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton-RTL.css",
+			"size": 64128,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton.css",
+			"size": 63763,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 57578,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 30143,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 461,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/shared.css",
+			"size": 0,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.css",
+			"size": 396,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.source.less",
+			"size": 82962,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 58916,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"size": 46,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton-RTL.css",
+			"size": 65097,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton.css",
+			"size": 64732,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 58551,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 396,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 268,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_bluecrystal/.theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/Calendar.css",
+			"size": 8776,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/CalendarLegend.css",
+			"size": 2601,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/OverlapCalendar.css",
+			"size": 9659,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/ProgressIndicator.css",
+			"size": 3984,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/TabContainer.css",
+			"size": 3057,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.css",
+			"size": 188,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.source.less",
+			"size": 97830,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/img-RTL/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/img/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL.css",
+			"size": 25976,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-parameters.json",
+			"size": 2,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton-RTL.css",
+			"size": 29343,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton.css",
+			"size": 29153,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.css",
+			"size": 25786,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.less",
+			"size": 28920,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.source.less",
+			"size": 484,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/shared.css",
+			"size": 69,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/Calendar.less",
+			"size": 4849,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/CalendarLegend.less",
+			"size": 880,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/OverlapCalendar.less",
+			"size": 7279,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.css",
+			"size": 192,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.source.less",
+			"size": 70907,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"size": 13847,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton-RTL.css",
+			"size": 16179,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton.css",
+			"size": 16150,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"size": 13818,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"size": 13555,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"size": 311,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/shared.css",
+			"size": 66,
+			"theme": "sap_hcb"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:macro="sap.fe.macros"
+	xmlns:core="sap.ui.core"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper'
+	}"
+>
+
+    <macro:Chart
+		id="{presentationContext>chartConfiguration/id}"
+		collection="{presentationContext>chartConfiguration/collection}"
+		presentation="{visualizationPath>}"
+		selectionMode="MULTIPLE"
+		chartDelegate="{= '{name:\'sap/fe/macros/ChartDelegate\', payload: {collectionName: \'' + ${presentationContext>chartConfiguration/entityName} + '\'}}'}"
+		p13nMode="{presentationContext>chartConfiguration/p13nMode}"
+		onDataFieldForIBN=".handlers.onDataFieldForIntentBasedNavigation"
+		navigationPath="{presentationContext>chartConfiguration/navigationPath}"
+		onCallAction=".editFlow.onCallAction"
+		selectedContextsModel="localUI"
+		width="100%"
+	>
+    </macro:Chart>
+</core:FragmentDefinition>

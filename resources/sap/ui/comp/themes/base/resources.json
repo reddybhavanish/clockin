@@ -1,0 +1,153 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "DateRangeType.css",
+			"size": 1626,
+			"theme": "base"
+		},
+		{
+			"name": "DialogContent.css",
+			"size": 1397,
+			"theme": "base"
+		},
+		{
+			"name": "FieldListNode.css",
+			"size": 398,
+			"theme": "base"
+		},
+		{
+			"name": "FieldSelector.css",
+			"size": 718,
+			"theme": "base"
+		},
+		{
+			"name": "FilterBar.css",
+			"size": 6152,
+			"theme": "base"
+		},
+		{
+			"name": "FullScreenDialog.css",
+			"size": 284,
+			"theme": "base"
+		},
+		{
+			"name": "GroupElement.css",
+			"size": 409,
+			"theme": "base"
+		},
+		{
+			"name": "MultiCurrency.css",
+			"size": 488,
+			"theme": "base"
+		},
+		{
+			"name": "NavigationPopover.css",
+			"size": 2764,
+			"theme": "base"
+		},
+		{
+			"name": "SmartChart.css",
+			"size": 1144,
+			"theme": "base"
+		},
+		{
+			"name": "SmartField.css",
+			"size": 1994,
+			"theme": "base"
+		},
+		{
+			"name": "SmartForm.css",
+			"size": 480,
+			"theme": "base"
+		},
+		{
+			"name": "SmartLink.css",
+			"size": 781,
+			"theme": "base"
+		},
+		{
+			"name": "SmartMultiEdit.css",
+			"size": 574,
+			"theme": "base"
+		},
+		{
+			"name": "SmartTable.css",
+			"size": 944,
+			"theme": "base"
+		},
+		{
+			"name": "TransportDialog.css",
+			"size": 516,
+			"theme": "base"
+		},
+		{
+			"name": "ValueHelpDialog.css",
+			"size": 9777,
+			"theme": "base"
+		},
+		{
+			"name": "VariantManagement.css",
+			"size": 2551,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 217,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 79999,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 23792,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 24952,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 24929,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 23769,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 34687,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 869,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "shared.css",
+			"size": 161,
+			"theme": "base"
+		}
+	]
+}

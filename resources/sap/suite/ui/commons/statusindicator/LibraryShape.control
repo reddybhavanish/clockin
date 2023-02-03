@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/LibraryShape</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Custom shape that is selected by &lt;code&gt;shapeId&lt;/code&gt; from the shapes library.</documentation>
+    <since>1.60.0</since>
+    <baseType>sap.suite.ui.commons/statusindicator/CustomShape</baseType>
+    <properties>
+        <property name="shapeId" type="sap.ui.core/string" group="Misc">
+            <documentation>An ID associated with a specific shape from the shape library.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="afterShapeLoaded" allowPreventDefault="false">
+            <documentation>This event is fired when the definition of shape is loaded.</documentation>
+        </event>
+    </events>
+</control>

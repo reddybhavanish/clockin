@@ -1,0 +1,31 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 1619,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 795
+		},
+		{
+			"name": "ListReport.view.xml",
+			"size": 6392
+		},
+		{
+			"name": "ListReportController-dbg.controller.js",
+			"size": 18742,
+			"isDebug": true
+		},
+		{
+			"name": "ListReportController.controller.js",
+			"size": 7630
+		},
+		{
+			"name": "manifest.json",
+			"size": 1769
+		}
+	]
+}

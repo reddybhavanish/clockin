@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Containers</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;Container&lt;/i&gt; instances.</documentation>
+    <baseType>sap.ui.vbm/VoAggregation</baseType>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Container" cardinality="0..n">
+            <documentation>Container object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

@@ -1,0 +1,100 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "HeaderContainer.less",
+			"size": 516,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "NetworkNode.less",
+			"size": 825,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProcessFlow.less",
+			"size": 292,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProcessFlowConnection.less",
+			"size": 1563,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProcessFlowConnectionLabel.less",
+			"size": 6602,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProcessFlowLaneHeader.less",
+			"size": 3519,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProcessFlowNode.less",
+			"size": 22117,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 9281,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 90892,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 416354,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 3649,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 417433,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 417008,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.css",
+			"size": 415783,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.less",
+			"size": 36348,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.source.less",
+			"size": 536,
+			"designtime": true,
+			"theme": "sap_belize"
+		}
+	]
+}

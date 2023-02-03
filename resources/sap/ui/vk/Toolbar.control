@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Toolbar</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Provides buttons to hide or show certain sap.ui.vk controls.</documentation>
+    <since>1.32.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" defaultValue="" group="Appearance">
+            <documentation>Used to set the title of the Toolbar</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Toolbar content, this can be used to add/remove buttons and other SAP UI5 controls to the toolbar</documentation>
+        </aggregation>
+        <aggregation name="_toolbar" type="sap.m/Toolbar" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_helpButton" type="sap.m/Button" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_stepNavigationButton" type="sap.m/ToggleButton" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_sceneTreeButton" type="sap.m/ToggleButton" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_enterFullScreenButton" type="sap.m/ToggleButton" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_exitFullScreenButton" type="sap.m/Button" cardinality="0..1" visibility="hidden"/>
+        <aggregation name="_toolbarTitle" type="sap.m/Title" cardinality="0..1" visibility="hidden"/>
+    </aggregations>
+    <associations>
+        <association name="viewer" type="sap.ui.vk/Viewer" cardinality="0..1">
+            <documentation>A toolbar instance is associated with an instance of the Viewer</documentation>
+        </association>
+    </associations>
+</control>

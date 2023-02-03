@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LegendItem</name>
+    <derived/>
+    <documentation>Aggregation element for the Legend. A LegendItem consists of marker and an associated text. The marker is either a rectangle in the
+       given color or the given image or a semantic spot type. If no marker but only a text is provided then it is shown in italic letters and
+       can be regarded as a header.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="color" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>The color of the legend marker.</documentation>
+        </property>
+        <property name="image" type="sap.ui.core/string" group="Misc">
+            <documentation>The image for the legend marker.</documentation>
+        </property>
+        <property name="semanticSpotType" type="sap.ui.vbm/SemanticType" group="Behavior">
+            <documentation>The semantic spot type for the legend marker.</documentation>
+        </property>
+        <property name="text" type="sap.ui.core/string" group="Misc">
+            <documentation>The text of the legend item.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a legend item.</documentation>
+            <parameters>
+                <parameter name="data" type="sap.ui.core/object">
+                    <documentation>Event data object</documentation>
+                </parameter>
+                <parameter name="ctrlKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Ctrl pressed</documentation>
+                </parameter>
+                <parameter name="shiftKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Shift pressed</documentation>
+                </parameter>
+                <parameter name="metaKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Meta pressed</documentation>
+                </parameter>
+                <parameter name="altKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Alt pressed</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+</control>

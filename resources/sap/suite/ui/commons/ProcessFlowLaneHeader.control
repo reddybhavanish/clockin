@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowLaneHeader</name>
+    <derived/>
+    <documentation>This control gives you an overview of documents or items used in a process flow. The process flow is represented by donut chart sections that are colored according to the status of documents. This control can be used in two different ways. If you use it standalone, an event is triggered and can be caught to display the node map. If you use it with nodes or documents, it gives you an overview of the documents or items used in the process flow, which is represented by the donut chart sections.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="text" type="sap.ui.core/string" group="Misc">
+            <documentation>Text information that is displayed in the control.</documentation>
+        </property>
+        <property name="iconSrc" type="sap.ui.core/URI" group="Misc">
+            <documentation>Icon to be displayed in the middle of the control.</documentation>
+        </property>
+        <property name="position" type="sap.ui.core/int" group="Misc">
+            <documentation>Position of the lane in the process flow control. Numbering of the position has to be sequential and needs to start from 0.</documentation>
+        </property>
+        <property name="laneId" type="sap.ui.core/string" group="Misc">
+            <documentation>Internal identification of the header.</documentation>
+        </property>
+        <property name="state" type="sap.ui.core/object" group="Misc">
+            <documentation>Array of the ProcessFlowLaneState. The user can explicitly set an array with the two properties state and value of the state, for example [state:sap.suite.ui.commons.ProcessFlowNodeState.Neutral, value: 20]. Possible states are states are positive, negative, neutral, and planned.</documentation>
+        </property>
+        <property name="zoomLevel" type="sap.suite.ui.commons/ProcessFlowZoomLevel" group="Misc">
+            <documentation>Current zoom level for the lane header.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>This event is fired when the header is clicked.</documentation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>tbd</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+</control>

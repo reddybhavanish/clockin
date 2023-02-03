@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DateRangeSlider</name>
+    <derived/>
+    <documentation>The Date Range Slider provides the user with a Range Slider control that is optimized for use with Dates.</documentation>
+    <deprecation since="1.34">Deprecated. Not Fiori.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="100%" group="Dimension">
+            <documentation>Width of the horizontal date range slider.</documentation>
+        </property>
+        <property name="enabled" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>This property switches the enabled state of the control. Disabled fields have different colors, and can not be focused.</documentation>
+        </property>
+        <property name="editable" type="sap.ui.core/boolean" defaultValue="true" group="Behavior">
+            <documentation>This property switches the enabled state of the control. Using the date range slider interactively requires this property to be true.</documentation>
+        </property>
+        <property name="visible" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>This property switches the visible state of the control. Invisible date range slider are not rendered.</documentation>
+        </property>
+        <property name="showBubbles" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Property to show or hide bubbles. Default is true.</documentation>
+        </property>
+        <property name="smallStepWidth" type="sap.ui.core/float" group="Appearance">
+            <documentation>The grips of the control can only be moved in steps of this width.</documentation>
+        </property>
+        <property name="totalUnits" type="sap.ui.core/int" group="Appearance">
+            <documentation>Number of units between ticks.</documentation>
+        </property>
+        <property name="stepLabels" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Display a date label above each tick.</documentation>
+        </property>
+        <property name="labels" type="sap.ui.core/string[]" group="Misc">
+            <documentation>Labels to be displayed instead of dates.</documentation>
+        </property>
+        <property name="min" type="sap.ui.core/object" group="Behavior">
+            <documentation>Minimum date for the slider.</documentation>
+        </property>
+        <property name="max" type="sap.ui.core/object" group="Behavior">
+            <documentation>Maximum date for the slider.</documentation>
+        </property>
+        <property name="value" type="sap.ui.core/object" group="Behavior">
+            <documentation>Date value of the left grip.</documentation>
+        </property>
+        <property name="value2" type="sap.ui.core/object" group="Behavior">
+            <documentation>Date value of the right grip.</documentation>
+        </property>
+        <property name="pinGrip" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Pin the left grip so that user cannot move it with the keyboard or mouse.</documentation>
+        </property>
+        <property name="pinGrip2" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Pin the right grip so that user cannot move it with the keyboard or mouse.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="change" allowPreventDefault="false">
+            <documentation>This event is fired when user changes completes the selection of a new date using a grip. It contains the Date object value of each grip such that the left grip value is held by the value property and the right grip value is held by the value2 property.</documentation>
+        </event>
+        <event name="liveChange" allowPreventDefault="false">
+            <documentation>This live event is fired as the user slides a grip with the mouse. It contains the Date object value of each grip such that the left grip value is held by the value property and the right grip value is held by the value2 property.</documentation>
+        </event>
+    </events>
+</control>

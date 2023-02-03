@@ -1,0 +1,135 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.f"
+	xmlns:v="sap.ui.fl.variants"
+	xmlns:macro="sap.fe.macros"
+	xmlns:core="sap.ui.core"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+		macroLibrary: 'sap/fe/macros/macroLibrary',
+		CORE: 'sap/fe/core/AnnotationHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper'
+	}"
+	controllerName="sap.fe.templates.ListReport.ListReportController"
+>
+	<template:with path="entitySet>@FE.presentation" var="presentationContext">
+		<template:with path="presentationContext>annotationPath" var="annotationPath">
+			<template:with path="entitySet>$Type" var="entityType">
+				<template:with path="entityType>@com.sap.vocabularies.UI.v1.HeaderInfo" var="headerInfo">
+					<f:DynamicPage
+						unittest:id="listReportFooterTest"
+						customData:reportTableId="{presentationContext>tableConfiguration/annotation/id}"
+						customData:filterBarId="{presentationContext>tableConfiguration/annotation/filterId}"
+						customData:filterBarVariantId="{= ID.generate([ ${presentationContext>tableConfiguration/annotation/filterId}, 'VariantManagement']) }"
+						customData:reportChartId="{presentationContext>chartConfiguration/id}"
+						customData:ListReportTitle="{= ${manifest>/sap.app/title} }"
+						customData:ListReportSubtitle="{= ${manifest>/sap.app/appSubTitle} || '' }"
+						showFooter="{= CORE.hasDeterminingActions(${entitySet>./@})}"
+						headerExpanded="{= !${viewData>/initialLoad} }"
+						busy="{ui>/busy}"
+						busyIndicatorDelay="0"
+					>
+					<f:dependents>
+						<core:CommandExecution execute=".handlers.onShareListReportActionButtonPress($event, $controller)" command="Share" />
+			  		</f:dependents>
+						<f:title>
+							<f:DynamicPageTitle>
+								<f:heading>
+									<template:if test="{= ${viewData>/variantManagement} === 'Page'}">
+										<template:then>
+											<v:VariantManagement
+												id="fe::PageVariantManagement"
+												for="{= ${presentationContext>tableConfiguration/annotation/id} + ',' +  ${presentationContext>tableConfiguration/annotation/filterId} }"
+												showSetAsDefault="true"
+												showExecuteOnSelection="false"
+												select=".handlers.onVariantSelected"
+												save=".handlers.onVariantSaved"
+											/>
+										</template:then>
+									<template:elseif test="{= ${viewData>/variantManagement} === 'Control'}">
+										<v:VariantManagement
+												id="{= ID.generate([ ${presentationContext>tableConfiguration/annotation/filterId}, 'VariantManagement']) }"
+												for="{presentationContext>tableConfiguration/annotation/filterId}"
+												showSetAsDefault="true"
+												showExecuteOnSelection="false"
+												select=".handlers.onVariantSelected"
+												save=".handlers.onVariantSaved"
+											/>
+									</template:elseif>
+										<template:else>
+											<Title unittest:id="listReportTitleTest" text="{= ${manifest>/sap.app/appSubTitle} || ${manifest>/sap.app/title} }" />
+										</template:else>
+									</template:if>
+								</f:heading>
+								<f:snappedContent>
+									<Text text="{localUI>/appliedFilters}" />
+								</f:snappedContent>
+								<f:actions>
+									<ToolbarSpacer />
+									<OverflowToolbarButton
+										id="fe::Share"
+										icon="sap-icon://action"
+										type="Transparent"
+										press="cmd:Share"
+										visible="{= ${fclhelper>/} ? ${fclhelper>/showShareIcon} : true }"
+										tooltip="{sap.fe.i18n>SAPFE_ACTION_SHARE}"
+										text="{sap.fe.i18n>SAPFE_ACTION_SHARE}"
+									>
+									</OverflowToolbarButton>
+								</f:actions>
+							</f:DynamicPageTitle>
+						</f:title>
+						<f:header>
+							<f:DynamicPageHeader pinnable="true">
+								<macro:FilterBar
+									unittest:id="listReportFilterBarTest"
+									id="{= ${presentationContext>tableConfiguration/annotation/filterId}}"
+									entitySet="{entitySet>}"
+									listBindingNames="{= ${presentationContext>tableConfiguration/annotation/id}}"
+									filtersChanged=".handlers.onFiltersChanged"
+									search=".handlers.onSearch"
+									draftEditStateModelName="{= (${entitySet>@com.sap.vocabularies.Common.v1.DraftRoot} || ${entitySet>@com.sap.vocabularies.Common.v1.DraftNode}) ? '$draft' : '' }"
+									liveMode="{viewData>/liveMode}"
+									showAdaptFiltersButton="{= ${viewData>/variantManagement} !== 'None'}"
+									p13nMode="Item,Value"
+								/>
+							</f:DynamicPageHeader>
+						</f:header>
+						<f:content>
+							<core:Fragment fragmentName="sap.fe.templates.controls.ViewSwitchContainer.ViewSwitchContainer" type="XML" />
+						</f:content>
+						<f:footer>
+							<OverflowToolbar
+								unittest:id="listReportOverflowToolbarTest"
+								id="fe::FooterBar"
+								visible="{=  CORE.showFooter(${entitySet>$Type@com.sap.vocabularies.UI.v1.LineItem},false) }"
+							>
+								<template:with path="entitySet>./" var="entityType">
+									<ToolbarSpacer />
+									<template:repeat list="{entityType>./@com.sap.vocabularies.UI.v1.LineItem}" var="dataField">
+										<template:if test="{= !(${dataField>./@com.sap.vocabularies.UI.v1.Hidden} === true) }">
+											<template:if test="{= ${dataField>$Type} === 'com.sap.vocabularies.UI.v1.DataFieldForAction' &amp;&amp; ${dataField>Determining} === true}">
+												<Button
+													id="{= ID.generate(['fe', 'FooterBar', ${dataField>}] )}"
+													text="{dataField>Label}"
+													press="{= '.editFlow.onCallAction(\'' + ${dataField>Action} + '\', { model: ${$source>}.getModel(), label: \'' + ${dataField>Label} + '\'})'}"
+													visible="{= ${dataField>./@com.sap.vocabularies.UI.v1.Hidden} === false ? true : %{dataField>./@com.sap.vocabularies.UI.v1.Hidden@@MODEL.value} &amp;&amp;'{= !%' + %{dataField>./@com.sap.vocabularies.UI.v1.Hidden@@MODEL.value} + '}' }"
+													hideText="false"
+													importance="Medium"
+													type="Default"
+												/>
+											</template:if>
+										</template:if>
+									</template:repeat>
+								</template:with>
+							</OverflowToolbar>
+						</f:footer>
+					</f:DynamicPage>
+				</template:with>
+			</template:with>
+		</template:with>
+	</template:with>
+</mvc:View>

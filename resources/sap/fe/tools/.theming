@@ -1,0 +1,6 @@
+{
+  "sEntity" : "Library",
+  "sId" : "sap/fe/tools",
+  "sVersion" : "1.78.0",
+  "bIgnore" : true
+}

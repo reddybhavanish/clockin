@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>CalculationBuilderFunction</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A custom function to be used in the calculation builder.&lt;br&gt;
+The default functions available for the calculation builder are defined in
+{@link sap.suite.ui.commons.CalculationBuilderFunctionType}.</documentation>
+    <since>1.56.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="key" type="sap.ui.core/string" group="Misc">
+            <documentation>A key associated with the function. This property is mandatory.&lt;br&gt;
+The key is displayed in the text editor area of the calculation builder.</documentation>
+        </property>
+        <property name="label" type="sap.ui.core/string" group="Misc">
+            <documentation>Label for the function.&lt;br&gt;
+The label is displayed in the visual editor of the calculation builder
+and in the functions menu on the calculation builder's toolbar.</documentation>
+        </property>
+        <property name="description" type="sap.ui.core/string" group="Misc">
+            <documentation>Description of the function.&lt;br&gt;
+The description is displayed in the functions menu on the calculation builder's toolbar.
+If no description is specified, it is generated automatically based on the &lt;code&gt;key&lt;/code&gt;
+property and the parameters defined in the &lt;code&gt;items&lt;/code&gt; aggregation.</documentation>
+        </property>
+        <property name="useDefaultValidation" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether default validation should be used.&lt;br&gt;
+Set this property to &lt;code&gt;false&lt;/code&gt; to provide your own validation algorithm using
+{@link sap.suite.ui.commons.CalculationBuilderValidationResult}.&lt;br&gt;
+If you do not provide your own validation algorithm for this custom function, set this
+property to &lt;code&gt;true&lt;/code&gt;, and the function will be validated by the calculation builder.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="items" type="sap.suite.ui.commons/CalculationBuilderItem" cardinality="0..n">
+            <documentation>Holds the parameters that can be passed to the function.&lt;br&gt;
+For example, if the function has two parameters, the &lt;code&gt;items&lt;/code&gt; aggregation may consist of:
+&lt;ol&gt;
+&lt;li&gt;A {@link sap.suite.ui.commons.CalculationBuilderItem} with an empty key for the first argument
+entered by the user.&lt;/li&gt;
+&lt;li&gt;A {@link sap.suite.ui.commons.CalculationBuilderItem} with a "&lt;code&gt;,&lt;/code&gt;" (comma) key for the comma
+that separates the arguments.&lt;/li&gt;
+&lt;li&gt;A {@link sap.suite.ui.commons.CalculationBuilderItem} with an empty key for the second argument
+entered by the user.&lt;/li&gt;
+&lt;/ol&gt;</documentation>
+        </aggregation>
+    </aggregations>
+</control>

@@ -1,0 +1,124 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <ViewSettingsDialog
+        id="viewSettingsDialogCustomerCreated"
+        sortDescending="true"
+        confirm=".handleCustomerCreatedDialogConfirm"
+        cancel=".handleCustomerCreatedCancel"
+        resetFilters=".handleCustomerCreatedResetFilters">
+        <sortItems>
+            <ViewSettingsItem id="CustomerCreatedIDSort" text="{i18n>Column.PageID}" key="id" />
+            <ViewSettingsItem id="CustomerCreatedDescriptionSort" text="{i18n>Column.PageDescription}" key="description" />
+            <ViewSettingsItem id="CustomerCreatedTitleSort" text="{i18n>Column.PageTitle}" key="title" />
+            <ViewSettingsItem id="CustomerCreatedAssignmentSort" text="{i18n>Column.PageAssignmentStatus}" key="assignmentCodeStatus" />
+            <ViewSettingsItem id="CustomerCreatedPackageSort" text="{i18n>Column.PagePackage}" key="devclass" />
+            <ViewSettingsItem id="CustomerCreatedWorkbenchRequestSort" text="{i18n>Column.PageWorkbenchRequest}" key="transportId" />
+            <ViewSettingsItem id="CustomerCreatedCreatedBySort" text="{i18n>Column.PageCreatedBy}" key="createdByFullname" />
+            <ViewSettingsItem id="CustomerCreatedCreatedOnSort" text="{i18n>Column.PageCreatedOn}" key="createdOn" />
+            <ViewSettingsItem id="CustomerCreatedChangedBySort" text="{i18n>Column.PageChangedBy}" key="modifiedByFullname" />
+            <ViewSettingsItem id="CustomerCreatedChangedOnSort" text="{i18n>Column.PageChangedOn}" key="modifiedOn" selected="true" />
+        </sortItems>
+        <filterItems>
+            <ViewSettingsFilterItem
+                id="AssignmentFilter"
+                text="{i18n>Column.PageAssignmentStatus}"
+                key="editAllowed"
+                items="{
+                    path: 'uniqueValues>/assignmentCodeStatus',
+                    key: 'id'
+                    }">
+                <items>
+                    <ViewSettingsItem
+                        text="{path: 'uniqueValues>key'}"
+                        key="assignmentCodeStatus___EQ___{uniqueValues>key}" />
+                </items>
+            </ViewSettingsFilterItem>
+            <ViewSettingsFilterItem
+                id="CustomerCreatedPackageFilter"
+                text="{i18n>Column.PagePackage}"
+                key="devclass"
+                items="{
+                    path: 'uniqueValues>/devclass',
+                    key: 'id'
+                }">
+                <items>
+                    <ViewSettingsItem
+                        text="{uniqueValues>key}"
+                        key="devclass___EQ___{uniqueValues>key}" />
+                </items>
+            </ViewSettingsFilterItem>
+            <ViewSettingsFilterItem
+                id="CustomerCreatedWorkbenchRequestFilter"
+                text="{i18n>Column.PageWorkbenchRequest}"
+                key="transportId"
+                items="{
+                    path: 'uniqueValues>/transportId',
+                    key: 'id'
+                }">
+                <items>
+                    <ViewSettingsItem
+                        text="{= ${uniqueValues>key} ? ${uniqueValues>key} : ${i18n>Message.NoWorkbenchRequestAssigned} }"
+                        key="transportId___EQ___{uniqueValues>key}" />
+                </items>
+            </ViewSettingsFilterItem>
+            <ViewSettingsFilterItem
+                id="CustomerCreatedCreatedByFilter"
+                text="{i18n>Column.PageCreatedBy}"
+                key="createdByFullname"
+                items="{
+                    path: 'uniqueValues>/createdByFullname',
+                    key: 'id'
+                }">
+                <items>
+                    <ViewSettingsItem
+                        text="{uniqueValues>key}"
+                        key="createdByFullname___EQ___{uniqueValues>key}" />
+                </items>
+            </ViewSettingsFilterItem>
+            <ViewSettingsCustomItem
+                id="CustomerCreatedCreatedOnFilter"
+                text="{i18n>Column.PageCreatedOn}"
+                key="createdOn">
+                <customControl>
+                    <DateRangeSelection
+                        id="CustomerCreatedCreatedOnDateRangeSelection"
+                        change=".handleCustomerCreatedDateRangeSelectionChanged" />
+                </customControl>
+            </ViewSettingsCustomItem>
+            <ViewSettingsFilterItem
+                id="CustomerCreatedChangedByFilter"
+                text="{i18n>Column.PageChangedBy}"
+                key="modifiedByFullname"
+                items="{
+                    path: 'uniqueValues>/modifiedByFullname',
+                    key: 'id'
+                }">
+                <items>
+                    <ViewSettingsItem
+                        text="{uniqueValues>key}"
+                        key="modifiedByFullname___EQ___{uniqueValues>key}" />
+                </items>
+            </ViewSettingsFilterItem>
+            <ViewSettingsCustomItem
+                id="CustomerCreatedChangedOnFilter"
+                text="{i18n>Column.PageChangedOn}"
+                key="modifiedOn">
+                <customControl>
+                    <DateRangeSelection
+                        id="CustomerCreatedChangedOnDateRangeSelection"
+                        change=".handleCustomerCreatedDateRangeSelectionChanged" />
+                </customControl>
+            </ViewSettingsCustomItem>
+        </filterItems>
+        <groupItems>
+            <ViewSettingsItem id="CustomerCreatedAssignmentGroup" text="{i18n>Column.PageAssignmentStatus}" key="assignmentCodeStatus" />
+            <ViewSettingsItem id="CustomerCreatedPackageGroup" text="{i18n>Column.PagePackage}" key="devclass" />
+            <ViewSettingsItem id="CustomerCreatedWorkbenchRequestGroup" text="{i18n>Column.PageWorkbenchRequest}" key="transportId" />
+            <ViewSettingsItem id="CustomerCreatedCreatedByGroup" text="{i18n>Column.PageCreatedBy}" key="createdByFullname" />
+            <ViewSettingsItem id="CustomerCreatedCreatedOnGroup" text="{i18n>Column.PageCreatedOn}" key="createdOn" />
+            <ViewSettingsItem id="CustomerCreatedChangedByGroup" text="{i18n>Column.PageChangedBy}" key="modifiedByFullname" />
+            <ViewSettingsItem id="CustomerCreatedChangedOnGroup" text="{i18n>Column.PageChangedOn}" key="modifiedOn" />
+        </groupItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>tools/Gizmo</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Provides buttons to hide or show certain sap.ui.vk controls.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+</control>

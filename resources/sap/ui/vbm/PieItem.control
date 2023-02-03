@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>PieItem</name>
+    <derived/>
+    <documentation>Slice element for a Pie Chart.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="name" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>The name of the Pie item.</documentation>
+        </property>
+        <property name="value" type="sap.ui.core/string" group="Misc">
+            <documentation>The value of the Pie item.</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/string" group="Misc">
+            <documentation>The color of the Pie Item.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <deprecation>This event should no longer be used. Click event from Pie and Pies now includes Pie Item index when event occurs.</deprecation>
+        </event>
+    </events>
+</control>

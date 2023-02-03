@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LaunchTile</name>
+    <derived/>
+    <documentation>This control launches a URL.</documentation>
+    <deprecation since="1.25">Deprecated.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>Descriptive title of the launch destination.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/URI" group="Misc">
+            <documentation>Icon associated with the launch destination.</documentation>
+        </property>
+        <property name="link" type="sap.ui.core/URI" group="Misc">
+            <documentation>The launch destination.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>The event fired when the user clicks on the control.</documentation>
+        </event>
+    </events>
+</control>

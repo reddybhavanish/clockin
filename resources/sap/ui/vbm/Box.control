@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Box</name>
+    <derived/>
+    <documentation>Specific Visual Object element for a &lt;i&gt;Box&lt;/i&gt;. A Box is a rectangle, which is positioned with its centerpoint at the given &lt;i&gt;position&lt;/i&gt;.
+       The ratio between width and height can be controlled with property &lt;i&gt;scale&lt;/i&gt;. Depending on the property &lt;i&gt;fxsize&lt;/i&gt; a box has an
+       absolute or relative size.&lt;br&gt;
+       Since the actual size of a box may depend on the zoom level it might be only partly visible. Thus detail windows will open at the click
+       position.</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" defaultValue="0;0;0" group="Misc">
+            <documentation>The position of the Box. The format is "lon;lat;0".</documentation>
+        </property>
+        <property name="scale" type="sap.ui.core/string" defaultValue="1;1;1" group="Misc">
+            <documentation>The scale of the box. The format is "x-Scale;y-Scale;z-Scale" whereas z-Scale is currently ignored.</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/string" defaultValue="RGB(255;0;0)" group="Misc">
+            <documentation>The color of the box.</documentation>
+        </property>
+        <property name="colorBorder" type="sap.ui.core/string" defaultValue="RGB(255;0;0)" group="Misc">
+            <documentation>The border color of the box.</documentation>
+        </property>
+    </properties>
+</control>

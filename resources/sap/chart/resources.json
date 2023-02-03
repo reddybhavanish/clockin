@@ -1,0 +1,1483 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1293
+		},
+		{
+			"name": ".theming",
+			"size": 95
+		},
+		{
+			"name": "AutoScaleMode-dbg.js",
+			"module": "sap/chart/AutoScaleMode.js",
+			"size": 890,
+			"isDebug": true
+		},
+		{
+			"name": "AutoScaleMode.js",
+			"module": "sap/chart/AutoScaleMode.js",
+			"size": 179
+		},
+		{
+			"name": "Chart-dbg.js",
+			"module": "sap/chart/Chart.js",
+			"size": 132844,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/SeriesColorTracker.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/coloring/Colorings.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/library.js",
+				"sap/chart/pagination/PagingController.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DataSourceUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/chart/utils/SelectionAPIUtils.js",
+				"sap/chart/utils/ValueAxisScaleUtils.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/BusyIndicatorUtils.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/FilterType.js",
+				"sap/ui/model/analytics/ODataModelAdapter.js",
+				"sap/ui/model/analytics/odata4analytics.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/ui5/controls/VizFrame.js",
+				"sap/viz/ui5/controls/common/BaseControl.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/Dataset.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/FlattenedDataset.js",
+				"sap/viz/ui5/data/MeasureDefinition.js",
+				"sap/viz/ui5/format/ChartFormatter.js",
+				"sap/viz/ui5/utils/CommonUtil.js"
+			]
+		},
+		{
+			"name": "Chart.js",
+			"module": "sap/chart/Chart.js",
+			"size": 56926,
+			"required": [
+				"sap/base/Log.js",
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/SeriesColorTracker.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/coloring/Colorings.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/library.js",
+				"sap/chart/pagination/PagingController.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DataSourceUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/chart/utils/SelectionAPIUtils.js",
+				"sap/chart/utils/ValueAxisScaleUtils.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/BusyIndicatorUtils.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/FilterType.js",
+				"sap/ui/model/analytics/ODataModelAdapter.js",
+				"sap/ui/model/analytics/odata4analytics.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/ui5/controls/VizFrame.js",
+				"sap/viz/ui5/controls/common/BaseControl.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/Dataset.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/FlattenedDataset.js",
+				"sap/viz/ui5/data/MeasureDefinition.js",
+				"sap/viz/ui5/format/ChartFormatter.js",
+				"sap/viz/ui5/utils/CommonUtil.js"
+			]
+		},
+		{
+			"name": "ChartLog-dbg.js",
+			"module": "sap/chart/ChartLog.js",
+			"size": 426,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "ChartLog.js",
+			"module": "sap/chart/ChartLog.js",
+			"size": 315,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "ChartType-dbg.js",
+			"module": "sap/chart/ChartType.js",
+			"size": 4126,
+			"isDebug": true
+		},
+		{
+			"name": "ChartType.js",
+			"module": "sap/chart/ChartType.js",
+			"size": 1113
+		},
+		{
+			"name": "ColoringType-dbg.js",
+			"module": "sap/chart/ColoringType.js",
+			"size": 32767,
+			"isDebug": true
+		},
+		{
+			"name": "ColoringType.js",
+			"module": "sap/chart/ColoringType.js",
+			"size": 203
+		},
+		{
+			"name": "ScaleBehavior-dbg.js",
+			"module": "sap/chart/ScaleBehavior.js",
+			"size": 659,
+			"isDebug": true
+		},
+		{
+			"name": "ScaleBehavior.js",
+			"module": "sap/chart/ScaleBehavior.js",
+			"size": 181
+		},
+		{
+			"name": "SeriesColorTracker-dbg.js",
+			"module": "sap/chart/SeriesColorTracker.js",
+			"size": 3743,
+			"isDebug": true,
+			"required": [
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "SeriesColorTracker.js",
+			"module": "sap/chart/SeriesColorTracker.js",
+			"size": 1451,
+			"required": [
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "TimeUnitType-dbg.js",
+			"module": "sap/chart/TimeUnitType.js",
+			"size": 1393,
+			"isDebug": true
+		},
+		{
+			"name": "TimeUnitType.js",
+			"module": "sap/chart/TimeUnitType.js",
+			"size": 303
+		},
+		{
+			"name": "coloring/ColorPalette-dbg.js",
+			"module": "sap/chart/coloring/ColorPalette.js",
+			"size": 5519,
+			"isDebug": true
+		},
+		{
+			"name": "coloring/ColorPalette.js",
+			"module": "sap/chart/coloring/ColorPalette.js",
+			"size": 4692
+		},
+		{
+			"name": "coloring/ColoringUtils-dbg.js",
+			"module": "sap/chart/coloring/ColoringUtils.js",
+			"size": 7208,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/ColoringUtils.js",
+			"module": "sap/chart/coloring/ColoringUtils.js",
+			"size": 4017,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/Colorings-dbg.js",
+			"module": "sap/chart/coloring/Colorings.js",
+			"size": 3263,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/coloring/emphasis/Emphasis.js",
+				"sap/chart/coloring/gradation/Gradation.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/Colorings.js",
+			"module": "sap/chart/coloring/Colorings.js",
+			"size": 1780,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/coloring/emphasis/Emphasis.js",
+				"sap/chart/coloring/gradation/Gradation.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/CriticalityType-dbg.js",
+			"module": "sap/chart/coloring/CriticalityType.js",
+			"size": 753,
+			"isDebug": true
+		},
+		{
+			"name": "coloring/CriticalityType.js",
+			"module": "sap/chart/coloring/CriticalityType.js",
+			"size": 213
+		},
+		{
+			"name": "coloring/criticality/Criticality-dbg.js",
+			"module": "sap/chart/coloring/criticality/Criticality.js",
+			"size": 8504,
+			"isDebug": true,
+			"required": [
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/Criticality.js",
+			"module": "sap/chart/coloring/criticality/Criticality.js",
+			"size": 3578,
+			"required": [
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/DimensionValues-dbg.js",
+			"module": "sap/chart/coloring/criticality/DimensionValues.js",
+			"size": 4384,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/DimensionValues.js",
+			"module": "sap/chart/coloring/criticality/DimensionValues.js",
+			"size": 2282,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/MeasureUtils-dbg.js",
+			"module": "sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+			"size": 16197,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/MeasureUtils.js",
+			"module": "sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+			"size": 8393,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/MeasureValues-dbg.js",
+			"module": "sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+			"size": 8767,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/MeasureValues.js",
+			"module": "sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+			"size": 3850,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/ThresholdsUtils-dbg.js",
+			"module": "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+			"size": 11651,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js"
+			]
+		},
+		{
+			"name": "coloring/criticality/measureValues/ThresholdsUtils.js",
+			"module": "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+			"size": 5370,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js"
+			]
+		},
+		{
+			"name": "coloring/emphasis/DimensionValues-dbg.js",
+			"module": "sap/chart/coloring/emphasis/DimensionValues.js",
+			"size": 2298,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/emphasis/DimensionValues.js",
+			"module": "sap/chart/coloring/emphasis/DimensionValues.js",
+			"size": 1198,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/emphasis/Emphasis-dbg.js",
+			"module": "sap/chart/coloring/emphasis/Emphasis.js",
+			"size": 2324,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/emphasis/DimensionValues.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/emphasis/Emphasis.js",
+			"module": "sap/chart/coloring/emphasis/Emphasis.js",
+			"size": 1136,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/emphasis/DimensionValues.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/DelineatedDimensionValues-dbg.js",
+			"module": "sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+			"size": 3826,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/DelineatedDimensionValues.js",
+			"module": "sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+			"size": 1992,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/DelineatedMeasures-dbg.js",
+			"module": "sap/chart/coloring/gradation/DelineatedMeasures.js",
+			"size": 3999,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/DelineatedMeasures.js",
+			"module": "sap/chart/coloring/gradation/DelineatedMeasures.js",
+			"size": 2240,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/Gradation-dbg.js",
+			"module": "sap/chart/coloring/gradation/Gradation.js",
+			"size": 5610,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+				"sap/chart/coloring/gradation/DelineatedMeasures.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/Gradation.js",
+			"module": "sap/chart/coloring/gradation/Gradation.js",
+			"size": 2493,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+				"sap/chart/coloring/gradation/DelineatedMeasures.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/rankedMeasureValues/RankedMeasureUtils-dbg.js",
+			"module": "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+			"size": 12717,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+			"module": "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+			"size": 7019,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/rankedMeasureValues/RankedMeasureValues-dbg.js",
+			"module": "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+			"size": 4470,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+			"module": "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+			"size": 2111,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "data/Dimension-dbg.js",
+			"module": "sap/chart/data/Dimension.js",
+			"size": 4608,
+			"isDebug": true,
+			"required": [
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "data/Dimension.js",
+			"module": "sap/chart/data/Dimension.js",
+			"size": 1101,
+			"required": [
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "data/DimensionRoleType-dbg.js",
+			"module": "sap/chart/data/DimensionRoleType.js",
+			"size": 1280,
+			"isDebug": true
+		},
+		{
+			"name": "data/DimensionRoleType.js",
+			"module": "sap/chart/data/DimensionRoleType.js",
+			"size": 193
+		},
+		{
+			"name": "data/HierarchyDimension-dbg.js",
+			"module": "sap/chart/data/HierarchyDimension.js",
+			"size": 1504,
+			"isDebug": true,
+			"required": [
+				"sap/chart/data/Dimension.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "data/HierarchyDimension.js",
+			"module": "sap/chart/data/HierarchyDimension.js",
+			"size": 507,
+			"required": [
+				"sap/chart/data/Dimension.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "data/Measure-dbg.js",
+			"module": "sap/chart/data/Measure.js",
+			"size": 6964,
+			"isDebug": true,
+			"required": [
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "data/Measure.js",
+			"module": "sap/chart/data/Measure.js",
+			"size": 1321,
+			"required": [
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "data/MeasureRoleType-dbg.js",
+			"module": "sap/chart/data/MeasureRoleType.js",
+			"size": 2331,
+			"isDebug": true
+		},
+		{
+			"name": "data/MeasureRoleType.js",
+			"module": "sap/chart/data/MeasureRoleType.js",
+			"size": 191
+		},
+		{
+			"name": "data/MeasureSemantics-dbg.js",
+			"module": "sap/chart/data/MeasureSemantics.js",
+			"size": 770,
+			"isDebug": true
+		},
+		{
+			"name": "data/MeasureSemantics.js",
+			"module": "sap/chart/data/MeasureSemantics.js",
+			"size": 195
+		},
+		{
+			"name": "data/TimeDimension-dbg.js",
+			"module": "sap/chart/data/TimeDimension.js",
+			"size": 1941,
+			"isDebug": true,
+			"required": [
+				"sap/chart/data/Dimension.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "data/TimeDimension.js",
+			"module": "sap/chart/data/TimeDimension.js",
+			"size": 637,
+			"required": [
+				"sap/chart/data/Dimension.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "designtime/Chart-dbg.designtime.js",
+			"module": "sap/chart/designtime/Chart.designtime.js",
+			"size": 287,
+			"isDebug": true,
+			"designtime": true
+		},
+		{
+			"name": "designtime/Chart.designtime.js",
+			"module": "sap/chart/designtime/Chart.designtime.js",
+			"size": 158,
+			"designtime": true
+		},
+		{
+			"name": "designtime/library-preload.designtime.js",
+			"module": "sap/chart/designtime/library-preload.designtime.js",
+			"size": 320,
+			"merged": true,
+			"designtime": true,
+			"included": [
+				"sap/chart/designtime/Chart.designtime.js"
+			]
+		},
+		{
+			"name": "designtime/library-preload.designtime.js.map",
+			"size": 303,
+			"isDebug": true,
+			"designtime": true
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/chart/library.js",
+			"size": 11104,
+			"isDebug": true,
+			"required": [
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartType.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/DimensionRoleType.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/MeasureRoleType.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/ui/core/library.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/format/ChartFormatter.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/chart/library-h2-preload.js",
+			"size": 12128,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepEqual.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/BusyIndicatorUtils.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/FilterType.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/analytics/ODataModelAdapter.js",
+				"sap/ui/model/analytics/odata4analytics.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/controls/VizFrame.js",
+				"sap/viz/ui5/controls/common/BaseControl.js",
+				"sap/viz/ui5/controls/common/feeds/AnalysisObject.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/Dataset.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/FlattenedDataset.js",
+				"sap/viz/ui5/data/MeasureDefinition.js",
+				"sap/viz/ui5/format/ChartFormatter.js",
+				"sap/viz/ui5/utils/CommonUtil.js"
+			],
+			"included": [
+				"sap/chart/library.js",
+				"sap/chart/manifest.json",
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/Chart.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ChartType.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/SeriesColorTracker.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/Colorings.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+				"sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+				"sap/chart/coloring/emphasis/DimensionValues.js",
+				"sap/chart/coloring/emphasis/Emphasis.js",
+				"sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+				"sap/chart/coloring/gradation/DelineatedMeasures.js",
+				"sap/chart/coloring/gradation/Gradation.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/DimensionRoleType.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/MeasureRoleType.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/designtime/Chart.designtime.js",
+				"sap/chart/pagination/PagingController.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DataSourceUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/chart/utils/RoleMapper.js",
+				"sap/chart/utils/SelectionAPIUtils.js",
+				"sap/chart/utils/ValueAxisScaleUtils.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 3032,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/chart/library-preload.js",
+			"size": 165656,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepEqual.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/BusyIndicatorUtils.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/LocaleData.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/FilterType.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/analytics/ODataModelAdapter.js",
+				"sap/ui/model/analytics/odata4analytics.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/controls/VizFrame.js",
+				"sap/viz/ui5/controls/common/BaseControl.js",
+				"sap/viz/ui5/controls/common/feeds/AnalysisObject.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/Dataset.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/FlattenedDataset.js",
+				"sap/viz/ui5/data/MeasureDefinition.js",
+				"sap/viz/ui5/format/ChartFormatter.js",
+				"sap/viz/ui5/utils/CommonUtil.js"
+			],
+			"included": [
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/Chart.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ChartType.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/SeriesColorTracker.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/Colorings.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/coloring/criticality/DimensionValues.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+				"sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+				"sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+				"sap/chart/coloring/emphasis/DimensionValues.js",
+				"sap/chart/coloring/emphasis/Emphasis.js",
+				"sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+				"sap/chart/coloring/gradation/DelineatedMeasures.js",
+				"sap/chart/coloring/gradation/Gradation.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+				"sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/DimensionRoleType.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/MeasureRoleType.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/library.js",
+				"sap/chart/manifest.json",
+				"sap/chart/pagination/PagingController.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DataSourceUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/chart/utils/RoleMapper.js",
+				"sap/chart/utils/SelectionAPIUtils.js",
+				"sap/chart/utils/ValueAxisScaleUtils.js"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 209407,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/chart/library.js",
+			"size": 3249,
+			"required": [
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartType.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/DimensionRoleType.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/MeasureRoleType.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartTypeAdapterUtils.js",
+				"sap/chart/utils/RoleFitter.js",
+				"sap/ui/core/library.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/format/ChartFormatter.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/chart/manifest.json",
+			"size": 1110
+		},
+		{
+			"name": "messages/messagebundle.properties",
+			"module": "sap/chart/messages/messagebundle.properties",
+			"size": 2610,
+			"locale": "",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ar.properties",
+			"module": "sap/chart/messages/messagebundle_ar.properties",
+			"size": 8487,
+			"locale": "ar",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_bg.properties",
+			"module": "sap/chart/messages/messagebundle_bg.properties",
+			"size": 10534,
+			"locale": "bg",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ca.properties",
+			"module": "sap/chart/messages/messagebundle_ca.properties",
+			"size": 3370,
+			"locale": "ca",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_cs.properties",
+			"module": "sap/chart/messages/messagebundle_cs.properties",
+			"size": 3471,
+			"locale": "cs",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_da.properties",
+			"module": "sap/chart/messages/messagebundle_da.properties",
+			"size": 2987,
+			"locale": "da",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_de.properties",
+			"module": "sap/chart/messages/messagebundle_de.properties",
+			"size": 3049,
+			"locale": "de",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_el.properties",
+			"module": "sap/chart/messages/messagebundle_el.properties",
+			"size": 10329,
+			"locale": "el",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_en.properties",
+			"module": "sap/chart/messages/messagebundle_en.properties",
+			"size": 2610,
+			"locale": "en",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_en_US_sappsd.properties",
+			"module": "sap/chart/messages/messagebundle_en_US_sappsd.properties",
+			"size": 10827,
+			"locale": "en_US_sappsd",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_es.properties",
+			"module": "sap/chart/messages/messagebundle_es.properties",
+			"size": 3397,
+			"locale": "es",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_et.properties",
+			"module": "sap/chart/messages/messagebundle_et.properties",
+			"size": 2609,
+			"locale": "et",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_fi.properties",
+			"module": "sap/chart/messages/messagebundle_fi.properties",
+			"size": 2923,
+			"locale": "fi",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_fr.properties",
+			"module": "sap/chart/messages/messagebundle_fr.properties",
+			"size": 3566,
+			"locale": "fr",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_he.properties",
+			"module": "sap/chart/messages/messagebundle_he.properties",
+			"size": 7171,
+			"locale": "he",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_hi.properties",
+			"module": "sap/chart/messages/messagebundle_hi.properties",
+			"size": 8472,
+			"locale": "hi",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_hr.properties",
+			"module": "sap/chart/messages/messagebundle_hr.properties",
+			"size": 3164,
+			"locale": "hr",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_hu.properties",
+			"module": "sap/chart/messages/messagebundle_hu.properties",
+			"size": 3318,
+			"locale": "hu",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_it.properties",
+			"module": "sap/chart/messages/messagebundle_it.properties",
+			"size": 2812,
+			"locale": "it",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_iw.properties",
+			"module": "sap/chart/messages/messagebundle_iw.properties",
+			"size": 6857,
+			"locale": "iw",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ja.properties",
+			"module": "sap/chart/messages/messagebundle_ja.properties",
+			"size": 4834,
+			"locale": "ja",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_kk.properties",
+			"module": "sap/chart/messages/messagebundle_kk.properties",
+			"size": 10864,
+			"locale": "kk",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ko.properties",
+			"module": "sap/chart/messages/messagebundle_ko.properties",
+			"size": 4571,
+			"locale": "ko",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_lt.properties",
+			"module": "sap/chart/messages/messagebundle_lt.properties",
+			"size": 3594,
+			"locale": "lt",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_lv.properties",
+			"module": "sap/chart/messages/messagebundle_lv.properties",
+			"size": 3314,
+			"locale": "lv",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ms.properties",
+			"module": "sap/chart/messages/messagebundle_ms.properties",
+			"size": 2722,
+			"locale": "ms",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_nb.properties",
+			"module": "sap/chart/messages/messagebundle_nb.properties",
+			"size": 2921,
+			"locale": "nb",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_nl.properties",
+			"module": "sap/chart/messages/messagebundle_nl.properties",
+			"size": 2851,
+			"locale": "nl",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_no.properties",
+			"module": "sap/chart/messages/messagebundle_no.properties",
+			"size": 2921,
+			"locale": "no",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_pl.properties",
+			"module": "sap/chart/messages/messagebundle_pl.properties",
+			"size": 3203,
+			"locale": "pl",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_pt.properties",
+			"module": "sap/chart/messages/messagebundle_pt.properties",
+			"size": 3319,
+			"locale": "pt",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ro.properties",
+			"module": "sap/chart/messages/messagebundle_ro.properties",
+			"size": 3455,
+			"locale": "ro",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_ru.properties",
+			"module": "sap/chart/messages/messagebundle_ru.properties",
+			"size": 12103,
+			"locale": "ru",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_sh.properties",
+			"module": "sap/chart/messages/messagebundle_sh.properties",
+			"size": 3176,
+			"locale": "sh",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_sk.properties",
+			"module": "sap/chart/messages/messagebundle_sk.properties",
+			"size": 3464,
+			"locale": "sk",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_sl.properties",
+			"module": "sap/chart/messages/messagebundle_sl.properties",
+			"size": 3394,
+			"locale": "sl",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_sv.properties",
+			"module": "sap/chart/messages/messagebundle_sv.properties",
+			"size": 2811,
+			"locale": "sv",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_th.properties",
+			"module": "sap/chart/messages/messagebundle_th.properties",
+			"size": 9499,
+			"locale": "th",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_tr.properties",
+			"module": "sap/chart/messages/messagebundle_tr.properties",
+			"size": 3496,
+			"locale": "tr",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_uk.properties",
+			"module": "sap/chart/messages/messagebundle_uk.properties",
+			"size": 10417,
+			"locale": "uk",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_vi.properties",
+			"module": "sap/chart/messages/messagebundle_vi.properties",
+			"size": 5997,
+			"locale": "vi",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_zh_CN.properties",
+			"module": "sap/chart/messages/messagebundle_zh_CN.properties",
+			"size": 3450,
+			"locale": "zh_CN",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "messages/messagebundle_zh_TW.properties",
+			"module": "sap/chart/messages/messagebundle_zh_TW.properties",
+			"size": 3679,
+			"locale": "zh_TW",
+			"raw": "messages/messagebundle.properties"
+		},
+		{
+			"name": "pagination/PagingController-dbg.js",
+			"module": "sap/chart/pagination/PagingController.js",
+			"size": 11240,
+			"isDebug": true,
+			"required": [
+				"sap/ui/model/Sorter.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "pagination/PagingController.js",
+			"module": "sap/chart/pagination/PagingController.js",
+			"size": 6179,
+			"required": [
+				"sap/ui/model/Sorter.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "resources.json",
+			"size": 24580
+		},
+		{
+			"name": "utils/ChartTypeAdapterUtils-dbg.js",
+			"module": "sap/chart/utils/ChartTypeAdapterUtils.js",
+			"size": 898,
+			"isDebug": true,
+			"required": [
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "utils/ChartTypeAdapterUtils.js",
+			"module": "sap/chart/utils/ChartTypeAdapterUtils.js",
+			"size": 418,
+			"required": [
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "utils/ChartUtils-dbg.js",
+			"module": "sap/chart/utils/ChartUtils.js",
+			"size": 3942,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/deepEqual.js",
+				"sap/chart/ChartType.js"
+			]
+		},
+		{
+			"name": "utils/ChartUtils.js",
+			"module": "sap/chart/utils/ChartUtils.js",
+			"size": 2518,
+			"required": [
+				"sap/base/util/deepEqual.js",
+				"sap/chart/ChartType.js"
+			]
+		},
+		{
+			"name": "utils/DataSourceUtils-dbg.js",
+			"module": "sap/chart/utils/DataSourceUtils.js",
+			"size": 11612,
+			"isDebug": true,
+			"required": [
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/DataSourceUtils.js",
+			"module": "sap/chart/utils/DataSourceUtils.js",
+			"size": 5996,
+			"required": [
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/data/Dimension.js",
+				"sap/chart/data/HierarchyDimension.js",
+				"sap/chart/data/Measure.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/DateFormatUtil-dbg.js",
+			"module": "sap/chart/utils/DateFormatUtil.js",
+			"size": 776,
+			"isDebug": true,
+			"required": [
+				"sap/chart/TimeUnitType.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "utils/DateFormatUtil.js",
+			"module": "sap/chart/utils/DateFormatUtil.js",
+			"size": 400,
+			"required": [
+				"sap/chart/TimeUnitType.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "utils/MeasureSemanticsUtils-dbg.js",
+			"module": "sap/chart/utils/MeasureSemanticsUtils.js",
+			"size": 18105,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/MeasureSemanticsUtils.js",
+			"module": "sap/chart/utils/MeasureSemanticsUtils.js",
+			"size": 8425,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/ColoringType.js",
+				"sap/chart/coloring/ColorPalette.js",
+				"sap/chart/coloring/ColoringUtils.js",
+				"sap/chart/coloring/CriticalityType.js",
+				"sap/chart/coloring/criticality/Criticality.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/RoleFitter-dbg.js",
+			"module": "sap/chart/utils/RoleFitter.js",
+			"size": 22400,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/RoleMapper.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/ui5/controls/common/feeds/AnalysisObject.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/MeasureDefinition.js"
+			]
+		},
+		{
+			"name": "utils/RoleFitter.js",
+			"module": "sap/chart/utils/RoleFitter.js",
+			"size": 11597,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/TimeUnitType.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/RoleMapper.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/viz/ui5/controls/common/feeds/AnalysisObject.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js",
+				"sap/viz/ui5/data/DimensionDefinition.js",
+				"sap/viz/ui5/data/MeasureDefinition.js"
+			]
+		},
+		{
+			"name": "utils/RoleMapper-dbg.js",
+			"module": "sap/chart/utils/RoleMapper.js",
+			"size": 11289,
+			"isDebug": true,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/RoleMapper.js",
+			"module": "sap/chart/utils/RoleMapper.js",
+			"size": 5043,
+			"required": [
+				"sap/chart/ChartLog.js",
+				"sap/chart/data/MeasureSemantics.js",
+				"sap/chart/data/TimeDimension.js",
+				"sap/chart/utils/ChartUtils.js",
+				"sap/chart/utils/DateFormatUtil.js",
+				"sap/chart/utils/MeasureSemanticsUtils.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/SelectionAPIUtils-dbg.js",
+			"module": "sap/chart/utils/SelectionAPIUtils.js",
+			"size": 5485,
+			"isDebug": true,
+			"required": [
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/SelectionAPIUtils.js",
+			"module": "sap/chart/utils/SelectionAPIUtils.js",
+			"size": 2006,
+			"required": [
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "utils/ValueAxisScaleUtils-dbg.js",
+			"module": "sap/chart/utils/ValueAxisScaleUtils.js",
+			"size": 5337,
+			"isDebug": true,
+			"required": [
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		},
+		{
+			"name": "utils/ValueAxisScaleUtils.js",
+			"module": "sap/chart/utils/ValueAxisScaleUtils.js",
+			"size": 2583,
+			"required": [
+				"sap/chart/AutoScaleMode.js",
+				"sap/chart/ChartLog.js",
+				"sap/chart/ScaleBehavior.js",
+				"sap/chart/utils/ChartUtils.js"
+			]
+		}
+	]
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>imageeditor/ImageEditorContainer</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>This control acts as a wrapper around the {@link sap.suite.ui.commons.imageeditor.ImageEditor} control.
+It provides additional image editing capabilities for the convenience of your users.
+
+&lt;h3&gt;Toolbar Customization&lt;/h3&gt;
+There are two ways to customize the toolbar, but they cannot be used together:
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;enabledButtons&lt;code&gt; property to select the order and visibility of the buttons provided by the &lt;code&gt;ImageEditorContainer&lt;/code&gt; control.
+You can use the &lt;code&gt;customToolbarControls&lt;/code&gt; aggregation to add custom controls that will be rendered in the toolbar.&lt;/li&gt;
+&lt;li&gt;Use the {@link #getToolbar} method together with the {@link #getToolbarIds} method to customize the toolbar as you need.
+&lt;br&gt;The changes made to the toolbar will be kept unless some of the methods from previous approach are used. The previous approach involves rerendering of the toolbar, which causes all changes to be lost.
+&lt;b&gt;Note:&lt;/b&gt; If you use this approach, make sure that you make your changes to the mobile toolbars as well, so that your application can be used on mobile devices.
+&lt;br&gt;There are three mobile toolbars available:
+&lt;ul&gt;
+&lt;li&gt;The header toolbar that can be customized using the method {@link #getMobileHeaderToolbar} and is intended for custom buttons.&lt;/li&gt;
+&lt;li&gt;The zoom toolbar contains zoom functionality that can be customized using the methods {@link #getMobileZoomToolbar} and {@link #getMobileZoomToolbarIds}.&lt;/li&gt;
+&lt;li&gt;The footer toolbar that usually includes the &lt;code&gt;ImageEditorContainer&lt;/code&gt; buttons and can be customized using the methods {@link #getMobileFooterToolbar} and {@link #getMobileFooterToolbarIds}.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;</documentation>
+    <since>1.66.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="mode" type="sap.suite.ui.commons/ImageEditorContainerMode" defaultValue="Filter">
+            <documentation>Image editor container mode.
+&lt;br&gt;Three modes are available: transform mode, crop mode, and filter mode (default).
+&lt;br&gt;The default mode provides filters for image editing: brightness, contrast, saturation, sepia
+grayscale, and others.</documentation>
+        </property>
+        <property name="enabledButtons" type="sap.suite.ui.commons/ImageEditorContainerButton[]" defaultValue="[Filter,Transform,Crop]">
+            <documentation>Controls order and availability of the buttons in the header panel of ImageEditorContainer.</documentation>
+        </property>
+    </properties>
+    <aggregations default="imageEditor">
+        <aggregation name="imageEditor" type="sap.suite.ui.commons/imageeditor/ImageEditor" cardinality="0..1">
+            <documentation>{@link sap.suite.ui.commons.imageeditor.ImageEditor} containing the image for editing.
+&lt;br&gt;If no {@link sap.suite.ui.commons.imageeditor.ImageEditor} is specified, the &lt;code&gt;ImageEditorContainer&lt;/code&gt;
+has no effect.</documentation>
+        </aggregation>
+        <aggregation name="customToolbarControls" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Custom controls that are added into the toolbar of &lt;code&gt;ImageEditorContainer&lt;/code&gt;.
+Only use controls that are supported by {@link sap.m.OverflowToolbar}.</documentation>
+        </aggregation>
+        <aggregation name="customResizeItems" type="sap.suite.ui.commons/imageeditor/CustomSizeItem" cardinality="0..n">
+            <documentation>Custom items for Resize option panel.</documentation>
+        </aggregation>
+        <aggregation name="customRectangleCropItems" type="sap.suite.ui.commons/imageeditor/CustomSizeItem" cardinality="0..n">
+            <documentation>Custom items for Rectangle Crop option panel.</documentation>
+        </aggregation>
+        <aggregation name="customEllipseCropItems" type="sap.suite.ui.commons/imageeditor/CustomSizeItem" cardinality="0..n">
+            <documentation>Custom items for Ellipse Crop option panel.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

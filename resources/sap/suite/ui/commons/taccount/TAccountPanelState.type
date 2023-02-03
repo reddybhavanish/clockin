@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>taccount/TAccountPanelState</name>
+    <derived/>
+    <documentation>The state of the {@link sap.suite.ui.commons.taccount.TAccountPanel} that defines how T accounts included in the panel are displayed.</documentation>
+    <enumeration>
+        <value name="Default">
+            <documentation>The T account panel displays T accounts as T shapes with debit and credit entries on either side of the T.</documentation>
+        </value>
+        <value name="Table">
+            <documentation>The T account panel displays T accounts as an aggregated table, with each debit and credit entry listed on a separate row.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

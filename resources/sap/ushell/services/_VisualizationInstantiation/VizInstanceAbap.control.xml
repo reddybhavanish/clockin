@@ -1,0 +1,3 @@
+<FragmentDefinition xmlns="sap.ui.core" xmlns:m="sap.m">
+    <m:GenericTile state="{$this>state}" />
+</FragmentDefinition>

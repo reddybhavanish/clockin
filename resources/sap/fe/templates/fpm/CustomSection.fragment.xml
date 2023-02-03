@@ -1,0 +1,11 @@
+<core:Fragment
+	xmlns:core="sap.ui.core"
+	xmlns:compo="http://schemas.sap.com/sapui5/extension/sap.ui.core.xmlcomposite/1"
+	fragmentName="{this>fragmentInstanceName}"
+	id="{this>id}"
+	type="CUSTOM"
+>
+	<compo:fragmentContent>
+		<core:Fragment xmlns:core="sap.ui.core" xmlns="sap.m" fragmentName="{this>fragmentName}" type="XML" />
+	</compo:fragmentContent>
+</core:Fragment>

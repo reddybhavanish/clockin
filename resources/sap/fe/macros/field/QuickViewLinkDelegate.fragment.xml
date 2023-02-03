@@ -1,0 +1,117 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:mdcField="sap.ui.mdc.field"
+	xmlns:mdcLink="sap.ui.mdc.link"
+	xmlns:macro="sap.fe.macros"
+	xmlns:l="sap.ui.layout"
+	template:require="{
+				macroLibrary: 'sap/fe/macros/macroLibrary',
+				MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+				COMMON: 'sap/fe/macros/CommonHelper',
+				CONTACT: 'sap/fe/macros/ContactHelper',
+				FIELD: 'sap/fe/macros/field/FieldHelper'
+				}"
+>
+	<!--TODO Add PanelListItems to make the header reading {entityType>./@com.sap.vocabularies.UI.v1.HeaderInfo}-->
+	<template:if test="{entityType>}">
+		<template:then>
+			<template:with path="entityType>./@com.sap.vocabularies.UI.v1.HeaderInfo" var="headerInfo">
+				<VBox class="mdcbaseinfoPanelTitleH1 mdcbaseinfoPanelHeader mdcbaseinfoPanelThumbnail">
+					<l:HorizontalLayout class="mdcbaseinfoPanelListItem">
+						<HBox visible="true">
+							<layoutData>
+								<FlexItemData styleClass="{= ${headerInfo>description} ? 'mdcbaseinfoPanelItemsGroup' : 'mdcbaseinfoPanelItemsWithoutGroup'}" />
+							</layoutData>
+							<Avatar
+								class="sapUiSmallMarginEnd sapUiSmallMarginBottom"
+								src="{headerInfo>ImageUrl}"
+								displayShape="{= ${entityType>./@com.sap.vocabularies.Common.v1.IsNaturalPerson} ? 'Circle' : 'Square'}"
+								fallbackIcon="{= ${entityType>./@com.sap.vocabularies.Common.v1.IsNaturalPerson} ? 'sap-icon://person-placeholder' : 'sap-icon://product'}"
+								displaySize="M"
+								initials="{= CONTACT.getAvatarInitials(${headerInfo>Initials@@MODEL.format})}"
+							/>
+							<VBox>
+								<Label text="{headerInfo>Title/Value@@MODEL.format}" visible="true" />
+								<Text text="{headerInfo>Description/Value@@MODEL.format}" visible="true" />
+							</VBox>
+						</HBox>
+					</l:HorizontalLayout>
+				</VBox>
+				<VBox>
+					<template:repeat list="{entityType>./@com.sap.vocabularies.UI.v1.QuickViewFacets}" var="facet">
+						<l:HorizontalLayout>
+						<template:if test="{= ${facet>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.Communication.v1.Contact') > -1 }">
+							<template:then>
+								<template:with path="facet>Target/$AnnotationPath" var="contact">
+									<core:Fragment fragmentName="sap.fe.macros.ContactContent" type="XML" />
+								</template:with>
+							</template:then>
+							<template:elseif
+									test="{= (${facet>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.FieldGroup') > -1 ||
+														${facet>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.Identification') > -1) ||
+														${facet>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.DataPoint') > -1}"
+								>
+								<macro:Form
+										editMode="Display"
+										metadataContexts="{ model: 'facet', path:'', name: 'facet'},{ model:'entityType',path:'',name:'entitySet'}"
+										useFormContainerLabels="true"
+									/>
+							</template:elseif>
+						</template:if>
+						</l:HorizontalLayout>
+					</template:repeat>
+				</VBox>
+			</template:with>
+		</template:then>
+		<template:elseif test="{dataField>}">
+			<VBox class="mdcbaseinfoPanelTitleH1 mdcbaseinfoPanelHeader">
+					<l:HorizontalLayout class="mdcbaseinfoPanelListItem">
+						<HBox visible="true">
+							<layoutData>
+								<FlexItemData styleClass="{= ${dataField>Label} ? 'mdcbaseinfoPanelItemsGroup' : 'mdcbaseinfoPanelItemsWithoutGroup'}" />
+							</layoutData>
+							<Avatar
+							class="sapUiSmallMarginEnd sapUiSmallMarginBottom"
+							src="{dataField>IconUrl@@MODEL.value}"
+							displayShape="Square"
+							fallbackIcon="sap-icon://employee"
+							displaySize="M"
+						/>
+							<VBox>
+								<Label text="{dataField>Value@@MODEL.format}" visible="true" />
+								<Text text="{dataField>Label@@MODEL.format}" visible="true" />
+							</VBox>
+						</HBox>
+					</l:HorizontalLayout>
+				</VBox>
+		</template:elseif>
+		<template:elseif test="{contact>}">
+				<VBox class="mdcbaseinfoPanelTitleH1 mdcbaseinfoPanelHeader mdcbaseinfoPanelThumbnail">
+					<l:HorizontalLayout class="mdcbaseinfoPanelListItem">
+						<HBox visible="true">
+							<Avatar
+							class="sapUiSmallMarginEnd sapUiSmallMarginBottom"
+							src="{contact>photo@@MODEL.value}"
+							displayShape="Circle"
+							fallbackIcon="sap-icon://product"
+							displaySize="M"
+						/>
+							<VBox>
+								<Label text="{contact>fn@@MODEL.format}" class="sapMLabelMaxWidth" visible="true" />
+								<Text text="{contact>title@@MODEL.format}" visible="{= !!${contact>title}}" />
+							</VBox>
+						</HBox>
+					</l:HorizontalLayout>
+				</VBox>
+				<VBox>
+					<l:HorizontalLayout>
+						<core:Fragment fragmentName="sap.fe.macros.ContactContent" type="XML" />
+					</l:HorizontalLayout>
+				</VBox>
+		</template:elseif>
+	</template:if>
+</core:FragmentDefinition>

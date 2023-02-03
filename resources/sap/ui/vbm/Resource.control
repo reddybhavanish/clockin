@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Resource</name>
+    <derived/>
+    <documentation>A resource is a Base64 encoded representation of an image binary that can be referenced by name in e.g. a &lt;i&gt;Spot&lt;/i&gt; element. When
+       images are specified as a string resource it is guaranteed that the control can access the bits in the image. If just a URL to the
+       resource is given it is loaded and converted to a Base64 encoded binary. This happens asynchronously and it may require several
+       re-renderings of the control until all resource show up correctly.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="value" type="sap.ui.core/string" group="Misc">
+            <documentation>Value of the resource. Base64 endode binary.</documentation>
+        </property>
+        <property name="src" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>URL to an image. It is important that the image data is readable fom the visual business control. Therefore e.g. images coming from
+a local drive or cross domains are not allowed. The preferred way is to use the Base64 encoded data provided using the value
+property.</documentation>
+        </property>
+        <property name="name" type="sap.ui.core/string" group="Misc">
+            <documentation>Name of the resource. The name should be always used when a resource is referenced.</documentation>
+        </property>
+    </properties>
+</control>

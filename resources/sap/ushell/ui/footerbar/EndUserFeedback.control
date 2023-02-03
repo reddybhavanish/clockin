@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/footerbar/EndUserFeedback</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/footerbar/EndUserFeedback</documentation>
+    <baseType>sap.ushell/ui/launchpad/ActionItem</baseType>
+    <properties>
+        <property name="showAnonymous" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="anonymousByDefault" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="showLegalAgreement" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="showCustomUIContent" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="feedbackDialogTitle" type="sap.ui.core/string" group="Misc"/>
+        <property name="textAreaPlaceholder" type="sap.ui.core/string" group="Misc"/>
+    </properties>
+    <aggregations>
+        <aggregation name="customUIContent" type="sap.ui.core/Control" cardinality="0..n"/>
+    </aggregations>
+</control>

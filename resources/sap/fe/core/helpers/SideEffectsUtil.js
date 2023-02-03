@@ -1,0 +1,6 @@
+/*
+ * ! SAP UI development toolkit for HTML5 (SAPUI5)
+        (c) Copyright 2009-2020 SAP SE. All rights reserved
+    
+ */
+sap.ui.define(["sap/base/Log"],function(L){"use strict";var s={};s.replaceEmptyNavigationPaths=function(p){return((p&&p.map(function(P){if(P["$NavigationPropertyPath"]===""){return{"$PropertyPath":"*"};}return P;}))||[]);};s.addTextProperties=function(p,m,b){var B=b,t=[],T,e,r;if(B.charAt(0)!=="/"){B="/"+B;}if(B.charAt(B.length-1)!=="/"){B=B+"/";}p.forEach(function(P){if(P["$PropertyPath"]==="*"){r=true;}else if(P["$PropertyPath"]){T=_(m,B+P["$PropertyPath"]);if(T){t.push(T);}}});if(r){e=m.getObject(B);Object.keys(e).forEach(function(k){if(e[k].$kind&&e[k].$kind==="Property"){T=_(m,B+k);if(T){t.push(T);}}});}return p.concat(t);};function _(m,p){var t=m.getObject(p+"@com.sap.vocabularies.Common.v1.Text");if(t&&t["$Path"]){return{"$PropertyPath":t["$Path"]};}return undefined;}s.logRequest=function(r){var p=Array.isArray(r.pathExpressions)&&r.pathExpressions.reduce(function(P,o){return P+"\n\t\t"+(o["$PropertyPath"]||o["$NavigationPropertyPath"]||"");},"");L.info("SideEffects request:\n\tContext path : "+r.context.getPath()+"\n\tProperty paths :"+p);};return s;});

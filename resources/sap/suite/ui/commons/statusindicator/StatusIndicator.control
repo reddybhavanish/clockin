@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/StatusIndicator</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The status indicator control displays a value between 0 and 100.
+
+A status indicator may consist of multiple groups that gradually display the value. The shapes in the first
+group are filled first, the shapes in the second group second, and so on.
+
+The value of the status indicator is distributed between the groups depending on their weight.
+
+The filling of the shapes in the groups can be proportional to the value of the status indicator or can be
+based on thresholds specified in the &lt;code&gt;discreteThresholds&lt;/code&gt; aggregation.</documentation>
+    <since>1.50</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" group="Dimension">
+            <documentation>Width of the status indicator. Only sets the width of the image part of the status indicator, potential label is not included.
+The root div of the status indicator is set as display: "block" and so takes up the whole space available.
+Wrap status indicator in {@link sap.m.FlexBox} control if you wish to control width of the whole status indicator.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" group="Dimension">
+            <documentation>Height of the status indicator. Only sets the height of the image part of the status indicator, potential label is not included.</documentation>
+        </property>
+        <property name="value" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Percentage value, between 0 and 100, that the status indicator reflects.</documentation>
+        </property>
+        <property name="viewBox" type="sap.ui.core/string">
+            <documentation>Defines the view box surrounding the shapes included in the status indicator.</documentation>
+        </property>
+        <property name="ariaLabel" type="sap.ui.core/string">
+            <documentation>ARIA label for this control to be used by screen reader software.</documentation>
+        </property>
+        <property name="size" type="sap.suite.ui.commons/statusindicator/SizeType" defaultValue="None">
+            <documentation>Predefined sizes for the status indicator.</documentation>
+        </property>
+        <property name="labelPosition" type="sap.suite.ui.commons/statusindicator/LabelPositionType" defaultValue="Left"/>
+        <property name="showLabel" type="sap.ui.core/boolean" defaultValue="false"/>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>This event is fired when the user clicks or taps the status indicator.</documentation>
+        </event>
+    </events>
+    <aggregations default="groups">
+        <aggregation name="groups" type="sap.suite.ui.commons/statusindicator/ShapeGroup" cardinality="0..n">
+            <documentation>Groups of shapes that display the status indicator's percentage value.
+A status indicator must always include at least one group.</documentation>
+        </aggregation>
+        <aggregation name="propertyThresholds" type="sap.suite.ui.commons/statusindicator/PropertyThreshold" cardinality="0..n">
+            <documentation>Defines how shapes are filled based on the status indicator's percentage value.</documentation>
+        </aggregation>
+        <aggregation name="discreteThresholds" type="sap.suite.ui.commons/statusindicator/DiscreteThreshold" cardinality="0..n">
+            <documentation>Specifies discrete thresholds for the status indicator. If discrete thresholds are set,
+the status indicator adjusts its appearance to the closest threshold value that is not
+greater than the actual percentage value of the status indicator. For example, if the
+following discrete thresholds are specified:
+&lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;value = "20"&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;value = "60"&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;value = "100"&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+The status indicator displays the following percentage values:
+&lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;0&lt;/code&gt; if the actual value is 15&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;20&lt;/code&gt; if the actual value is 20&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;20&lt;/code&gt; if the actual value is 55&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;60&lt;/code&gt; if the actual value is 60&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;60&lt;/code&gt; if the actual value is 79&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;100&lt;/code&gt; if the actual value is 100&lt;/li&gt;
+&lt;/ul&gt;
+Please note that these thresholds affect only the appearance of the status inicator, not
+its stored value.</documentation>
+        </aggregation>
+        <aggregation name="label" type="sap.m/Text" cardinality="0..1"/>
+    </aggregations>
+    <associations>
+        <association name="ariaDescribedBy" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Controls or IDs that provide a description for this control. Can be used by screen reader software.</documentation>
+        </association>
+        <association name="ariaLabelledBy" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Controls or IDs that label this control. Can be used by screen reader software.</documentation>
+        </association>
+    </associations>
+</control>

@@ -1,0 +1,100 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "BarListCard.less",
+			"size": 652,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "Card.less",
+			"size": 4317,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "DashboardLayout.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "LinkListCard.less",
+			"size": 75,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "OVPApp.less",
+			"size": 967,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ObjectStream.less",
+			"size": 1645,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "StackPlaceHolder.less",
+			"size": 264,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 814,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 82085,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 57729,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 258,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 60609,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 60591,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 57711,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 8813,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 508,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		}
+	]
+}

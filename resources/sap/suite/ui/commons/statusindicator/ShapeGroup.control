@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/ShapeGroup</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Group of shapes that display status indicator value. Shapes in the group are filled in parallel, actual
+animation might depend on particular shape setting.</documentation>
+    <since>1.50</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="weight" type="sap.ui.core/int" defaultValue="10">
+            <documentation>Weight of the group, relative to other groups in the status indicator. This property
+allows you to distribute the status indicator's value between groups of shapes that it
+contains. For example, for three groups with weights 10, 10, and 20 (total weight 40),
+the status indicator's value is distributed in the following way:
+&lt;ul&gt;
+  &lt;li&gt;If the status indicator's value is below 25% (10 out of 40), the first group
+of shapes (weight 10) is partially filled, depending on the percentage value. For example,
+if the percentage value is 5, the first group of shapes is 1/5-full. The second
+and the third groups are empty.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is at least 25% but below 50%, the first group
+of shapes (weight 10) is filled, the second group (also weight 10) is partially filled, and
+the third group (weight 20) appears empty.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is at least 50% but below 100%, the first two
+groups of shapes (weight 10 each) are filled, but the third group (weight 20) is only
+partially filled.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is 100, all three groups of shapes are filled.&lt;/li&gt;
+&lt;/ul&gt;</documentation>
+        </property>
+    </properties>
+    <aggregations default="shapes">
+        <aggregation name="shapes" type="sap.suite.ui.commons/statusindicator/Shape" cardinality="0..n">
+            <documentation>List of shapes that belong to this group.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

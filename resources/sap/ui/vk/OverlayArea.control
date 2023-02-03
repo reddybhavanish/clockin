@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>OverlayArea</name>
+    <derived/>
+    <documentation>Aggregation element for the Overlay Control</documentation>
+    <since>1.32.0</since>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="key" type="sap.ui.core/string" group="Misc">
+            <documentation>Unique identifier for the object. This is optional. If not provided the default identifier sId is used. However, sId is generated
+if template binding is used and thus it is not stable. Provide the key if the object really needs a unique and stable identifier.</documentation>
+        </property>
+        <property name="position" type="sap.ui.core/string" group="Misc">
+            <documentation>The position array for the OverlayArea. The format is "x0;y0;0;...;xN,yN,0".</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/CSSColor" defaultValue="rgba(200, 50, 50, 0.3)" group="Misc">
+            <documentation>The fill color of the OverlayArea.</documentation>
+        </property>
+        <property name="colorBorder" type="sap.ui.core/CSSColor" defaultValue="rgba(200, 50, 50, 1.0)" group="Misc">
+            <documentation>The border color of the OverlayArea.</documentation>
+        </property>
+        <property name="colorSelect" type="sap.ui.core/string" group="Misc">
+            <documentation>The select color of the OverlayArea in case selection highligthing is desired.</documentation>
+        </property>
+        <property name="colorNonSelect" type="sap.ui.core/string" group="Misc">
+            <documentation>The non-select color of the OverlayArea in case non-selection de-highligthing is desired.</documentation>
+        </property>
+        <property name="deltaColorHot" type="sap.ui.core/string" defaultValue="RHLSA(0;1.3;1.0;1.0)" group="Misc">
+            <documentation>Color or color delta when object is hovered. Color deltas can be declared in the format RHLSA(&lt;hue shift in degree&gt;;&lt;lightness
+multiplier&gt;;&lt;saturation multiplier&gt;;&lt;opacity multiplier&gt;)</documentation>
+        </property>
+        <property name="select" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>set to true if the element is selected</documentation>
+        </property>
+        <property name="changeable" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Set to true if OverlayArea is changeable.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on an OverlayArea.</documentation>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on an OverlayArea.</documentation>
+            <parameters>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="edgeClick" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an OverlayArea is clicked.</documentation>
+            <parameters>
+                <parameter name="index" type="sap.ui.core/int">
+                    <documentation>Index of the clicked edge. The numbering is zero based and the first edge with index 0 starts at the first position in the
+position array and end at the second.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="edgeContextMenu" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an OverlayArea is right clicked.</documentation>
+            <parameters>
+                <parameter name="index" type="sap.ui.core/int">
+                    <documentation>Index of the clicked edge. The numbering is zero based and the first edge with index 0 starts at the first position in the
+position array and end at the second.</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="handleMoved" allowPreventDefault="false">
+            <documentation>This event is raised when the design handle of a changable OverlayArea is moved.</documentation>
+        </event>
+        <event name="handleContextMenu" allowPreventDefault="false">
+            <documentation>This event is raised when the design handle of a changable OverlayArea is right clicked.</documentation>
+            <parameters>
+                <parameter name="index" type="sap.ui.core/int">
+                    <documentation>Index of the clicked handle. The numbering is zero based.</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="handleClick" allowPreventDefault="false">
+            <documentation>This event is raised when the design handle of a changable OverlayArea is clicked.</documentation>
+        </event>
+    </events>
+    <methods>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>open the context menu</documentation>
+            <parameters>
+                <parameter name="menu" type="sap.ui.core/object">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

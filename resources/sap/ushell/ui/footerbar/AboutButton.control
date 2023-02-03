@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/footerbar/AboutButton</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/footerbar/AboutButton</documentation>
+    <baseType>sap.ushell/ui/launchpad/ActionItem</baseType>
+</control>

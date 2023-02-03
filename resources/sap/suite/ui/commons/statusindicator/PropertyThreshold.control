@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/PropertyThreshold</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Property threshold defines how the shapes included in the status indicator should be filled
+when the status indicator's percentage value is below the given threshold.</documentation>
+    <since>1.50</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="fillColor" type="sap.m/ValueCSSColor" defaultValue="Neutral">
+            <documentation>Defines the color used to fill the shapes included in the status indicator.</documentation>
+        </property>
+        <property name="toValue" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the maximum value up to which the threshold setting should apply.</documentation>
+        </property>
+        <property name="ariaLabel" type="sap.ui.core/string">
+            <documentation>ARIA label for this threshold to be used by screen reader software.</documentation>
+        </property>
+    </properties>
+</control>

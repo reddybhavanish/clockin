@@ -1,0 +1,142 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "CalculationBuilder.less",
+			"size": 761,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "MicroProcessFlow.less",
+			"size": 517,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "NetworkGraph.less",
+			"size": 466,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "NetworkGroup.less",
+			"size": 414,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "NetworkLine.less",
+			"size": 413,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "NetworkNode.less",
+			"size": 1264,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ProcessFlow.less",
+			"size": 361,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ProcessFlowConnection.less",
+			"size": 1075,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ProcessFlowConnectionLabel.less",
+			"size": 3178,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ProcessFlowLaneHeader.less",
+			"size": 1901,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ProcessFlowNode.less",
+			"size": 6713,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "StatusIndicator.less",
+			"size": 417,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "TAccount.less",
+			"size": 661,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "Timeline.less",
+			"size": 611,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 2446,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 84103,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 243879,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 924,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 259229,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 258952,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 243600,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 20128,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 748,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+    <name>sap.fe.test</name>
+    <vendor>SAP SE</vendor>
+    <copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+        (c) Copyright 2009-2020 SAP SE. All rights reserved
+    </copyright>
+    <version>1.78.0</version>
+
+    <documentation>UI5 library: sap.fe.test</documentation>
+
+    <dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+    </dependencies>
+
+    <appData>
+        <!-- excludes for the JSDoc -->
+        <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc">
+        	<exclude name="sap.fe.test.js."/>
+        </jsdoc>
+        <!-- excludes for the JSCoverage -->
+		<jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage">
+			<exclude name="sap.fe.test.js."/>
+			<exclude name="sap.ui." />
+			<exclude name="*" /> <!-- exclude files within current folder -->
+		</jscoverage>
+    </appData>
+
+</library>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RouteType</name>
+    <derived/>
+    <documentation>Route type, determining how line between start and endpoint should be drawn.</documentation>
+    <enumeration>
+        <value name="Straight">
+            <documentation>Type indicating a straight connection</documentation>
+        </value>
+        <value name="Geodesic">
+            <documentation>Type indicating a geodesic connection</documentation>
+        </value>
+    </enumeration>
+</simple-type>

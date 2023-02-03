@@ -1,0 +1,70 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "AnalyticMap.less",
+			"size": 227,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "VBI.less",
+			"size": 1992,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 1255,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 72060,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 14872,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 509,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 14721,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 14703,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 14854,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 2558,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 261,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

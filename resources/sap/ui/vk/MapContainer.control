@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>MapContainer</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Abstract Constructor for a new Container.</documentation>
+    <baseType>sap.ui.vk/ContainerBase</baseType>
+    <properties>
+        <property name="showNavbar" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Show navbar</documentation>
+        </property>
+        <property name="showHome" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Controls the visibility of the home button</documentation>
+        </property>
+        <property name="showMapLayer" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Controls the visibility of the Map Layer Select</documentation>
+        </property>
+        <property name="showRectangularZoom" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Controls the visibility of the rectangular zoom button</documentation>
+        </property>
+        <property name="showZoom" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Controls the visibility of the zoom buttons</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="listPanelStack" type="sap.ui.vk/ListPanelStack" cardinality="0..1">
+            <documentation>List Panel aggregation</documentation>
+        </aggregation>
+        <aggregation name="scrollCont" type="sap.m/ScrollContainer" cardinality="0..1" visibility="hidden">
+            <documentation>hidden scroll container aggregation needed for binding</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="setToolbarItem" type="sap.ui.core/object">
+            <documentation>Set custom item on the MapContainer toolbar.
+All custom items added between selection segment button and setting button.</documentation>
+            <parameters>
+                <parameter name="item" type="sap.ui.core/object">
+                    <documentation>Item configuration object.</documentation>
+                </parameter>
+                <parameter name="item.id" type="sap.ui.core/string">
+                    <documentation>Id of the item for future references.</documentation>
+                </parameter>
+                <parameter name="item.index" type="sap.ui.core/int">
+                    <documentation>Relative index of an item across all custom items.</documentation>
+                </parameter>
+                <parameter name="item.visible" type="sap.ui.core/boolean">
+                    <documentation>Visibility of an item.</documentation>
+                </parameter>
+                <parameter name="item.active" type="sap.ui.core/boolean">
+                    <documentation>Active item or not.</documentation>
+                </parameter>
+                <parameter name="item.text" type="sap.ui.core/string">
+                    <documentation>Text of an item.</documentation>
+                </parameter>
+                <parameter name="item.tooltip" type="sap.ui.core/string">
+                    <documentation>Tooltip of an item.</documentation>
+                </parameter>
+                <parameter name="item.overflow" type="sap.ui.core/boolean">
+                    <documentation>If true create Overflow button or standard if false.</documentation>
+                </parameter>
+                <parameter name="item.icon" type="sap.ui.core/URI">
+                    <documentation>Icon of an item.</documentation>
+                </parameter>
+                <parameter name="item.activeIcon" type="sap.ui.core/URI">
+                    <documentation>Alternative icon of an item, see {@link sap.m.Button} for details.</documentation>
+                </parameter>
+                <parameter name="item.type" type="sap.ui.core/string">
+                    <documentation>The {@link sap.ui.vk.MapContainerButtonType} enum.</documentation>
+                </parameter>
+                <parameter name="item.press" type="sap.ui.core/any">
+                    <documentation>Callback function which is called when item gets pressed.</documentation>
+                </parameter>
+                <parameter name="item.toggled" type="sap.ui.core/boolean">
+                    <documentation>sets the initial pressed state for a {@link sap.ui.vk.MapContainerButtonType} Toggle button. This does not fire the pressed event handler. It should be used if pressed logic is activated by application code on first load.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

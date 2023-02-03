@@ -1,0 +1,122 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 12049,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 4994
+		},
+		{
+			"name": "FolderSelection-dbg.controller.js",
+			"size": 10117,
+			"isDebug": true
+		},
+		{
+			"name": "FolderSelection-dbg.view.js",
+			"size": 1538,
+			"isDebug": true
+		},
+		{
+			"name": "FolderSelection.controller.js",
+			"size": 4683
+		},
+		{
+			"name": "FolderSelection.view.js",
+			"size": 786
+		},
+		{
+			"name": "NoGroups-dbg.controller.js",
+			"size": 1275,
+			"isDebug": true
+		},
+		{
+			"name": "NoGroups-dbg.view.js",
+			"size": 2335,
+			"isDebug": true
+		},
+		{
+			"name": "NoGroups.controller.js",
+			"size": 392
+		},
+		{
+			"name": "NoGroups.view.js",
+			"size": 1113
+		},
+		{
+			"name": "Sharing-dbg.controller.js",
+			"size": 27745,
+			"isDebug": true
+		},
+		{
+			"name": "Sharing-dbg.view.js",
+			"size": 6323,
+			"isDebug": true
+		},
+		{
+			"name": "Sharing.controller.js",
+			"size": 14655
+		},
+		{
+			"name": "Sharing.view.js",
+			"size": 3598
+		},
+		{
+			"name": "attachment/Attachment-dbg.js",
+			"size": 2624,
+			"isDebug": true
+		},
+		{
+			"name": "attachment/Attachment.js",
+			"size": 1197
+		},
+		{
+			"name": "attachment/InvalidAttachmentConstructorArgumentsException-dbg.js",
+			"size": 810,
+			"isDebug": true
+		},
+		{
+			"name": "attachment/InvalidAttachmentConstructorArgumentsException.js",
+			"size": 399
+		},
+		{
+			"name": "attachment/InvalidAttachmentParameterException-dbg.js",
+			"size": 535,
+			"isDebug": true
+		},
+		{
+			"name": "attachment/InvalidAttachmentParameterException.js",
+			"size": 382
+		},
+		{
+			"name": "dialog/Component-dbg.js",
+			"size": 15066,
+			"isDebug": true
+		},
+		{
+			"name": "dialog/Component.js",
+			"size": 7086
+		},
+		{
+			"name": "helper/AttachmentsUtil-dbg.js",
+			"size": 7717,
+			"isDebug": true
+		},
+		{
+			"name": "helper/AttachmentsUtil.js",
+			"size": 4034
+		},
+		{
+			"name": "helper/ShareUtil-dbg.js",
+			"size": 16986,
+			"isDebug": true
+		},
+		{
+			"name": "helper/ShareUtil.js",
+			"size": 8404
+		}
+	]
+}

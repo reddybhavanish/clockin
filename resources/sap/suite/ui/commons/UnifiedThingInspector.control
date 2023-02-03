@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>UnifiedThingInspector</name>
+    <derived/>
+    <documentation>This control provides an ability to display a thing (for example, object factsheet) on the desktop, tablet, and phone devices in a Fiori style.</documentation>
+    <deprecation since="1.32">Deprecated. Object page should be used instead.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="height" type="sap.ui.core/CSSSize" defaultValue="100%" group="Misc">
+            <documentation>The height of the control.</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>The title of the thing.</documentation>
+        </property>
+        <property name="name" type="sap.ui.core/string" group="Misc">
+            <documentation>The name of the thing.</documentation>
+        </property>
+        <property name="description" type="sap.ui.core/string" group="Misc">
+            <documentation>The description of the thing.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/URI" group="Misc">
+            <documentation>The icon to be displayed as a graphical element within the header. This can be an image or an icon from the icon font.</documentation>
+        </property>
+        <property name="transactionsVisible" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>If set to true, the Transaction button appears.</documentation>
+        </property>
+        <property name="actionsVisible" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>If set to true, the Actions button appears.</documentation>
+        </property>
+        <property name="destroyPageOnBack" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>If set to true, destroys a page when the user chooses the Back button to leave this page.</documentation>
+        </property>
+        <property name="configurationVisible" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>If set to true, the Configuration button appears.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="backAction" allowPreventDefault="false">
+            <documentation>The event is fired when the user chooses the Back button.</documentation>
+        </event>
+        <event name="transactionsButtonPress" allowPreventDefault="true">
+            <documentation>The event is fired when the user chooses the Transactions button.</documentation>
+            <parameters>
+                <parameter name="caller" type="sap.ui.core/object">
+                    <documentation>The object that initiated the event.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="actionsButtonPress" allowPreventDefault="true">
+            <documentation>The event is fired when the user chooses the Actions button.</documentation>
+            <parameters>
+                <parameter name="caller" type="sap.ui.core/object">
+                    <documentation>The object that initiated the event.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="configurationButtonPress" allowPreventDefault="false">
+            <documentation>The event is fired when the user chooses the Configuration button.</documentation>
+            <parameters>
+                <parameter name="caller" type="sap.ui.core/object">
+                    <documentation>The object that initiated the event.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="navigate" allowPreventDefault="true">
+            <documentation>The event is fired when navigation between two pages has been triggered. The transition (if any) to the new page has not started yet.
+This event can be aborted by the application with preventDefault(), which means that there will be no navigation.
+This event is propogated from the inner NavContainer. The event can also return internal Master and Detail pages.</documentation>
+            <parameters>
+                <parameter name="from" type="sap.ui.core/Control">
+                    <documentation>The page that was shown before the current navigation.</documentation>
+                </parameter>
+                <parameter name="fromId" type="sap.ui.core/string">
+                    <documentation>The ID of the page that was shown before the current navigation.</documentation>
+                </parameter>
+                <parameter name="to" type="sap.ui.core/Control">
+                    <documentation>The page that will be shown after the current navigation.</documentation>
+                </parameter>
+                <parameter name="toId" type="sap.ui.core/string">
+                    <documentation>The ID of the page that will be shown after the current navigation.</documentation>
+                </parameter>
+                <parameter name="firstTime" type="sap.ui.core/boolean">
+                    <documentation>Whether the "to" page (more precisely: a control with the ID of the page that is currently navigated to) has not been shown/navigated to before.</documentation>
+                </parameter>
+                <parameter name="isTo" type="sap.ui.core/boolean">
+                    <documentation>Whether this is a forward navigation, triggered by "to()".</documentation>
+                </parameter>
+                <parameter name="isBack" type="sap.ui.core/boolean">
+                    <documentation>Whether this is a back navigation, triggered by "back()".</documentation>
+                </parameter>
+                <parameter name="isBackToTop" type="sap.ui.core/boolean">
+                    <documentation>Whether this is a navigation to the root page, triggered by "backToTop()".</documentation>
+                </parameter>
+                <parameter name="isBackToPage" type="sap.ui.core/boolean" since="1.7.2">
+                    <documentation>Whether this was a navigation to the root page, triggered by "backToTop()".</documentation>
+                </parameter>
+                <parameter name="direction" type="sap.ui.core/string">
+                    <documentation>How the navigation was triggered, possible values are: "to", "back", and "backToTop".</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="afterNavigate" allowPreventDefault="false">
+            <documentation>The event is fired when navigation between two pages has completed. In case of animated transitions this event is fired with some delay after the "navigate" event.
+This event is propogated from the inner NavContainer. The event can also return internal Master and Detail pages.</documentation>
+            <parameters>
+                <parameter name="from" type="sap.ui.core/Control">
+                    <documentation>The page that had been shown before navigation.</documentation>
+                </parameter>
+                <parameter name="fromId" type="sap.ui.core/string">
+                    <documentation>The ID of the page that had been shown before navigation.</documentation>
+                </parameter>
+                <parameter name="to" type="sap.ui.core/Control">
+                    <documentation>The page that is now shown after navigation.</documentation>
+                </parameter>
+                <parameter name="toId" type="sap.ui.core/string">
+                    <documentation>The ID of the page that is now shown after navigation.</documentation>
+                </parameter>
+                <parameter name="firstTime" type="sap.ui.core/boolean">
+                    <documentation>Whether the "to" page (more precisely: a control with the ID of the page that has been navigated to) had not been shown/navigated to before.</documentation>
+                </parameter>
+                <parameter name="isTo" type="sap.ui.core/boolean">
+                    <documentation>Whether was a forward navigation, triggered by "to()".</documentation>
+                </parameter>
+                <parameter name="isBack" type="sap.ui.core/boolean">
+                    <documentation>Whether this was a back navigation, triggered by "back()".</documentation>
+                </parameter>
+                <parameter name="isBackToTop" type="sap.ui.core/boolean">
+                    <documentation>Whether this was a navigation to the root page, triggered by "backToTop()".</documentation>
+                </parameter>
+                <parameter name="isBackToPage" type="sap.ui.core/boolean" since="1.7.2">
+                    <documentation>Whether this was a navigation to the root page, triggered by "backToTop()".</documentation>
+                </parameter>
+                <parameter name="direction" type="sap.ui.core/string">
+                    <documentation>How the navigation was triggered, possible values are: "to", "back", and "backToTop".</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="facets" type="sap.suite.ui.commons/FacetOverview" cardinality="0..n">
+            <documentation>The list of the sap.suite.ui.commons.FacetOverview objects.</documentation>
+        </aggregation>
+        <aggregation name="facetContent" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>The content that appears on the detail page of the UnifiedThingInspector.</documentation>
+        </aggregation>
+        <aggregation name="navContainer" type="sap.m/NavContainer" cardinality="0..1" visibility="hidden">
+            <documentation>The hidden aggregation for the sap.m.NavContainer control.</documentation>
+        </aggregation>
+        <aggregation name="kpis" type="sap.suite.ui.commons/KpiTile" cardinality="0..n">
+            <documentation>A set of the KPI tiles to be shown in the header. Currently only 3 tiles from the list are displayed on the desktop and tablet. On the phone, all tiles are displayed in a swipeable container.</documentation>
+        </aggregation>
+        <aggregation name="transactions" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Menu items for transaction popup.</documentation>
+            <deprecation since="1.18.2">Deprecated due to the incorrect work with data binding. Open the popup in the transactionsButtonPress event handler instead.</deprecation>
+        </aggregation>
+        <aggregation name="actions" type="sap.m/Button" cardinality="0..n">
+            <documentation>Action sheet controls.</documentation>
+            <deprecation since="1.18.2">Deprecated due to the incorrect work with data binding. Open the popup in the actionsButtonPress event handler instead.</deprecation>
+        </aggregation>
+        <aggregation name="pages" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Contains pages except for Master and Detail.</documentation>
+        </aggregation>
+        <aggregation name="objectHeader" type="sap.m/ObjectHeader" cardinality="0..1" visibility="hidden">
+            <documentation>The hidden aggregation for the sap.m.ObjectHeader control.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

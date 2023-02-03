@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/Rectangle</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Status indicator shape in the form of a rectangle.</documentation>
+    <since>1.50</since>
+    <baseType>sap.suite.ui.commons/statusindicator/SimpleShape</baseType>
+    <properties>
+        <property name="x" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the x coordinate of the upper-left corner of the rectangle.</documentation>
+        </property>
+        <property name="y" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the y coordinate of the upper-left corner of the rectangle.</documentation>
+        </property>
+        <property name="rx" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the horizontal corner radius of the rectangle. If set to 0, the corners
+are not rounded.</documentation>
+        </property>
+        <property name="ry" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the vertical corner radius of the rectangle. If set to 0, the corners
+are not rounded.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the width of the rectangle.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the height of the rectangle.</documentation>
+        </property>
+    </properties>
+</control>

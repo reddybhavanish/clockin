@@ -1,0 +1,41 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 6244,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 2624
+		},
+		{
+			"name": "Notification-dbg.controller.js",
+			"size": 20042,
+			"isDebug": true
+		},
+		{
+			"name": "Notification-dbg.view.js",
+			"size": 5571,
+			"isDebug": true
+		},
+		{
+			"name": "Notification.controller.js",
+			"size": 10645
+		},
+		{
+			"name": "Notification.view.js",
+			"size": 3763
+		},
+		{
+			"name": "NotificationContainer-dbg.js",
+			"size": 884,
+			"isDebug": true
+		},
+		{
+			"name": "NotificationContainer.js",
+			"size": 578
+		}
+	]
+}

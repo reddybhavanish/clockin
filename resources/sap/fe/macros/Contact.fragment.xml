@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mdcField="sap.ui.mdc.field"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:mdcLink="sap.ui.mdc.link"
+	template:require="{
+						 MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+			             FIELD: 'sap/fe/macros/field/FieldHelper',
+						 COMMON: 'sap/fe/macros/CommonHelper'}"
+>
+	<!--TODO verify if visible is well passed
+	TODO Do we need some ID ? SourceControl ID ?
+	TODO verify FieldBaseDelegate is the good one ?-->
+	<mdc:Field
+		delegate="{name: 'sap/ui/mdc/odata/v4/FieldBaseDelegate'}"
+		editMode="Display"
+		width="100%"
+		visible="{visible>}"
+		value="{contact>fn@@MODEL.format}"
+	>
+		<mdc:fieldInfo>
+			<mdc:Link
+				enablePersonalization="false"
+				binding="{contact>}"
+				delegate="{= FIELD.computeLinkParameters('sap/fe/macros/field/QuickViewLinkDelegate', undefined, undefined, undefined, undefined, ${contact>@@COMMON.getMetaPath})}"
+			>
+			</mdc:Link>
+		</mdc:fieldInfo>
+	</mdc:Field>
+</core:FragmentDefinition>

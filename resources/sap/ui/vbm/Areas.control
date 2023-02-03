@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Areas</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;Area&lt;/i&gt; instances.</documentation>
+    <baseType>sap.ui.vbm/VoAggregation</baseType>
+    <properties>
+        <property name="posChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if position may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="edgeClick" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an Area is clicked.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/Area">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="edge" type="sap.ui.core/int">
+                    <documentation>The number of the edge where the click occured. Edges are numbered zero based: e.g. edge from point 1 to point 2 has number
+0</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="edgeContextMenu" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an Area is right clicked.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/Area">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="edge" type="sap.ui.core/int">
+                    <documentation>The number of the edge where the click occured. Edges are numbered zero based: e.g. edge from point 1 to point 2 has number
+0</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Area" cardinality="0..n">
+            <documentation>Area object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

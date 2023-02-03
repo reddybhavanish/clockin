@@ -1,0 +1,86 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:macro="sap.fe.macros"
+	xmlns:core="sap.ui.core"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+						 CONTACT: 'sap/fe/macros/ContactHelper',
+						 FIELD: 'sap/fe/macros/field/FieldHelper'
+	}"
+>
+	<template:if test="{contact>}">
+		<f:SimpleForm editable="false" layout="ResponsiveGridLayout">
+			<core:Title text="{= CONTACT.getContactTitle(${contact>fn})}" />
+			<Label text="{= CONTACT.computeLabel('role', ${contact>role})}" labelFor="IDRole" visible="{= !!${contact>role}}" />
+			<Text id="IDRole" text="{contact>role@@MODEL.format}" visible="{= !!${contact>role}}" />
+
+			<Label text="{= CONTACT.computeLabel('title', ${contact>title})}" labelFor="IDTitle" visible="{= !!${contact>title}}" />
+			<Text id="IDTitle" text="{contact>title@@MODEL.format}" visible="{= !!${contact>title}}" />
+
+			<Label text="{= CONTACT.computeLabel('org', ${contact>org})}" labelFor="IDOrg" visible="{= !!${contact>org}}" />
+			<Text id="IDOrg" text="{contact>org@@MODEL.format}" visible="{= !!${contact>org}}" />
+
+			<template:if test="{contact>tel}">
+				<template:with path="contact>tel" var="tels">
+					<template:repeat list="{path:'tels>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'preferred'}}" var="tel">
+						<Label text="{= CONTACT.computeLabel('phone', ${tel>type/$EnumMember})}" labelFor="IDName" visible="true" />
+						<Link href="{= CONTACT.formatUri('phone', ${tel>uri/@@MODEL.format})}" text="{tel>uri/@@MODEL.format}" visible="true">
+						</Link>
+					</template:repeat>
+					<template:repeat list="{path:'tels>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'work'}}" var="tel">
+						<Label text="{= CONTACT.computeLabel('phone', ${tel>type/$EnumMember})}" labelFor="IDName" visible="true" />
+						<Link href="{= CONTACT.formatUri('phone', ${tel>uri/@@MODEL.format})}" text="{tel>uri/@@MODEL.format}" visible="true">
+						</Link>
+					</template:repeat>
+					<template:repeat list="{path:'tels>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'cell'}}" var="tel">
+						<Label text="{= CONTACT.computeLabel('phone', ${tel>type/$EnumMember})}" labelFor="IDName" visible="true" />
+						<Link href="{= CONTACT.formatUri('phone', ${tel>uri/@@MODEL.format})}" text="{tel>uri/@@MODEL.format}" visible="true">
+						</Link>
+					</template:repeat>
+					<template:repeat list="{path:'tels>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'fax'}}" var="tel">
+						<Label text="{= CONTACT.computeLabel('phone', ${tel>type/$EnumMember})}" labelFor="IDName" visible="true" />
+						<Link href="{= CONTACT.formatUri('phone', ${tel>uri/@@MODEL.format})}" text="{tel>uri/@@MODEL.format}" visible="true">
+						</Link>
+					</template:repeat>
+				</template:with>
+			</template:if>
+			<template:if test="{contact>email}">
+				<template:with path="contact>email" var="emails">
+					<template:repeat list="{path:'emails>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'preferred'}}" var="mail">
+						<Label text="{= CONTACT.computeLabel('mail', ${mail>type/$EnumMember})}" labelFor="IDName" visible="{= !!${mail>address}}" />
+						<Link
+							href="{= CONTACT.formatUri('mail', ${mail>address/@@MODEL.format})}"
+							text="{mail>address/@@MODEL.format}"
+							visible="{= !!${mail>address}}"
+						>
+						</Link>
+					</template:repeat>
+					<template:repeat list="{path:'emails>', filters: { path: 'type/$EnumMember', operator: 'EndsWith', value1: 'work'}}" var="mail">
+						<Label text="{= CONTACT.computeLabel('mail', ${mail>type/$EnumMember})}" labelFor="IDName" visible="{= !!${mail>address}}" />
+						<Link
+							href="{= CONTACT.formatUri('mail', ${mail>address/@@MODEL.format})}"
+							text="{mail>address/@@MODEL.format}"
+							visible="{= !!${mail>address}}"
+						>
+						</Link>
+					</template:repeat>
+				</template:with>
+			</template:if>
+			<template:if test="{contact>adr}">
+				<template:with path="contact>adr" var="adrs">
+					<template:repeat list="{adrs>}" var="adr">
+						<Label text="{= CONTACT.computeLabel('address', ${adr>type/$EnumMember})}" visible="true" />
+						<Text
+							text="{= CONTACT.formatAddress(${adr>street/@@MODEL.format}, ${adr>code/@@MODEL.format}, ${adr>locality/@@MODEL.format}, ${adr>region/@@MODEL.format}, ${adr>country/@@MODEL.format})}"
+							visible="{= !!${adr>street} || !!${adr>code} || !!${adr>locality} || !!${adr>region} || !!${adr>country}}"
+						/>
+					</template:repeat>
+				</template:with>
+			</template:if>
+		</f:SimpleForm>
+	</template:if>
+</core:FragmentDefinition>

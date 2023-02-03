@@ -1,0 +1,180 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ChartTile.less",
+			"size": 947,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "FacetOverview.less",
+			"size": 1289,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "GenericTile2X2.less",
+			"size": 1602,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "HeaderContainer.less",
+			"size": 294,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "KpiTile.less",
+			"size": 418,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "LinkActionSheet.less",
+			"size": 644,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "MonitoringTile.less",
+			"size": 462,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "NumericTile.less",
+			"size": 484,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ProcessFlowConnection.less",
+			"size": 1347,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ProcessFlowConnectionLabel.less",
+			"size": 6494,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ProcessFlowLaneHeader.less",
+			"size": 2817,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ProcessFlowNode.less",
+			"size": 15751,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "TargetFilter.less",
+			"size": 1521,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ThingCollection.less",
+			"size": 499,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "TileContent2X2.less",
+			"size": 376,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "UnifiedThingGroup.less",
+			"size": 568,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "UnifiedThingInspector.less",
+			"size": 568,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 2663,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 101480,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/btn_nav_left_p.png",
+			"size": 317,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/btn_nav_right_p.png",
+			"size": 311,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/btn_nav_left_p.png",
+			"size": 1387,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/btn_nav_right_p.png",
+			"size": 1387,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 259617,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 924,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 277186,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 276855,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.css",
+			"size": 259285,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.less",
+			"size": 37690,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.source.less",
+			"size": 856,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		}
+	]
+}

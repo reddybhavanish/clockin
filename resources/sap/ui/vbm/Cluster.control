@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Cluster</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Cluster control to visualize clustered objects on a map. The Cluster control does not cluster anything itself, instead it only shows a
+       predefined image. The image can be configured with the properties &lt;i&gt;type&lt;/i&gt;, &lt;i&gt;color&lt;/i&gt;, &lt;i&gt;icon&lt;/i&gt; and &lt;i&gt;text&lt;/i&gt;. If a
+       &lt;i&gt;text&lt;/i&gt; is given it is shown in the upper right corner of the control with a rounded border around. With the &lt;i&gt;color&lt;/i&gt; property
+       any color can be chosen. The &lt;i&gt;type&lt;/i&gt; property overwrites a property &lt;i&gt;color&lt;/i&gt; with semantic color of the type and provides a
+       particular semantic icon in the middle of the control. With the &lt;i&gt;icon&lt;/i&gt; property an icon can be defined and may overrule the
+       semantic icon; if no icon is defined ( and no type) then the semantic icon for type inactive is chosen.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="color" type="sap.ui.core/CSSColor" group="Misc">
+            <documentation>Set the color of the control. If a type is set then the semantic color of the type is taken instead.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/string" group="Misc">
+            <documentation>Set the icon of the control. If a type is set then the semantic icon of the type can be overwritten with this property. If no icon
+and no type is set then the icon for the semantic type 'inactive' is taken.</documentation>
+        </property>
+        <property name="text" type="sap.ui.core/string" group="Misc">
+            <documentation>Set the text of the control.</documentation>
+        </property>
+        <property name="type" type="sap.ui.vbm/SemanticType" defaultValue="None" group="Behavior">
+            <documentation>semantic type for cluster. The type specifies the icon and the color of the cluster control.</documentation>
+        </property>
+    </properties>
+</control>

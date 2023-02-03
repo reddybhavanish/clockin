@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>FlexibleControl</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Holds layout data for the FlexibleControl contents.</documentation>
+    <since>1.16.0</since>
+    <developmentState state="experimental" since="1.32.0">This class is experimental and might be modified or removed in future versions.</developmentState>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" group="Dimension">
+            <documentation>CSS width of the vertical layout.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" group="Dimension"/>
+        <property name="layout" type="sap.ui.core/string" defaultValue="Stacked" group="Behavior"/>
+        <property name="enabled" type="sap.ui.core/boolean" defaultValue="true" group="Behavior">
+            <documentation>If not enabled all controls inside are not enabled automatically.</documentation>
+        </property>
+    </properties>
+    <aggregations default="content">
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Child Controls within the layout.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

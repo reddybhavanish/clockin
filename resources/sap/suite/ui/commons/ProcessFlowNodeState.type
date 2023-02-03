@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowNodeState</name>
+    <derived/>
+    <documentation>Describes the state connected to the content it is representing in the Process Flow Node. The state is also displayed in the Process Flow Lane Header as a color segment of the donut.</documentation>
+    <enumeration>
+        <value name="Positive">
+            <documentation>Positive status for a created document: the document is done, finished, solved.</documentation>
+        </value>
+        <value name="Negative">
+            <documentation>Negative status for a created document: with this document, an issue occurred.</documentation>
+        </value>
+        <value name="Critical" since="1.42.0">
+            <documentation>Critical status for a created document: with this document, a critical issue occurred, for example, the business process can be interrupted.</documentation>
+        </value>
+        <value name="Planned">
+            <documentation>Planned status for a document: the document is planned to be started.</documentation>
+        </value>
+        <value name="Neutral">
+            <documentation>Neutral status for a created document: the document is in progress.</documentation>
+        </value>
+        <value name="PlannedNegative">
+            <documentation>Planned, but negative status for a document: the planned document has an issue but has not yet been started.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

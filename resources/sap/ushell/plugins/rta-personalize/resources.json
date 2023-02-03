@@ -1,0 +1,469 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/plugins/rta-personalize/Component.js",
+			"size": 10752,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/UriParameters.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/fl/EventHistory.js",
+				"sap/ui/fl/Utils.js",
+				"sap/ushell/plugins/BaseRTAPlugin.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "sap/ushell/plugins/rta-personalize/Component-h2-preload.js",
+			"size": 6253,
+			"merged": true,
+			"required": [
+				"sap/base/util/UriParameters.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/fl/EventHistory.js",
+				"sap/ui/fl/Utils.js",
+				"sap/ushell/plugins/BaseRTAPlugin.js"
+			],
+			"included": [
+				"sap/ushell/plugins/rta-personalize/Component.js",
+				"sap/ushell/plugins/rta-personalize/manifest.json",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ar.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_bg.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ca.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_cs.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_da.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_de.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_el.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_sappsd.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_saptrc.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_es.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_et.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_fi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_fr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hu.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_it.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_iw.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ja.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_kk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ko.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_lt.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_lv.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ms.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_nl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_no.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_pl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_pt.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ro.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ru.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sh.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sv.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_th.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_tr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_uk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_vi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_zh_CN.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_zh_TW.properties"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js.map",
+			"size": 4158,
+			"isDebug": true
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "sap/ushell/plugins/rta-personalize/Component-preload.js",
+			"size": 56745,
+			"merged": true,
+			"required": [
+				"sap/base/util/UriParameters.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/fl/EventHistory.js",
+				"sap/ui/fl/Utils.js",
+				"sap/ushell/plugins/BaseRTAPlugin.js"
+			],
+			"included": [
+				"sap/ushell/plugins/rta-personalize/Component.js",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ar.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_bg.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ca.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_cs.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_da.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_de.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_el.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_sappsd.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_saptrc.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_es.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_et.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_fi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_fr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_hu.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_it.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_iw.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ja.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_kk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ko.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_lt.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_lv.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ms.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_nl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_no.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_pl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_pt.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ro.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_ru.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sh.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sl.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_sv.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_th.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_tr.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_uk.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_vi.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_zh_CN.properties",
+				"sap/ushell/plugins/rta-personalize/i18n/i18n_zh_TW.properties",
+				"sap/ushell/plugins/rta-personalize/manifest.json"
+			]
+		},
+		{
+			"name": "Component-preload.js.map",
+			"size": 5805,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/plugins/rta-personalize/Component.js",
+			"size": 4796,
+			"required": [
+				"sap/base/util/UriParameters.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/fl/EventHistory.js",
+				"sap/ui/fl/Utils.js",
+				"sap/ushell/plugins/BaseRTAPlugin.js"
+			]
+		},
+		{
+			"name": "i18n/i18n.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n.properties",
+			"size": 1613,
+			"locale": "",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ar.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ar.properties",
+			"size": 3065,
+			"locale": "ar",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_bg.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_bg.properties",
+			"size": 3815,
+			"locale": "bg",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ca.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ca.properties",
+			"size": 1674,
+			"locale": "ca",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_cs.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_cs.properties",
+			"size": 1670,
+			"locale": "cs",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_da.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_da.properties",
+			"size": 1606,
+			"locale": "da",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_de.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_de.properties",
+			"size": 1686,
+			"locale": "de",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_el.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_el.properties",
+			"size": 4107,
+			"locale": "el",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_en.properties",
+			"size": 1574,
+			"locale": "en",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en_US_sappsd.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_sappsd.properties",
+			"size": 5298,
+			"locale": "en_US_sappsd",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en_US_saptrc.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_en_US_saptrc.properties",
+			"size": 1831,
+			"locale": "en_US_saptrc",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_es.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_es.properties",
+			"size": 1678,
+			"locale": "es",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_et.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_et.properties",
+			"size": 1644,
+			"locale": "et",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_fi.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_fi.properties",
+			"size": 1747,
+			"locale": "fi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_fr.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_fr.properties",
+			"size": 1663,
+			"locale": "fr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hi.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_hi.properties",
+			"size": 3433,
+			"locale": "hi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hr.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_hr.properties",
+			"size": 1700,
+			"locale": "hr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hu.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_hu.properties",
+			"size": 1796,
+			"locale": "hu",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_it.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_it.properties",
+			"size": 1651,
+			"locale": "it",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_iw.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_iw.properties",
+			"size": 2850,
+			"locale": "iw",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ja.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ja.properties",
+			"size": 2665,
+			"locale": "ja",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_kk.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_kk.properties",
+			"size": 3947,
+			"locale": "kk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ko.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ko.properties",
+			"size": 2274,
+			"locale": "ko",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_lt.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_lt.properties",
+			"size": 1782,
+			"locale": "lt",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_lv.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_lv.properties",
+			"size": 1940,
+			"locale": "lv",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ms.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ms.properties",
+			"size": 1589,
+			"locale": "ms",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_nl.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_nl.properties",
+			"size": 1612,
+			"locale": "nl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_no.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_no.properties",
+			"size": 1593,
+			"locale": "no",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_pl.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_pl.properties",
+			"size": 1771,
+			"locale": "pl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_pt.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_pt.properties",
+			"size": 1746,
+			"locale": "pt",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ro.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ro.properties",
+			"size": 1719,
+			"locale": "ro",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ru.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_ru.properties",
+			"size": 3570,
+			"locale": "ru",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sh.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_sh.properties",
+			"size": 1687,
+			"locale": "sh",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sk.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_sk.properties",
+			"size": 1826,
+			"locale": "sk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sl.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_sl.properties",
+			"size": 1579,
+			"locale": "sl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sv.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_sv.properties",
+			"size": 1576,
+			"locale": "sv",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_th.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_th.properties",
+			"size": 3971,
+			"locale": "th",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_tr.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_tr.properties",
+			"size": 1781,
+			"locale": "tr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_uk.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_uk.properties",
+			"size": 3610,
+			"locale": "uk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_vi.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_vi.properties",
+			"size": 2497,
+			"locale": "vi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_zh_CN.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_zh_CN.properties",
+			"size": 2079,
+			"locale": "zh_CN",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_zh_TW.properties",
+			"module": "sap/ushell/plugins/rta-personalize/i18n/i18n_zh_TW.properties",
+			"size": 1926,
+			"locale": "zh_TW",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ushell/plugins/rta-personalize/manifest.json",
+			"size": 1133
+		},
+		{
+			"name": "resources.json",
+			"size": 12540
+		}
+	]
+}

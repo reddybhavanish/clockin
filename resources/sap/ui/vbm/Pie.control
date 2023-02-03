@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Pie</name>
+    <derived/>
+    <documentation>Specific Visual Object element for a &lt;i&gt;Pie Chart&lt;/i&gt;. A Pie is a round chart, which is positioned with its centerpoint at the given
+       &lt;i&gt;position&lt;/i&gt;. The size of the pie can be controlled with property &lt;i&gt;scale&lt;/i&gt;. The slices of the pie chart are defined by the
+       aggregated &lt;i&gt;PieItem&lt;/i&gt; elements. The detail window will open at the center of the pie.&lt;br&gt;
+       The property &lt;i&gt;hotDeltaColor&lt;/i&gt; borrowed from VoBase is applied only to the hot PieItem and not the whole pie.&lt;/b&gt;</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" group="Misc">
+            <documentation>The position of the Pie.</documentation>
+        </property>
+        <property name="scale" type="sap.ui.core/string" group="Misc">
+            <documentation>The scaling of the Pie. The scale must be a vector "x-Scale;y-Scale;z-Scale", but currently only the x scaling is applied to the
+Pie.</documentation>
+        </property>
+    </properties>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/PieItem" cardinality="0..n">
+            <documentation>PieItem object aggregation. A PieItem holds the data for one slice in a Pie.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

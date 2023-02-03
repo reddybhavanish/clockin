@@ -1,0 +1,3188 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 811
+		},
+		{
+			"name": ".theming",
+			"size": 80
+		},
+		{
+			"name": "FileViewer-dbg.js",
+			"module": "sap/fileviewer/FileViewer.js",
+			"size": 17703,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/fileviewer/FileViewerModuleLoader.js",
+				"sap/fileviewer/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "FileViewer.js",
+			"module": "sap/fileviewer/FileViewer.js",
+			"size": 4737,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/fileviewer/FileViewerModuleLoader.js",
+				"sap/fileviewer/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "FileViewerModuleLoader-dbg.js",
+			"module": "sap/fileviewer/FileViewerModuleLoader.js",
+			"size": 1218,
+			"isDebug": true,
+			"required": [
+				"sap/fileviewer/viewer/build/pdf.js",
+				"sap/fileviewer/viewer/build/pdf.worker.js",
+				"sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+				"sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js",
+				"sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+				"sap/fileviewer/viewer/web/compatibility.js",
+				"sap/fileviewer/viewer/web/l10n.js",
+				"sap/fileviewer/viewer/web/pdf_viewer.js"
+			]
+		},
+		{
+			"name": "FileViewerModuleLoader.js",
+			"module": "sap/fileviewer/FileViewerModuleLoader.js",
+			"size": 542,
+			"required": [
+				"sap/fileviewer/viewer/build/pdf.js",
+				"sap/fileviewer/viewer/build/pdf.worker.js",
+				"sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+				"sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js",
+				"sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+				"sap/fileviewer/viewer/web/compatibility.js",
+				"sap/fileviewer/viewer/web/l10n.js",
+				"sap/fileviewer/viewer/web/pdf_viewer.js"
+			]
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/fileviewer/library.js",
+			"size": 1485,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/fileviewer/library-h2-preload.js",
+			"size": 1983,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js",
+				"sap/fileviewer/viewer/web/pdf_viewer.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			],
+			"included": [
+				"sap/fileviewer/library.js",
+				"sap/fileviewer/manifest.json",
+				"sap/fileviewer/FileViewer.js",
+				"sap/fileviewer/FileViewerModuleLoader.js",
+				"sap/fileviewer/viewer/build/pdf.js",
+				"sap/fileviewer/viewer/build/pdf.worker.js",
+				"sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+				"sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoverlaps.js",
+				"sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+				"sap/fileviewer/viewer/web/compatibility.js",
+				"sap/fileviewer/viewer/web/debugger.js",
+				"sap/fileviewer/viewer/web/l10n.js",
+				"sap/fileviewer/viewer/web/viewer.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 426,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fileviewer/library-preload.js",
+			"size": 1083206,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoperlaps.js",
+				"sap/fileviewer/viewer/web/pdf_viewer.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			],
+			"included": [
+				"sap/fileviewer/FileViewer.js",
+				"sap/fileviewer/FileViewerModuleLoader.js",
+				"sap/fileviewer/library.js",
+				"sap/fileviewer/manifest.json",
+				"sap/fileviewer/viewer/build/pdf.js",
+				"sap/fileviewer/viewer/build/pdf.worker.js",
+				"sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+				"sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+				"sap/fileviewer/viewer/sap-fpt/util/removeoverlaps.js",
+				"sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+				"sap/fileviewer/viewer/web/compatibility.js",
+				"sap/fileviewer/viewer/web/debugger.js",
+				"sap/fileviewer/viewer/web/l10n.js",
+				"sap/fileviewer/viewer/web/viewer.js"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 1252590,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/fileviewer/library.js",
+			"size": 418,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fileviewer/manifest.json",
+			"size": 859
+		},
+		{
+			"name": "resources.json",
+			"size": 33783
+		},
+		{
+			"name": "resources/messagebundle.properties",
+			"module": "sap/fileviewer/resources/messagebundle.properties",
+			"size": 49655,
+			"locale": "",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ar.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ar.properties",
+			"size": 74553,
+			"locale": "ar",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_bg.properties",
+			"module": "sap/fileviewer/resources/messagebundle_bg.properties",
+			"size": 85273,
+			"locale": "bg",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ca.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ca.properties",
+			"size": 50634,
+			"locale": "ca",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_cs.properties",
+			"module": "sap/fileviewer/resources/messagebundle_cs.properties",
+			"size": 52614,
+			"locale": "cs",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_da.properties",
+			"module": "sap/fileviewer/resources/messagebundle_da.properties",
+			"size": 49218,
+			"locale": "da",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_de.properties",
+			"module": "sap/fileviewer/resources/messagebundle_de.properties",
+			"size": 50328,
+			"locale": "de",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_el.properties",
+			"module": "sap/fileviewer/resources/messagebundle_el.properties",
+			"size": 84336,
+			"locale": "el",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_en.properties",
+			"module": "sap/fileviewer/resources/messagebundle_en.properties",
+			"size": 48205,
+			"locale": "en",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_en_US_sappsd.properties",
+			"module": "sap/fileviewer/resources/messagebundle_en_US_sappsd.properties",
+			"size": 96384,
+			"locale": "en_US_sappsd",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_en_US_saptrc.properties",
+			"module": "sap/fileviewer/resources/messagebundle_en_US_saptrc.properties",
+			"size": 59820,
+			"locale": "en_US_saptrc",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_es.properties",
+			"module": "sap/fileviewer/resources/messagebundle_es.properties",
+			"size": 50484,
+			"locale": "es",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_et.properties",
+			"module": "sap/fileviewer/resources/messagebundle_et.properties",
+			"size": 50004,
+			"locale": "et",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_fi.properties",
+			"module": "sap/fileviewer/resources/messagebundle_fi.properties",
+			"size": 51636,
+			"locale": "fi",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_fr.properties",
+			"module": "sap/fileviewer/resources/messagebundle_fr.properties",
+			"size": 51382,
+			"locale": "fr",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_hi.properties",
+			"module": "sap/fileviewer/resources/messagebundle_hi.properties",
+			"size": 78996,
+			"locale": "hi",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_hr.properties",
+			"module": "sap/fileviewer/resources/messagebundle_hr.properties",
+			"size": 49953,
+			"locale": "hr",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_hu.properties",
+			"module": "sap/fileviewer/resources/messagebundle_hu.properties",
+			"size": 54102,
+			"locale": "hu",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_it.properties",
+			"module": "sap/fileviewer/resources/messagebundle_it.properties",
+			"size": 49978,
+			"locale": "it",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_iw.properties",
+			"module": "sap/fileviewer/resources/messagebundle_iw.properties",
+			"size": 68894,
+			"locale": "iw",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ja.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ja.properties",
+			"size": 60496,
+			"locale": "ja",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_kk.properties",
+			"module": "sap/fileviewer/resources/messagebundle_kk.properties",
+			"size": 81694,
+			"locale": "kk",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ko.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ko.properties",
+			"size": 57226,
+			"locale": "ko",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_lt.properties",
+			"module": "sap/fileviewer/resources/messagebundle_lt.properties",
+			"size": 52796,
+			"locale": "lt",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_lv.properties",
+			"module": "sap/fileviewer/resources/messagebundle_lv.properties",
+			"size": 53277,
+			"locale": "lv",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ms.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ms.properties",
+			"size": 49225,
+			"locale": "ms",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_nl.properties",
+			"module": "sap/fileviewer/resources/messagebundle_nl.properties",
+			"size": 49389,
+			"locale": "nl",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_no.properties",
+			"module": "sap/fileviewer/resources/messagebundle_no.properties",
+			"size": 48934,
+			"locale": "no",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_pl.properties",
+			"module": "sap/fileviewer/resources/messagebundle_pl.properties",
+			"size": 52215,
+			"locale": "pl",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_pt.properties",
+			"module": "sap/fileviewer/resources/messagebundle_pt.properties",
+			"size": 51001,
+			"locale": "pt",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ro.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ro.properties",
+			"size": 51615,
+			"locale": "ro",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_ru.properties",
+			"module": "sap/fileviewer/resources/messagebundle_ru.properties",
+			"size": 83668,
+			"locale": "ru",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_sh.properties",
+			"module": "sap/fileviewer/resources/messagebundle_sh.properties",
+			"size": 50122,
+			"locale": "sh",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_sk.properties",
+			"module": "sap/fileviewer/resources/messagebundle_sk.properties",
+			"size": 52924,
+			"locale": "sk",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_sl.properties",
+			"module": "sap/fileviewer/resources/messagebundle_sl.properties",
+			"size": 50303,
+			"locale": "sl",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_sv.properties",
+			"module": "sap/fileviewer/resources/messagebundle_sv.properties",
+			"size": 49829,
+			"locale": "sv",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_th.properties",
+			"module": "sap/fileviewer/resources/messagebundle_th.properties",
+			"size": 80676,
+			"locale": "th",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_tr.properties",
+			"module": "sap/fileviewer/resources/messagebundle_tr.properties",
+			"size": 53110,
+			"locale": "tr",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_uk.properties",
+			"module": "sap/fileviewer/resources/messagebundle_uk.properties",
+			"size": 83516,
+			"locale": "uk",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_vi.properties",
+			"module": "sap/fileviewer/resources/messagebundle_vi.properties",
+			"size": 60488,
+			"locale": "vi",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_zh_CN.properties",
+			"module": "sap/fileviewer/resources/messagebundle_zh_CN.properties",
+			"size": 53974,
+			"locale": "zh_CN",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "resources/messagebundle_zh_TW.properties",
+			"module": "sap/fileviewer/resources/messagebundle_zh_TW.properties",
+			"size": 53969,
+			"locale": "zh_TW",
+			"raw": "resources/messagebundle.properties"
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/FileViewer.less",
+			"size": 505,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.css",
+			"size": 117,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.source.less",
+			"size": 79704,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-check.svg",
+			"size": 415,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-comment.svg",
+			"size": 883,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-help.svg",
+			"size": 2168,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-insert.svg",
+			"size": 408,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-key.svg",
+			"size": 1452,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-newparagraph.svg",
+			"size": 426,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-noicon.svg",
+			"size": 158,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-note.svg",
+			"size": 1041,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/annotation-paragraph.svg",
+			"size": 1143,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-next-rtl.png",
+			"size": 199,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-next-rtl@2x.png",
+			"size": 304,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-next.png",
+			"size": 193,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-next@2x.png",
+			"size": 296,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-previous-rtl.png",
+			"size": 193,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-previous-rtl@2x.png",
+			"size": 296,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-previous.png",
+			"size": 199,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/findbarButton-previous@2x.png",
+			"size": 304,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/grab.cur",
+			"size": 576,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/grabbing.cur",
+			"size": 585,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/loading-icon.gif",
+			"size": 2545,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/loading-small.png",
+			"size": 7402,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/loading-small@2x.png",
+			"size": 16131,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-documentProperties.png",
+			"size": 403,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-documentProperties@2x.png",
+			"size": 933,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-firstPage.png",
+			"size": 179,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-firstPage@2x.png",
+			"size": 266,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-handTool.png",
+			"size": 301,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-handTool@2x.png",
+			"size": 583,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-lastPage.png",
+			"size": 175,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-lastPage@2x.png",
+			"size": 276,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-rotateCcw.png",
+			"size": 360,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-rotateCcw@2x.png",
+			"size": 731,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-rotateCw.png",
+			"size": 359,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/secondaryToolbarButton-rotateCw@2x.png",
+			"size": 714,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/shadow.png",
+			"size": 290,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/texture.png",
+			"size": 2417,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-bookmark.png",
+			"size": 174,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-bookmark@2x.png",
+			"size": 260,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-download.png",
+			"size": 259,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-download@2x.png",
+			"size": 425,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-menuArrows.png",
+			"size": 107,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-menuArrows@2x.png",
+			"size": 152,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-openFile.png",
+			"size": 295,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-openFile@2x.png",
+			"size": 550,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageDown-rtl.png",
+			"size": 242,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageDown-rtl@2x.png",
+			"size": 398,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageDown.png",
+			"size": 238,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageDown@2x.png",
+			"size": 396,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageUp-rtl.png",
+			"size": 245,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageUp-rtl@2x.png",
+			"size": 405,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageUp.png",
+			"size": 246,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-pageUp@2x.png",
+			"size": 403,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-presentationMode.png",
+			"size": 321,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-presentationMode@2x.png",
+			"size": 586,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-print.png",
+			"size": 257,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-print@2x.png",
+			"size": 464,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-search.png",
+			"size": 309,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-search@2x.png",
+			"size": 653,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-secondaryToolbarToggle-rtl.png",
+			"size": 246,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png",
+			"size": 456,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-secondaryToolbarToggle.png",
+			"size": 243,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-secondaryToolbarToggle@2x.png",
+			"size": 458,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-sidebarToggle-rtl.png",
+			"size": 225,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-sidebarToggle-rtl@2x.png",
+			"size": 344,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-sidebarToggle.png",
+			"size": 225,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-sidebarToggle@2x.png",
+			"size": 331,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewAttachments.png",
+			"size": 384,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewAttachments@2x.png",
+			"size": 859,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewEntities.png",
+			"size": 356,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewEntities@2x.png",
+			"size": 797,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewOutline-rtl.png",
+			"size": 177,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewOutline-rtl@2x.png",
+			"size": 394,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewOutline.png",
+			"size": 178,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewOutline@2x.png",
+			"size": 331,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewThumbnail.png",
+			"size": 185,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-viewThumbnail@2x.png",
+			"size": 219,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-zoomIn.png",
+			"size": 136,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-zoomIn@2x.png",
+			"size": 160,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-zoomOut.png",
+			"size": 88,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/toolbarButton-zoomOut@2x.png",
+			"size": 109,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-collapsed-rtl.png",
+			"size": 143,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-collapsed-rtl@2x.png",
+			"size": 167,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-collapsed.png",
+			"size": 128,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-collapsed@2x.png",
+			"size": 149,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-expanded.png",
+			"size": 125,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/images/treeitem-expanded@2x.png",
+			"size": 172,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 894,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton-RTL.css",
+			"size": 777,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton.css",
+			"size": 777,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 894,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 896,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 259,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.css",
+			"size": 190,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.source.less",
+			"size": 82574,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 1793,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"size": 55,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton-RTL.css",
+			"size": 1604,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton.css",
+			"size": 1604,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 1793,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 375,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 282,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.css",
+			"size": 194,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.source.less",
+			"size": 82574,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 1831,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"size": 59,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton-RTL.css",
+			"size": 1638,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton.css",
+			"size": 1638,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 1831,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 396,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 298,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.css",
+			"size": 117,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.source.less",
+			"size": 70665,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"size": 1119,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton-RTL.css",
+			"size": 1002,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton.css",
+			"size": 1002,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"size": 1119,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"size": 229,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"size": 216,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "viewer/LICENSE",
+			"size": 10174
+		},
+		{
+			"name": "viewer/build/pdf-dbg.js",
+			"module": "sap/fileviewer/viewer/build/pdf.js",
+			"size": 367696,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/build/pdf.js",
+			"module": "sap/fileviewer/viewer/build/pdf.js",
+			"size": 165110,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/build/pdf.worker-dbg.js",
+			"module": "sap/fileviewer/viewer/build/pdf.worker.js",
+			"size": 1429274,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/build/pdf.worker.js",
+			"module": "sap/fileviewer/viewer/build/pdf.worker.js",
+			"size": 701456,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/package.json",
+			"size": 663
+		},
+		{
+			"name": "viewer/sap-fpt/package.json",
+			"size": 464
+		},
+		{
+			"name": "viewer/sap-fpt/pdf2text/pdf2text-dbg.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+			"size": 14047,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/sap-fpt/pdf2text/pdf2text.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/pdf2text/pdf2text.js",
+			"size": 5582,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/sap-fpt/suv/suv-dbg.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+			"size": 10185,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/sap-fpt/suv/suv.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/suv/suv.js",
+			"size": 3127,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/sap-fpt/util/removeoverlaps-dbg.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/util/removeoverlaps.js",
+			"size": 4967,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/sap-fpt/util/removeoverlaps.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/util/removeoverlaps.js",
+			"size": 1272,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/sap-fpt/viewer/pdfhighlighter-dbg.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+			"size": 7853,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/sap-fpt/viewer/pdfhighlighter.js",
+			"module": "sap/fileviewer/viewer/sap-fpt/viewer/pdfhighlighter.js",
+			"size": 3031,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/web/annotation_layer_builder.css",
+			"size": 1862
+		},
+		{
+			"name": "viewer/web/cmaps/78-EUC-H.bcmap",
+			"size": 3857
+		},
+		{
+			"name": "viewer/web/cmaps/78-EUC-V.bcmap",
+			"size": 204
+		},
+		{
+			"name": "viewer/web/cmaps/78-H.bcmap",
+			"size": 3703
+		},
+		{
+			"name": "viewer/web/cmaps/78-RKSJ-H.bcmap",
+			"size": 3839
+		},
+		{
+			"name": "viewer/web/cmaps/78-RKSJ-V.bcmap",
+			"size": 203
+		},
+		{
+			"name": "viewer/web/cmaps/78-V.bcmap",
+			"size": 191
+		},
+		{
+			"name": "viewer/web/cmaps/78ms-RKSJ-H.bcmap",
+			"size": 4229
+		},
+		{
+			"name": "viewer/web/cmaps/78ms-RKSJ-V.bcmap",
+			"size": 378
+		},
+		{
+			"name": "viewer/web/cmaps/83pv-RKSJ-H.bcmap",
+			"size": 1338
+		},
+		{
+			"name": "viewer/web/cmaps/90ms-RKSJ-H.bcmap",
+			"size": 1058
+		},
+		{
+			"name": "viewer/web/cmaps/90ms-RKSJ-V.bcmap",
+			"size": 378
+		},
+		{
+			"name": "viewer/web/cmaps/90msp-RKSJ-H.bcmap",
+			"size": 1046
+		},
+		{
+			"name": "viewer/web/cmaps/90msp-RKSJ-V.bcmap",
+			"size": 379
+		},
+		{
+			"name": "viewer/web/cmaps/90pv-RKSJ-H.bcmap",
+			"size": 1450
+		},
+		{
+			"name": "viewer/web/cmaps/90pv-RKSJ-V.bcmap",
+			"size": 346
+		},
+		{
+			"name": "viewer/web/cmaps/Add-H.bcmap",
+			"size": 3785
+		},
+		{
+			"name": "viewer/web/cmaps/Add-RKSJ-H.bcmap",
+			"size": 3819
+		},
+		{
+			"name": "viewer/web/cmaps/Add-RKSJ-V.bcmap",
+			"size": 384
+		},
+		{
+			"name": "viewer/web/cmaps/Add-V.bcmap",
+			"size": 364
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-0.bcmap",
+			"size": 541
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-1.bcmap",
+			"size": 655
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-2.bcmap",
+			"size": 666
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-3.bcmap",
+			"size": 721
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-4.bcmap",
+			"size": 729
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-5.bcmap",
+			"size": 732
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-6.bcmap",
+			"size": 732
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-CNS1-UCS2.bcmap",
+			"size": 66659
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-0.bcmap",
+			"size": 341
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-1.bcmap",
+			"size": 408
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-2.bcmap",
+			"size": 861
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-3.bcmap",
+			"size": 872
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-4.bcmap",
+			"size": 1161
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-5.bcmap",
+			"size": 1213
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-GB1-UCS2.bcmap",
+			"size": 55861
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-0.bcmap",
+			"size": 357
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-1.bcmap",
+			"size": 360
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-2.bcmap",
+			"size": 373
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-3.bcmap",
+			"size": 392
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-4.bcmap",
+			"size": 581
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-5.bcmap",
+			"size": 784
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-6.bcmap",
+			"size": 905
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Japan1-UCS2.bcmap",
+			"size": 65342
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Korea1-0.bcmap",
+			"size": 389
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Korea1-1.bcmap",
+			"size": 688
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Korea1-2.bcmap",
+			"size": 699
+		},
+		{
+			"name": "viewer/web/cmaps/Adobe-Korea1-UCS2.bcmap",
+			"size": 41153
+		},
+		{
+			"name": "viewer/web/cmaps/B5-H.bcmap",
+			"size": 1592
+		},
+		{
+			"name": "viewer/web/cmaps/B5-V.bcmap",
+			"size": 172
+		},
+		{
+			"name": "viewer/web/cmaps/B5pc-H.bcmap",
+			"size": 1605
+		},
+		{
+			"name": "viewer/web/cmaps/B5pc-V.bcmap",
+			"size": 174
+		},
+		{
+			"name": "viewer/web/cmaps/CNS-EUC-H.bcmap",
+			"size": 3080
+		},
+		{
+			"name": "viewer/web/cmaps/CNS-EUC-V.bcmap",
+			"size": 3304
+		},
+		{
+			"name": "viewer/web/cmaps/CNS1-H.bcmap",
+			"size": 1148
+		},
+		{
+			"name": "viewer/web/cmaps/CNS1-V.bcmap",
+			"size": 169
+		},
+		{
+			"name": "viewer/web/cmaps/CNS2-H.bcmap",
+			"size": 836
+		},
+		{
+			"name": "viewer/web/cmaps/CNS2-V.bcmap",
+			"size": 97
+		},
+		{
+			"name": "viewer/web/cmaps/ETHK-B5-H.bcmap",
+			"size": 6872
+		},
+		{
+			"name": "viewer/web/cmaps/ETHK-B5-V.bcmap",
+			"size": 198
+		},
+		{
+			"name": "viewer/web/cmaps/ETen-B5-H.bcmap",
+			"size": 1649
+		},
+		{
+			"name": "viewer/web/cmaps/ETen-B5-V.bcmap",
+			"size": 198
+		},
+		{
+			"name": "viewer/web/cmaps/ETenms-B5-H.bcmap",
+			"size": 105
+		},
+		{
+			"name": "viewer/web/cmaps/ETenms-B5-V.bcmap",
+			"size": 220
+		},
+		{
+			"name": "viewer/web/cmaps/EUC-H.bcmap",
+			"size": 934
+		},
+		{
+			"name": "viewer/web/cmaps/EUC-V.bcmap",
+			"size": 201
+		},
+		{
+			"name": "viewer/web/cmaps/Ext-H.bcmap",
+			"size": 3958
+		},
+		{
+			"name": "viewer/web/cmaps/Ext-RKSJ-H.bcmap",
+			"size": 4083
+		},
+		{
+			"name": "viewer/web/cmaps/Ext-RKSJ-V.bcmap",
+			"size": 270
+		},
+		{
+			"name": "viewer/web/cmaps/Ext-V.bcmap",
+			"size": 261
+		},
+		{
+			"name": "viewer/web/cmaps/GB-EUC-H.bcmap",
+			"size": 909
+		},
+		{
+			"name": "viewer/web/cmaps/GB-EUC-V.bcmap",
+			"size": 229
+		},
+		{
+			"name": "viewer/web/cmaps/GB-H.bcmap",
+			"size": 872
+		},
+		{
+			"name": "viewer/web/cmaps/GB-V.bcmap",
+			"size": 221
+		},
+		{
+			"name": "viewer/web/cmaps/GBK-EUC-H.bcmap",
+			"size": 25846
+		},
+		{
+			"name": "viewer/web/cmaps/GBK-EUC-V.bcmap",
+			"size": 230
+		},
+		{
+			"name": "viewer/web/cmaps/GBK2K-H.bcmap",
+			"size": 34166
+		},
+		{
+			"name": "viewer/web/cmaps/GBK2K-V.bcmap",
+			"size": 277
+		},
+		{
+			"name": "viewer/web/cmaps/GBKp-EUC-H.bcmap",
+			"size": 25834
+		},
+		{
+			"name": "viewer/web/cmaps/GBKp-EUC-V.bcmap",
+			"size": 231
+		},
+		{
+			"name": "viewer/web/cmaps/GBT-EUC-H.bcmap",
+			"size": 12013
+		},
+		{
+			"name": "viewer/web/cmaps/GBT-EUC-V.bcmap",
+			"size": 230
+		},
+		{
+			"name": "viewer/web/cmaps/GBT-H.bcmap",
+			"size": 11857
+		},
+		{
+			"name": "viewer/web/cmaps/GBT-V.bcmap",
+			"size": 222
+		},
+		{
+			"name": "viewer/web/cmaps/GBTpc-EUC-H.bcmap",
+			"size": 12023
+		},
+		{
+			"name": "viewer/web/cmaps/GBTpc-EUC-V.bcmap",
+			"size": 232
+		},
+		{
+			"name": "viewer/web/cmaps/GBpc-EUC-H.bcmap",
+			"size": 919
+		},
+		{
+			"name": "viewer/web/cmaps/GBpc-EUC-V.bcmap",
+			"size": 231
+		},
+		{
+			"name": "viewer/web/cmaps/H.bcmap",
+			"size": 881
+		},
+		{
+			"name": "viewer/web/cmaps/HKdla-B5-H.bcmap",
+			"size": 4610
+		},
+		{
+			"name": "viewer/web/cmaps/HKdla-B5-V.bcmap",
+			"size": 178
+		},
+		{
+			"name": "viewer/web/cmaps/HKdlb-B5-H.bcmap",
+			"size": 4176
+		},
+		{
+			"name": "viewer/web/cmaps/HKdlb-B5-V.bcmap",
+			"size": 178
+		},
+		{
+			"name": "viewer/web/cmaps/HKgccs-B5-H.bcmap",
+			"size": 3434
+		},
+		{
+			"name": "viewer/web/cmaps/HKgccs-B5-V.bcmap",
+			"size": 179
+		},
+		{
+			"name": "viewer/web/cmaps/HKm314-B5-H.bcmap",
+			"size": 2830
+		},
+		{
+			"name": "viewer/web/cmaps/HKm314-B5-V.bcmap",
+			"size": 179
+		},
+		{
+			"name": "viewer/web/cmaps/HKm471-B5-H.bcmap",
+			"size": 3633
+		},
+		{
+			"name": "viewer/web/cmaps/HKm471-B5-V.bcmap",
+			"size": 179
+		},
+		{
+			"name": "viewer/web/cmaps/HKscs-B5-H.bcmap",
+			"size": 6889
+		},
+		{
+			"name": "viewer/web/cmaps/HKscs-B5-V.bcmap",
+			"size": 199
+		},
+		{
+			"name": "viewer/web/cmaps/Hankaku.bcmap",
+			"size": 156
+		},
+		{
+			"name": "viewer/web/cmaps/Hiragana.bcmap",
+			"size": 144
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-EUC-H.bcmap",
+			"size": 2996
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-EUC-V.bcmap",
+			"size": 206
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-H.bcmap",
+			"size": 2939
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-Johab-H.bcmap",
+			"size": 26310
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-Johab-V.bcmap",
+			"size": 206
+		},
+		{
+			"name": "viewer/web/cmaps/KSC-V.bcmap",
+			"size": 198
+		},
+		{
+			"name": "viewer/web/cmaps/KSCms-UHC-H.bcmap",
+			"size": 4551
+		},
+		{
+			"name": "viewer/web/cmaps/KSCms-UHC-HW-H.bcmap",
+			"size": 4557
+		},
+		{
+			"name": "viewer/web/cmaps/KSCms-UHC-HW-V.bcmap",
+			"size": 211
+		},
+		{
+			"name": "viewer/web/cmaps/KSCms-UHC-V.bcmap",
+			"size": 208
+		},
+		{
+			"name": "viewer/web/cmaps/KSCpc-EUC-H.bcmap",
+			"size": 3260
+		},
+		{
+			"name": "viewer/web/cmaps/KSCpc-EUC-V.bcmap",
+			"size": 208
+		},
+		{
+			"name": "viewer/web/cmaps/Katakana.bcmap",
+			"size": 108
+		},
+		{
+			"name": "viewer/web/cmaps/LICENSE",
+			"size": 2080
+		},
+		{
+			"name": "viewer/web/cmaps/NWP-H.bcmap",
+			"size": 4295
+		},
+		{
+			"name": "viewer/web/cmaps/NWP-V.bcmap",
+			"size": 318
+		},
+		{
+			"name": "viewer/web/cmaps/RKSJ-H.bcmap",
+			"size": 753
+		},
+		{
+			"name": "viewer/web/cmaps/RKSJ-V.bcmap",
+			"size": 200
+		},
+		{
+			"name": "viewer/web/cmaps/Roman.bcmap",
+			"size": 102
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UCS2-H.bcmap",
+			"size": 75527
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UCS2-V.bcmap",
+			"size": 188
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF16-H.bcmap",
+			"size": 79928
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF16-V.bcmap",
+			"size": 192
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF32-H.bcmap",
+			"size": 81628
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF32-V.bcmap",
+			"size": 196
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF8-H.bcmap",
+			"size": 84481
+		},
+		{
+			"name": "viewer/web/cmaps/UniCNS-UTF8-V.bcmap",
+			"size": 193
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UCS2-H.bcmap",
+			"size": 77701
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UCS2-V.bcmap",
+			"size": 249
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF16-H.bcmap",
+			"size": 72998
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF16-V.bcmap",
+			"size": 222
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF32-H.bcmap",
+			"size": 74620
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF32-V.bcmap",
+			"size": 226
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF8-H.bcmap",
+			"size": 77447
+		},
+		{
+			"name": "viewer/web/cmaps/UniGB-UTF8-V.bcmap",
+			"size": 229
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UCS2-H.bcmap",
+			"size": 37732
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UCS2-HW-H.bcmap",
+			"size": 131
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UCS2-HW-V.bcmap",
+			"size": 948
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UCS2-V.bcmap",
+			"size": 926
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF16-H.bcmap",
+			"size": 61552
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF16-V.bcmap",
+			"size": 821
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF32-H.bcmap",
+			"size": 62419
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF32-V.bcmap",
+			"size": 855
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF8-H.bcmap",
+			"size": 66321
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS-UTF8-V.bcmap",
+			"size": 874
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF16-H.bcmap",
+			"size": 61846
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF16-V.bcmap",
+			"size": 825
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF32-H.bcmap",
+			"size": 62713
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF32-V.bcmap",
+			"size": 859
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF8-H.bcmap",
+			"size": 66595
+		},
+		{
+			"name": "viewer/web/cmaps/UniJIS2004-UTF8-V.bcmap",
+			"size": 878
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISPro-UCS2-HW-V.bcmap",
+			"size": 987
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISPro-UCS2-V.bcmap",
+			"size": 965
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISPro-UTF8-V.bcmap",
+			"size": 1000
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISX0213-UTF32-H.bcmap",
+			"size": 62371
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISX0213-UTF32-V.bcmap",
+			"size": 862
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISX02132004-UTF32-H.bcmap",
+			"size": 62665
+		},
+		{
+			"name": "viewer/web/cmaps/UniJISX02132004-UTF32-V.bcmap",
+			"size": 866
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UCS2-H.bcmap",
+			"size": 42667
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UCS2-V.bcmap",
+			"size": 226
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF16-H.bcmap",
+			"size": 40575
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF16-V.bcmap",
+			"size": 198
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF32-H.bcmap",
+			"size": 40685
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF32-V.bcmap",
+			"size": 202
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF8-H.bcmap",
+			"size": 44206
+		},
+		{
+			"name": "viewer/web/cmaps/UniKS-UTF8-V.bcmap",
+			"size": 211
+		},
+		{
+			"name": "viewer/web/cmaps/V.bcmap",
+			"size": 188
+		},
+		{
+			"name": "viewer/web/cmaps/WP-Symbol.bcmap",
+			"size": 237
+		},
+		{
+			"name": "viewer/web/compatibility-dbg.js",
+			"module": "sap/fileviewer/viewer/web/compatibility.js",
+			"size": 18222,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/web/compatibility.js",
+			"module": "sap/fileviewer/viewer/web/compatibility.js",
+			"size": 9359,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/web/compressed.tracemonkey-pldi-09.pdf",
+			"size": 1718425
+		},
+		{
+			"name": "viewer/web/debugger-dbg.js",
+			"module": "sap/fileviewer/viewer/web/debugger.js",
+			"size": 19444,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"FontInspector",
+				"opMap",
+				"StepperManager",
+				"Stepper",
+				"Stats",
+				"PDFBug"
+			],
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/web/debugger.js",
+			"module": "sap/fileviewer/viewer/web/debugger.js",
+			"size": 10464,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"FontInspector",
+				"opMap",
+				"StepperManager",
+				"Stepper",
+				"Stats",
+				"PDFBug"
+			],
+			"format": "raw"
+		},
+		{
+			"name": "viewer/web/images/annotation-check.svg",
+			"size": 415
+		},
+		{
+			"name": "viewer/web/images/annotation-comment.svg",
+			"size": 883
+		},
+		{
+			"name": "viewer/web/images/annotation-help.svg",
+			"size": 2168
+		},
+		{
+			"name": "viewer/web/images/annotation-insert.svg",
+			"size": 408
+		},
+		{
+			"name": "viewer/web/images/annotation-key.svg",
+			"size": 1452
+		},
+		{
+			"name": "viewer/web/images/annotation-newparagraph.svg",
+			"size": 426
+		},
+		{
+			"name": "viewer/web/images/annotation-noicon.svg",
+			"size": 158
+		},
+		{
+			"name": "viewer/web/images/annotation-note.svg",
+			"size": 1041
+		},
+		{
+			"name": "viewer/web/images/annotation-paragraph.svg",
+			"size": 1143
+		},
+		{
+			"name": "viewer/web/images/findbarButton-next-rtl.png",
+			"size": 199
+		},
+		{
+			"name": "viewer/web/images/findbarButton-next-rtl@2x.png",
+			"size": 304
+		},
+		{
+			"name": "viewer/web/images/findbarButton-next.png",
+			"size": 193
+		},
+		{
+			"name": "viewer/web/images/findbarButton-next@2x.png",
+			"size": 296
+		},
+		{
+			"name": "viewer/web/images/findbarButton-previous-rtl.png",
+			"size": 193
+		},
+		{
+			"name": "viewer/web/images/findbarButton-previous-rtl@2x.png",
+			"size": 296
+		},
+		{
+			"name": "viewer/web/images/findbarButton-previous.png",
+			"size": 199
+		},
+		{
+			"name": "viewer/web/images/findbarButton-previous@2x.png",
+			"size": 304
+		},
+		{
+			"name": "viewer/web/images/grab.cur",
+			"size": 576
+		},
+		{
+			"name": "viewer/web/images/grabbing.cur",
+			"size": 585
+		},
+		{
+			"name": "viewer/web/images/loading-icon.gif",
+			"size": 2545
+		},
+		{
+			"name": "viewer/web/images/loading-small.png",
+			"size": 7402
+		},
+		{
+			"name": "viewer/web/images/loading-small@2x.png",
+			"size": 16131
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-documentProperties.png",
+			"size": 403
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-documentProperties@2x.png",
+			"size": 933
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-firstPage.png",
+			"size": 179
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-firstPage@2x.png",
+			"size": 266
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-handTool.png",
+			"size": 301
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-handTool@2x.png",
+			"size": 583
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-lastPage.png",
+			"size": 175
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-lastPage@2x.png",
+			"size": 276
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-rotateCcw.png",
+			"size": 360
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-rotateCcw@2x.png",
+			"size": 731
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-rotateCw.png",
+			"size": 359
+		},
+		{
+			"name": "viewer/web/images/secondaryToolbarButton-rotateCw@2x.png",
+			"size": 714
+		},
+		{
+			"name": "viewer/web/images/shadow.png",
+			"size": 290
+		},
+		{
+			"name": "viewer/web/images/texture.png",
+			"size": 2417
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-bookmark.png",
+			"size": 174
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-bookmark@2x.png",
+			"size": 260
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-download.png",
+			"size": 259
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-download@2x.png",
+			"size": 425
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-menuArrows.png",
+			"size": 107
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-menuArrows@2x.png",
+			"size": 152
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-openFile.png",
+			"size": 295
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-openFile@2x.png",
+			"size": 550
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageDown-rtl.png",
+			"size": 242
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageDown-rtl@2x.png",
+			"size": 398
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageDown.png",
+			"size": 238
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageDown@2x.png",
+			"size": 396
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageUp-rtl.png",
+			"size": 245
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageUp-rtl@2x.png",
+			"size": 405
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageUp.png",
+			"size": 246
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-pageUp@2x.png",
+			"size": 403
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-presentationMode.png",
+			"size": 321
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-presentationMode@2x.png",
+			"size": 586
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-print.png",
+			"size": 257
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-print@2x.png",
+			"size": 464
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-search.png",
+			"size": 309
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-search@2x.png",
+			"size": 653
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-secondaryToolbarToggle-rtl.png",
+			"size": 246
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png",
+			"size": 456
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-secondaryToolbarToggle.png",
+			"size": 243
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-secondaryToolbarToggle@2x.png",
+			"size": 458
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-sidebarToggle-rtl.png",
+			"size": 225
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-sidebarToggle-rtl@2x.png",
+			"size": 344
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-sidebarToggle.png",
+			"size": 225
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-sidebarToggle@2x.png",
+			"size": 331
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-signout.png",
+			"size": 535
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-signout@2x.png",
+			"size": 1159
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewAttachments.png",
+			"size": 384
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewAttachments@2x.png",
+			"size": 859
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewEntities.png",
+			"size": 356
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewEntities@2x.png",
+			"size": 797
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewOutline-rtl.png",
+			"size": 177
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewOutline-rtl@2x.png",
+			"size": 394
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewOutline.png",
+			"size": 178
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewOutline@2x.png",
+			"size": 331
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewThumbnail.png",
+			"size": 185
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-viewThumbnail@2x.png",
+			"size": 219
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-zoomIn.png",
+			"size": 136
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-zoomIn@2x.png",
+			"size": 160
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-zoomOut.png",
+			"size": 88
+		},
+		{
+			"name": "viewer/web/images/toolbarButton-zoomOut@2x.png",
+			"size": 109
+		},
+		{
+			"name": "viewer/web/images/treeitem-collapsed-rtl.png",
+			"size": 143
+		},
+		{
+			"name": "viewer/web/images/treeitem-collapsed-rtl@2x.png",
+			"size": 167
+		},
+		{
+			"name": "viewer/web/images/treeitem-collapsed.png",
+			"size": 128
+		},
+		{
+			"name": "viewer/web/images/treeitem-collapsed@2x.png",
+			"size": 149
+		},
+		{
+			"name": "viewer/web/images/treeitem-expanded.png",
+			"size": 125
+		},
+		{
+			"name": "viewer/web/images/treeitem-expanded@2x.png",
+			"size": 172
+		},
+		{
+			"name": "viewer/web/l10n-dbg.js",
+			"module": "sap/fileviewer/viewer/web/l10n.js",
+			"size": 29253,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/web/l10n.js",
+			"module": "sap/fileviewer/viewer/web/l10n.js",
+			"size": 10900,
+			"format": "raw"
+		},
+		{
+			"name": "viewer/web/locale/ach/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ach/viewer.properties",
+			"size": 6768
+		},
+		{
+			"name": "viewer/web/locale/af/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/af/viewer.properties",
+			"size": 7007
+		},
+		{
+			"name": "viewer/web/locale/ak/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ak/viewer.properties",
+			"size": 5317
+		},
+		{
+			"name": "viewer/web/locale/an/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/an/viewer.properties",
+			"size": 7325
+		},
+		{
+			"name": "viewer/web/locale/ar/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ar/viewer.properties",
+			"size": 8168
+		},
+		{
+			"name": "viewer/web/locale/as/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/as/viewer.properties",
+			"size": 10295
+		},
+		{
+			"name": "viewer/web/locale/ast/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ast/viewer.properties",
+			"size": 7183
+		},
+		{
+			"name": "viewer/web/locale/az/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/az/viewer.properties",
+			"size": 7362
+		},
+		{
+			"name": "viewer/web/locale/be/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/be/viewer.properties",
+			"size": 6416
+		},
+		{
+			"name": "viewer/web/locale/bg/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/bg/viewer.properties",
+			"size": 9442
+		},
+		{
+			"name": "viewer/web/locale/bn-BD/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/bn-BD/viewer.properties",
+			"size": 10418
+		},
+		{
+			"name": "viewer/web/locale/bn-IN/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/bn-IN/viewer.properties",
+			"size": 10814
+		},
+		{
+			"name": "viewer/web/locale/br/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/br/viewer.properties",
+			"size": 7518
+		},
+		{
+			"name": "viewer/web/locale/bs/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/bs/viewer.properties",
+			"size": 7216
+		},
+		{
+			"name": "viewer/web/locale/ca/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ca/viewer.properties",
+			"size": 7332
+		},
+		{
+			"name": "viewer/web/locale/cs/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/cs/viewer.properties",
+			"size": 7320
+		},
+		{
+			"name": "viewer/web/locale/csb/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/csb/viewer.properties",
+			"size": 4832
+		},
+		{
+			"name": "viewer/web/locale/cy/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/cy/viewer.properties",
+			"size": 7033
+		},
+		{
+			"name": "viewer/web/locale/da/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/da/viewer.properties",
+			"size": 6516
+		},
+		{
+			"name": "viewer/web/locale/de/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/de/viewer.properties",
+			"size": 6883
+		},
+		{
+			"name": "viewer/web/locale/el/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/el/viewer.properties",
+			"size": 9388
+		},
+		{
+			"name": "viewer/web/locale/en-GB/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/en-GB/viewer.properties",
+			"size": 6822
+		},
+		{
+			"name": "viewer/web/locale/en-US/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/en-US/viewer.properties",
+			"size": 6830
+		},
+		{
+			"name": "viewer/web/locale/en-ZA/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/en-ZA/viewer.properties",
+			"size": 6832
+		},
+		{
+			"name": "viewer/web/locale/eo/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/eo/viewer.properties",
+			"size": 7143
+		},
+		{
+			"name": "viewer/web/locale/es-AR/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/es-AR/viewer.properties",
+			"size": 6726
+		},
+		{
+			"name": "viewer/web/locale/es-CL/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/es-CL/viewer.properties",
+			"size": 7334
+		},
+		{
+			"name": "viewer/web/locale/es-ES/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/es-ES/viewer.properties",
+			"size": 5000
+		},
+		{
+			"name": "viewer/web/locale/es-MX/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/es-MX/viewer.properties",
+			"size": 7275
+		},
+		{
+			"name": "viewer/web/locale/et/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/et/viewer.properties",
+			"size": 6947
+		},
+		{
+			"name": "viewer/web/locale/eu/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/eu/viewer.properties",
+			"size": 7276
+		},
+		{
+			"name": "viewer/web/locale/fa/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/fa/viewer.properties",
+			"size": 8392
+		},
+		{
+			"name": "viewer/web/locale/ff/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ff/viewer.properties",
+			"size": 6995
+		},
+		{
+			"name": "viewer/web/locale/fi/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/fi/viewer.properties",
+			"size": 6694
+		},
+		{
+			"name": "viewer/web/locale/fr/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/fr/viewer.properties",
+			"size": 7021
+		},
+		{
+			"name": "viewer/web/locale/fy-NL/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/fy-NL/viewer.properties",
+			"size": 7210
+		},
+		{
+			"name": "viewer/web/locale/ga-IE/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ga-IE/viewer.properties",
+			"size": 7489
+		},
+		{
+			"name": "viewer/web/locale/gd/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/gd/viewer.properties",
+			"size": 7591
+		},
+		{
+			"name": "viewer/web/locale/gl/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/gl/viewer.properties",
+			"size": 7399
+		},
+		{
+			"name": "viewer/web/locale/gu-IN/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/gu-IN/viewer.properties",
+			"size": 9633
+		},
+		{
+			"name": "viewer/web/locale/he/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/he/viewer.properties",
+			"size": 7784
+		},
+		{
+			"name": "viewer/web/locale/hi-IN/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/hi-IN/viewer.properties",
+			"size": 10134
+		},
+		{
+			"name": "viewer/web/locale/hr/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/hr/viewer.properties",
+			"size": 7251
+		},
+		{
+			"name": "viewer/web/locale/hu/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/hu/viewer.properties",
+			"size": 7556
+		},
+		{
+			"name": "viewer/web/locale/hy-AM/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/hy-AM/viewer.properties",
+			"size": 8850
+		},
+		{
+			"name": "viewer/web/locale/id/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/id/viewer.properties",
+			"size": 7087
+		},
+		{
+			"name": "viewer/web/locale/is/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/is/viewer.properties",
+			"size": 7033
+		},
+		{
+			"name": "viewer/web/locale/it/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/it/viewer.properties",
+			"size": 5048
+		},
+		{
+			"name": "viewer/web/locale/ja/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ja/viewer.properties",
+			"size": 7541
+		},
+		{
+			"name": "viewer/web/locale/ka/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ka/viewer.properties",
+			"size": 10805
+		},
+		{
+			"name": "viewer/web/locale/kk/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/kk/viewer.properties",
+			"size": 8874
+		},
+		{
+			"name": "viewer/web/locale/km/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/km/viewer.properties",
+			"size": 10851
+		},
+		{
+			"name": "viewer/web/locale/kn/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/kn/viewer.properties",
+			"size": 10792
+		},
+		{
+			"name": "viewer/web/locale/ko/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ko/viewer.properties",
+			"size": 7353
+		},
+		{
+			"name": "viewer/web/locale/ku/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ku/viewer.properties",
+			"size": 6146
+		},
+		{
+			"name": "viewer/web/locale/lg/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/lg/viewer.properties",
+			"size": 4279
+		},
+		{
+			"name": "viewer/web/locale/lij/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/lij/viewer.properties",
+			"size": 4929
+		},
+		{
+			"name": "viewer/web/locale/locale.properties",
+			"module": "sap/fileviewer/viewer/web/locale/locale.properties",
+			"size": 4314
+		},
+		{
+			"name": "viewer/web/locale/lt/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/lt/viewer.properties",
+			"size": 7422
+		},
+		{
+			"name": "viewer/web/locale/lv/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/lv/viewer.properties",
+			"size": 7108
+		},
+		{
+			"name": "viewer/web/locale/mai/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/mai/viewer.properties",
+			"size": 9690
+		},
+		{
+			"name": "viewer/web/locale/mk/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/mk/viewer.properties",
+			"size": 6867
+		},
+		{
+			"name": "viewer/web/locale/ml/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ml/viewer.properties",
+			"size": 12359
+		},
+		{
+			"name": "viewer/web/locale/mn/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/mn/viewer.properties",
+			"size": 3282
+		},
+		{
+			"name": "viewer/web/locale/mr/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/mr/viewer.properties",
+			"size": 10068
+		},
+		{
+			"name": "viewer/web/locale/ms/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ms/viewer.properties",
+			"size": 6943
+		},
+		{
+			"name": "viewer/web/locale/my/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/my/viewer.properties",
+			"size": 10750
+		},
+		{
+			"name": "viewer/web/locale/nb-NO/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/nb-NO/viewer.properties",
+			"size": 6949
+		},
+		{
+			"name": "viewer/web/locale/nl/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/nl/viewer.properties",
+			"size": 7228
+		},
+		{
+			"name": "viewer/web/locale/nn-NO/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/nn-NO/viewer.properties",
+			"size": 6907
+		},
+		{
+			"name": "viewer/web/locale/nso/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/nso/viewer.properties",
+			"size": 5440
+		},
+		{
+			"name": "viewer/web/locale/oc/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/oc/viewer.properties",
+			"size": 7302
+		},
+		{
+			"name": "viewer/web/locale/or/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/or/viewer.properties",
+			"size": 10748
+		},
+		{
+			"name": "viewer/web/locale/pa-IN/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/pa-IN/viewer.properties",
+			"size": 9353
+		},
+		{
+			"name": "viewer/web/locale/pl/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/pl/viewer.properties",
+			"size": 4988
+		},
+		{
+			"name": "viewer/web/locale/pt-BR/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/pt-BR/viewer.properties",
+			"size": 7348
+		},
+		{
+			"name": "viewer/web/locale/pt-PT/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/pt-PT/viewer.properties",
+			"size": 7274
+		},
+		{
+			"name": "viewer/web/locale/rm/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/rm/viewer.properties",
+			"size": 7531
+		},
+		{
+			"name": "viewer/web/locale/ro/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ro/viewer.properties",
+			"size": 7523
+		},
+		{
+			"name": "viewer/web/locale/ru/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ru/viewer.properties",
+			"size": 6684
+		},
+		{
+			"name": "viewer/web/locale/rw/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/rw/viewer.properties",
+			"size": 3237
+		},
+		{
+			"name": "viewer/web/locale/sah/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sah/viewer.properties",
+			"size": 8551
+		},
+		{
+			"name": "viewer/web/locale/si/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/si/viewer.properties",
+			"size": 9684
+		},
+		{
+			"name": "viewer/web/locale/sk/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sk/viewer.properties",
+			"size": 7501
+		},
+		{
+			"name": "viewer/web/locale/sl/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sl/viewer.properties",
+			"size": 7144
+		},
+		{
+			"name": "viewer/web/locale/son/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/son/viewer.properties",
+			"size": 6902
+		},
+		{
+			"name": "viewer/web/locale/sq/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sq/viewer.properties",
+			"size": 6723
+		},
+		{
+			"name": "viewer/web/locale/sr/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sr/viewer.properties",
+			"size": 9008
+		},
+		{
+			"name": "viewer/web/locale/sv-SE/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sv-SE/viewer.properties",
+			"size": 6895
+		},
+		{
+			"name": "viewer/web/locale/sw/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/sw/viewer.properties",
+			"size": 5095
+		},
+		{
+			"name": "viewer/web/locale/ta-LK/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ta-LK/viewer.properties",
+			"size": 3174
+		},
+		{
+			"name": "viewer/web/locale/ta/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ta/viewer.properties",
+			"size": 11152
+		},
+		{
+			"name": "viewer/web/locale/te/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/te/viewer.properties",
+			"size": 10289
+		},
+		{
+			"name": "viewer/web/locale/th/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/th/viewer.properties",
+			"size": 9997
+		},
+		{
+			"name": "viewer/web/locale/tl/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/tl/viewer.properties",
+			"size": 3770
+		},
+		{
+			"name": "viewer/web/locale/tn/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/tn/viewer.properties",
+			"size": 3498
+		},
+		{
+			"name": "viewer/web/locale/tr/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/tr/viewer.properties",
+			"size": 7126
+		},
+		{
+			"name": "viewer/web/locale/uk/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/uk/viewer.properties",
+			"size": 8928
+		},
+		{
+			"name": "viewer/web/locale/ur/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/ur/viewer.properties",
+			"size": 8058
+		},
+		{
+			"name": "viewer/web/locale/vi/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/vi/viewer.properties",
+			"size": 7572
+		},
+		{
+			"name": "viewer/web/locale/wo/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/wo/viewer.properties",
+			"size": 4707
+		},
+		{
+			"name": "viewer/web/locale/xh/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/xh/viewer.properties",
+			"size": 7512
+		},
+		{
+			"name": "viewer/web/locale/zh-CN/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/zh-CN/viewer.properties",
+			"size": 6732
+		},
+		{
+			"name": "viewer/web/locale/zh-TW/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/zh-TW/viewer.properties",
+			"size": 6796
+		},
+		{
+			"name": "viewer/web/locale/zu/viewer.properties",
+			"module": "sap/fileviewer/viewer/web/locale/zu/viewer.properties",
+			"size": 5501
+		},
+		{
+			"name": "viewer/web/pdf_viewer.css",
+			"size": 1862
+		},
+		{
+			"name": "viewer/web/pdf_viewer_hcb.css",
+			"size": 1862
+		},
+		{
+			"name": "viewer/web/pdf_viewer_hcw.css",
+			"size": 1862
+		},
+		{
+			"name": "viewer/web/resources/resources.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources.properties",
+			"size": 235,
+			"locale": "",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ar.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ar.properties",
+			"size": 362,
+			"locale": "ar",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_bg.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_bg.properties",
+			"size": 288,
+			"locale": "bg",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ca.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ca.properties",
+			"size": 210,
+			"locale": "ca",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_cs.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_cs.properties",
+			"size": 204,
+			"locale": "cs",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_da.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_da.properties",
+			"size": 174,
+			"locale": "da",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_de.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_de.properties",
+			"size": 188,
+			"locale": "de",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_el.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_el.properties",
+			"size": 372,
+			"locale": "el",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_en.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_en.properties",
+			"size": 176,
+			"locale": "en",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_en_GB.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_en_GB.properties",
+			"size": 106,
+			"locale": "en_GB",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_en_US.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_en_US.properties",
+			"size": 106,
+			"locale": "en_US",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_en_US_sappsd.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_en_US_sappsd.properties",
+			"size": 494,
+			"locale": "en_US_sappsd",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_en_US_saptrc.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_en_US_saptrc.properties",
+			"size": 268,
+			"locale": "en_US_saptrc",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_es.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_es.properties",
+			"size": 196,
+			"locale": "es",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_et.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_et.properties",
+			"size": 186,
+			"locale": "et",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_fi.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_fi.properties",
+			"size": 180,
+			"locale": "fi",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_fr.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_fr.properties",
+			"size": 196,
+			"locale": "fr",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_hi.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_hi.properties",
+			"size": 374,
+			"locale": "hi",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_hr.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_hr.properties",
+			"size": 172,
+			"locale": "hr",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_hu.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_hu.properties",
+			"size": 208,
+			"locale": "hu",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_it.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_it.properties",
+			"size": 194,
+			"locale": "it",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_iw.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_iw.properties",
+			"size": 276,
+			"locale": "iw",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ja.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ja.properties",
+			"size": 288,
+			"locale": "ja",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_kk.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_kk.properties",
+			"size": 350,
+			"locale": "kk",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ko.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ko.properties",
+			"size": 228,
+			"locale": "ko",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_lt.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_lt.properties",
+			"size": 182,
+			"locale": "lt",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_lv.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_lv.properties",
+			"size": 206,
+			"locale": "lv",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ms.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ms.properties",
+			"size": 182,
+			"locale": "ms",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_nl.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_nl.properties",
+			"size": 180,
+			"locale": "nl",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_no.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_no.properties",
+			"size": 176,
+			"locale": "no",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_pl.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_pl.properties",
+			"size": 168,
+			"locale": "pl",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_pt.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_pt.properties",
+			"size": 202,
+			"locale": "pt",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ro.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ro.properties",
+			"size": 202,
+			"locale": "ro",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_ru.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_ru.properties",
+			"size": 300,
+			"locale": "ru",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_sh.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_sh.properties",
+			"size": 178,
+			"locale": "sh",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_sk.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_sk.properties",
+			"size": 192,
+			"locale": "sk",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_sl.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_sl.properties",
+			"size": 172,
+			"locale": "sl",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_sv.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_sv.properties",
+			"size": 178,
+			"locale": "sv",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_th.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_th.properties",
+			"size": 348,
+			"locale": "th",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_tr.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_tr.properties",
+			"size": 186,
+			"locale": "tr",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_uk.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_uk.properties",
+			"size": 400,
+			"locale": "uk",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_vi.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_vi.properties",
+			"size": 264,
+			"locale": "vi",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_zh_CN.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_zh_CN.properties",
+			"size": 192,
+			"locale": "zh_CN",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/resources/resources_zh_TW.properties",
+			"module": "sap/fileviewer/viewer/web/resources/resources_zh_TW.properties",
+			"size": 192,
+			"locale": "zh_TW",
+			"raw": "viewer/web/resources/resources.properties"
+		},
+		{
+			"name": "viewer/web/text_layer_builder.css",
+			"size": 1905
+		},
+		{
+			"name": "viewer/web/viewer-dbg.js",
+			"module": "sap/fileviewer/viewer/web/viewer.js",
+			"size": 388424,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"DEFAULT_URL",
+				"pdfjsWebLibs",
+				"getViewerConfiguration",
+				"determineStyleSheetFromURL",
+				"webViewerLoad"
+			],
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "viewer/web/viewer.css",
+			"size": 54390
+		},
+		{
+			"name": "viewer/web/viewer.html",
+			"size": 20115
+		},
+		{
+			"name": "viewer/web/viewer.js",
+			"module": "sap/fileviewer/viewer/web/viewer.js",
+			"size": 165071,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"DEFAULT_URL",
+				"pdfjsWebLibs",
+				"getViewerConfiguration",
+				"determineStyleSheetFromURL",
+				"webViewerLoad"
+			],
+			"format": "raw"
+		},
+		{
+			"name": "viewer/web/viewer_hcb.css",
+			"size": 50687
+		},
+		{
+			"name": "viewer/web/viewer_hcw.css",
+			"size": 48756
+		}
+	]
+}

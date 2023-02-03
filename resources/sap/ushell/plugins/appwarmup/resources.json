@@ -1,0 +1,106 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/plugins/appwarmup/Component.js",
+			"size": 4619,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ushell/plugins/appwarmup/ShellUIService.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "sap/ushell/plugins/appwarmup/Component-h2-preload.js",
+			"size": 3282,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js"
+			],
+			"included": [
+				"sap/ushell/plugins/appwarmup/Component.js",
+				"sap/ushell/plugins/appwarmup/manifest.json",
+				"sap/ushell/plugins/appwarmup/ShellUIService.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js.map",
+			"size": 2107,
+			"isDebug": true
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "sap/ushell/plugins/appwarmup/Component-preload.js",
+			"size": 3356,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js"
+			],
+			"included": [
+				"sap/ushell/plugins/appwarmup/Component.js",
+				"sap/ushell/plugins/appwarmup/ShellUIService.js",
+				"sap/ushell/plugins/appwarmup/manifest.json"
+			]
+		},
+		{
+			"name": "Component-preload.js.map",
+			"size": 2390,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/plugins/appwarmup/Component.js",
+			"size": 2105,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ushell/plugins/appwarmup/ShellUIService.js"
+			]
+		},
+		{
+			"name": "ShellUIService-dbg.js",
+			"module": "sap/ushell/plugins/appwarmup/ShellUIService.js",
+			"size": 751,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/service/Service.js"
+			]
+		},
+		{
+			"name": "ShellUIService.js",
+			"module": "sap/ushell/plugins/appwarmup/ShellUIService.js",
+			"size": 340,
+			"required": [
+				"sap/ui/core/service/Service.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ushell/plugins/appwarmup/manifest.json",
+			"size": 663
+		},
+		{
+			"name": "resources.json",
+			"size": 1692
+		}
+	]
+}

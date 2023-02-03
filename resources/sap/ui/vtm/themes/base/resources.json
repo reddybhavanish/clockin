@@ -1,0 +1,94 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "Panel.less",
+			"size": 241,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Progress.less",
+			"size": 202,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SelectColumnsDialog.less",
+			"size": 96,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Text.less",
+			"size": 137,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Tooltip.less",
+			"size": 343,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Tree.less",
+			"size": 559,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 114,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 79704,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 1395,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 1457,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 1453,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 1391,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 2251,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 395,
+			"designtime": true,
+			"theme": "base"
+		}
+	]
+}

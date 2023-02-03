@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>GenericArray</name>
+    <derived/>
+    <documentation>A hybrid data type that can represent an array of string, or array of object.
+The result value parsed by this data type are "string[]" or "object[]"
+
+Examples of valid values in js:
+&lt;ol&gt;
+  &lt;li&gt;["order", "activity"]&lt;/li&gt;
+  &lt;li&gt;[{name:"order", idName:"OrderNo"},{name:"activity"}]&lt;/li&gt;
+  &lt;li&gt;[{name:"order", idName:"OrderNo"},"activity"]&lt;/li&gt;
+&lt;/ol&gt;
+
+Examples of valid values in xml view:
+&lt;ol&gt;
+  &lt;li&gt;"order,activity"&lt;/li&gt;
+  &lt;li&gt;"[order,activity]"&lt;/li&gt;
+  &lt;li&gt;[{"name":"order", "idName":"OrderNo"},{"name":"activity"}]&lt;/li&gt;
+&lt;/ol&gt;</documentation>
+    <baseType>any</baseType>
+    <final/>
+</simple-type>

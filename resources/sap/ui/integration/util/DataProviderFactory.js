@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2020 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/base/Object","sap/ui/integration/util/ServiceDataProvider","sap/ui/integration/util/RequestDataProvider","sap/ui/integration/util/DataProvider"],function(B,S,R,D){"use strict";var a=B.extend("sap.ui.integration.util.DataProviderFactory",{constructor:function(d){B.call(this);this._oDestinations=d;this._aDataProviders=[];}});a.prototype.destroy=function(){B.prototype.destroy.apply(this,arguments);if(this._aDataProviders){this._aDataProviders.forEach(function(d){if(!d.bIsDestroyed){d.destroy();}});this._aDataProviders=null;}this._bIsDestroyed=true;};a.prototype.isDestroyed=function(){return this._bIsDestroyed;};a.prototype.create=function(d,s){var o;if(!d){return null;}if(d.request){o=new R();}else if(d.service){o=new S();}else if(d.json){o=new D();}else{return null;}o.setDestinations(this._oDestinations);o.setSettings(d);if(o.isA("sap.ui.integration.util.IServiceDataProvider")){o.createServiceInstances(s);}if(d.updateInterval){o.setUpdateInterval(d.updateInterval);}this._aDataProviders.push(o);return o;};a.prototype.remove=function(d){var p=this._aDataProviders.indexOf(d);if(p>-1){this._aDataProviders.splice(p,1);}if(d&&!d.bDestroyed&&d._bIsDestroyed){d.destroy();}};return a;});

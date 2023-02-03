@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Spot</name>
+    <derived/>
+    <documentation>Specific Visual Object element for a &lt;i&gt;Spot&lt;/i&gt;. A Spot is actually an image drawn at the given &lt;i&gt;position&lt;/i&gt;. There are two modes
+       for using spots:
+       &lt;ul&gt;
+       &lt;li&gt;A controlled mode by providing a spot type. In this mode many properties for the spot are automatically set by programmed defaults
+       according to the Fiori guidelines.&lt;/li&gt;
+       &lt;li&gt;A freestyle mode, providing the full control on colors and layout.&lt;/li&gt;
+       &lt;/ul&gt;
+       Beside the visualization with an image a spot can have an &lt;i&gt;icon&lt;/i&gt; or &lt;i&gt;text&lt;/i&gt;, which can be controlled and positioned using the
+       content properties. &lt;br&gt;
+       A Spot supports GeoMap internal drag'n drop with fine grained control on matching drag sources and drop targets. A drag'n drop operation
+       is possible if any type in the drag source aggregation of the dragged visual object matches a type in the drop target aggregation of the
+       target vo. Drag source and drop target types defined on element level apply only for a single element instance, except the element is
+       used as template.</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" defaultValue="0;0;0" group="Misc">
+            <documentation>The position of the spot. The format is "lon;lat;0"</documentation>
+        </property>
+        <property name="text" type="sap.ui.core/string" group="Misc">
+            <documentation>The text that is displayed on the spot. The text should not exceed a few characters. Note that either text or icon may be displayed (
+not both together ).</documentation>
+        </property>
+        <property name="image" type="sap.ui.core/string" group="Misc">
+            <documentation>The image for the spot. This must be a reference to a resource.</documentation>
+        </property>
+        <property name="alignment" type="sap.ui.core/string" defaultValue="5" group="Misc">
+            <documentation>Alignment of the spot to its position:
+&lt;ul&gt;
+&lt;li&gt;0: center
+&lt;li&gt;1: top center
+&lt;li&gt;2: top right
+&lt;li&gt;3: center right
+&lt;li&gt;4: bottom right
+&lt;li&gt;5: bottom center
+&lt;li&gt;6: bottom left
+&lt;li&gt;7: center left
+&lt;li&gt;8: top left
+&lt;/ul&gt;</documentation>
+        </property>
+        <property name="scale" type="sap.ui.core/string" defaultValue="1;1;1" group="Misc">
+            <documentation>The scale of the spot. The format is "x-Scale;y-Scale;z-Scale". The z-Scale is curretly ignored.</documentation>
+        </property>
+        <property name="imageSelected" type="sap.ui.core/string" group="Misc">
+            <documentation>The image for the spot when selected. This must be a reference to a resource.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/string" group="Misc">
+            <documentation>The icon to be rendered on the spot. Note that either text or icon may be displayed ( not both together ). Use the CharCode-Id of
+SAPUI5-Icons (e.g.: "\ue146")</documentation>
+        </property>
+        <property name="contentColor" type="sap.ui.core/string" group="Misc">
+            <documentation>The color of the content ( icon or text ).</documentation>
+        </property>
+        <property name="contentOffset" type="sap.ui.core/string" defaultValue="0;0" group="Misc">
+            <documentation>The offset from the center of the image where to place the content ( text or icon ) in x;y- direction</documentation>
+        </property>
+        <property name="contentFont" type="sap.ui.core/string" defaultValue="arial" group="Misc">
+            <documentation>The font of the spot's text. If icon is used then the font is automatically set to"SAP-icons".</documentation>
+        </property>
+        <property name="contentSize" type="sap.ui.core/string" group="Misc">
+            <documentation>The font size to be used for text or icon</documentation>
+        </property>
+        <property name="type" type="sap.ui.vbm/SemanticType" group="Behavior">
+            <documentation>Spot type for semantic spots. A given semantic type will overrule settings for image, scale, and content.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="dragSource" type="sap.ui.vbm/DragSource" cardinality="0..n">
+            <documentation>DragSource aggregation</documentation>
+        </aggregation>
+        <aggregation name="dropTarget" type="sap.ui.vbm/DropTarget" cardinality="0..n">
+            <documentation>DropTarget aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

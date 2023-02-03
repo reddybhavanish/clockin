@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Element</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Base Class for UI Elements.
+
+&lt;code&gt;Element&lt;/code&gt; is the most basic building block for UI5 UIs. An &lt;code&gt;Element&lt;/code&gt; has state like a
+&lt;code&gt;ManagedObject&lt;/code&gt;, it has a unique ID by which the framework remembers it. It can have associated
+DOM, but it can't render itself. Only {@link sap.ui.core.Control Controls} can render themselves and also
+take care of rendering &lt;code&gt;Elements&lt;/code&gt; that they aggregate as children. If an &lt;code&gt;Element&lt;/code&gt;
+has been rendered, its related DOM gets the same ID as the &lt;code&gt;Element&lt;/code&gt; and thereby can be retrieved
+via API. When the state of an &lt;code&gt;Element&lt;/code&gt; changes, it informs its parent &lt;code&gt;Control&lt;/code&gt; which
+usually re-renders then.
+
+&lt;h3&gt;Dispatching Events&lt;/h3&gt;
+
+The UI5 framework already registers generic listeners for common browser events, such as &lt;code&gt;click&lt;/code&gt;
+or &lt;code&gt;keydown&lt;/code&gt;. When called, the generic listener first determines the corresponding target element
+using {@link jQuery#control}. Then it checks whether the element has an event handler method for the event.
+An event handler method by convention has the same name as the event, but prefixed with "on": Method
+&lt;code&gt;onclick&lt;/code&gt; is the handler for the &lt;code&gt;click&lt;/code&gt; event, method &lt;code&gt;onkeydown&lt;/code&gt; the handler
+for the &lt;code&gt;keydown&lt;/code&gt; event and so on. If there is such a method, it will be called with the original
+event as the only parameter. If the element has a list of delegates registered, their handler functions will
+be called the same way, where present. The set of implemented handlers might differ between element and
+delegates. Not each handler implemented by an element has to be implemented by its delegates, and delegates
+can implement handlers that the corresponding element doesn't implement.
+
+A list of browser events that are handled that way can be found in {@link module:sap/ui/events/ControlEvents}.
+Additionally, the framework dispatches pseudo events ({@link module:sap/ui/events/PseudoEvents}) using the same
+naming convention. Last but not least, some framework events are also dispatched that way, e.g.
+&lt;code&gt;BeforeRendering&lt;/code&gt;, &lt;code&gt;AfterRendering&lt;/code&gt; (only for controls) and &lt;code&gt;ThemeChanged&lt;/code&gt;.
+
+If further browser events are needed, controls can register listeners on the DOM using native APIs in their
+&lt;code&gt;onAfterRendering&lt;/code&gt; handler. If needed, they can do this for their aggregated elements as well.
+If events might fire often (e.g. &lt;code&gt;mousemove&lt;/code&gt;), it is best practice to register them only while
+needed, and deregister afterwards. Anyhow, any registered listeners must be cleaned up in the
+&lt;code&gt;onBeforeRendering&lt;/code&gt; listener and before destruction in the &lt;code&gt;exit&lt;/code&gt; hook.</documentation>
+    <abstract/>
+    <properties>
+        <property name="id" type="sap.ui.core/ID">
+            <documentation>The unique identifier within a page, either configured or automatically generated.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="tooltip" type="sap.ui.core/TooltipBase" cardinality="0..1">
+            <documentation>The tooltip that should be shown for this Element.
+
+In the most simple case, a tooltip is a string that will be rendered by the control and
+displayed by the browser when the mouse pointer hovers over the control's DOM. In this
+variant, &lt;code&gt;tooltip&lt;/code&gt; behaves like a simple control property.
+
+Controls need to explicitly support this kind of tooltip as they have to render it,
+but most controls do. Exceptions will be documented for the corresponding controls
+(e.g. &lt;code&gt;sap.ui.core.HTML&lt;/code&gt; does not support tooltips).
+
+Alternatively, &lt;code&gt;tooltip&lt;/code&gt; can act like a 0..1 aggregation and can be set to a
+tooltip control (an instance of a subclass of &lt;code&gt;sap.ui.core.TooltipBase&lt;/code&gt;). In
+that case, the framework will take care of rendering the tooltip control in a popup-like
+manner. Such a tooltip control can display arbitrary content, not only a string.
+
+UI5 currently does not provide a recommended implementation of &lt;code&gt;TooltipBase&lt;/code&gt;
+as the use of content-rich tooltips is discouraged by the Fiori Design Guidelines.
+Existing subclasses of &lt;code&gt;TooltipBase&lt;/code&gt; therefore have been deprecated.
+However, apps can still subclass from &lt;code&gt;TooltipBase&lt;/code&gt; and create their own
+implementation when needed (potentially taking the deprecated implementations as a
+starting point).
+
+See the section {@link https://experience.sap.com/fiori-design-web/using-tooltips/ Using Tooltips}
+in the Fiori Design Guideline.</documentation>
+        </aggregation>
+        <aggregation name="customData" type="sap.ui.core/CustomData" cardinality="0..n">
+            <documentation>Custom Data, a data structure like a map containing arbitrary key value pairs.</documentation>
+        </aggregation>
+        <aggregation name="layoutData" type="sap.ui.core/LayoutData" cardinality="0..1">
+            <documentation>Defines the layout constraints for this control when it is used inside a Layout.
+LayoutData classes are typed classes and must match the embedding Layout.
+See VariantLayoutData for aggregating multiple alternative LayoutData instances to a single Element.</documentation>
+        </aggregation>
+        <aggregation name="dependents" type="sap.ui.core/Element" since="1.19" cardinality="0..n">
+            <documentation>Dependents are not rendered, but their databinding context and lifecycle are bound to the aggregating Element.</documentation>
+        </aggregation>
+        <aggregation name="dragDropConfig" type="sap.ui.core/dnd/DragDropBase" since="1.56" cardinality="0..n">
+            <documentation>Defines the drag-and-drop configuration.
+&lt;b&gt;Note:&lt;/b&gt; This configuration might be ignored due to control {@link sap.ui.core.Element.extend metadata} restrictions.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

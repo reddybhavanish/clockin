@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/DiscreteThreshold</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Discrete threshold specifies which values should be displayed by the status indicator.</documentation>
+    <since>1.50</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="value" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the value threshold. This value is displayed when the status indicator's
+percentage value is above or equal to this value but below the value of
+the next threshold.</documentation>
+        </property>
+        <property name="ariaLabel" type="sap.ui.core/string">
+            <documentation>ARIA label for this threshold to be used by screen reader software.</documentation>
+        </property>
+    </properties>
+</control>

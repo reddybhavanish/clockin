@@ -1,0 +1,113 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 66615,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 26322
+		},
+		{
+			"name": "annotations/Metadata-dbg.js",
+			"size": 3661,
+			"isDebug": true
+		},
+		{
+			"name": "annotations/Metadata.js",
+			"size": 1649
+		},
+		{
+			"name": "annotations/MetadataException-dbg.js",
+			"size": 544,
+			"isDebug": true
+		},
+		{
+			"name": "annotations/MetadataException.js",
+			"size": 424
+		},
+		{
+			"name": "annotations/TimelineTermsUtility-dbg.js",
+			"size": 14456,
+			"isDebug": true
+		},
+		{
+			"name": "annotations/TimelineTermsUtility.js",
+			"size": 6606
+		},
+		{
+			"name": "controls/TimelineItemEmbedded-dbg.js",
+			"size": 3702,
+			"isDebug": true
+		},
+		{
+			"name": "controls/TimelineItemEmbedded.js",
+			"size": 1269
+		},
+		{
+			"name": "controls/TimelineItemEmbeddedRenderer-dbg.js",
+			"size": 765,
+			"isDebug": true
+		},
+		{
+			"name": "controls/TimelineItemEmbeddedRenderer.js",
+			"size": 242
+		},
+		{
+			"name": "datahandlers/JamDataHandler-dbg.js",
+			"size": 32911,
+			"isDebug": true
+		},
+		{
+			"name": "datahandlers/JamDataHandler.js",
+			"size": 11461
+		},
+		{
+			"name": "datahandlers/SMIntegrationDataHandler-dbg.js",
+			"size": 4326,
+			"isDebug": true
+		},
+		{
+			"name": "datahandlers/SMIntegrationDataHandler.js",
+			"size": 1812
+		},
+		{
+			"name": "datahandlers/ServiceDataHandler-dbg.js",
+			"size": 3393,
+			"isDebug": true
+		},
+		{
+			"name": "datahandlers/ServiceDataHandler.js",
+			"size": 1294
+		},
+		{
+			"name": "datahandlers/TimelineDataHandler-dbg.js",
+			"size": 25494,
+			"isDebug": true
+		},
+		{
+			"name": "datahandlers/TimelineDataHandler.js",
+			"size": 9136
+		},
+		{
+			"name": "filter/FilterType-dbg.js",
+			"size": 526,
+			"isDebug": true
+		},
+		{
+			"name": "filter/FilterType.js",
+			"size": 416
+		},
+		{
+			"name": "validation/InputValidator-dbg.js",
+			"size": 8426,
+			"isDebug": true
+		},
+		{
+			"name": "validation/InputValidator.js",
+			"size": 3905
+		}
+	]
+}

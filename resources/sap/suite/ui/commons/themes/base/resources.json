@@ -1,0 +1,498 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "BusinessCard.less",
+			"size": 747,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CalculationBuilder.less",
+			"size": 1039,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CalculationBuilderExpression.less",
+			"size": 1866,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CalculationBuilderInput.less",
+			"size": 2086,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CalculationBuilderItem.less",
+			"size": 8406,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ChartContainer.less",
+			"size": 938,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ChartTile.less",
+			"size": 2211,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DateRangeScroller.less",
+			"size": 469,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DateRangeSlider.less",
+			"size": 171,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DateRangeSliderInternal.less",
+			"size": 1132,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FacetOverview.less",
+			"size": 1377,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FeedItemHeader.less",
+			"size": 1902,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FeedTile.less",
+			"size": 2217,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GenericTile2X2.less",
+			"size": 3312,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "HeaderCell.less",
+			"size": 1162,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "HeaderContainer.less",
+			"size": 2593,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ImageEditor.less",
+			"size": 7957,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ImageEditorContainer.less",
+			"size": 4180,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "InfoTile.less",
+			"size": 3273,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "InfoTileSize.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "KpiTile.less",
+			"size": 1274,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "LaunchTile.less",
+			"size": 592,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "LinkActionSheet.less",
+			"size": 1550,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MicroProcessFlow.less",
+			"size": 5868,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MonitoringContent.less",
+			"size": 1674,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MonitoringTile.less",
+			"size": 170,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NetworkGraph.less",
+			"size": 9210,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NetworkGroup.less",
+			"size": 8725,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NetworkLine.less",
+			"size": 6769,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NetworkNode.less",
+			"size": 22878,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NetworkTooltip.less",
+			"size": 1248,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NoteTaker.less",
+			"size": 3594,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NoteTakerCard.less",
+			"size": 9350,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NoteTakerFeeder.less",
+			"size": 5937,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NumericTile.less",
+			"size": 2538,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "PictureZoomIn.less",
+			"size": 900,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProcessFlow.less",
+			"size": 11872,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProcessFlowConnection.less",
+			"size": 5530,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProcessFlowConnectionLabel.less",
+			"size": 2224,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProcessFlowLaneHeader.less",
+			"size": 6490,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProcessFlowNode.less",
+			"size": 29460,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SplitButton.less",
+			"size": 2723,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "StatusIndicator.less",
+			"size": 4031,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "TAccount.less",
+			"size": 14339,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "TargetFilter.less",
+			"size": 9357,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ThingCollection.less",
+			"size": 1538,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ThreePanelThingViewer.less",
+			"size": 4009,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "TileContent2X2.less",
+			"size": 3093,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Timeline.less",
+			"size": 9829,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "TimelineItem.less",
+			"size": 28414,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "UnifiedThingGroup.less",
+			"size": 844,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "UnifiedThingInspector.less",
+			"size": 2032,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "VerticalNavigationBar.less",
+			"size": 2273,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ViewRepeater.less",
+			"size": 1040,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 2440,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 82873,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/PFBusinessSuiteInAppSymbols.eot",
+			"size": 68284,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/PFBusinessSuiteInAppSymbols.ttf",
+			"size": 68044,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/btn_actions_hover.png",
+			"size": 267,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/btn_actions_regular.png",
+			"size": 279,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/btn_nav_left_a.png",
+			"size": 344,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/btn_nav_right_a.png",
+			"size": 344,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/bubble_1.png",
+			"size": 940,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/decline_16.png",
+			"size": 121,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/edit_grey_24.png",
+			"size": 169,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/error.gif",
+			"size": 827,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/img_bg.png",
+			"size": 79,
+			"theme": "base"
+		},
+		{
+			"name": "img-RTL/img_bg_ti.png",
+			"size": 84272,
+			"theme": "base"
+		},
+		{
+			"name": "img/btn_actions_hover.png",
+			"size": 1179,
+			"theme": "base"
+		},
+		{
+			"name": "img/btn_actions_regular.png",
+			"size": 1202,
+			"theme": "base"
+		},
+		{
+			"name": "img/btn_nav_left_a.png",
+			"size": 1554,
+			"theme": "base"
+		},
+		{
+			"name": "img/btn_nav_right_a.png",
+			"size": 1556,
+			"theme": "base"
+		},
+		{
+			"name": "img/bubble_1.png",
+			"size": 1049,
+			"theme": "base"
+		},
+		{
+			"name": "img/decline_16.png",
+			"size": 121,
+			"theme": "base"
+		},
+		{
+			"name": "img/edit_grey_24.png",
+			"size": 169,
+			"theme": "base"
+		},
+		{
+			"name": "img/error.gif",
+			"size": 849,
+			"theme": "base"
+		},
+		{
+			"name": "img/img_bg.png",
+			"size": 936,
+			"theme": "base"
+		},
+		{
+			"name": "img/img_bg_ti.png",
+			"size": 80972,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 233063,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 924,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 245404,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 245195,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 232852,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 272922,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 1974,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "shared.less",
+			"size": 121,
+			"designtime": true,
+			"theme": "base"
+		}
+	]
+}

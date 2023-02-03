@@ -1,0 +1,6 @@
+{
+  "sEntity" : "Library",
+  "sId" : "sap/fe/templates",
+  "sVersion" : "1.78.0",
+  "bIgnore" : true
+}

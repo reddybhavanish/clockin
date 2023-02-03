@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/FillingOption</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Filling options for an SVG shape included in a custom shape.</documentation>
+    <since>1.50</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="shapeId" type="sap.ui.core/string">
+            <documentation>ID of the fillable SVG shape included in a custom shape.</documentation>
+        </property>
+        <property name="weight" type="sap.ui.core/int" defaultValue="1">
+            <documentation>Weight of the fillable shape, relative to other fillable shapes included in this
+custom shape. This property allows you to distribute the status indicator's value
+between distinct SVG shapes included in the custom shape. For example, for four SVG
+shapes with weights 1, 2, 3, and 4 (total weight 10), the status indicator's value
+is distributed in the following way:
+&lt;ul&gt;
+  &lt;li&gt;If the status indicator's value is below 10% (1 out of 10), the first SVG shape
+(weight 1) is partially filled, depending on the percentage value. For example,
+if the percentage value of the status indicator is 5, the first SVG shape appears
+half-full. The rest of the SVG shapes appear empty.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is at least 10% but below 30%, the first SVG
+shape (weight 1) is filled, and the second shape (weight 2) is filled only partially,
+depending on the percentage value. The rest of the SVG shapes in this custom shape
+appear empty.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is at least 30% but below 60%, the first two
+SVG shapes (weight 1 and 2) are filled, and the third SVG shape (weight 3) is filled
+only partially. The fourth SVG shape (weight 4) appears empty.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is at least 60% but below 100%, the first three
+SVG shapes (weight 1, 2, and 3) are filled, but the fourth SVG shape is filled only
+partially, depending on the percentage value.&lt;/li&gt;
+  &lt;li&gt;If the status indicator's value is 100, all four SVG shapes appear filled.&lt;/li&gt;
+&lt;/ul&gt;</documentation>
+        </property>
+        <property name="order" type="sap.ui.core/int">
+            <documentation>Order in which this fillable SVG shape must be filled, relative to other SVG shapes
+included in the custom shape. For example, if you have three SVG shapes with order
+values 1, 2, and 4 assigned, the first shape will be filled first, then the second
+shape, and, finally, the third shape, regardless of their order in the SVG definition.
+The value of this property must be unique.</documentation>
+        </property>
+    </properties>
+</control>

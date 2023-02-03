@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ImageFormat</name>
+    <derived/>
+    <documentation>Image file format.</documentation>
+    <enumeration>
+        <value name="Png">
+            <documentation>PNG file format.</documentation>
+        </value>
+        <value name="Jpeg">
+            <documentation>JPEG file format.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

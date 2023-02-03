@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlow</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Complex control that enables you to display documents or other items in their flow.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="foldedCorners" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>This property defines the folded corners for the single node control. The following values exist:
+- true: means folded corner
+- false/null/undefined: means normal corner</documentation>
+        </property>
+        <property name="scrollable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>By default, the control body is embedded into a scroll container of fixed size, so the user
+can put the control into a fixed size layout.
+When the control body (the graph) gets larger, the container cuts the overflowing parts of the graph and the cut parts can be displayed by scrolling the control body.
+When the control body fits into the container limits, obviously no scrolling is possible (and makes sense).
+
+The scrolling feature can be turned off by setting this property value to false,
+so the width/height of the whole control will change as the flow graph gets smaller/larger.
+In this case the control body could not be scrolled, as the control body size matches the control container size.</documentation>
+        </property>
+        <property name="wheelZoomable" type="sap.ui.core/boolean" defaultValue="true" group="Behavior">
+            <documentation>Defines if semantic zooming by mouse wheel events on desktop browsers is enabled.</documentation>
+        </property>
+        <property name="showLabels" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>Defines if the connection labels are shown or not.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="nodeTitlePress" allowPreventDefault="false">
+            <documentation>This event is fired when a process flow node title was
+clicked. The user can access the clicked process flow node control object which is the only argument of the event handler.</documentation>
+            <deprecation since="1.26">Should not be used any longer, use nodePress event instead ( click on the node)</deprecation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>This object represents the wrapped process flow node object.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="nodePress" allowPreventDefault="false">
+            <documentation>This event is fired when a process flow node was clicked.</documentation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>This object represents the wrapped process flow node object.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="labelPress" allowPreventDefault="false">
+            <documentation>This event is fired when a process flow connection label was clicked.</documentation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>This object represents the label information.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="headerPress" allowPreventDefault="false">
+            <documentation>This event is fired when the header column is clicked. This event is available only in header mode, i.e. when no nodes are defined.</documentation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>This object represents the wrapped process flow lane header object.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="onError" allowPreventDefault="false">
+            <documentation>This event is fired when an issue occurs with the process flow calculation. In most cases, there is an issue with the data. The console contains the detailed error description with the errors.</documentation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>This parameters contains the localized string with error message.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="lanes">
+        <aggregation name="_connections" type="sap.suite.ui.commons/ProcessFlowConnection" cardinality="0..n" visibility="hidden">
+            <documentation>This is the aggregation of the connection controls put into the table to the calculated cells.</documentation>
+        </aggregation>
+        <aggregation name="nodes" type="sap.suite.ui.commons/ProcessFlowNode" cardinality="0..n">
+            <documentation>This is the aggregation of nodes in the process flow control.</documentation>
+        </aggregation>
+        <aggregation name="lanes" type="sap.suite.ui.commons/ProcessFlowLaneHeader" cardinality="0..n">
+            <documentation>This is a header of the table for the process flow control.</documentation>
+        </aggregation>
+        <aggregation name="ariaProperties" type="sap.suite.ui.commons/AriaProperties" cardinality="0..1">
+            <documentation>ARIA-compliant properties to be added to the control.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

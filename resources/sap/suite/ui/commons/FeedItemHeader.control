@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>FeedItemHeader</name>
+    <derived/>
+    <documentation>This control displays feed item header information.</documentation>
+    <deprecation since="1.25">This control has been deprecated in favor of new sap.suite.ui.commons.GenericTile.</deprecation>
+    <baseType>sap.m/ListItemBase</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>The title of the feed item.</documentation>
+        </property>
+        <property name="image" type="sap.ui.core/URI" group="Misc">
+            <documentation>The image associated with the feed item.</documentation>
+        </property>
+        <property name="link" type="sap.ui.core/URI" group="Misc">
+            <documentation>The target location of the feed item.</documentation>
+        </property>
+        <property name="source" type="sap.ui.core/string" group="Misc">
+            <documentation>The source of the feed item.</documentation>
+        </property>
+        <property name="publicationDate" type="sap.ui.core/object" group="Misc">
+            <documentation>The date the feed item was published.</documentation>
+        </property>
+        <property name="description" type="sap.ui.core/string" group="Misc">
+            <documentation>The description of the feed item.</documentation>
+        </property>
+    </properties>
+</control>

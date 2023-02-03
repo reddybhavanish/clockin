@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RepeaterViewConfiguration</name>
+    <derived/>
+    <documentation>A configuration control defining how the content of the sap.suite.ui.commons.ViewRepeater control is displayed and what data is bound.</documentation>
+    <deprecation since="1.32">Deprecated. Standard Fiori technology should be used.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>The title of the view to be displayed in sap.suite.ui.commons.ViewRepeater view selector. If neither this nor "icon" property are defined, the default title "View ##" will be shown, where ## is an index number of the view in View Repeater starting from 1.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/URI" group="Misc">
+            <documentation>A path to the icon representing this view in sap.suite.ui.commons.ViewRepeater view selector.</documentation>
+        </property>
+        <property name="iconHovered" type="sap.ui.core/URI" group="Misc">
+            <documentation>A path to the icon representing this view in sap.suite.ui.commons.ViewRepeater view selector when the regular icon is hovered.</documentation>
+        </property>
+        <property name="path" type="sap.ui.core/string" group="Misc">
+            <documentation>A path used for rows/titles data binding.</documentation>
+        </property>
+        <property name="itemMinWidth" type="sap.ui.core/int" defaultValue="-1" group="Misc">
+            <documentation>The minimal width of the tile in this view. Only applicable if "responsive" property is set to true.</documentation>
+        </property>
+        <property name="numberOfTiles" type="sap.ui.core/int" defaultValue="-1" group="Misc">
+            <documentation>The number of tiles/rows that will be shown on a single page in this view.</documentation>
+        </property>
+        <property name="responsive" type="sap.ui.core/any" defaultValue="false" group="Misc">
+            <documentation>This parameter indicates whether the content is shown in rows or tiles. If false, the content is shown in rows just like in core sap.ui.commons.RowRepeater. If true, the content is shown in tiles (similar to sap.ui.ux3.DataSet control) that have minimal width defined by the "itemMinWidth" property. The number of columns depends on the parent control's width. If you resize the control, the number of columns may change respectively so that the content tiles can fill the entire space of a row.</documentation>
+        </property>
+        <property name="external" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Indicates if the external representation of this view is rendered instead of the row repeater's own content.</documentation>
+        </property>
+        <property name="iconSelected" type="sap.ui.core/URI" group="Misc">
+            <documentation>A path to the icon representing this view in sap.suite.ui.commons.ViewRepeater view selector when the regular icon is selected.</documentation>
+        </property>
+        <property name="itemHeight" type="sap.ui.core/int" group="Misc">
+            <documentation>The height of the tile in this view in pixels. Only applicable if the responsive property is set to true. This value is used for calculating the number of tile rows.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="template" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>The control used as a template while displaying rows/tiles in this view. It should not have fixed width wider than defined by the "itemMinWidth" property, otherwise some content may appear cropped.</documentation>
+        </aggregation>
+        <aggregation name="externalRepresentation" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>The control to be rendered instead of sap.suite.ui.commons.ViewRepeater's own content. Only used if the "external" property is set to true. This allows you to create custom views, for example, Table views. The sap.suite.ui.commons.ViewRepeater control will share its model with this control if the control does not have its own model.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

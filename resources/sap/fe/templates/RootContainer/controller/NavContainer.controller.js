@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/json/JSONModel","./BaseController","sap/ui/core/Component"],function(J,B,C){"use strict";return B.extend("sap.fe.templates.RootContainer.controller.NavContainer",{onInit:function(){B.prototype.onInit.bind(this)();},onExit:function(){},isFclEnabled:function(){return false;}});},true);

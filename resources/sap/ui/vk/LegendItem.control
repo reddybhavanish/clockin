@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LegendItem</name>
+    <derived/>
+    <documentation>Legend item control</documentation>
+    <developmentState state="experimental" since="1.38.0">This class is experimental and might be modified or removed in future versions.</developmentState>
+    <baseType>sap.m/StandardListItem</baseType>
+    <properties>
+        <property name="color" type="sap.ui.core/CSSColor" group="Appearance">
+            <documentation>show color square</documentation>
+        </property>
+        <property name="semanticSpotType" type="sap.ui.vbm/SemanticType" group="Behavior">
+            <documentation>The semantic spot type for the legend marker.</documentation>
+        </property>
+    </properties>
+</control>

@@ -1,0 +1,86 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "CardContainer.fragment.xml",
+			"size": 992
+		},
+		{
+			"name": "Component-dbg.js",
+			"size": 35954,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 11304
+		},
+		{
+			"name": "DashboardCardContainer.fragment.xml",
+			"size": 992
+		},
+		{
+			"name": "Error.view.xml",
+			"size": 349
+		},
+		{
+			"name": "Main-dbg.controller.js",
+			"size": 202299,
+			"isDebug": true
+		},
+		{
+			"name": "Main.controller.js",
+			"size": 57634
+		},
+		{
+			"name": "Main.view.xml",
+			"size": 4915
+		},
+		{
+			"name": "ManageCard.fragment.xml",
+			"size": 1836
+		},
+		{
+			"name": "OVPUtils-dbg.js",
+			"size": 739,
+			"isDebug": true
+		},
+		{
+			"name": "OVPUtils.js",
+			"size": 422
+		},
+		{
+			"name": "SharePage.fragment.xml",
+			"size": 874
+		},
+		{
+			"name": "SmarFilterBarWithoutVariant.fragment.xml",
+			"size": 3883
+		},
+		{
+			"name": "SmartFilterBarWithVariant.fragment.xml",
+			"size": 4160
+		},
+		{
+			"name": "TemplateBaseExtension-dbg.js",
+			"size": 2843,
+			"isDebug": true
+		},
+		{
+			"name": "TemplateBaseExtension.js",
+			"size": 1027
+		},
+		{
+			"name": "manifest.json",
+			"size": 1458
+		},
+		{
+			"name": "resources-dbg.js",
+			"size": 2677,
+			"isDebug": true
+		},
+		{
+			"name": "resources.js",
+			"size": 819
+		}
+	]
+}

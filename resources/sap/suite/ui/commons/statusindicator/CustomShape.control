@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/CustomShape</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Custom shape that is defined directly as SVG.</documentation>
+    <since>1.50</since>
+    <baseType>sap.suite.ui.commons/statusindicator/Shape</baseType>
+    <properties>
+        <property name="x" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the x coordinate of the upper-left corner of the bounding rectangle.</documentation>
+        </property>
+        <property name="y" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Defines the y coordinate of the upper-left corner of the bounding rectangle.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+            <documentation>Defines the width of the bounding rectangle.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" defaultValue="100%">
+            <documentation>Defines the height of the bounding rectangle.</documentation>
+        </property>
+        <property name="strokeColor" type="sap.m/ValueCSSColor" defaultValue="Neutral">
+            <documentation>Specifies the color of the shape's outline.</documentation>
+        </property>
+        <property name="strokeWidth" type="sap.ui.core/float" defaultValue="0.25">
+            <documentation>Specifies the width of the shape's outline.</documentation>
+        </property>
+        <property name="definition" type="sap.ui.core/string">
+            <documentation>A valid XML fragment that contains an &amp;lt;svg&amp;gt; element that complies with the following
+requirements:
+&lt;ul&gt;
+    &lt;li&gt;It includes no SVG groups (&amp;lt;g&amp;gt; elements).&lt;/li&gt;
+    &lt;li&gt;It includes no &amp;lt;defs&amp;gt; elements.&lt;/li&gt;
+&lt;/ul&gt;
+The SVG element is transformed into a status indicator shape in the following way:
+&lt;ul&gt;
+    &lt;li&gt;The &lt;code&gt;viewBox&lt;/code&gt; attribute of the root SVG element is respected and kept after the transformation.&lt;/li&gt;
+    &lt;li&gt;The inline styles of SVG shapes are respected, and shapes with such inline styles are not considered to be fillable.&lt;/li&gt;
+    &lt;li&gt;The SVG shapes without classes are considered fillable.&lt;/li&gt;
+    &lt;li&gt;If there are multiple fillable shapes, each shape element must have a &lt;code&gt;data-shape-id&lt;/code&gt; attribute that is set to a unique value.&lt;/li&gt;
+&lt;/ul&gt;
+Example:
+&lt;pre&gt;
+  &amp;lt;svg version=&amp;quot;1.1&amp;quot; xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; viewBox=&amp;quot;0 0 30 30&amp;quot; xml:space=&amp;quot;preserve&amp;quot;&amp;gt;
+     &amp;lt;path style=&amp;quot;fill:blue;&amp;quot; d=&amp;quot;M14.664,29....&amp;quot; /&amp;gt;
+     &amp;lt;path style=&amp;quot;fill:blue;&amp;quot; d=&amp;quot;M13.626,25....&amp;quot; /&amp;gt;
+     &amp;lt;path data-shape-id=&amp;quot;fill-1&amp;quot; d=&amp;quot;M15.337,21....&amp;quot; /&amp;gt;
+     &amp;lt;path data-shape-id=&amp;quot;fill-2&amp;quot; d=&amp;quot;M13.626,17....&amp;quot; /&amp;gt;
+     &amp;lt;path data-shape-id=&amp;quot;fill-3&amp;quot; d=&amp;quot;M15.337,14....&amp;quot; /&amp;gt;
+     &amp;lt;path data-shape-id=&amp;quot;fill-4&amp;quot; d=&amp;quot;M13.107,10....&amp;quot; /&amp;gt;
+  &amp;lt;/svg&amp;gt;
+&lt;/pre&gt;
+The first two paths in this example are filled with blue color. The last four shape elements are filled gradually, as
+the status indicator's value changes.
+
+Please note that the SVG element must be escaped when used directly as an attribute in the XML view.</documentation>
+        </property>
+    </properties>
+    <aggregations default="shapes">
+        <aggregation name="shapes" type="sap.suite.ui.commons/statusindicator/SimpleShape" cardinality="0..n">
+            <documentation>Read-only aggregation that contains simple shapes transformed from the SVG definition.</documentation>
+        </aggregation>
+        <aggregation name="fillingOptions" type="sap.suite.ui.commons/statusindicator/FillingOption" cardinality="0..n">
+            <documentation>Defines the order and weight of fillable shapes based on the status indicator value distribution.
+If this aggregation is not used, the shapes are filled in the order they are specified in the SVG definition.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

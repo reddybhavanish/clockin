@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Spots</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;Spot&lt;/i&gt; elements.&lt;br&gt;
+       Spots support GeoMap internal drag'n drop with fine grained control on matching drag sources and drop targets. A drag'n drop operation
+       is possible if any type in the drag source aggregation of the dragged visual object matches a type in the drop target aggregation of the
+       target vo. If drag source and drop target types are defined on aggregation level they apply for all aggregated elements.</documentation>
+    <baseType>sap.ui.vbm/VoAggregation</baseType>
+    <properties>
+        <property name="posChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if position may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+        <property name="scaleChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if scale may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+    </properties>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Spot" cardinality="0..n">
+            <documentation>spot object aggregation</documentation>
+        </aggregation>
+        <aggregation name="dragSource" type="sap.ui.vbm/DragSource" cardinality="0..n">
+            <documentation>DragSource aggregation</documentation>
+        </aggregation>
+        <aggregation name="dropTarget" type="sap.ui.vbm/DropTarget" cardinality="0..n">
+            <documentation>DropTarget aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

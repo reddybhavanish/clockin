@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TextColor</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying text colors.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Default">
+            <documentation>The default text color.</documentation>
+        </value>
+        <value name="Gray">
+            <documentation>Gray.</documentation>
+        </value>
+        <value name="Grey">
+            <documentation>Grey. A synonym for Gray.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

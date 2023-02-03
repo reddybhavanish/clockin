@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TimelineGroupType</name>
+    <derived/>
+    <documentation>Type of grouping for timeline entries.</documentation>
+    <enumeration>
+        <value name="None">
+            <documentation>No grouping is used.</documentation>
+        </value>
+        <value name="Year">
+            <documentation>Data is grouped by year.</documentation>
+        </value>
+        <value name="Month">
+            <documentation>Data is grouped by month.</documentation>
+        </value>
+        <value name="Quarter">
+            <documentation>Data is grouped by quarter.</documentation>
+        </value>
+        <value name="Week">
+            <documentation>Data is grouped by week.</documentation>
+        </value>
+        <value name="Day">
+            <documentation>Data is grouped by day.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

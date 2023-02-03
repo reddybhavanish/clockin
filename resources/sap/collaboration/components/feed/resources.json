@@ -1,0 +1,84 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "BOMode-dbg.js",
+			"size": 18616,
+			"isDebug": true
+		},
+		{
+			"name": "BOMode.js",
+			"size": 6978
+		},
+		{
+			"name": "Component-dbg.js",
+			"size": 8754,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 1858
+		},
+		{
+			"name": "Component.json",
+			"size": 249
+		},
+		{
+			"name": "GroupIDsMode-dbg.js",
+			"size": 8676,
+			"isDebug": true
+		},
+		{
+			"name": "GroupIDsMode.js",
+			"size": 3846
+		},
+		{
+			"name": "Mode-dbg.js",
+			"size": 7879,
+			"isDebug": true
+		},
+		{
+			"name": "Mode.js",
+			"size": 3503
+		},
+		{
+			"name": "ModeFactory-dbg.js",
+			"size": 2414,
+			"isDebug": true
+		},
+		{
+			"name": "ModeFactory.js",
+			"size": 1004
+		},
+		{
+			"name": "UserMode-dbg.js",
+			"size": 5465,
+			"isDebug": true
+		},
+		{
+			"name": "UserMode.js",
+			"size": 1807
+		},
+		{
+			"name": "fragments/CustomListItem.fragment.xml",
+			"size": 265
+		},
+		{
+			"name": "fragments/GroupSelector.fragment.xml",
+			"size": 568
+		},
+		{
+			"name": "views/GroupFeed-dbg.controller.js",
+			"size": 52024,
+			"isDebug": true
+		},
+		{
+			"name": "views/GroupFeed.controller.js",
+			"size": 23850
+		},
+		{
+			"name": "views/GroupFeed.view.xml",
+			"size": 568
+		}
+	]
+}

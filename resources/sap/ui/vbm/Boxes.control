@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Boxes</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;Box&lt;/i&gt; instances.</documentation>
+    <baseType>sap.ui.vbm/VoAggregation</baseType>
+    <properties>
+        <property name="posChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if position may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+        <property name="scaleChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if scale may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+    </properties>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Box" cardinality="0..n">
+            <documentation>Box object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

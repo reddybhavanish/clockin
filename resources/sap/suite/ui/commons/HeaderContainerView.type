@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HeaderContainerView</name>
+    <derived/>
+    <documentation>The list of possible HeaderContainer views.</documentation>
+    <deprecation since="1.48">This control is deprecated since 1.48. Please use the equivalent sap.ui.core.Orientation.</deprecation>
+    <enumeration>
+        <value name="Horizontal">
+            <documentation>The horizontal orientation of the control.</documentation>
+        </value>
+        <value name="Vertical">
+            <documentation>The vertical orientation of the control.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

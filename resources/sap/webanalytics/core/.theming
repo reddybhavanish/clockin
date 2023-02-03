@@ -1,0 +1,6 @@
+{
+  "sEntity" : "Library",
+  "sId" : "sap/webanalytics/core",
+  "sVersion" : "1.78.0",
+  "bIgnore" : true
+}

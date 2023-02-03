@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>taccount/TAccountGroup</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The T account group control displays debit and credit entries for all {@link sap.suite.ui.commons.TAccount}
+controls included in the group.</documentation>
+    <since>1.58.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>Title of the group.</documentation>
+        </property>
+        <property name="collapsed" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether the group should appear as collapsed. By default, it appears as expanded.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="accounts" type="sap.suite.ui.commons/taccount/TAccount" cardinality="0..n">
+            <documentation>T accounts included in the group.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

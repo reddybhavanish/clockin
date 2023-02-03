@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>imageeditor/CustomSizeItem</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A &lt;code&gt;CustomSizeItem&lt;/code&gt; can be used in the {@link sap.suite.ui.commons.imageeditor.ImageEditorContainer} aggregations to define custom items on the Resize, Crop Rectangle, and Crop Ellipse panels.</documentation>
+    <since>1.66.0</since>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/float" defaultValue="0">
+            <documentation>Defines the width of the &lt;code&gt;CustomSizeItem&lt;/code&gt;. &lt;br&gt;This property is mandatory and must be greater than 0.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/float" defaultValue="0">
+            <documentation>* Defines the height of the &lt;code&gt;CustomSizeItem&lt;/code&gt;. &lt;br&gt;This property is mandatory and must be greater than 0.</documentation>
+        </property>
+        <property name="label" type="sap.ui.core/string" defaultValue="">
+            <documentation>Defines the label of the &lt;code&gt;CustomSizeItem&lt;/code&gt;.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/URI" defaultValue="">
+            <documentation>Defines the icon to be displayed in the &lt;code&gt;CustomSizeItem&lt;/code&gt;. &lt;br&gt;If no icon is specified, the default image is used, which is derived from the set width and height.</documentation>
+        </property>
+        <property name="relative" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Specifies whether the &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; properties use relative values (&lt;code&gt;true&lt;/code&gt;) or absolute values (&lt;code&gt;false&lt;/code&gt;).
+&lt;br&gt;When used in the &lt;code&gt;customResizeItems&lt;/code&gt; aggregation of an {@link sap.suite.ui.commons.imageeditor.ImageEditorContainer}, width and height are multiplied by the &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; properties of the &lt;code&gt;CustomSizeItem&lt;/code&gt;.
+&lt;br&gt;When used in the &lt;code&gt;customRectangleCropItems&lt;/code&gt; or &lt;code&gt;customEllipseCropItems&lt;/code&gt; aggregations of an {@link sap.suite.ui.commons.imageeditor.ImageEditorContainer}, aspect ratio is set to the &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; properties of the &lt;code&gt;CustomSizeItem&lt;/code&gt;.</documentation>
+        </property>
+    </properties>
+</control>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DecisionTableCell</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Some class description goes here.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="valuePath" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the value of the control.</documentation>
+        </property>
+        <property name="valueOnlyPath" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the valueOnly of the control.</documentation>
+        </property>
+        <property name="headerValuePath" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the header value of the control.</documentation>
+        </property>
+        <property name="fixedOperatorPath" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the fixed operator value of the control.</documentation>
+        </property>
+        <property name="typePath" type="sap.ui.core/string" bindable="bindable">
+            <documentation>The business data type of the expression (e.g. String, Number, Boolean).
+The default value &lt;code&gt;sap.rules.ui.ExpressionType.All&lt;/code&gt; means that all valid business data types are permitted.</documentation>
+        </property>
+        <property name="valueStatePath" type="sap.ui.core/string" defaultValue="null" bindable="bindable">
+            <documentation>Defines the binding path to the value state of the cell such as Error.</documentation>
+        </property>
+        <property name="valueStateTextPath" type="sap.ui.core/string" defaultValue="null" bindable="bindable">
+            <documentation>Defines the binding path to the text that appears in the value state message pop-up.</documentation>
+        </property>
+        <property name="valueModelName" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the name of the value model - which contains the cell value when focus-in (ODataModel)</documentation>
+        </property>
+        <property name="displayModelName" type="sap.ui.core/string" defaultValue="" bindable="bindable">
+            <documentation>Defines the name of the display model - which contains the cell value when focus-out</documentation>
+        </property>
+        <property name="editable" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Defines whether the control can be modified by the user or not.
+&lt;b&gt;Note:&lt;b&gt; A user can tab to a non-editable control, highlight it, and copy the text from it.</documentation>
+        </property>
+        <property name="inFocus" type="sap.ui.core/boolean" defaultValue="false"/>
+        <property name="decisionTableCellType" type="sap.rules.ui/type/DecisionTableCell">
+            <documentation>Define the DecisionTableCell type/formatter.</documentation>
+        </property>
+        <property name="ruleFormatPath" type="sap.ui.core/string" defaultValue="null" bindable="bindable">
+            <documentation>Defines the value of the RuleFormat.</documentation>
+        </property>
+        <property name="decisionTableFormat" type="sap.rules.ui/DecisionTableFormat" defaultValue="CellFormat">
+            <documentation>Defines the value of the DecisionTableFormat.</documentation>
+        </property>
+        <property name="keyProperties" type="sap.ui.core/object" defaultValue="{}">
+            <documentation>Contains the key properties of cell : RowId,ColId,RuleId, Version needed for binding context</documentation>
+        </property>
+        <property name="attributeInfoPath" type="sap.ui.core/string" bindable="bindable">
+            <documentation>Defines the value of the Header Attribute Info.</documentation>
+        </property>
+        <property name="attributeNamePath" type="sap.ui.core/string" bindable="bindable">
+            <documentation>Defines the value of the Header Attribute Name.</documentation>
+        </property>
+        <property name="headerInfo" type="sap.ui.core/object" defaultValue="{}"/>
+    </properties>
+    <aggregations>
+        <aggregation name="_displayedControl" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden"/>
+    </aggregations>
+    <associations>
+        <association name="expressionLanguage" type="sap.rules.ui/services/ExpressionLanguage" cardinality="0..1">
+            <documentation>Association to the expression language element.</documentation>
+        </association>
+        <association name="astExpressionLanguage" type="sap.rules.ui/services/AstExpressionLanguage" cardinality="0..1"/>
+    </associations>
+</control>

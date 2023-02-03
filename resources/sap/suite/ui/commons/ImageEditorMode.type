@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ImageEditorMode</name>
+    <derived/>
+    <documentation>Mode types for {@link sap.suite.ui.commons.imageeditor.ImageEditor}.</documentation>
+    <enumeration>
+        <value name="Resize">
+            <documentation>Image editor mode with resize handlers.</documentation>
+        </value>
+        <value name="CropRectangle">
+            <documentation>Image editor mode with rectangle crop area.</documentation>
+        </value>
+        <value name="CropEllipse">
+            <documentation>Image editor mode with ellipse crop area.</documentation>
+        </value>
+        <value name="CropCustomShape">
+            <documentation>Image editor mode with custom shape crop area.</documentation>
+        </value>
+        <value name="Default">
+            <documentation>Image editor mode that shows just the source image.
+&lt;br&gt;This mode is used by default.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

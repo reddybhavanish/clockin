@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowNode</name>
+    <derived/>
+    <documentation>This control enables you to see documents (or other items) in respect to their statuses – positive, negative, neutral, planned, planned negative. In addition to the node title (which can be optionally a hyperlink) also two other text fields are provided and can be filled. The process flow nodes consider all styles depending on the status they are in. The user can update or change the content of the node. The content of the node can be also filtered according to updated data and specific parameters set. This means that also the node’s style is affected.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>The node title.</documentation>
+        </property>
+        <property name="isTitleClickable" type="sap.ui.core/boolean" defaultValue="false" group="Behavior">
+            <documentation>Specifies if the node title is clickable.</documentation>
+            <deprecation since="1.26">According to the new requirement there should be only one click event for each node (click on the whole node – see Press event) that is why titlePress event should not be used any longer. Hence isTitleClickable should not be used either.</deprecation>
+        </property>
+        <property name="laneId" type="sap.ui.core/string" group="Misc">
+            <documentation>Specifies the assignment of the node to the respective lane.</documentation>
+        </property>
+        <property name="nodeId" type="sap.ui.core/string" group="Misc">
+            <documentation>Node identifier.</documentation>
+        </property>
+        <property name="state" type="sap.suite.ui.commons/ProcessFlowNodeState" defaultValue="Neutral" group="Appearance">
+            <documentation>State of the node.</documentation>
+        </property>
+        <property name="type" type="sap.suite.ui.commons/ProcessFlowNodeType" defaultValue="Single" group="Appearance">
+            <documentation>Type of the node.</documentation>
+        </property>
+        <property name="children" type="sap.ui.core/any[]" group="Misc">
+            <documentation>Defines an array of children of the node.</documentation>
+        </property>
+        <property name="titleAbbreviation" type="sap.ui.core/string" group="Data">
+            <documentation>Title abbreviation is used in zoom level 'Three'.</documentation>
+        </property>
+        <property name="stateText" type="sap.ui.core/string" group="Data">
+            <documentation>Description of the state, for example "Status OK".</documentation>
+        </property>
+        <property name="texts" type="sap.ui.core/string[]" group="Misc">
+            <documentation>The property contains the additional texts on the node. The expected type is array of strings. One array must not contain more than two strings. Additional strings in the array will be ignored.</documentation>
+        </property>
+        <property name="highlighted" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>The parameter defines if the node should be displayed in highlighted state.</documentation>
+        </property>
+        <property name="focused" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>The parameter defines if the node should be displayed in focus state.</documentation>
+        </property>
+        <property name="tag" type="sap.ui.core/object" group="Misc">
+            <documentation>The user-defined object which is returned back to the user by a node click event.</documentation>
+        </property>
+        <property name="selected" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>The parameter defines if the node should be displayed in selected state.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="titlePress" allowPreventDefault="false">
+            <documentation>This event handler is executed when the user clicks the node title. This event is fired only when the title is clickable (isTitleClickable equals true).</documentation>
+            <deprecation since="1.26">Should not be used any longer, use Press event instead ( click on the node)</deprecation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>The node identification.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="press" allowPreventDefault="false">
+            <documentation>This event is fired when the user clicks on the node. However, this event is not fired if the titlePress event has been fired.</documentation>
+            <deprecation since="1.50.0">This event is deprecated, use &lt;node&gt;nodePress&lt;/code&gt; event instead. See {@link sap.suite.ui.commons.ProcessFlow.html#event:nodePress}.</deprecation>
+            <parameters>
+                <parameter name="oEvent" type="sap.ui.core/object">
+                    <documentation>The node identification.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="zoomLevelOneContent" type="sap.ui.core/Control" since="1.50" cardinality="0..1">
+            <documentation>The node's content used for zoom level 1.
+If this aggregation is set, no default content like title and texts is used.</documentation>
+        </aggregation>
+        <aggregation name="zoomLevelTwoContent" type="sap.ui.core/Control" since="1.50" cardinality="0..1">
+            <documentation>The node's content used for zoom level 2.
+If this aggregation is set, no default content like title and texts is used.</documentation>
+        </aggregation>
+        <aggregation name="zoomLevelThreeContent" type="sap.ui.core/Control" since="1.50" cardinality="0..1">
+            <documentation>The node's content used for zoom level 3.
+If this aggregation is set, no default content like title and texts is used.</documentation>
+        </aggregation>
+        <aggregation name="zoomLevelFourContent" type="sap.ui.core/Control" since="1.50" cardinality="0..1">
+            <documentation>The node's content used for zoom level 4.
+If this aggregation is set, no default content like title and texts is used.</documentation>
+        </aggregation>
+        <aggregation name="ariaProperties" type="sap.suite.ui.commons/AriaProperties" cardinality="0..1">
+            <documentation>ARIA-compliant properties to be added to the control.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association name="parents" type="sap.suite.ui.commons/ProcessFlowNode" cardinality="0..n">
+            <documentation>Reference to ProcessFlowNodes which appears before this ProcessFlowNode.</documentation>
+        </association>
+    </associations>
+</control>

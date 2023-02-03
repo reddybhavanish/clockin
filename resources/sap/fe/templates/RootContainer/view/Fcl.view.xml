@@ -1,0 +1,9 @@
+<View xmlns="sap.f" displayBlock="true" height="100%" controllerName="sap.fe.templates.RootContainer.controller.Fcl">
+	<FlexibleColumnLayout
+		id="appContent"
+		backgroundDesign="Transparent"
+		layout="{fcl>/layout}"
+		stateChange="onStateChanged"
+		afterEndColumnNavigate="onStateChanged"
+	/>
+</View>

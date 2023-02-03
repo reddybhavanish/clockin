@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>CalculationBuilderItem</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Each of the items used as building blocks to create an arithmetic expression in the calculation builder.</documentation>
+    <since>1.56.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="key" type="sap.ui.core/string" group="Misc">
+            <documentation>A key associated with the item. This property is mandatory.&lt;br&gt;
+The key is displayed in the text editor area of the calculation builder.</documentation>
+        </property>
+    </properties>
+</control>

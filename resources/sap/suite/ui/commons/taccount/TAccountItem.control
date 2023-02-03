@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>taccount/TAccountItem</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The T account item control represents a credit or debit entry on a {@link sap.suite.ui.commons.TAccount}.</documentation>
+    <since>1.58.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="value" type="sap.ui.core/float" defaultValue="0" group="Misc">
+            <documentation>Value of the credit or debit entry.</documentation>
+        </property>
+        <property name="color" type="sap.m/ValueCSSColor" group="Misc">
+            <documentation>Color applied to the debit or credit entry.</documentation>
+        </property>
+        <property name="group" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>Group where this debit or credit entry belongs.&lt;br&gt;
+Entries that share the same group are highlighted when the user clicks or taps
+one of such entries.</documentation>
+        </property>
+        <property name="ariaLabel" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>Aria label for item.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>This event is fired when the user clicks or taps the entry.
+It highlights the entry and all other entries that belong to the same group.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="properties" type="sap.suite.ui.commons/taccount/TAccountItemProperty" cardinality="0..n">
+            <documentation>Additional properties that define how the entry is displayed.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

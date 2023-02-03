@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TileContent</name>
+    <derived/>
+    <documentation>This control serves a universal container for different types of content and footer.</documentation>
+    <deprecation since="1.34">this control is a mere wrapper for sap.m.TileContent.</deprecation>
+    <baseType>sap.m/TileContent</baseType>
+</control>

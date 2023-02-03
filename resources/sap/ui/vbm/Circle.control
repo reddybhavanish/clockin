@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Circle</name>
+    <derived/>
+    <documentation>Specific Visual Object element for an &lt;i&gt;Circle&lt;/i&gt;. A Circle is positioned with its centerpoint at the given &lt;i&gt;position&lt;/i&gt;. The
+       detail window will open at the center of the circle.</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" defaultValue="0;0;0" group="Misc">
+            <documentation>The position of the circle.</documentation>
+        </property>
+        <property name="radius" type="sap.ui.core/string" defaultValue="20" group="Misc">
+            <documentation>The pixel radius of the circle.</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/string" defaultValue="RGBA(0,0,128,128)" group="Misc">
+            <documentation>The color of the circle.</documentation>
+        </property>
+        <property name="colorBorder" type="sap.ui.core/string" defaultValue="RGB(0,0,0)" group="Misc">
+            <documentation>The border color of the circle.</documentation>
+        </property>
+        <property name="slices" type="sap.ui.core/string" group="Misc">
+            <documentation>Number of circle slices. The property is required only when the PlugIn is used.</documentation>
+        </property>
+    </properties>
+</control>

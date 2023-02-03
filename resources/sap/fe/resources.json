@@ -1,0 +1,114 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 2140
+		},
+		{
+			"name": ".theming",
+			"size": 92
+		},
+		{
+			"name": "AppComponent-dbg.js",
+			"module": "sap/fe/AppComponent.js",
+			"size": 1310,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppComponent.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "AppComponent.js",
+			"module": "sap/fe/AppComponent.js",
+			"size": 675,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppComponent.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/fe/library.js",
+			"size": 1330,
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/fe/library-h2-preload.js",
+			"size": 1999,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppComponent.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			],
+			"included": [
+				"sap/fe/library.js",
+				"sap/fe/manifest.json",
+				"sap/fe/AppComponent.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 667,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fe/library-preload.js",
+			"size": 2324,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppComponent.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			],
+			"included": [
+				"sap/fe/AppComponent.js",
+				"sap/fe/library.js",
+				"sap/fe/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 1180,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/fe/library.js",
+			"size": 720,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fe/manifest.json",
+			"size": 1396
+		},
+		{
+			"name": "resources.json",
+			"size": 1136
+		}
+	]
+}

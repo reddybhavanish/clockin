@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>FeatureCollection</name>
+    <derived/>
+    <documentation>FeatureCollection aggregation container. A FeatureCollection can render the content of an assigned GeoJSON. The naming is associated to
+       the GeoJSON standard. All features found in the GeoJSON are rendered as separated objects. From the possible feature types only
+       &lt;ul&gt;
+       &lt;li&gt;Polygon and
+       &lt;li&gt;Multipolygon
+       &lt;/ul&gt;
+       are supported so far. The feature type support will be extended in the upcoming releases.&lt;br&gt;
+       All features from the GeoJSON will be rendered with the given default colors and are inactive. They do not react on mouse over, except
+       with tooltip, or raise any events on click or right click.&lt;br&gt;
+       By adding &lt;i&gt;Feature elements&lt;/i&gt; to the items aggregation you can make the match (by id) feature from the GeoJSON interactive and give
+       it alternative colors.</documentation>
+    <baseType>sap.ui.vbm/GeoJsonLayer</baseType>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on an aggregated Feature. Clicks on other Features from the GeoJSON are ignored.</documentation>
+            <parameters>
+                <parameter name="featureId" type="sap.ui.core/string">
+                    <documentation>Id of clicked Feature</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on an aggregated Feature. Clicks on other Features from
+the GeoJSON are ignored.</documentation>
+            <parameters>
+                <parameter name="featureId" type="sap.ui.core/string">
+                    <documentation>Id of clicked Feature</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Feature" cardinality="0..n">
+            <documentation>Feature object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="getFeaturesInfo" type="any">
+            <documentation>Returns Properties for Features like name, bounding box, and midpoint</documentation>
+            <parameters>
+                <parameter name="featureIds" type="sap.ui.core/string[]">
+                    <documentation>Array of Feature Ids. The Feature Id must match the GeoJSON tag.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

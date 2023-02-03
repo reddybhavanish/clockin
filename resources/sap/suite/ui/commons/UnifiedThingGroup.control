@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>UnifiedThingGroup</name>
+    <derived/>
+    <documentation>This control is used in UnifiedThingInspector to display the facet header information.</documentation>
+    <deprecation since="1.32">Deprecated. Object page should be used instead.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>The title of the group.</documentation>
+        </property>
+        <property name="description" type="sap.ui.core/string" group="Misc">
+            <documentation>The description of the group.</documentation>
+        </property>
+        <property name="design" type="sap.suite.ui.commons/ThingGroupDesign" defaultValue="ZeroIndent" group="Misc">
+            <documentation>Defines how the control is rendered.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>The content of the group.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

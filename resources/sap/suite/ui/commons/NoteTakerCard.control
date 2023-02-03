@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>NoteTakerCard</name>
+    <derived/>
+    <documentation>This control allows you to store Note Taker card header and body text.</documentation>
+    <deprecation since="1.32">Deprecated. Standard Fiori technology should be used.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="header" type="sap.ui.core/string" group="Misc">
+            <documentation>Stores the Note Taker card header.</documentation>
+        </property>
+        <property name="body" type="sap.ui.core/string" group="Misc">
+            <documentation>Stores the Note Taker card body text.</documentation>
+        </property>
+        <property name="timestamp" type="sap.ui.core/object" defaultValue="new Date()" group="Misc">
+            <documentation>Stores a timestamp of the Note Taker card.</documentation>
+        </property>
+        <property name="tags" type="sap.ui.core/object" defaultValue="[]" group="Misc">
+            <documentation>Contains an array of the String type tags applied to the current card.</documentation>
+        </property>
+        <property name="viewAllTrigger" type="sap.ui.core/int" defaultValue="1800" group="Misc">
+            <documentation>The View All link appears in the Note Taker card if a body text length exceeds the specified value.</documentation>
+        </property>
+        <property name="uid" type="sap.ui.core/string" group="Misc">
+            <documentation>The card ID. This property should be set by an application developer.</documentation>
+        </property>
+        <property name="isFiltered" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Shows whether the note card is hidden by the applied filter.</documentation>
+        </property>
+        <property name="thumbUp" type="sap.ui.core/boolean" group="Misc">
+            <documentation>Indicates positive information for the card.</documentation>
+        </property>
+        <property name="thumbDown" type="sap.ui.core/boolean" group="Misc">
+            <documentation>Indicates negative information for the card.</documentation>
+        </property>
+        <property name="allTags" type="sap.ui.core/object" defaultValue="[]" group="Misc">
+            <documentation>Contains an array of the String type tags available for selection during the card update.</documentation>
+        </property>
+        <property name="attachmentFilename" type="sap.ui.core/string" group="Misc">
+            <documentation>Stores the name of the file attached to the card.</documentation>
+        </property>
+        <property name="attachmentUrl" type="sap.ui.core/string" group="Misc">
+            <documentation>Stores the address of the file attached to the card.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="editNote" allowPreventDefault="false">
+            <documentation>The event is fired when a user chooses the Edit button in the note card.</documentation>
+            <parameters>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of edited card.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>A new text of the edited card.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/string">
+                    <documentation>A new timestamp of the edited card.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>A unique ID that was set by an application developer.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>Indicates positive information for the edited card.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>Indicates negative information for the edited card.</documentation>
+                </parameter>
+                <parameter name="tags" type="sap.ui.core/object">
+                    <documentation>Updated array of the String type tags applied to the card during editing.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="deleteNote" allowPreventDefault="false">
+            <documentation>The event is fired when a card needs to be deleted. This event is needed for the Note Taker control.</documentation>
+            <parameters>
+                <parameter name="cardId" type="sap.ui.core/string">
+                    <documentation>The HTML ID of a card that needs to be deleted.</documentation>
+                </parameter>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>The text of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/string">
+                    <documentation>The timestamp of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>A unique ID that was set by an application developer.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>Indicates positive information for the deleted card.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>Indicates negative information for the deleted card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentClick" allowPreventDefault="false">
+            <documentation>The event is fired when a user chooses the attachment download link.</documentation>
+            <parameters>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>A unique ID that was set by an application developer.</documentation>
+                </parameter>
+                <parameter name="url" type="sap.ui.core/string">
+                    <documentation>The address of the file attached to the card.</documentation>
+                </parameter>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>The name of the file attached to the card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+</control>

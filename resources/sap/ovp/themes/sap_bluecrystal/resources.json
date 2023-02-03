@@ -1,0 +1,110 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "BarListCard.less",
+			"size": 324,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "Card.less",
+			"size": 1992,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "DashboardLayout.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "LinkListCard.less",
+			"size": 74,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "OVPApp.less",
+			"size": 1146,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ObjectStream.less",
+			"size": 1404,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "StackPlaceHolder.less",
+			"size": 208,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 815,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 98807,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img-RTL/ovpDarkBg.png",
+			"size": 68702,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "img/ovpDarkBg.png",
+			"size": 70907,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 55015,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 238,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 57334,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 57317,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.css",
+			"size": 54998,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.less",
+			"size": 5945,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.source.less",
+			"size": 372,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Matrix</name>
+    <derived/>
+    <documentation>A float[] type representing a transformation matrix in a ISO 10303-42 format (in a 1 dimensional array of 13 numbers).
+
+The {@link sap.ui.vtm.MatrixComponent} enumeration enumerates the array indices of the matrix components for this type</documentation>
+    <developmentState state="experimental" since="1.0.0">This class is experimental and might be modified or removed in future versions.</developmentState>
+    <baseType>any[]</baseType>
+    <final/>
+</simple-type>

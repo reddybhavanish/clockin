@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>GeoJsonLayer</name>
+    <derived/>
+    <documentation>GeoJsonLayer aggregation container. A GeoJsonLayer can render the content of an assigned GeoJSON. The naming is associated to the
+       GeoJSON standard. All features found in the GeoJSON are rendered as separated objects. From the possible feature types only
+       &lt;ul&gt;
+       &lt;li&gt;Polygon and Multipolygon,
+       &lt;li&gt;LineString, and
+       &lt;li&gt;Point
+       &lt;/ul&gt;
+       are supported so far. The feature type support will be extended in the upcoming releases.&lt;br&gt;
+       All features from the GeoJSON will be rendered with the given default colors and are inactive. They do not react on mouse over, except
+       with tooltip, or raise any events on click or right click.&lt;br&gt;
+       By adding &lt;i&gt;Feature elements&lt;/i&gt; to the items aggregation you can make the match (by id) feature from the GeoJSON interactive and give
+       it alternative colors. &lt;br&gt;
+       The GeoJSON can be given as a URL using property &lt;i&gt;srcURL&lt;/i&gt;, directly as object using property &lt;i&gt;data&lt;/i&gt;, or as a combination of
+       both.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="srcURL" type="sap.ui.core/string">
+            <documentation>Source URL for GeoJSON</documentation>
+        </property>
+        <property name="data" type="sap.ui.core/object">
+            <documentation>GeoJSON object according to the {@link http://geojson.org/geojson-spec.html#geojson-objects|specification} or array of such objects</documentation>
+        </property>
+        <property name="defaultLineWidth" type="sap.ui.core/int" defaultValue="5" group="Appearance">
+            <documentation>Default line width for LineStrings</documentation>
+        </property>
+        <property name="defaultFillColor" type="sap.ui.core/CSSColor" defaultValue="rgba(186, 193, 196, 0.5)" group="Appearance">
+            <documentation>Default Fill color for GeoJSON features (Polygons and LineStrings)</documentation>
+        </property>
+        <property name="defaultBorderColor" type="sap.ui.core/CSSColor" defaultValue="rgba(255, 255, 255, 1.0)" group="Appearance">
+            <documentation>Default border color for GeoJSON features, if applicable (Polygons and LineStrings)</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on an aggregated Feature. Clicks on other Features from the GeoJSON are ignored.</documentation>
+            <parameters>
+                <parameter name="featureId" type="sap.ui.core/string">
+                    <documentation>Id of clicked Feature</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on an aggregated Feature. Clicks on other Features from
+the GeoJSON are ignored.</documentation>
+            <parameters>
+                <parameter name="featureId" type="sap.ui.core/string">
+                    <documentation>Id of clicked Feature</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/Feature" cardinality="0..n">
+            <documentation>Feature object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="addData" type="sap.ui.core/void">
+            <documentation>Add GeoJSON object to the layer</documentation>
+            <parameters>
+                <parameter name="data" type="sap.ui.core/object">
+                    <documentation>GeoJSON object or an array of those</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getFeaturesInfo" type="any">
+            <documentation>Returns Properties for Features like name, bounding box, and midpoint</documentation>
+            <parameters>
+                <parameter name="featureIds" type="sap.ui.core/string[]">
+                    <documentation>Array of Feature Ids. The Feature Id must match the GeoJSON tag.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openDetailWindow" type="sap.ui.core/void">
+            <documentation>open a Detail Window</documentation>
+            <parameters>
+                <parameter name="feature" type="sap.ui.vbm/Feature">
+                    <documentation>VO instance for which the Detail Window should be opened</documentation>
+                </parameter>
+                <parameter name="params" type="sap.ui.core/object">
+                    <documentation>Parameter object</documentation>
+                </parameter>
+                <parameter name="params.caption" type="sap.ui.core/string">
+                    <documentation>Text for Detail Window caption</documentation>
+                </parameter>
+                <parameter name="params.offsetX" type="sap.ui.core/string">
+                    <documentation>position offset in x-direction from the anchor point</documentation>
+                </parameter>
+                <parameter name="params.offsetY" type="sap.ui.core/string">
+                    <documentation>position offset in y-direction from the anchor point</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>open the context menu</documentation>
+            <parameters>
+                <parameter name="feature" type="sap.ui.vbm/Feature">
+                    <documentation>VO instance for which the Detail Window should be opened</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.core/object">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

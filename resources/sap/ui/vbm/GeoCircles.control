@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>GeoCircles</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;GeoCircle&lt;/i&gt; elements.</documentation>
+    <baseType>sap.ui.vbm/VoAggregation</baseType>
+    <properties>
+        <property name="posChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if position may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+        <property name="radiusChangeable" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true if radius may be changed at runtime. The actual changeability is control on each aggregated element with property
+&lt;i&gt;changeable&lt;/i&gt;.</documentation>
+        </property>
+    </properties>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/GeoCircle" cardinality="0..n">
+            <documentation>GeoCircle element aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

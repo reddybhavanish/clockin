@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/footerbar/AddBookmarkButton</name>
+    <derived/>
+    <documentation>A button to be displayed in the application footer.
+  Clicking the button opens a dialog box allowing the user to save the app state,
+  so that the app can be launched in this state directly from the launchpad.</documentation>
+    <baseType>sap.m/Button</baseType>
+    <properties>
+        <property name="beforePressHandler" type="sap.ui.core/any" group="Misc"/>
+        <property name="afterPressHandler" type="sap.ui.core/any" group="Misc"/>
+        <property name="title" type="sap.ui.core/string" group="Misc"/>
+        <property name="subtitle" type="sap.ui.core/string" group="Misc"/>
+        <property name="info" type="sap.ui.core/string" group="Misc"/>
+        <property name="tileIcon" type="sap.ui.core/string" group="Misc"/>
+        <property name="numberUnit" type="sap.ui.core/string" group="Misc"/>
+        <property name="keywords" type="sap.ui.core/string" group="Misc"/>
+        <property name="customUrl" type="sap.ui.core/any" group="Misc"/>
+        <property name="serviceUrl" type="sap.ui.core/any" group="Misc"/>
+        <property name="serviceRefreshInterval" type="sap.ui.core/string" group="Misc"/>
+        <property name="showGroupSelection" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="showPageSelection" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+        <property name="appData" type="sap.ui.core/object" group="Misc"/>
+    </properties>
+</control>

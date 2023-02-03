@@ -1,0 +1,11 @@
+<mvc:View
+    controllerName="sap.ushell.components.shell.Settings.spaces.SpacesSetting"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <VBox class="sapUiSmallMargin">
+        <CheckBox text="{i18n>spacesModeLabel}" selected="{/isSpacesEnabled}"/>
+        <VBox class="sapUshellFlpSettingsDescriptionBorder">
+            <Text class="sapUshellFlpSettingsDescription" text="{i18n>spacesModeDescriptionText}"/>
+        </VBox>
+    </VBox>
+</mvc:View>

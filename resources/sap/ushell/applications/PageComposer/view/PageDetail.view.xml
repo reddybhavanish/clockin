@@ -1,0 +1,96 @@
+<mvc:View
+    controllerName="sap.ushell.applications.PageComposer.controller.PageDetail"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc">
+    <f:DynamicPage
+        id="pageDetail"
+        fitContent="true"
+        class="sapUshellPageLayout sapUiNoContentPadding"
+        backgroundDesign="Transparent">
+        <f:title>
+            <f:DynamicPageTitle id="dynamicPageTitle">
+                <f:heading>
+                <HBox>
+                    <Title id="pageId" text="{/page/id}" />
+                    <ObjectStatus
+                        active="true"
+                        id="assignmentStatus"
+                        press=".onErrorMessageClicked"
+                        visible="{= ${/page/assignmentState} !== &quot;Success&quot;}"
+                        class="sapUiSmallMarginBottom sapUiSmallMarginBegin"
+                        text="{/page/assignmentCodeStatus}"
+                        state="{/page/assignmentState}" />
+                </HBox>
+                </f:heading>
+                <f:expandedContent>
+                    <HBox id="hboxExpanded" displayInline="true">
+                        <ObjectAttribute id="objectAttributeDescriptionExpanded" text="{/page/description}">
+                            <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Header" writeToDom="true" /></customData>
+                        </ObjectAttribute>
+                    </HBox>
+                </f:expandedContent>
+                <f:snappedContent>
+                    <!-- Nothing (to maximize working area when the header is snapped) -->
+                </f:snappedContent>
+                <f:actions>
+                    <Button
+                        id="buttonCopy"
+                        text="{i18n>Button.Copy}"
+                        type="Transparent"
+                        press=".onCopy"
+                        visible="{SupportedOperationModel>/copySupported}">
+                        <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Button-CopyPage" writeToDom="true" /></customData>
+                    </Button>
+                    <Button
+                        id="buttonDelete"
+                        text="{i18n>Button.Delete}"
+                        type="Transparent"
+                        press=".onDelete"
+                        visible="{SupportedOperationModel>/deleteSupported}">
+                        <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Button-DeletePage" writeToDom="true" /></customData>
+                    </Button>
+                </f:actions>
+                <f:navigationActions>
+                    <Button
+                        id="buttonPreview"
+                        text="{i18n>Button.PagePreview}"
+                        type="Transparent"
+                        press=".preview">
+                        <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Button-PagePreview" writeToDom="true" /></customData>
+                    </Button>
+                </f:navigationActions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader id="dynamicPageHeader" pinnable="false">
+                <core:Fragment fragmentName="sap.ushell.applications.PageComposer.view.PageInfo" type="XML" />
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <VBox id="panelWrapper"> <!-- wrapper to make the panel calculate the correct height -->
+                <Panel
+                    id="panel"
+                    height="100%"
+                    accessibleRole="Region"
+                    backgroundDesign="Transparent"
+                    class="sapUiNoContentPadding">
+                    <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Panel-TileDisplay" writeToDom="true" /></customData>
+                    <headerToolbar>
+                        <OverflowToolbar id="layoutOverflowToolbar" design="Transparent" height="3rem" class="sapUiTinyMarginTop">
+                            <Title id="layoutTitle" class="sapContrastPlus" text="{i18n>Title.Layout}" />
+                            <ToolbarSpacer id="layoutToolbarSpacer" />
+                            <Button id="layoutButtonEdit" text="{i18n>Button.Edit}" type="Emphasized" press=".onEdit" >
+                                <customData><core:CustomData key="help-id" value="FLPPage-manage-PageDetail-Button-Edit" writeToDom="true" /></customData>
+                            </Button>
+                        </OverflowToolbar>
+                    </headerToolbar>
+                    <content>
+                        <core:Fragment fragmentName="sap.ushell.applications.PageComposer.view.Page" type="XML" />
+                    </content>
+                </Panel>
+            </VBox>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

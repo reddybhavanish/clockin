@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ListPanel</name>
+    <derived/>
+    <documentation>Aggregation control for the Legend</documentation>
+    <developmentState state="experimental" since="1.38.0">This class is experimental and might be modified or removed in future versions.</developmentState>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="headerText" type="sap.ui.core/string" group="Misc">
+            <documentation>Header text</documentation>
+        </property>
+        <property name="headerIcon" type="sap.ui.core/URI" group="Misc">
+            <documentation>Header icon</documentation>
+        </property>
+        <property name="expanded" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Expansion state</documentation>
+        </property>
+        <property name="expandAnimation" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Expand animation</documentation>
+        </property>
+        <property name="selectionMode" type="sap.m/ListMode" defaultValue="MultiSelect" group="Misc">
+            <documentation>Selection Mode</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="headerIconPress" allowPreventDefault="false">
+            <documentation>Event is fired if the header icon is pressed</documentation>
+        </event>
+        <event name="expand" allowPreventDefault="false">
+            <documentation>Event is fired if the panel is expanded of collapsed</documentation>
+        </event>
+        <event name="selectionChange" allowPreventDefault="false">
+            <documentation>Event is fired when selection is changed via user interaction inside the control.</documentation>
+            <parameters>
+                <parameter name="listItem" type="sap.m/ListItemBase">
+                    <documentation>The item whose selection has changed. In &lt;code&gt;MultiSelect&lt;/code&gt; mode, only the up-most selected item is returned. This
+parameter can be used for single-selection modes.</documentation>
+                </parameter>
+                <parameter name="listItems" type="sap.m/ListItemBase[]">
+                    <documentation>Array of items whose selection has changed. This parameter can be used for &lt;code&gt;MultiSelect&lt;/code&gt; mode.</documentation>
+                </parameter>
+                <parameter name="selected" type="sap.ui.core/boolean">
+                    <documentation>Indicates whether the &lt;code&gt;listItem&lt;/code&gt; parameter is selected or not.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="itemPress" allowPreventDefault="false">
+            <documentation>Event is fired when an item is pressed unless the item's &lt;code&gt;type&lt;/code&gt; property is &lt;code&gt;Inactive&lt;/code&gt;.</documentation>
+            <parameters>
+                <parameter name="listItem" type="sap.m/ListItemBase">
+                    <documentation>The item which fired the pressed event.</documentation>
+                </parameter>
+                <parameter name="srcControl" type="sap.ui.core/Control">
+                    <documentation>The control which caused the press event within the container.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="items" type="sap.m/ListItemBase" cardinality="0..n">
+            <documentation>Item aggregation</documentation>
+        </aggregation>
+        <aggregation name="panel" type="sap.m/Panel" cardinality="0..1" visibility="hidden">
+            <documentation>hidden panel aggregation needed for binding</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="getSelectedItem" type="sap.m/ListItemBase">
+            <documentation>Returns selected list item. When no item is selected, "null" is returned. When "multi-selection" is enabled and multiple items are selected, only the up-most selected item is returned.</documentation>
+        </method>
+        <method name="setSelectedItem">
+            <documentation>Selects or deselects the given list item.</documentation>
+            <parameters>
+                <parameter name="listItem" type="sap.m/ListItemBase">
+                    <documentation>The list item whose selection to be changed. This parameter is mandatory.</documentation>
+                </parameter>
+                <parameter name="select" type="sap.ui.core/boolean">
+                    <documentation>Sets selected status of the list item. Default value is true.</documentation>
+                </parameter>
+                <parameter name="fireEvent" type="sap.ui.core/boolean">
+                    <documentation>Whether to fire the event or not.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getSelectedItems" type="sap.m/ListItemBase[]">
+            <documentation>Returns an array containing the selected list items. If no items are selected, an empty array is returned.</documentation>
+        </method>
+    </methods>
+</control>

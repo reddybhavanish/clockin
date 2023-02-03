@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/webanalytics/core/library-h2-preload.js",
+"sourceroot":".",
+"sources":["library-dbg.js","manifest.json"],
+"names":["jQuery","library1"],
+"mappings":";;;;;;;AAUA,gBAAa,iCAAC,qBAAsB,uBACnC,SAASA,CAAM,CAAEC,CAAQ,CAAE,CAC3B,aAcA,8BACC,IAAK,CAAE,wBACP,YAAa,CAAE,gBACf,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,aAAc,KACd,QAAS,QACV,GAEA,OAAO,sBAER;;;;;;;;;",
+"x_com_sap_openui5_sections":[58,458,522,1077]
+}

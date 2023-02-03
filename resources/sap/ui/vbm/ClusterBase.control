@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ClusterBase</name>
+    <derived/>
+    <documentation>Abtract base class for Clustering types. This element implements the common part for all specific Cluster elements. It must not be used
+       directly, but is the base for further extension.&lt;br&gt;
+       There are two optional aggregations: &lt;code&gt;vizTemplate&lt;/code&gt; and &lt;code&gt;vizVo&lt;/code&gt; determining how cluster objects should be
+       visualized. Only the one or the other should be provided.&lt;br&gt;
+       With aggregation &lt;code&gt;vizTemplate&lt;/code&gt; you can provide an arbitrary SAPUI5 control for the actual visualization. If you want this control
+       to display the number of clustered object you need to provide the name of the receiving property of the template via property &lt;code&gt;textProperty&lt;/code&gt;.
+       For interaction with the cluster you can either use the events provided by the visualization template or, if it does not provide appropriate events,
+       the cluster element events &lt;code&gt;click&lt;/code&gt; and &lt;code&gt;contextMenu&lt;/code&gt;. The event handler will receive an instance of &lt;code&gt;sap.ui.vbm.ClusterContainer&lt;/code&gt;.&lt;br&gt;
+       With aggregation &lt;code&gt;vizVo&lt;/code&gt; you provide an instance of &lt;code&gt;sap.ui.vbm.Spot&lt;/code&gt; as visualization object. Spots are based on an image. The text
+       for the number of clustered objects needs to be placed over the image. The actual color, font, size, and positioning of the text can be influence via property
+       &lt;code&gt;textSettings&lt;/code&gt;. For interaction with the cluster you can use the events provided by the spot.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="areaAlwaysVisible" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>Flag controlling the visibility of the area convered by a cluster object.</documentation>
+        </property>
+        <property name="areaColor" type="sap.ui.core/CSSColor" defaultValue="rgba(200,0,0,0.2)" group="Appearance">
+            <documentation>Fill color for the area covered by a cluster object</documentation>
+        </property>
+        <property name="areaColorBorder" type="sap.ui.core/CSSColor" defaultValue="rgba(220,220,220,0.5)" group="Appearance">
+            <documentation>Border color for the area covered by a cluster object</documentation>
+        </property>
+        <property name="textProperty" type="sap.ui.core/string" defaultValue="text" group="Misc">
+            <documentation>Name of property of the visualization control receiving the number of clustered objects. This setting applys only if aggregation
+vizTemplate is used.</documentation>
+        </property>
+        <property name="textSettings" type="sap.ui.core/object" group="Appearance">
+            <documentation>Settings for the text placed on the given Spot telling the number of clustered objects. This setting applys only if aggregation
+vizVo is used. If omitted the number of clustered object will &lt;b&gt;not&lt;/b&gt; be shown!</documentation>
+        </property>
+        <property name="rule" type="sap.ui.core/string" group="Misc">
+            <documentation>Clustering rule, describing which visual objects should be considered for clustering</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a Cluster Object.</documentation>
+            <parameters>
+                <parameter name="clusterID" type="sap.ui.core/string">
+                    <documentation>ID of the clicked cluster object. Can serve as input for GeoMap function getInfoForCluster</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on a Cluster.</documentation>
+            <parameters>
+                <parameter name="clusterID" type="sap.ui.core/string">
+                    <documentation>ID of the clicked cluster object. Can serve as input for GeoMap function getInfoForCluster</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="vizTemplate">
+        <aggregation name="vizTemplate" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>Optional: Instance of a control, which is used as template for visualizing cluster objects. This is the prefered choise.</documentation>
+        </aggregation>
+        <aggregation name="vizVo" type="sap.ui.vbm/Spot" cardinality="0..1">
+            <documentation>Optional: Instance of a spot, which is used as template for visualizing cluster objects</documentation>
+        </aggregation>
+        <aggregation name="clusterVos" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Hidden aggregation for cluster visualization controls</documentation>
+        </aggregation>
+        <aggregation name="clusterContainers" type="sap.ui.vbm/ClusterContainer" cardinality="0..n">
+            <documentation>Hidden aggregation for host container VOs</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="openDetailWindow" type="sap.ui.core/void">
+            <documentation>Open a Detail Window. This function can only be used with a Spot as Cluster visualization object!</documentation>
+            <parameters>
+                <parameter name="spotInst" type="sap.ui.vbm/Spot">
+                    <documentation>Spot instance for which the Detail Window should be opened</documentation>
+                </parameter>
+                <parameter name="params" type="sap.ui.core/object">
+                    <documentation>Parameter object</documentation>
+                </parameter>
+                <parameter name="params.caption" type="sap.ui.core/string">
+                    <documentation>Text for Detail Window caption</documentation>
+                </parameter>
+                <parameter name="params.offsetX" type="sap.ui.core/string">
+                    <documentation>position offset in x-direction from the anchor point</documentation>
+                </parameter>
+                <parameter name="params.offsetY" type="sap.ui.core/string">
+                    <documentation>position offset in y-direction from the anchor point</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>Open a context menu</documentation>
+            <parameters>
+                <parameter name="type" type="sap.ui.core/string">
+                    <documentation>Type of VO</documentation>
+                </parameter>
+                <parameter name="container" type="sap.ui.vbm/ClusterContainer">
+                    <documentation>VO instance for which the Context Menu should be opened</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

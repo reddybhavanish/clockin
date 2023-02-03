@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/tile/TileBase</name>
+    <derived/>
+    <documentation>Base class for tiles that already provides several visual elements like title, subtitle, icon and additional information</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Data">
+            <documentation>The title of this tile</documentation>
+        </property>
+        <property name="subtitle" type="sap.ui.core/string" group="Data">
+            <documentation>A subtitle of this tile (optional)</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/string" group="Data">
+            <documentation>An icon for the tile</documentation>
+        </property>
+        <property name="info" type="sap.ui.core/string" group="Data">
+            <documentation>Additional information displayed at the bottom of the tile</documentation>
+        </property>
+        <property name="infoState" type="sap.ushell/ui/tile/State" defaultValue="Neutral">
+            <documentation>The state of the info field</documentation>
+        </property>
+        <property name="targetURL" type="sap.ui.core/string" group="Behavior">
+            <documentation>If given, the Control is wrapped into a link pointing to this URL. If empty or not set, the link is not rendered</documentation>
+        </property>
+        <property name="highlightTerms" type="sap.ui.core/any" defaultValue="[]" group="Appearance">
+            <documentation>contains an array of terms that should be highlighted; per default, the array is empty</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false">
+            <documentation>called when the tile is clicked / pressed</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..n"/>
+    </aggregations>
+</control>

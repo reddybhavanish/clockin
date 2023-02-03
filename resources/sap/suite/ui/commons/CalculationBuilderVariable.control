@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>CalculationBuilderVariable</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A variable used in the expression entered into the calculation builder.</documentation>
+    <since>1.56.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="key" type="sap.ui.core/string" group="Misc">
+            <documentation>A key associated with the variable. This property is mandatory.&lt;br&gt;
+The key is displayed in the text editor area of the calculation builder.</documentation>
+        </property>
+        <property name="label" type="sap.ui.core/string" group="Misc">
+            <documentation>Label for the variable.&lt;br&gt;
+The label is displayed in the visual editor of the calculation builder
+and in the variables menu on the calculation builder's toolbar.</documentation>
+        </property>
+        <property name="group" type="sap.ui.core/string" group="Misc">
+            <documentation>The group where this variable belongs.&lt;br&gt;
+To define variable groups, use {@link sap.suite.ui.commons.CalculationBuilderGroup}.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="items" type="sap.suite.ui.commons/CalculationBuilderItem" cardinality="0..n" singularName="Item">
+            <documentation>Holds the items included in the variable.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

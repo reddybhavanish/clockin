@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>imageeditor/ImageEditor</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Image editor displays an image and provides API and visual controls to edit it.</documentation>
+    <since>1.66.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="src" type="sap.ui.core/any" defaultValue="">
+            <documentation>Image source.
+&lt;br&gt;Can be a file or Blob object, a URL address of the image, a Base64 data URL string, or any other source supported by the &amp;lt;img&gt; HTML tag.</documentation>
+        </property>
+        <property name="customShapeSrc" type="sap.ui.core/any" defaultValue="">
+            <documentation>Image source for the custom shape used in custom shape cropping.
+&lt;br&gt;Can be a file or Blob object, a URL address of the image, a Base64 data URL string, or any other source supported by the &amp;lt;img&gt; HTML tag.
+&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; In Internet Explorer, &lt;code&gt;customShape&lt;/code&gt; doesn't support SVG files and will throw and exception if SVG files are used.</documentation>
+        </property>
+        <property name="mode" type="sap.suite.ui.commons/ImageEditorMode" defaultValue="Default">
+            <documentation>Image editor mode.
+&lt;br&gt;Four modes are available: resize mode, crop to rectangle mode, crop to circle mode, and display
+image mode (default).&lt;br&gt;The default mode displays the image to be edited.</documentation>
+        </property>
+        <property name="keepCropAspectRatio" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Defines whether aspect ratio should be kept when the crop area is expanded or shrunk in the
+&lt;code&gt;CropRectangle&lt;/code&gt; or &lt;code&gt;CropEllipse&lt;/code&gt; modes ({@link sap.suite.ui.commons.ImageEditorMode}).</documentation>
+        </property>
+        <property name="keepResizeAspectRatio" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Defines whether aspect ratio should be kept when the image is resized in the &lt;code&gt;Resize&lt;/code&gt;
+mode ({@link sap.suite.ui.commons.ImageEditorMode}) or using the {@link #setWidth} or {@link #setHeight} methods.</documentation>
+        </property>
+        <property name="scaleCropArea" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Defines the behavior of the crop area when zooming in or out.
+				 &lt;br&gt;If set to &lt;code&gt;true&lt;/code&gt;, the crop area is scaled up or down when the zoom level is changed.
+				 &lt;br&gt;If set to &lt;code&gt;false&lt;/code&gt;, the crop area remains unchanged and keeps its size.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="loaded" allowPreventDefault="false">
+            <documentation>This event is fired after the image specified in the &lt;code&gt;src&lt;/code&gt; property is successfully loaded.</documentation>
+        </event>
+        <event name="error" allowPreventDefault="false">
+            <documentation>This event is fired if there is an error loading the image specified in the &lt;code&gt;src&lt;/code&gt; property,
+for example, when the URL is unreachable.</documentation>
+        </event>
+        <event name="customShapeLoaded" allowPreventDefault="false">
+            <documentation>This event is fired after the image specified in the &lt;code&gt;customShapeSrc&lt;/code&gt; property is successfully loaded.</documentation>
+        </event>
+        <event name="customShapeError" allowPreventDefault="false">
+            <documentation>This event is fired if there is an error loading the image specified in the &lt;code&gt;customShapeSrc&lt;/code&gt; property,
+for example, when the URL is unreachable.</documentation>
+        </event>
+        <event name="sizeChanged" allowPreventDefault="false">
+            <documentation>This event is fired when the size of the image is changed by the user while in the &lt;code&gt;Resize&lt;/code&gt;
+mode ({@link sap.suite.ui.commons.ImageEditorMode}).</documentation>
+            <parameters>
+                <parameter name="width" type="sap.ui.core/int"/>
+                <parameter name="height" type="sap.ui.core/int"/>
+                <parameter name="originalWidth" type="sap.ui.core/int"/>
+                <parameter name="originalHeight" type="sap.ui.core/int"/>
+            </parameters>
+        </event>
+        <event name="cropAreaChanged" allowPreventDefault="false">
+            <documentation>This event is fired when the size of the crop area is changed by the user while in the
+&lt;code&gt;CropRectangle&lt;/code&gt; or &lt;code&gt;CropEllipse&lt;/code&gt; mode ({@link sap.suite.ui.commons.ImageEditorMode}).</documentation>
+            <parameters>
+                <parameter name="cropArea" type="sap.ui.core/object"/>
+                <parameter name="originalCropArea" type="sap.ui.core/object"/>
+            </parameters>
+        </event>
+        <event name="zoomChanged" allowPreventDefault="false">
+            <documentation>This event is fired when the zoom level is changed by the user interaction.</documentation>
+            <parameters>
+                <parameter name="zoom" type="sap.ui.core/int"/>
+            </parameters>
+        </event>
+        <event name="historyChanged" allowPreventDefault="false">
+            <documentation>This event is fired each time there is a change in the history of recent actions or in the recent actions
+history index.
+&lt;br&gt;This may happen either when an action is performed on the image or when the {@link #undo}, {@link #redo}, or
+{@link #jumpToHistory} methods are called.</documentation>
+        </event>
+    </events>
+</control>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Loco</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Intercepts input event data for a SAPUI5 target, and interprets the data based on a supported set of gestures.</documentation>
+    <since>1.32.0</since>
+    <baseType>sap.ui.base.EventProvider</baseType>
+</control>

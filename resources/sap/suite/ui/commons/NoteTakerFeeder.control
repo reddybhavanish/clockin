@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>NoteTakerFeeder</name>
+    <derived/>
+    <documentation>This control allows you to enter a quick note and N note cards.</documentation>
+    <deprecation since="1.32">Deprecated. Standard Fiori technology should be used.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="body" type="sap.ui.core/string" group="Data">
+            <documentation>The text inside the note card.</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" group="Data">
+            <documentation>This text is the header of a new note.</documentation>
+        </property>
+        <property name="tags" type="sap.ui.core/object" defaultValue="[]" group="Misc">
+            <documentation>The list of tags selected for addition to a new note card.</documentation>
+        </property>
+        <property name="thumbUp" type="sap.ui.core/boolean" group="Misc">
+            <documentation>Sets positive indication for a new note.</documentation>
+        </property>
+        <property name="thumbDown" type="sap.ui.core/boolean" group="Misc">
+            <documentation>Sets negative indication for a new note.</documentation>
+        </property>
+        <property name="attachmentUploadUrl" type="sap.ui.core/string" group="Misc">
+            <documentation>Sets the upload attachment URL for a new card.</documentation>
+        </property>
+        <property name="attachmentName" type="sap.ui.core/string" defaultValue="attachment" group="Misc">
+            <documentation>The attachment property name for identification on the server side after sending data to the server.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="addNote" allowPreventDefault="false">
+            <documentation>The event is fired when a user chooses the Add button in the control.</documentation>
+            <parameters>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of the note to be added.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>The text of the note to be added.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/object">
+                    <documentation>The timestamp of the note to be added.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>If set to true, a new card should be marked as positive one.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>If set to true, a new card should be marked as negative one.</documentation>
+                </parameter>
+                <parameter name="attachmentFilename" type="sap.ui.core/string">
+                    <documentation>Stores the attachment file name for a new card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentSelect" allowPreventDefault="false">
+            <documentation>The event is fired when the value of attached file has been changed.</documentation>
+            <parameters>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentUploadComplete" allowPreventDefault="false">
+            <documentation>The event is fired when the upload of the file is completed. However this covers only the client side of the Upload process and does not give any success status from the server.</documentation>
+            <parameters>
+                <parameter name="response" type="sap.ui.core/string">
+                    <documentation>The response message that comes from the server. On the server side this response has to be put within the "body" tags of the response document of the iFrame. It can consist of a return code and an optional message. This does not work in cross-domain scenarios.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentDelete" allowPreventDefault="false">
+            <documentation>The event is fired when a user presses the Delete button in the Feeder card.</documentation>
+            <parameters>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentClick" allowPreventDefault="false">
+            <documentation>The event is fired when a user presses the attachment link.</documentation>
+            <parameters>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="bodyArea" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Hidden aggregation of body area control.</documentation>
+        </aggregation>
+        <aggregation name="titleInput" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Hidden aggregation of title field control.</documentation>
+        </aggregation>
+        <aggregation name="fileUploader" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Hidden aggregation of FileUploader control.</documentation>
+        </aggregation>
+        <aggregation name="tagInput" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Hidden aggregation of tag field control.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

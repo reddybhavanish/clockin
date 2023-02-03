@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowNodeType</name>
+    <derived/>
+    <documentation>Describes the type of a node. The type value could be single or aggregated. With this type,
+the application can define if several nodes should be displayed as one aggregated node in a path per column to
+represent a grouping of semantically equal nodes.</documentation>
+    <enumeration>
+        <value name="Single">
+            <documentation>Single node - one node is illustrated in a column.</documentation>
+        </value>
+        <value name="Aggregated">
+            <documentation>Aggregated node - several nodes are illustrated as a stack of nodes in the same path and in one column.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

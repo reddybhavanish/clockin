@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TimelineItem</name>
+    <derived/>
+    <documentation>An entry posted on the timeline.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="dateTime" type="sap.ui.core/any" group="Misc">
+            <documentation>Date and time value of the timeline post. This value must be in one of the following formats:
+&lt;ul&gt;
+&lt;li&gt; A valid instance of the &lt;code&gt;Date&lt;/code&gt; object. &lt;/li&gt;
+&lt;li&gt; An integer representing Unix time (also known as POSIX or Epoch time) in milliseconds. &lt;/li&gt;
+&lt;li&gt; A string with an integer representing Unix time in milliseconds. &lt;/li&gt;
+&lt;li&gt; A string that contains &lt;code&gt;Date([number])&lt;/code&gt;, where &lt;code&gt;[number]&lt;/code&gt;
+represents Unix time in milliseconds. &lt;/li&gt;
+&lt;/ul&gt;
+If this property has any other format, the timeline will try to parse it using &lt;code&gt;Date.parse&lt;/code&gt;.
+It is not recommended to use this functionality, as different web browsers implement this function differently,
+which may lead to unpredictable behavior.</documentation>
+        </property>
+        <property name="filterValue" type="sap.ui.core/string" group="Misc">
+            <documentation>Text for the items filter name. This text will be used as the name of the items filter in the
+filter popover.</documentation>
+        </property>
+        <property name="icon" type="sap.ui.core/string" group="Misc">
+            <documentation>Icon on the timeline axis that corresponds to the point in time when the entry was posted.
+Posts can be displayed in chronological or reverse chronological order.</documentation>
+        </property>
+        <property name="iconTooltip" type="sap.ui.core/string" group="Misc">
+            <documentation>Tooltip for an icon displayed on the timeline axis.</documentation>
+        </property>
+        <property name="useIconTooltip" type="sap.ui.core/boolean" defaultValue="true" group="Accessibility">
+            <documentation>Decides whether a default Icon tooltip should be used if no tooltip is set.</documentation>
+        </property>
+        <property name="maxCharacters" type="sap.ui.core/int" group="Behavior">
+            <documentation>The expand and collapse feature is set by default and uses 300 characters on mobile devices
+and 500 characters on desktop computers as limits. Based on these values, the text of the timeline post
+is collapsed once it reaches these character limits. In this case, only the specified number of characters
+is displayed. By clicking the More link, the entire text can be displayed. Clicking Less collapses the text.
+The application can set the value according to its needs.</documentation>
+        </property>
+        <property name="replyCount" type="sap.ui.core/int" group="Misc">
+            <documentation>Number of replies to a timeline post.</documentation>
+        </property>
+        <property name="status" type="sap.ui.core/string" group="Misc">
+            <documentation>Indicates the post status. The status affects the post's icon color. Supported values:
+&lt;ul&gt;
+&lt;li&gt; &lt;code&gt;Information&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt; &lt;code&gt;Success&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt; &lt;code&gt;Warning&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt; &lt;code&gt;Error&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>Text shown in the post title right after the user name.</documentation>
+        </property>
+        <property name="text" type="sap.ui.core/string" group="Misc">
+            <documentation>Text shown inside the timeline post.</documentation>
+        </property>
+        <property name="userName" type="sap.ui.core/string" group="Misc">
+            <documentation>User name shown in the post title.</documentation>
+        </property>
+        <property name="userNameClickable" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Makes the user name clickable. Clicking the name fires a userNameClicked event.</documentation>
+        </property>
+        <property name="userPicture" type="sap.ui.core/URI" group="Misc">
+            <documentation>Picture shown next to the user name.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="userNameClicked" allowPreventDefault="false">
+            <documentation>This event is fired when a user name is clicked in the post's header section.</documentation>
+            <parameters>
+                <parameter name="uiElement" type="sap.ui.core/Control">
+                    <documentation>A clickable UI element representing the user name.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="replyPost" allowPreventDefault="false">
+            <documentation>This event is fired when the Reply button is clicked in the links section of a timeline post.</documentation>
+            <parameters>
+                <parameter name="value" type="sap.ui.core/string">
+                    <documentation>Content of the reply to the post.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="replyListOpen" allowPreventDefault="false">
+            <documentation>This event is fired when the Reply link is clicked to open the reply dialog.</documentation>
+        </event>
+        <event name="customActionClicked" allowPreventDefault="false">
+            <documentation>Fired when custom action link is clicked.</documentation>
+            <parameters>
+                <parameter name="value" type="sap.ui.core/string">
+                    <documentation>Value of the custom action.</documentation>
+                </parameter>
+                <parameter name="key" type="sap.ui.core/string">
+                    <documentation>Key of the custom action.</documentation>
+                </parameter>
+                <parameter name="linkObj" type="sap.m/Link">
+                    <documentation>Link on which the user clicked.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="suggest" since="1.28.1" allowPreventDefault="false">
+            <documentation>This event is fired when the user types text into the search field and showSuggestion
+is set to true. Changing the suggestItems aggregation will show the suggestions inside a popup.&lt;br&gt;
+As of version 1.46, replaced by {@link sap.collaboration.components.feed.Component}.</documentation>
+            <deprecation since="1.46.0">Use the Group Feed Component instead.</deprecation>
+            <parameters>
+                <parameter name="suggestValue" type="sap.ui.core/string">
+                    <documentation>The current value that has been typed into the search field.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="suggestionItemSelected" since="1.28.1" allowPreventDefault="false">
+            <documentation>This event is fired when a suggested post is selected in the search suggestions popup. This event
+is fired only when the showSuggestion propery is set to &lt;code&gt;true&lt;/code&gt; and there are
+suggested posts shown in the suggestions popup.&lt;br&gt;
+As of version 1.46, replaced by {@link sap.collaboration.components.feed.Component}.</documentation>
+            <deprecation since="1.46.0">Use the Group Feed Component instead.</deprecation>
+            <parameters>
+                <parameter name="selectedItem" type="sap.ui.core/Item">
+                    <documentation>The post selected in the suggestions popup.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="embeddedControl">
+        <aggregation name="customAction" type="sap.ui.core/CustomData" cardinality="0..n">
+            <documentation>Custom actions displayed as links in the links section of the post. The key must be unique
+for each link. Values are used as labels for the link. When a user clicks the link, a customActionClicked
+event is fired.</documentation>
+        </aggregation>
+        <aggregation name="customReply" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>A UI5 control that acts as a custom reply dialog. It is used instead of the default reply dialog
+that is displayed when the user clicks the Reply link. Supports UI5 controls that have an openBy method,
+for example, the Popup control.</documentation>
+        </aggregation>
+        <aggregation name="embeddedControl" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>A UI5 control that is displayed as a timeline post's content instead of the default content (text).
+Examples of such a control include the Panel control and the List control.</documentation>
+        </aggregation>
+        <aggregation name="replyList" type="sap.m/List" cardinality="0..1">
+            <documentation>A list of replies related to the post.</documentation>
+        </aggregation>
+        <aggregation name="suggestionItems" type="sap.m/StandardListItem" cardinality="0..n">
+            <documentation>Suggested posts.&lt;br&gt;
+As of version 1.46, replaced by {@link sap.collaboration.components.feed.Component}.</documentation>
+            <deprecation since="1.46.0">Use the Group Feed Component instead.</deprecation>
+        </aggregation>
+    </aggregations>
+</control>

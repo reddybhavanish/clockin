@@ -1,0 +1,127 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:core="sap.ui.core"
+	xmlns:chart="sap.ui.mdc.chart"
+	xmlns:macrodata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+							HELPER: 'sap/fe/macros/chart/ChartHelper',
+							COMMON: 'sap/fe/macros/CommonHelper'
+						}"
+>
+	<!-- TODO: add operation available path to $select -->
+	<template:with path="collection>" helper="COMMON.getTargetCollection" var="targetCollection">
+		<template:with path="presentation>" helper="HELPER.getUiChart" var="chart">
+			<template:with path="chart>" helper="HELPER.getActions" var="actions">
+				<mdc:Chart
+					id="{this>id}"
+					data="{= '{path: \'/' + ${targetCollection>./$@sapui.name} + '\', parameters:{$$groupId:\'$auto.Workers\'}}'}"
+					chartType="{= ${this>chartType} || HELPER.formatChartType(${chart>ChartType})}"
+					header="{= ${this>header} || ${chart>Title} }"
+					height="{this>height}"
+					width="{this>width}"
+					selectionMode="{this>selectionMode}"
+					p13nMode="{this>p13nMode}"
+					delegate="{= '{name:\'sap/fe/macros/ChartDelegate\', payload: {collectionName: \'' + ${collection>@sapui.name} + '\'}}'}"
+					selectionDetailsActionPressed="HELPER.onSelectionDetailsActionPressed"
+					macrodata:targetCollectionName="{= '/' + ${targetCollection>$@sapui.name} }"
+					macrodata:selectedContextsModel="{this>selectedContextsModel}"
+					macrodata:operationAvailableMap="{=  '' + ${actions>@@HELPER.getOperationAvailableMap} + '' }"
+					macrodata:multiSelectDisabledActions="{= '' + ${actions>@@HELPER.getMultiSelectDisabledActions} + ''}"
+				>
+					<mdc:items>
+						<template:if test="{= ${chart>Dimensions} }">
+							<template:with path="chart>" helper="HELPER.formatDimensions" var="dimensions">
+								<template:repeat list="{dimensions>}" var="dimension">
+									<chart:DimensionItem
+										id="{= ID.generate([${this>id}, ${dimension>key}]) }"
+										key="{dimension>key}"
+										label="{dimension>label}"
+										role="{dimension>role}"
+										criticality="{dimension>criticality}"
+									/>
+								</template:repeat>
+							</template:with>
+						</template:if>
+						<template:with path="chart>" helper="HELPER.formatMeasures" var="measures">
+							<template:repeat list="{measures>}" var="measure">
+								<chart:MeasureItem
+									id="{= ID.generate([${this>id}, ${measure>key}]) }"
+									key="{measure>key}"
+									propertyPath="{measure>propertyPath}"
+									label="{measure>label}"
+									role="{measure>role}"
+									aggregationMethod="{measure>aggregationMethod}"
+									dataPoint="{measure>dataPoint}"
+								/>
+							</template:repeat>
+						</template:with>
+					</mdc:items>
+						<mdc:actions>
+							<template:repeat list="{actions>}" var="action">
+								<template:if
+								test="{= ${action>$Type}.indexOf('com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation') > -1  &amp;&amp; ${action>Inline}!== true }"
+							>
+									<template:then>
+										<template:if test="{= ${this>id} &amp;&amp; ${this>selectedContextsModel}}">
+											<Button
+											text="{action>Label}"
+											press="{= ${this>onDataFieldForIBN} ? ${this>onDataFieldForIBN} + '($controller, \'' + ${action>SemanticObject} + '\' ,\'' + ${action>Action} + '\' , \'' + JSON.stringify(${action>Mapping}) + '\', ' + (${action>RequiresContext} === true ? '${' + ${this>selectedContextsModel} + '>/$contexts/' + (${this>id}) + '/selectedContexts}' : 'undefined') + ')' : undefined }"
+											enabled="{= ${action>RequiresContext}
+												? '{= %{' + ${this>selectedContextsModel} + '>/$contexts/' + (${this>id}) + '/numberOfSelectedContexts} >= 1}'
+												: true
+												}"
+										/>
+										</template:if>
+									</template:then>
+									<template:elseif
+									test="{= ${action>$Type}.indexOf('com.sap.vocabularies.UI.v1.DataFieldForAction') > -1 &amp;&amp; ${action>Inline}!== true }"
+								>
+										<template:if test="{= ${this>onCallAction} &amp;&amp; ${this>selectedContextsModel} &amp;&amp; (${this>id})}">
+											<template:with path="action>Action" helper="COMMON.getActionContext" var="actionContext">
+												<template:with path="action>Action" helper="COMMON.getPathToBoundActionOverload" var="isBound">
+													<template:if test="{= ${isBound>$IsBound} !== true || ${actionContext>@Org.OData.Core.V1.OperationAvailable} !== false }">
+														<Button
+														id="{= ID.generate([${this>id}, ${action>Action}])}"
+														text="{action>Label}"
+														press="{= ${this>onCallAction} + '(\'' + ${action>Action} + '\' , { contexts:
+															${' + ${this>selectedContextsModel} + '>/$contexts/' + ${this>id} + '/selectedContexts},
+															invocationGrouping : \'' + (${action>InvocationGrouping/$EnumMember} === 'com.sap.vocabularies.UI.v1.OperationGroupingType/ChangeSet' ?'ChangeSet' : 'Isolated') + '\',
+															prefix: \'' + ${this>id} + '\',
+															operationAvailableMap: \'' + ${chart>@@HELPER.getOperationAvailableMap} + '\',
+															model: ${$source>/}.getModel(),
+															label: \'' + ${action>Label} + '\'})'}"
+														enabled="{= ${isBound>$IsBound} === true
+															? '{= ${' + ${this>selectedContextsModel} + '>/$contexts/' + ${this>id} + '/numberOfSelectedContexts} > 0 &amp;&amp; ${' + ${this>selectedContextsModel} + '>/$contexts/' + ${this>id} + '/' + ${action>Action} + '}}'
+															: true }"
+														visible="{= ${action>./@com.sap.vocabularies.UI.v1.Hidden} === false ? true : ${action>@@FIELD.getHiddenPathExpression}}"
+													>
+														</Button>
+													</template:if>
+												</template:with>
+											</template:with>
+										</template:if>
+									</template:elseif>
+								</template:if>
+							</template:repeat>
+						</mdc:actions>
+						<mdc:selectionDetailsActions>
+							<chart:SelectionDetailsActions>
+								<chart:detailsItemActions>
+									<template:repeat list="{actions>}" var="action">
+										<template:if
+										test="{= (${action>$Type}.indexOf('com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation') > -1 ||
+															${action>$Type}.indexOf('com.sap.vocabularies.UI.v1.DataFieldForAction') > -1) &amp;&amp; ${action>Inline} }"
+									>
+											<core:Item key="{action>Label}" text="{action>Label}" />
+										</template:if>
+									</template:repeat>
+								</chart:detailsItemActions>
+							</chart:SelectionDetailsActions>
+						</mdc:selectionDetailsActions>
+				</mdc:Chart>
+				</template:with>
+			</template:with>
+		</template:with>
+</core:FragmentDefinition>

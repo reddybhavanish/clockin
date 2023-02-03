@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/ushell/components/pages/Component-h2-preload.js",
+"sourceroot":".",
+"sources":["Component-dbg.js","manifest.json"],
+"names":["UIComponent","SharedComponentUtils","resources"],
+"mappings":";;AAUA,gBAAa,yCAAC,CACV,0BACA,6CACA,sBACJ,EAAG,QAAS,CAACA,CAAW,CAAEC,CAAoB,CAAEC,CAAS,CAAE,CACvD,aAeA,OAAOF,CAAW,gDAAoG,CAClH,SAAU,CACN,SAAU,OACV,QAAS,YACb,EASA,KAAM,QAAS,EAAG,CACdA,CAAW,2BAA4B,WAEvCC,CAAoB,yBACpBA,CAAoB,uDAAwD,uCAC5E,cAAcC,CAAS,WAAY,QAGnC,mBAAoB,CAAE,8CAC1B,EAOA,gBAAiB,QAAS,EAAG,CACzB,OAAO,oBACX,EAUA,iBAAkB,QAAS,EAAG,CAC1B,MAAO,GACX,CACJ,GACJ;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[66,786,856,1492]
+}

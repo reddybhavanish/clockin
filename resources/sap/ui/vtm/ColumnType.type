@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ColumnType</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying types of {@link sap.ui.vtm.Column}.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Metadata">
+            <documentation>The Metadata column type.
+This type of column represents metadata retrieved from viewables (or metadata values supplied by the application which will be present in exported viewables).</documentation>
+        </value>
+        <value name="Identifier">
+            <documentation>The Identifier column type.
+This type of column represents identifiers retrieved from viewables (or metadata values supplied by the application which will be present in exported viewables).</documentation>
+        </value>
+        <value name="AppData">
+            <documentation>The AppData (application data) column type.
+This type of column represents application data that is neither metadata nor identifier data.</documentation>
+        </value>
+        <value name="Internal">
+            <documentation>The Internal column type.
+Columns of this type:
+&lt;ul&gt;
+&lt;li&gt;Should not be used for application data (all columns of this type are defined by VTM).&lt;/li&gt;
+&lt;li&gt;Is not normally expected to be used by end users (columns of this type are typically expected to be used for development/debugging).&lt;/li&gt;
+&lt;/ul&gt;</documentation>
+        </value>
+    </enumeration>
+</simple-type>

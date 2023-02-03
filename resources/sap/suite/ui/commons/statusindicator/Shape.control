@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/Shape</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Abstract shape that displays the value of the status indicator. The shape reflects
+the status indicator's percentage value by filling one or more of its parts (SVG shapes)
+with the specified color.</documentation>
+    <since>1.50</since>
+    <abstract/>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="fullAnimationDuration" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Specifies the duration, in milliseconds, of the animation that would fill an empty
+shape to the full.
+The actual time it takes to change the shape's filling is proportional to the
+difference between the initial and the target status indicator's value. For example,
+a change from 20 percent to 70 percent takes only half of the time specified
+in the &lt;code&gt;fullAnimationDuration&lt;/code&gt; property. If this property is set to
+&lt;code&gt;0&lt;/code&gt;, changes are applied instantly without any animation.</documentation>
+            <deprecation since="1.54.1">All animations are now limited to 250 ms.</deprecation>
+        </property>
+        <property name="fillColor" type="sap.m/ValueCSSColor" defaultValue="Neutral">
+            <documentation>Defines the color of the shape's fill.</documentation>
+        </property>
+        <property name="animationOnStartup" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Defines if the initial value of the status indicator should be animated or
+directly displayed on startup. By default, it's displayed on startup without any
+animation.</documentation>
+            <deprecation since="1.54.1">Use the animationOnChange property instead.</deprecation>
+        </property>
+        <property name="animationOnChange" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Defines if the change in the status indicator value should be animated or not.&lt;br&gt;
+When set to &lt;code&gt;true&lt;/code&gt;, the change in value is animated.</documentation>
+        </property>
+        <property name="animationOnStartupDelay" type="sap.ui.core/int" defaultValue="0">
+            <documentation>Specifies the delay of the initial value animation. Only applicable if the
+&lt;code&gt;animationOnStartup&lt;/code&gt; property is set to &lt;code&gt;true&lt;/code&gt;.</documentation>
+            <deprecation></deprecation>
+        </property>
+        <property name="fillingDirection" type="sap.suite.ui.commons/statusindicator/FillingDirectionType" defaultValue="Up">
+            <documentation>Defines the direction in which the shape is filled.</documentation>
+        </property>
+        <property name="fillingType" type="sap.suite.ui.commons/statusindicator/FillingType" defaultValue="Linear">
+            <documentation>Defines the type of the shape's fill.</documentation>
+        </property>
+        <property name="fillingAngle" type="sap.ui.core/int" defaultValue="undefined">
+            <documentation>Defines the angle at which the shape is filled. This property overrides the
+&lt;code&gt;fillingDirection&lt;/code&gt; property.&lt;br&gt;
+Accepted values include &lt;code&gt;0&lt;/code&gt; through &lt;code&gt;360&lt;/code&gt; degrees.&lt;br&gt;
+For example, if you set the filling angle to &lt;code&gt;45&lt;/code&gt;, the shape will
+be filled diagonally from the lower right part of the shape to its upper left part.&lt;br&gt;
+This property can be used only when {@link sap.suite.ui.commons.statusindicator.FillingType}
+is set to &lt;code&gt;Linear&lt;/code&gt;.</documentation>
+        </property>
+        <property name="verticalAlignment" type="sap.suite.ui.commons/statusindicator/VerticalAlignmentType" defaultValue="Middle">
+            <documentation>Defines the vertical alignment of the shape within its parent container.</documentation>
+        </property>
+        <property name="horizontalAlignment" type="sap.suite.ui.commons/statusindicator/HorizontalAlignmentType" defaultValue="Middle">
+            <documentation>Defines the horizontal alignment of the shape within its parent container.</documentation>
+        </property>
+    </properties>
+</control>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TimelineFilterType</name>
+    <derived/>
+    <documentation>Filter type for the timeline.</documentation>
+    <enumeration>
+        <value name="Data">
+            <documentation>Items filter based on data, defined by the {@link sap.suite.ui.commons.TimelineItem#getFilterValue filterValue}
+property or by a custom value.</documentation>
+        </value>
+        <value name="Time">
+            <documentation>Time range filter, defined by the start date (&lt;code&gt;from&lt;/code&gt;) and end date
+(&lt;code&gt;to&lt;/code&gt;) of the time range.</documentation>
+        </value>
+        <value name="Search">
+            <documentation>Search results filter.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

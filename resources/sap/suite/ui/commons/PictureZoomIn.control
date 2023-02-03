@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>PictureZoomIn</name>
+    <derived/>
+    <documentation>Shows picture in fullscreen.</documentation>
+    <deprecation since="1.34">Deprecated. Not Fiori.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="description" type="sap.ui.core/string" group="Misc">
+            <documentation>Description is shown under image.</documentation>
+        </property>
+        <property name="imageSrc" type="sap.ui.core/URI" group="Misc">
+            <documentation>Source for image.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="busyIndicator" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>Custom busy indicator.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

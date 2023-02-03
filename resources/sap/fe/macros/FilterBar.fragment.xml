@@ -1,0 +1,116 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns="sap.m"
+	xmlns:macro="sap.fe.macros"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:macroData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		FB: 'sap/fe/macros/FilterBarHelper'
+	}"
+>
+	<template:with path="entitySet>@sapui.name" var="esName">
+	<!--
+		By using @FE we introduce a dependency between macro and sap fe converters.
+		This dependency will be remove after FilterBar refactorization
+	-->
+		<template:with path="entitySet>@FE.presentation/selectionFields" var="selectionFields">
+			<mdc:FilterBar
+				core:require="{FilterBarRuntime: 'sap/fe/macros/FilterBarRuntime'}"
+				id="{this>id}"
+				liveMode="{this>liveMode}"
+				delegate="{name: 'sap/fe/macros/FilterBarDelegate'}"
+				showAdaptFiltersButton="{this>showAdaptFiltersButton}"
+				p13nMode="{this>p13nMode}"
+				macroData:listBindingNames="{this>listBindingNames}"
+				search="{this>search}"
+				filtersChanged="{this>filtersChanged}"
+				filterConditions="{= ${this>draftEditStateModelName} ? '{\'$editState\': [{operator: \'DRAFT_EDIT_STATE\', values: [\'ALL\']}]}' : undefined}"
+				macroData:draftEditStateModelName="{this>draftEditStateModelName}"
+				macroData:localId="{this>id}"
+				macroData:hideBasicSearch="{this>hideBasicSearch}"
+				log:entitySet="{entitySet>@sapui.name}"
+			>
+				<mdc:dependents>
+					<core:CommandExecution execute="FilterBarRuntime.fireSearch" command="SearchFilterBar" />
+					<!-- Create the value help dialogs for the filterbar as dependends of the filterbar -->
+
+					<template:repeat list="{path:'selectionFields>'}" var="item">
+						<macro:ValueHelp
+							idPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+							conditionModel="$filters"
+							entitySet="{entitySet>}"
+							property="{item>templatingPath}"
+							forceValueHelp="true"
+							filterFieldValueHelp="true"
+						/>
+					</template:repeat>
+					<!-- TODO filter on properties here and in similar places -->
+					<template:if test="{= !${path:'entitySet>$Type/@com.sap.vocabularies.UI.v1.SelectionFields'}}">
+						<template:repeat list="{path:'entitySet>$Type', filters: {path: '$kind', operator: 'EQ', value1:'Property'}}" var="selectionField">
+							<template:with path="selectionField>" var="item">
+								<macro:ValueHelp
+									idPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+									conditionModel="$filters"
+									entitySet="{entitySet>}"
+									property="{item>}"
+									forceValueHelp="true"
+									filterFieldValueHelp="true"
+								/>
+							</template:with>
+						</template:repeat>
+					</template:if>
+				</mdc:dependents>
+				<!--
+				The search field is enabled when
+				* it is not hidden using the property hideBasisSearch
+				* there is no SearchRestrictions
+				* the SearchRestrictions has Searchable === true
+				-->
+				<template:if
+					test="{= FB.checkIfBasicSearchIsVisible( ${this>hideBasicSearch}, ${entitySet>@Org.OData.Capabilities.V1.SearchRestrictions} )}"
+				>
+					<mdc:basicSearchField>
+						<mdc:FilterField
+							placeholder="{this.i18n>filterbar.SEARCH}"
+							conditions="{$filters>/conditions/$search}"
+							dataType="Edm.String"
+							maxConditions="1"
+						/>
+					</mdc:basicSearchField>
+				</template:if>
+				<mdc:filterItems>
+					<template:if test="{this>draftEditStateModelName}">
+						<!-- The control must set the draft edit model using the name ' + ${this>draftEditStateModelName} + ' to the view or container -->
+						<!-- TODO if I don't put that into the condition model how can it be part of variants? Talk to filter bar team -->
+						<core:Fragment fragmentName="sap.fe.macros.filter.EditState" type="XML" />
+					</template:if>
+					<template:repeat list="{path:'selectionFields>'}" var="item">
+						<macro:FilterField
+							idPrefix="{= ID.generate([${this>id}, 'FilterField']) }"
+							vhIdPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+							entitySet="{entitySet>}"
+							property="{item>templatingPath}"
+							_valueList="{_valueList>}"
+						/>
+					</template:repeat>
+					<template:if test="{= !${entitySet>$Type/@com.sap.vocabularies.UI.v1.SelectionFields} &amp;&amp; (${this>enableFallback} === 'true') }">
+						<template:repeat list="{path:'entitySet>$Type', filters: {path: '$kind', operator: 'EQ', value1:'Property'}}" var="selectionField">
+							<macro:FilterField
+								entitySet="{entitySet>}"
+								property="{selectionField>}"
+								_valueList="{_valueList>}"
+								idPrefix="{= ID.generate([${this>id}, 'FilterField']) }"
+								vhIdPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+								log:comment="Taken from Properties"
+							/>
+						</template:repeat>
+					</template:if>
+
+				</mdc:filterItems>
+			</mdc:FilterBar>
+		</template:with>
+	</template:with>
+</core:FragmentDefinition>

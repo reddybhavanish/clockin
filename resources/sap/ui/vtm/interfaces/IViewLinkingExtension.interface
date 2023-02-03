@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<interface xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>interfaces/IViewLinkingExtension</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Interface for extensions which link the views (camera positions) across VTM viewports.</documentation>
+    <since>1.50</since>
+    <developmentState state="experimental" since="1.50.0">This library is experimental and might be modified or removed in future versions.</developmentState>
+</interface>

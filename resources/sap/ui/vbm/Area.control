@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Area</name>
+    <derived/>
+    <documentation>Specific Visual Object element for an &lt;i&gt;Area&lt;/i&gt;. An Area is a filled polygon, which border is given as a list of geo-coordinates.
+       Areas can have multiple disjunct parts as well as each part can have an arbitrary number of exclusions/holes.&lt;br&gt;
+       The inner part and the edges of areas are interactive and fire events on click.&lt;br&gt;
+       Since the actual size of an area depends on the zoom level it might be only partly visible. Thus detail windows will open at the click
+       position.</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" group="Misc">
+            <documentation>The position array for the Area. For single part areas the format is "lon0;lat0;0.0;...;lonN,latN,0.0". For multi part areas you
+need to provide an array of arrays of the above position string: "[['lon0...'],['lon0...']]" (sequence of single and double quotes
+is important). &lt;b&gt;Single and Multi part areas must not be mixed within one Areas aggregation.&lt;/b&gt;&lt;br&gt;
+Finally each area part can have multiple exclusions/holes. In that case the position list of excluded areas has follow the list of
+the base shape: "['lon0...', 'exLon0...']".</documentation>
+        </property>
+        <property name="color" type="sap.ui.core/string" group="Misc">
+            <documentation>The fill color of the Area.</documentation>
+        </property>
+        <property name="colorBorder" type="sap.ui.core/string" group="Misc">
+            <documentation>The border color of the Area.</documentation>
+        </property>
+        <property name="borderDash" type="sap.ui.core/string" group="Misc">
+            <documentation>Defines the dashing style of the area border using an array.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="edgeClick" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an Area is clicked.</documentation>
+        </event>
+        <event name="edgeContextMenu" allowPreventDefault="false">
+            <documentation>This event is raised when the edge of an Area is right clicked.</documentation>
+        </event>
+    </events>
+</control>

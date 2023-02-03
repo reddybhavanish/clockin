@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2020 SAP SE, All Rights Reserved
+sap.ui.define([],function(){"use strict";var M=function(){};M.prototype.isMenuEnabled=function(){return sap.ushell.Container.getServiceAsync("CommonDataModel").then(function(c){return c.getMenuEntries("main").then(function(m){return m.length>0;});});};M.prototype.getMenuEntries=function(){return sap.ushell.Container.getServiceAsync("CommonDataModel").then(function(c){return c.getMenuEntries("main");});};return M;},true);

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ChartContainer</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Provides a toolbar with generic functions for tables and charts based on the VizFrame control like zoom, display in fullscreen mode, toggle the legend, switch between chart types, and changes of the chart dimension. The controls of the content aggregation are positioned below the toolbar. Additional functions can be added to the toolbar with the customIcons aggregation.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="showPersonalization" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Set to true to display the personalization icon. Set to false to hide it.</documentation>
+        </property>
+        <property name="showFullScreen" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Set to true to display the full screen icon. Set to false to hide it.</documentation>
+        </property>
+        <property name="fullScreen" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Display the chart and the toolbar in full screen or normal mode.</documentation>
+        </property>
+        <property name="showLegend" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true to display the charts' legends. Set to false to hide them. See also showLegendButton.</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>String shown if there are no dimensions to display.</documentation>
+        </property>
+        <property name="selectorGroupLabel" type="sap.ui.core/string" group="Misc">
+            <documentation>Custom Label for Selectors Group.</documentation>
+            <deprecation since="1.32.0">Obsolete property as sap.m.Toolbar is replaced by sap.m.OverflowToolbar.</deprecation>
+        </property>
+        <property name="autoAdjustHeight" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Determine whether to stretch the chart height to the maximum possible height of ChartContainer's parent container. As a prerequisite, the parent container needs to have a fixed value height or be able to determine height from its parent.</documentation>
+        </property>
+        <property name="showZoom" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true to display zoom icons. Set to false to hide them.</documentation>
+        </property>
+        <property name="showLegendButton" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Set to true or false to display or hide a button for controlling the visbility of the chart's legend. Please be aware that setting this property to true indirectly is setting showLegend to false. If you need to hide the button but to show the legend, you need to set showLegend at a later point in time (onBeforeRendering). The execution order of the combined properties is not guaranteed by the control.</documentation>
+        </property>
+        <property name="showSelectionDetails" type="sap.ui.core/boolean" defaultValue="false" group="Behavior" since="1.48.0">
+            <documentation>Set to true to display the 'Details' button that opens a popup dialog with details about the selected data from the VizFrame based chart.</documentation>
+        </property>
+        <property name="wrapLabels" type="sap.ui.core/boolean" defaultValue="false" group="Misc" since="1.58.0">
+            <documentation>Set to true to wrap text labels in the dialog that opens when the user clicks or taps the 'Details' button.</documentation>
+        </property>
+        <property name="enableScroll" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>If set to &lt;code&gt;true&lt;/code&gt;, the Container control has its own scroll bar, with the scrolling taking place within the Container control itself.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+            <documentation>Defines the width of the Container.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="personalizationPress" allowPreventDefault="false">
+            <documentation>Event fired when a user clicks on the personalization icon.</documentation>
+        </event>
+        <event name="contentChange" allowPreventDefault="false">
+            <documentation>Event fired when a user changes the displayed content.</documentation>
+            <parameters>
+                <parameter name="selectedItemId" type="sap.ui.core/string">
+                    <documentation>Id of the selected item.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="customZoomInPress" allowPreventDefault="false">
+            <documentation>Custom event for zoom in.</documentation>
+        </event>
+        <event name="customZoomOutPress" allowPreventDefault="false">
+            <documentation>Custom event for zoom out.</documentation>
+        </event>
+    </events>
+    <aggregations default="content">
+        <aggregation name="dimensionSelectors" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Dimension Selects.</documentation>
+        </aggregation>
+        <aggregation name="content" type="sap.suite.ui.commons/ChartContainerContent" cardinality="0..n">
+            <documentation>ChartToolBar Content aggregation. Only sap.viz.ui5.controls.VizFrame, sap.m.Table and sap.ui.table.Table can be embedded.
+If not specified explicitly, the rendering order of the charts is determined by the sequence of contents provided by the application via this aggregation. This means, per default the first chart of the aggregation will be rendered within the container.</documentation>
+        </aggregation>
+        <aggregation name="toolbar" type="sap.m/OverflowToolbar" cardinality="0..1">
+            <documentation>Overflow ToolBar. If an external toolbar is used, it will be integrated with the embedded toolbar via a placeholder.
+This placeholder is mandatory, and it needs to be of type 'sap.suite.ui.commons.ChartContainerToolbarPlaceholder'.</documentation>
+        </aggregation>
+        <aggregation name="customIcons" type="sap.ui.core/Icon" cardinality="0..n">
+            <documentation>This aggregation contains the custom icons that should be displayed additionally on the toolbar.
+It is not guaranteed that the same instance of the sap.ui.core.Icon control will be used within the toolbar,
+but the toolbar will contain a sap.m.OverflowToolbarButton with an icon property equal to the src property
+of the sap.ui.core.Icon provided in the aggregation.
+If a press event is triggered by the icon displayed on the toolbar, then the press handler of
+the original sap.ui.core.Icon control is used. The instance of the control, that has triggered the press event,
+can be accessed using the "controlReference" parameter of the event object.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

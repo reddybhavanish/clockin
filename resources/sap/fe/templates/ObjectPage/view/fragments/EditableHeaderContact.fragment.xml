@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:macro="sap.fe.macros"
+>
+	<f:Form editable="true">
+		<f:layout>
+			<f:ColumnLayout />
+		</f:layout>
+		<f:formContainers>
+			<f:FormContainer>
+				<f:formElements>
+					<f:FormElement>
+						<f:label>
+							<Label text="{= ${facet>text}}">
+								<layoutData>
+									<f:ColumnElementData cellsLarge="12" />
+								</layoutData>
+							</Label>
+						</f:label>
+						<f:fields>
+							<macro:Contact contact="{facet>contact}" visible="true" />
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
+</core:FragmentDefinition>

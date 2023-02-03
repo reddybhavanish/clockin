@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	template:require="{
+		CORE: 'sap/fe/core/AnnotationHelper',
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper'
+	}"
+>
+	<!-- ${this>partOfPreview} === 'true'-->
+	<template:if test="{= ${facet>type} === 'Table'}">
+		<template:then>
+			<template:with path="facet>presentation" var="presentationContext">
+				<template:with path="presentationContext>annotationPath" var="annotationPath">
+					<core:Fragment fragmentName="sap.fe.templates.controls.ViewSwitchContainer.ViewSwitchContainer" type="XML" />
+				</template:with>
+			</template:with>
+		</template:then>
+		<template:elseif test="{= ${facet>type} === 'Contact'}">
+			<Text text="For Contacts Fragment" />
+		</template:elseif>
+		<template:elseif test="{= ${facet>type} === 'HeaderContact'}">
+			<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.EditableHeaderContact" type="XML" />
+		</template:elseif>
+		<template:elseif test="{= ${facet>type} === 'Chart'}">
+			<Text text="For Chart Fragment" />
+		</template:elseif>
+		<template:elseif test="{= ${facet>type} === 'Form'}">
+			<core:Fragment fragmentName="sap.fe.templates.ObjectPage.view.fragments.ObjectPageForm" type="XML" />
+		</template:elseif>
+		<template:else>
+			<Text text="{= 'Unhandled facet type: ' + ${facet>type}}" />
+		</template:else>
+	</template:if>
+</core:FragmentDefinition>

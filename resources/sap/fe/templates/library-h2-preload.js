@@ -1,0 +1,67 @@
+//@ui5-bundle sap/fe/templates/library-h2-preload.js
+/*
+ * ! SAP UI development toolkit for HTML5 (SAPUI5)
+        (c) Copyright 2009-2020 SAP SE. All rights reserved
+    
+ */
+sap.ui.predefine('sap/fe/templates/library',["sap/ui/core/Fragment","sap/ui/core/XMLTemplateProcessor"],function(F,X){"use strict";sap.ui.getCore().initLibrary({name:"sap.fe.templates",dependencies:["sap.ui.core","sap.fe.core","sap.fe.macros"],types:["sap.fe.templates.VariantManagement","sap.fe.templates.ObjectPage.SectionLayout"],interfaces:[],controls:[],elements:[],version:"1.78.0",noLibraryCSS:true});sap.fe.templates.VariantManagement={None:"None",Page:"Page",Control:"Control"};if(!sap.fe.templates.ObjectPage){sap.fe.templates.ObjectPage={};}sap.fe.templates.ObjectPage.SectionLayout={Page:"Page",Tabs:"Tabs"};F.registerType("CUSTOM",{init:function(s){this._sExplicitId=this.getId();this._oContainingView=this;this.oController=s.containingView.getController().createExtensionAPI();this._aContent=X.parseTemplate(s.fragmentContent,this);}});return sap.fe.templates;},false);
+sap.ui.require.preload({
+	"sap/fe/templates/manifest.json":'{"_version":"1.21.0","sap.app":{"id":"sap.fe.templates","type":"library","embeds":["ListReport","ObjectPage"],"applicationVersion":{"version":"1.78.0"},"title":"UI5 library: sap.fe.templates","description":"UI5 library: sap.fe.templates","resources":"resources.json","offline":true},"sap.ui":{"technology":"UI5","supportedThemes":[]},"sap.ui5":{"dependencies":{"minUI5Version":"1.78","libs":{"sap.f":{"minVersion":"1.78.0"},"sap.fe.core":{"minVersion":"1.78.0"},"sap.m":{"minVersion":"1.78.0"},"sap.fe.macros":{"minVersion":"1.78.0"},"sap.suite.ui.microchart":{"minVersion":"1.78.0","lazy":true},"sap.ui.core":{"minVersion":"1.78.0"},"sap.ui.layout":{"minVersion":"1.78.0","lazy":true},"sap.ui.mdc":{"minVersion":"1.78.0","lazy":false},"sap.ushell":{"minVersion":"1.78.0"},"sap.uxap":{"minVersion":"1.78.0","lazy":true},"sap.ui.fl":{"minVersion":"1.78.0"}}},"library":{"i18n":{"bundleUrl":"messagebundle.properties","supportedLocales":["","ar","bg","ca","cs","da","de","el","en","en-US-sappsd","en-US-saptrc","es","et","fi","fr","hi","hr","hu","it","iw","ja","kk","ko","lt","lv","ms","nl","no","pl","pt","ro","ru","sh","sk","sl","sv","th","tr","uk","vi","zh-CN","zh-TW"]},"css":false,"content":{"controls":[],"elements":[],"types":["sap.fe.templates.VariantManagement","sap.fe.templates.ObjectPage.SectionLayout"],"interfaces":[]}}}}'
+},"sap/fe/templates/library-h2-preload"
+);
+sap.ui.loader.config({depCacheUI5:{
+"sap/fe/templates/ListReport/Component.js":["sap/base/Log.js","sap/fe/core/TemplateComponent.js","sap/fe/templates/VariantManagement.js"],
+"sap/fe/templates/ListReport/ListReport.view.xml":["sap/f/DynamicPage.js","sap/f/DynamicPageHeader.js","sap/f/DynamicPageTitle.js","sap/fe/templates/ListReport/ListReportController.controller.js","sap/fe/templates/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml","sap/m/OverflowToolbar.js","sap/m/OverflowToolbarButton.js","sap/m/Text.js","sap/m/ToolbarSpacer.js","sap/ui/core/CommandExecution.js","sap/ui/core/Fragment.js","sap/ui/core/mvc/XMLView.js"],
+"sap/fe/templates/ListReport/ListReportController.controller.js":["sap/base/Log.js","sap/base/util/ObjectPath.js","sap/fe/core/AnnotationHelper.js","sap/fe/core/AppStateHandler.js","sap/fe/core/CommonUtils.js","sap/fe/core/FEHelper.js","sap/fe/core/actions/messageHandling.js","sap/fe/core/controllerextensions/EditFlow.js","sap/fe/core/controllerextensions/FlexibleColumnLayout.js","sap/fe/core/controllerextensions/Routing.js","sap/fe/core/controllerextensions/RoutingListener.js","sap/fe/macros/CommonHelper.js","sap/fe/macros/ResourceModel.js","sap/fe/macros/chart/ChartRuntime.js","sap/fe/macros/field/FieldRuntime.js","sap/fe/macros/table/Utils.js","sap/fe/navigation/NavigationHelper.js","sap/fe/navigation/SelectionVariant.js","sap/fe/navigation/library.js","sap/fe/templates/controls/Share/ShareUtils.js","sap/m/MessageBox.js","sap/ui/core/mvc/Controller.js","sap/ui/mdc/p13n/StateUtil.js","sap/ui/model/Filter.js","sap/ui/model/FilterOperator.js","sap/ui/model/json/JSONModel.js"],
+"sap/fe/templates/ObjectPage/AnnotationHelper.js":["sap/base/Log.js","sap/base/strings/formatMessage.js","sap/base/util/JSTokenizer.js","sap/base/util/merge.js","sap/ui/base/ManagedObject.js","sap/ui/model/odata/v4/AnnotationHelper.js"],
+"sap/fe/templates/ObjectPage/Component.js":["sap/base/Log.js","sap/fe/core/CommonUtils.js","sap/fe/core/TemplateComponent.js","sap/fe/templates/ObjectPage/SectionLayout.js","sap/fe/templates/VariantManagement.js","sap/ui/model/odata/v4/ODataListBinding.js"],
+"sap/fe/templates/ObjectPage/ObjectPage.view.xml":["sap/fe/templates/ObjectPage/ObjectPageController.controller.js","sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml","sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml","sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml","sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml","sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml","sap/fe/templates/ObjectPage/view/fragments/TitleAndSubtitle.fragment.xml","sap/m/Breadcrumbs.js","sap/m/FlexBox.js","sap/ui/core/CommandExecution.js","sap/ui/core/Fragment.js","sap/ui/core/mvc/XMLView.js","sap/uxap/ObjectPageDynamicHeaderTitle.js","sap/uxap/ObjectPageLayout.js"],
+"sap/fe/templates/ObjectPage/ObjectPageController.controller.js":["sap/base/Log.js","sap/base/util/merge.js","sap/fe/core/AppStateHandler.js","sap/fe/core/BusyLocker.js","sap/fe/core/CommonUtils.js","sap/fe/core/FEHelper.js","sap/fe/core/actions/messageHandling.js","sap/fe/core/controllerextensions/EditFlow.js","sap/fe/core/controllerextensions/FlexibleColumnLayout.js","sap/fe/core/controllerextensions/Routing.js","sap/fe/core/controllerextensions/RoutingListener.js","sap/fe/macros/CommonHelper.js","sap/fe/macros/ResourceModel.js","sap/fe/macros/chart/ChartRuntime.js","sap/fe/macros/field/FieldRuntime.js","sap/fe/macros/table/Utils.js","sap/fe/navigation/NavigationHelper.js","sap/fe/navigation/SelectionVariant.js","sap/fe/templates/controls/Share/ShareUtils.js","sap/m/Link.js","sap/m/MessageBox.js","sap/ui/core/mvc/Controller.js","sap/ui/core/routing/HashChanger.js","sap/ui/model/json/JSONModel.js","sap/ui/model/odata/v4/ODataListBinding.js"],
+"sap/fe/templates/ObjectPage/controls/SubSectionBlock.js":["sap/uxap/BlockBase.js"],
+"sap/fe/templates/ObjectPage/macros/SubSectionBlockContent.fragment.xml":["sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/macros/SubSectionBlockContent.metadata.js":["sap/fe/macros/MacroMetadata.js"],
+"sap/fe/templates/ObjectPage/macros/macroLibrary.js":["sap/fe/macros/PhantomUtil.js","sap/fe/templates/ObjectPage/macros/SubSectionBlockContent.metadata.js","sap/ui/core/util/XMLPreprocessor.js"],
+"sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml":["sap/fe/templates/ObjectPage/view/fragments/RelatedApps.fragment.xml","sap/ui/core/Fragment.js","sap/uxap/ObjectPageHeaderActionButton.js"],
+"sap/fe/templates/ObjectPage/view/fragments/EditableHeaderContact.fragment.xml":["sap/m/Label.js","sap/ui/core/Fragment.js","sap/ui/layout/form/ColumnElementData.js","sap/ui/layout/form/ColumnLayout.js","sap/ui/layout/form/Form.js","sap/ui/layout/form/FormContainer.js","sap/ui/layout/form/FormElement.js"],
+"sap/fe/templates/ObjectPage/view/fragments/EditableHeaderFacet.fragment.xml":["sap/m/HBox.js","sap/m/Label.js","sap/ui/core/Fragment.js","sap/ui/layout/form/ColumnElementData.js","sap/ui/layout/form/ColumnLayout.js","sap/ui/layout/form/Form.js","sap/ui/layout/form/FormContainer.js","sap/ui/layout/form/FormElement.js"],
+"sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml":["sap/fe/templates/controls/messages/MessageButton.js","sap/m/OverflowToolbar.js","sap/m/ToolbarSpacer.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/FormActionButtons.fragment.xml":["sap/m/Button.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/FormActions.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml":["sap/m/Title.js","sap/m/VBox.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml":["sap/m/ObjectMarker.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml":["sap/m/HBox.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml":["sap/m/Label.js","sap/m/ProgressIndicator.js","sap/m/Title.js","sap/m/VBox.js","sap/ui/core/CustomData.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml":["sap/m/Label.js","sap/m/RatingIndicator.js","sap/m/Title.js","sap/m/VBox.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml":["sap/m/VBox.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/RelatedApps.fragment.xml":["sap/m/Menu.js","sap/m/MenuButton.js","sap/m/MenuItem.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/ObjectPage/view/fragments/TitleAndSubtitle.fragment.xml":["sap/m/Label.js","sap/m/Title.js","sap/m/VBox.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/RootContainer/controller/BaseController.js":["sap/base/Log.js","sap/fe/core/CommonUtils.js","sap/ui/core/Component.js","sap/ui/core/mvc/Controller.js","sap/ui/core/routing/HashChanger.js","sap/ui/model/json/JSONModel.js"],
+"sap/fe/templates/RootContainer/controller/Fcl.controller.js":["sap/f/FlexibleColumnLayoutSemanticHelper.js","sap/fe/core/controllerextensions/Routing.js","sap/fe/templates/RootContainer/controller/BaseController.js","sap/ui/core/Component.js","sap/ui/model/json/JSONModel.js"],
+"sap/fe/templates/RootContainer/controller/NavContainer.controller.js":["sap/fe/templates/RootContainer/controller/BaseController.js","sap/ui/core/Component.js","sap/ui/model/json/JSONModel.js"],
+"sap/fe/templates/RootContainer/view/Fcl.view.xml":["sap/f/FlexibleColumnLayout.js","sap/fe/templates/RootContainer/controller/Fcl.controller.js","sap/ui/core/mvc/XMLView.js"],
+"sap/fe/templates/RootContainer/view/NavContainer.view.xml":["sap/fe/templates/RootContainer/controller/NavContainer.controller.js","sap/m/NavContainer.js","sap/ui/core/mvc/XMLView.js"],
+"sap/fe/templates/controls/Paginator.control.xml":["sap/m/HBox.js","sap/ui/core/XMLComposite.js","sap/uxap/ObjectPageHeaderActionButton.js"],
+"sap/fe/templates/controls/Paginator.js":["sap/ui/base/ManagedObjectObserver.js","sap/ui/core/XMLComposite.js","sap/ui/model/json/JSONModel.js","sap/ui/model/resource/ResourceModel.js"],
+"sap/fe/templates/controls/Share/ShareSheet.fragment.xml":["sap/m/ActionSheet.js","sap/m/Button.js","sap/ui/core/Fragment.js","sap/ushell/ui/footerbar/AddBookmarkButton.js"],
+"sap/fe/templates/controls/Share/ShareUtils.js":["sap/base/Log.js","sap/base/util/ObjectPath.js","sap/base/util/extend.js","sap/fe/core/CommonUtils.js","sap/ui/core/Fragment.js","sap/ui/core/XMLTemplateProcessor.js","sap/ui/core/routing/HashChanger.js","sap/ui/core/util/XMLPreprocessor.js","sap/ui/model/json/JSONModel.js"],
+"sap/fe/templates/controls/ViewSwitchContainer.js":["sap/ui/core/Control.js"],
+"sap/fe/templates/controls/ViewSwitchContainer/Chart.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/controls/ViewSwitchContainer/Table.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml":["sap/fe/templates/controls/ViewSwitchContainer.js","sap/ui/core/Fragment.js"],
+"sap/fe/templates/controls/ViewSwitchContainer/ViewSwitchContainerItem.fragment.xml":["sap/ui/core/Fragment.js"],
+"sap/fe/templates/controls/ViewSwitchContainerItem.js":["sap/ui/core/Control.js"],
+"sap/fe/templates/controls/messages/MessageButton.js":["sap/fe/templates/controls/messages/MessagePopover.js","sap/m/Button.js","sap/m/Dialog.js","sap/m/library.js","sap/ui/core/MessageType.js","sap/ui/model/Filter.js","sap/ui/model/FilterOperator.js","sap/uxap/ObjectPageLayout.js"],
+"sap/fe/templates/controls/messages/MessageFilter.js":["sap/ui/core/Element.js"],
+"sap/fe/templates/controls/messages/MessagePopover.js":["sap/m/MessageItem.js","sap/m/MessagePopover.js"],
+"sap/fe/templates/fpm/CustomSection.fragment.xml":["sap/ui/core/Fragment.js","{this>fragmentInstanceName}.fragment.custom","{this>fragmentName}.fragment.xml"],
+"sap/fe/templates/fpm/CustomSection.metadata.js":["sap/fe/macros/MacroMetadata.js"],
+"sap/fe/templates/fpm/fpm.js":["sap/fe/macros/PhantomUtil.js","sap/fe/templates/fpm/CustomSection.metadata.js"],
+"sap/fe/templates/library.js":["sap/ui/core/Fragment.js","sap/ui/core/XMLTemplateProcessor.js"]
+}});
+//# sourceMappingURL=library-h2-preload.js.map

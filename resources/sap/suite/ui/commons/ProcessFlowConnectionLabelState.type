@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowConnectionLabelState</name>
+    <derived/>
+    <documentation>Describes the state of a connection label.</documentation>
+    <enumeration>
+        <value name="Neutral">
+            <documentation>Neutral connection label.</documentation>
+        </value>
+        <value name="Positive">
+            <documentation>Positive connection label.</documentation>
+        </value>
+        <value name="Critical">
+            <documentation>Critical connection label.</documentation>
+        </value>
+        <value name="Negative">
+            <documentation>Negative connection label.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

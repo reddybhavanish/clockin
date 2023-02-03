@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DeviationIndicator</name>
+    <derived/>
+    <author>SAP AG</author>
+    <documentation>The marker for the deviation trend.</documentation>
+    <deprecation since="1.34">Deprecated. Moved to sapui5.runtime.</deprecation>
+    <enumeration>
+        <value name="Up">
+            <documentation>The actual value is more than the target value.</documentation>
+        </value>
+        <value name="Down">
+            <documentation>The actual value is less than the target value.</documentation>
+        </value>
+        <value name="None">
+            <documentation>No value.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

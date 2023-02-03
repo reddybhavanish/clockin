@@ -1,0 +1,340 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "DateRangeScroller.less",
+			"size": 714,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "FacetOverview.less",
+			"size": 1311,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "FeedTile.less",
+			"size": 270,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "HeaderContainer.less",
+			"size": 725,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "KpiTile.less",
+			"size": 607,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "LinkActionSheet.less",
+			"size": 1043,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "NoteTaker.less",
+			"size": 1227,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "NoteTakerCard.less",
+			"size": 2760,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "NoteTakerFeeder.less",
+			"size": 1821,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ProcessFlow.less",
+			"size": 301,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ProcessFlowConnection.less",
+			"size": 1075,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ProcessFlowConnectionLabel.less",
+			"size": 3174,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ProcessFlowLaneHeader.less",
+			"size": 1893,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ProcessFlowNode.less",
+			"size": 7153,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "TargetFilter.less",
+			"size": 1199,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ThingCollection.less",
+			"size": 618,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ThreePanelThingViewer.less",
+			"size": 918,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "UnifiedThingGroup.less",
+			"size": 821,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "UnifiedThingInspector.less",
+			"size": 897,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "VerticalNavigationBar.less",
+			"size": 1088,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ViewRepeater.less",
+			"size": 483,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 2499,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 73990,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/arrow_left.png",
+			"size": 889,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/arrow_left_hover.png",
+			"size": 889,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/arrow_right.png",
+			"size": 889,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/arrow_right_hover.png",
+			"size": 889,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/attachment_16.png",
+			"size": 232,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/attachment_24.png",
+			"size": 304,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/btn_nav_left_p.png",
+			"size": 317,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/btn_nav_right_p.png",
+			"size": 311,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/delete_16.png",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/edit_24.png",
+			"size": 186,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/home_24.png",
+			"size": 249,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/search_24.png",
+			"size": 266,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/tag_24.png",
+			"size": 238,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/thumbDown_24.png",
+			"size": 423,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img-RTL/thumbUp_24.png",
+			"size": 415,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/arrow_left.png",
+			"size": 1239,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/arrow_left_hover.png",
+			"size": 1239,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/arrow_right.png",
+			"size": 1237,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/arrow_right_hover.png",
+			"size": 1237,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/attachment_16.png",
+			"size": 237,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/attachment_24.png",
+			"size": 304,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/btn_nav_left_p.png",
+			"size": 1387,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/btn_nav_right_p.png",
+			"size": 1387,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/delete_16.png",
+			"size": 192,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/edit_24.png",
+			"size": 183,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/home_24.png",
+			"size": 243,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/search_24.png",
+			"size": 261,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/tag_24.png",
+			"size": 239,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/thumbDown_24.png",
+			"size": 1352,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "img/thumbUp_24.png",
+			"size": 1409,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 253155,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 924,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 269848,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 269468,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 252773,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 32260,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 930,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "shared.less",
+			"size": 384,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TimelineAlignment</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The alignment of timeline posts relative to the timeline axis.</documentation>
+    <enumeration>
+        <value name="Right">
+            <documentation>Entries are displayed to the right of the timeline axis.&lt;br&gt;
+In a horizontal timeline, entries are displayed below the timeline axis. Synonym for Bottom.</documentation>
+        </value>
+        <value name="Left">
+            <documentation>Entries are displayed to the left of the timeline axis.&lt;br&gt;
+In a horizontal timeline, entries are displayed above the timeline axis. Synonym for Top.</documentation>
+        </value>
+        <value name="Top">
+            <documentation>Entries are displayed above the timeline axis.&lt;br&gt;
+In a vertical timeline, entries are displayed to the left of the timeline axis. Synonym for Left.</documentation>
+        </value>
+        <value name="Bottom">
+            <documentation>Entries are displayed below the timeline axis.&lt;br&gt;
+In a vertical timeline, entries are displayed to the right of the timeline axis. Synonym for Right.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

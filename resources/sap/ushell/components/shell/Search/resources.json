@@ -1,0 +1,72 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/shell/Search/Component.js",
+			"size": 4705,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "sap/ushell/components/shell/Search/Component-h2-preload.js",
+			"size": 2584,
+			"merged": true,
+			"required": [
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ushell/resources.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Search/Component.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js.map",
+			"size": 2122,
+			"isDebug": true
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "sap/ushell/components/shell/Search/Component-preload.js",
+			"size": 2367,
+			"merged": true,
+			"required": [
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ushell/resources.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/Search/Component.js"
+			]
+		},
+		{
+			"name": "Component-preload.js.map",
+			"size": 2116,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/shell/Search/Component.js",
+			"size": 2202,
+			"required": [
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "resources.json",
+			"size": 986
+		}
+	]
+}

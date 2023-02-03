@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ContainerContent</name>
+    <derived/>
+    <documentation>Aggregation element for the Container Base</documentation>
+    <since>1.38.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="icon" type="sap.ui.core/string" group="Misc">
+            <documentation>Icon to show up in the toolbar</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>Title for the icon in the toolbar</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..1"/>
+    </aggregations>
+</control>

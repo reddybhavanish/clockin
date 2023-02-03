@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>taccount/TAccountItemProperty</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>An additional property that defines how a {@link sap.suite.ui.commons.TAccountItem} is displayed.</documentation>
+    <since>1.58.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="key" type="sap.ui.core/string" group="Misc">
+            <documentation>Key of the property.</documentation>
+        </property>
+        <property name="value" type="sap.ui.core/string" group="Misc">
+            <documentation>Value of the property.</documentation>
+        </property>
+        <property name="label" type="sap.ui.core/string" group="Misc">
+            <documentation>Label of the property.&lt;br&gt;Can be hidden or displayed using the &lt;code&gt;displayLabel&lt;/code&gt; property.</documentation>
+        </property>
+        <property name="displayLabel" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Defines whether the label should be displayed.&lt;br&gt;
+This property can be overridden by the {@link sap.suite.ui.commons.TAccountPanel} settings.</documentation>
+        </property>
+        <property name="visible" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Defines whether the T account property should be visible or hidden.</documentation>
+        </property>
+    </properties>
+</control>

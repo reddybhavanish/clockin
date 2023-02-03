@@ -1,0 +1,49 @@
+{
+	"mVersionDependency": {
+		"UI5.sap/ui/core.sap_belize": "1.82.1",
+		"UI5.sap/ui/core": "1.82.1",
+		"UI5": "1.82.1"
+	},
+	"sEntity": "Theme",
+	"sId": "wcmfioribelize",
+	"sLabel": "WCM Fiori Theme",
+	"oExtends": "UI5.sap/ui/core.sap_belize",
+	"aBuildFiles": [
+		"library",
+		"css_variables",
+		"custom"
+	],
+	"aFiles": [
+		"library",
+		"global",
+		"css_variables",
+		"custom"
+	],
+	"aBundled": [
+		"wcmfioribelize--Contrast"
+	],
+	"sTextDirections": "LTR",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"mCssScopes": {
+		"library": {
+			"sEmbeddingMethod": "APPEND",
+			"aScopes": [
+				{
+					"sLabel": "Contrast",
+					"sSelector": "sapContrast",
+					"sThemeIdSuffix": "Contrast",
+					"sThemability": "PUBLIC",
+					"aThemabilityFilter": [
+						"Color"
+					],
+					"rExcludeSelector": "\\.sapContrastPlus\\W",
+					"sEmbeddedFile": "wcmfioribelize--Contrast.library",
+					"sEmbeddedCompareFile": "library"
+				}
+			],
+			"sBaseFile": "library"
+		}
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

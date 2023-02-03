@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>GeoMap</name>
+    <derived/>
+    <documentation>Map control with the option to position multiple visual objects on top of a map. The GeoMap control shows an image based map loaded from
+       one or more configurable external providers. Per default a map from &lt;a href="http://www.mapquest.com"&gt;MapQuest&lt;/a&gt; is used. Other map
+       providers can be configured via property &lt;i&gt;mapConfiguration&lt;/i&gt;. Multiple maps can be mashed up into one map layer stack. If multiple
+       map layer stacks are provided via configuration it is possible to switch between them during runtime. The control supports the display
+       of copyright information for the visible maps.&lt;br&gt;
+       On top of the map the GeoMap control provides a navigation control, a scale, and a legend. Each of them can be switched off separately.&lt;br&gt;
+       It is possible to set the initial position and zoom for the map display. Further the control allows to restrict the potentially visible
+       map area and zoom range.&lt;br&gt;
+       Different visual objects can be placed on the map. Visual objects are grouped in VO aggregations and an arbitrary number of VO
+       aggregations can be assigned to the &lt;i&gt;vos&lt;/i&gt; aggregation.&lt;br&gt;
+       The second aggregation &lt;i&gt;featureCollections&lt;/i&gt; allows the use of GeoJSON as source for visual objects.</documentation>
+    <baseType>sap.ui.vbm/VBI</baseType>
+    <properties>
+        <property name="mapConfiguration" type="sap.ui.core/object" group="Misc">
+            <documentation>This is the map configuration for the geo map. The map configuration defines the used maps, the layering of the maps and the
+servers that can be used to request the map tiles.</documentation>
+        </property>
+        <property name="legendVisible" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>Toggles the visibility of the legend</documentation>
+        </property>
+        <property name="scaleVisible" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>Defines the visibility of the scale. Only supported on initialization!</documentation>
+        </property>
+        <property name="navcontrolVisible" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>Defines the visibility of the navigation control. Only supported on initialization!</documentation>
+        </property>
+        <property name="initialPosition" type="sap.ui.core/string" defaultValue="0;0;0" group="Behavior">
+            <documentation>Initial position of the Map. Set is only supported on initialization! Format is "&amp;lt;longitude&amp;gt;;&amp;lt;latitude&amp;gt;;0".</documentation>
+        </property>
+        <property name="initialZoom" type="sap.ui.core/string" defaultValue="2" group="Behavior">
+            <documentation>Initial zoom. Value needs to be positive whole number. Set is only supported on initialization!</documentation>
+        </property>
+        <property name="centerPosition" type="sap.ui.core/string" defaultValue="0;0" group="Behavior">
+            <documentation>Center position of the Map. Format is "&amp;lt;longitude&amp;gt;;&amp;lt;latitude&amp;gt;".</documentation>
+        </property>
+        <property name="zoomlevel" type="sap.ui.core/int" defaultValue="2" group="Behavior">
+            <documentation>Zoomlevel for the Map. Value needs to be positive whole number.</documentation>
+        </property>
+        <property name="refMapLayerStack" type="sap.ui.core/string" defaultValue="Default" group="Appearance">
+            <documentation>Name of the map layer stack (provided in mapConfiguration) which is used for map rendering. If not set the layer stack with the
+name 'Default' is chosen. Property can be changed at runtime to switch between map layer stack.</documentation>
+        </property>
+        <property name="visualFrame" type="sap.ui.core/object" group="Behavior">
+            <documentation>Visual Frame object. Defining a frame {minX, maxX, minY, maxY, maxLOD, minLOD} to which the scene display is restricted.</documentation>
+        </property>
+        <property name="clustering" type="sap.ui.core/object" group="Behavior">
+            <deprecation>This property should not longer be used. Its functionality has been replaced by the &lt;code&gt;clusters&lt;/code&gt;
+            aggregation.</deprecation>
+        </property>
+        <property name="disableZoom" type="sap.ui.core/boolean" defaultValue="false" group="Behavior">
+            <documentation>Disable Map Zooming. This setting works only upon initialization and cannot be changed later on.</documentation>
+        </property>
+        <property name="disablePan" type="sap.ui.core/boolean" defaultValue="false" group="Behavior">
+            <documentation>Disable Map Paning. This setting works only upon initialization and cannot be changed later on.</documentation>
+        </property>
+        <property name="enableAnimation" type="sap.ui.core/boolean" defaultValue="false" group="Behavior">
+            <documentation>Enable Animation of Map Zoom. Works in combination of setZoomlevel.</documentation>
+        </property>
+        <property name="ariaLabel" type="sap.ui.core/string" group="Misc">
+            <documentation>Text to be read out for the Control when used in accessibility mode (Screen reader)</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>Raised when the map is clicked.</documentation>
+            <parameters>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Geo coordinates in format "&amp;lt;longitude&amp;gt;;&amp;lt;latitude&amp;gt;;0"</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>Raised when the map is right clicked/longPressed(tap and hold).</documentation>
+            <parameters>
+                <parameter name="clientX" type="sap.ui.core/int">
+                    <documentation>Client coordinate X</documentation>
+                </parameter>
+                <parameter name="clientY" type="sap.ui.core/int">
+                    <documentation>Client coordinate Y</documentation>
+                </parameter>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Geo coordinates in format "&amp;lt;longitude&amp;gt;;&amp;lt;latitude&amp;gt;;0"</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="drop" allowPreventDefault="false">
+            <documentation>Raised when something is dropped on the map.</documentation>
+            <parameters>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Geo coordinates in format "&amp;lt;longitude&amp;gt;;&amp;lt;latitude&amp;gt;;0"</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="select" allowPreventDefault="false">
+            <documentation>This event is raised when a multi selection of visual objects has occurred</documentation>
+        </event>
+        <event name="zoomChanged" allowPreventDefault="false">
+            <documentation>this event is raised on zoom in or zoom out.</documentation>
+            <parameters>
+                <parameter name="centerPoint" type="sap.ui.core/string">
+                    <documentation>Center point of the map. Format : Lon;Lat;0.0.</documentation>
+                </parameter>
+                <parameter name="viewportBB" type="sap.ui.core/object">
+                    <documentation>Viewport bounding box's upperLeft and lowerRight coordinates. Format : Lon;Lat;0.0.</documentation>
+                </parameter>
+                <parameter name="zoomLevel" type="sap.ui.core/int">
+                    <documentation>Level of detail.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="centerChanged" allowPreventDefault="false">
+            <documentation>this event is raised on map move.</documentation>
+            <parameters>
+                <parameter name="centerPoint" type="sap.ui.core/string">
+                    <documentation>Center point of the map. Format : Lon;Lat;0.0.</documentation>
+                </parameter>
+                <parameter name="viewportBB" type="sap.ui.core/object">
+                    <documentation>Viewport bounding box's upperLeft and lowerRight coordinates. Format : Lon;Lat;0.0.</documentation>
+                </parameter>
+                <parameter name="zoomLevel" type="sap.ui.core/int">
+                    <documentation>Level of detail.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="keyDown" allowPreventDefault="false">
+            <documentation>this event is raised on map key down</documentation>
+            <parameters>
+                <parameter name="key" type="sap.ui.core/string">
+                    <documentation>Key value of the key</documentation>
+                </parameter>
+                <parameter name="code" type="sap.ui.core/int">
+                    <documentation>Code value of the key</documentation>
+                </parameter>
+                <parameter name="shift" type="sap.ui.core/boolean">
+                    <documentation>Shift key modifier state</documentation>
+                </parameter>
+                <parameter name="ctrl" type="sap.ui.core/boolean">
+                    <documentation>Ctrl key modifier state</documentation>
+                </parameter>
+                <parameter name="alt" type="sap.ui.core/boolean">
+                    <documentation>Alt key modifier state</documentation>
+                </parameter>
+                <parameter name="meta" type="sap.ui.core/boolean">
+                    <documentation>Meta key modifier state</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="keyPress" allowPreventDefault="false">
+            <documentation>this event is raised on map key press</documentation>
+            <parameters>
+                <parameter name="key" type="sap.ui.core/string">
+                    <documentation>Key value of the key</documentation>
+                </parameter>
+                <parameter name="code" type="sap.ui.core/int">
+                    <documentation>Code value of the key</documentation>
+                </parameter>
+                <parameter name="shift" type="sap.ui.core/boolean">
+                    <documentation>Shift key modifier state</documentation>
+                </parameter>
+                <parameter name="ctrl" type="sap.ui.core/boolean">
+                    <documentation>Ctrl key modifier state</documentation>
+                </parameter>
+                <parameter name="alt" type="sap.ui.core/boolean">
+                    <documentation>Alt key modifier state</documentation>
+                </parameter>
+                <parameter name="meta" type="sap.ui.core/boolean">
+                    <documentation>Meta key modifier state</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="keyUp" allowPreventDefault="false">
+            <documentation>this event is raised on map key up</documentation>
+            <parameters>
+                <parameter name="key" type="sap.ui.core/string">
+                    <documentation>Key value of the key</documentation>
+                </parameter>
+                <parameter name="code" type="sap.ui.core/int">
+                    <documentation>Code value of the key</documentation>
+                </parameter>
+                <parameter name="shift" type="sap.ui.core/boolean">
+                    <documentation>Shift key modifier state</documentation>
+                </parameter>
+                <parameter name="ctrl" type="sap.ui.core/boolean">
+                    <documentation>Ctrl key modifier state</documentation>
+                </parameter>
+                <parameter name="alt" type="sap.ui.core/boolean">
+                    <documentation>Alt key modifier state</documentation>
+                </parameter>
+                <parameter name="meta" type="sap.ui.core/boolean">
+                    <documentation>Meta key modifier state</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="vos">
+        <aggregation name="vos" type="sap.ui.vbm/VoAbstract" cardinality="0..n">
+            <documentation>Aggregation of visual object types. A VO aggregation can be considered to be a table of VOs of a common type.</documentation>
+        </aggregation>
+        <aggregation name="geoJsonLayers" type="sap.ui.vbm/GeoJsonLayer" cardinality="0..n">
+            <documentation>Aggregation of GeoJSON layers. Object from a GeoJSON layer will be behind all other Visual Objects from the &lt;code&gt;vos&lt;/code&gt;
+aggregation. In case of multiple GeoJSON layers the objects are orderer with the layers they belong to.</documentation>
+        </aggregation>
+        <aggregation name="featureCollections" type="sap.ui.vbm/FeatureCollection" cardinality="0..n">
+            <deprecation>This aggregation should not longer be used. Its functionality has been replaced by the more generic&lt;code&gt;geoJsonLayers&lt;/code&gt;
+            aggregation.</deprecation>
+        </aggregation>
+        <aggregation name="resources" type="sap.ui.vbm/Resource" cardinality="0..n">
+            <documentation>Aggregation of resources. The images for e.g. Spots have to be provided as resources.</documentation>
+        </aggregation>
+        <aggregation name="legend" type="sap.ui.vbm/Legend" cardinality="0..1">
+            <documentation>Legend for the Map</documentation>
+        </aggregation>
+        <aggregation name="clusters" type="sap.ui.vbm/ClusterBase" cardinality="0..n">
+            <documentation>Aggregation of clusters.</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method name="setRectangularSelection" type="sap.ui.vbm/GeoMap">
+            <documentation>Set Tracking Mode for Rectangular Selection on/off.</documentation>
+            <parameters>
+                <parameter name="set" type="sap.ui.core/boolean">
+                    <documentation>to start or stop tracking mode</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="setLassoSelection" type="sap.ui.vbm/GeoMap">
+            <documentation>Set Tracking Mode for Lasso Selection on/off.</documentation>
+            <parameters>
+                <parameter name="set" type="sap.ui.core/boolean">
+                    <documentation>to start or stop tracking mode</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="setRectZoom" type="sap.ui.vbm/GeoMap">
+            <documentation>Set Tracking Mode for Rectangular Zoom on/off.</documentation>
+            <parameters>
+                <parameter name="set" type="sap.ui.core/boolean">
+                    <documentation>to start or stop tracking mode</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getPositionInteractive" type="sap.ui.core/boolean">
+            <documentation>Trigger the interactive creation mode to get a position or position array.</documentation>
+            <developmentState state="experimental" since="1.30.0">This method is experimental and might be modified or removerd in future versions.</developmentState>
+            <parameters>
+                <parameter name="posArray" type="sap.ui.core/boolean">
+                    <documentation>Indicator if a single position or an array is requested</documentation>
+                </parameter>
+                <parameter name="callback" type="sap.ui.core/any">
+                    <documentation>Callback function func( sPosArray ) to be called when done. Position(array) sPosArray is provided in format</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openDetailWindow" type="sap.ui.core/void">
+            <documentation>Open Detail window</documentation>
+            <parameters>
+                <parameter name="position" type="sap.ui.core/string">
+                    <documentation>Postion for the Detail Window in format "lon;lat;0"</documentation>
+                </parameter>
+                <parameter name="params" type="sap.ui.core/object">
+                    <documentation>Parameter Objects</documentation>
+                </parameter>
+                <parameter name="params.caption" type="sap.ui.core/string">
+                    <documentation>Caption of the Detail Window</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="goToStartPosition" type="sap.ui.core/void">
+            <documentation>Go to Initial Start Position with Initial Zoom Level</documentation>
+        </method>
+        <method name="closeAnyDetailWindow" type="sap.ui.core/void">
+            <documentation>Close any open Detail window</documentation>
+        </method>
+        <method name="getVoByInternalId" type="sap.ui.vbm/VoBase">
+            <documentation>Get an aggregated VO instance by its internal ID returned by e.g. function &lt;code&gt;getInfoForCluster&lt;/code&gt;.</documentation>
+            <parameters>
+                <parameter name="voIdentifier" type="sap.ui.core/string">
+                    <documentation>Internal VO Identifier</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

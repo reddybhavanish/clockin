@@ -1,0 +1,13 @@
+<FragmentDefinition xmlns="sap.ui.core" xmlns:m="sap.m">
+    <m:GenericTile
+        header="{$this>title}"
+        subheader="{$this>subtitle}"
+        sizeBehavior="{$this>sizeBehavior}"
+        scope="{=${$this>editable} ? 'Actions' : 'Display'}"
+        state="{$this>state}"
+        press=".firePress(${$parameters>/})">
+        <m:TileContent footer="{$this>footer}">
+            <m:ImageContent src="{$this>icon}" />
+        </m:TileContent>
+    </m:GenericTile>
+</FragmentDefinition>

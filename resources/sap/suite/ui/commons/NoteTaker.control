@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>NoteTaker</name>
+    <derived/>
+    <documentation>This control allows you to create and store your notes for further reference.</documentation>
+    <deprecation since="1.32">Deprecated. Standard Fiori technology should be used.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="visibleNotes" type="sap.ui.core/int" defaultValue="2" group="Misc">
+            <documentation>Number of notes to display.</documentation>
+        </property>
+        <property name="cardViewAllTrigger" type="sap.ui.core/int" defaultValue="1800" group="Misc">
+            <documentation>The View All link appears in the Note Taker card when length of a card body text exceeds the specified value. The updated value of this property is not applied to the existing cards.</documentation>
+        </property>
+        <property name="filterCriteria" type="sap.ui.core/object" group="Misc">
+            <documentation>A composite object containing criteria for filtering cards in the Note Taker.</documentation>
+        </property>
+        <property name="attachmentUploadUrl" type="sap.ui.core/string" group="Misc">
+            <documentation>Defines a path on the server where the attached files are uploaded.</documentation>
+        </property>
+        <property name="attachmentName" type="sap.ui.core/string" defaultValue="attachment" group="Misc">
+            <documentation>The attachment property name for identification on the server side after sending data to the server.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="addCard" allowPreventDefault="false">
+            <documentation>The event is fired when a new card is added if no data binding is available.
+If data binding is available, the event is fired to notify a developer to add an element to the model.</documentation>
+            <parameters>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of the note to be added.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>The text of the note to be added.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/object">
+                    <documentation>The timestamp of the note to be added.</documentation>
+                </parameter>
+                <parameter name="viewAllTrigger" type="sap.ui.core/int">
+                    <documentation>The View All link appears in the Note Taker card when length of a body text exceeds the specified value.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>Indicates positive information for a new card.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>Indicates negative information for a new card.</documentation>
+                </parameter>
+                <parameter name="attachmentFilename" type="sap.ui.core/string">
+                    <documentation>Stores the name of the file attached to the card.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>The unique ID if available.</documentation>
+                </parameter>
+                <parameter name="attachmentUrl" type="sap.ui.core/string">
+                    <documentation>Stores the URL of the file attached to the card.</documentation>
+                </parameter>
+                <parameter name="card" type="sap.suite.ui.commons/NoteTakerCard">
+                    <documentation>A newly created card if no data binding is available. If data binding is available, this parameter is empty.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="deleteCard" allowPreventDefault="false">
+            <documentation>The event is fired when a new card is deleted if no data binding is available.
+If data binding is available, the event is fired to notify a developer to delete the element from the model.</documentation>
+            <parameters>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>The text of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/string">
+                    <documentation>The timestamp of the card to be deleted.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>The unique ID that was set by an application developer.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>Indicates positive information for the deleted card.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>Indicates negative information for the deleted card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="editCard" allowPreventDefault="false">
+            <documentation>The event is fired when a new card has been edited.</documentation>
+            <parameters>
+                <parameter name="title" type="sap.ui.core/string">
+                    <documentation>The title of the edited card.</documentation>
+                </parameter>
+                <parameter name="body" type="sap.ui.core/string">
+                    <documentation>A new text of the edited card.</documentation>
+                </parameter>
+                <parameter name="timestamp" type="sap.ui.core/string">
+                    <documentation>A new timestamp of the edited card.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>A unique ID that was set by an application developer.</documentation>
+                </parameter>
+                <parameter name="thumbUp" type="sap.ui.core/boolean">
+                    <documentation>Indicates positive information for the edited card.</documentation>
+                </parameter>
+                <parameter name="thumbDown" type="sap.ui.core/boolean">
+                    <documentation>Indicates negative information for the edited card.</documentation>
+                </parameter>
+                <parameter name="tags" type="sap.ui.core/object">
+                    <documentation>Updated array of the String type tags applied to the card during editing.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentSelect" allowPreventDefault="false">
+            <documentation>The event is fired when the value of attached file has been changed.</documentation>
+            <parameters>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentUploadComplete" allowPreventDefault="false">
+            <documentation>Fire event uploadComplete to attached listeners.</documentation>
+            <parameters>
+                <parameter name="response" type="sap.ui.core/string">
+                    <documentation>The response message of the String type that comes from the server. On the server side this response has to be put within the "body" tags of the response document of the iFrame. It can consist of a return code and an optional message. This does not work in cross-domain scenarios.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>The unique ID of the card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentDelete" allowPreventDefault="false">
+            <documentation>The event is fired, when user deletes the attached file.</documentation>
+            <parameters>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>The unique ID of the card.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="attachmentClick" allowPreventDefault="false">
+            <documentation>The event is fired when a user presses the attachment link.</documentation>
+            <parameters>
+                <parameter name="uid" type="sap.ui.core/string">
+                    <documentation>The unique ID of the card.</documentation>
+                </parameter>
+                <parameter name="isCardAttachment" type="sap.ui.core/string">
+                    <documentation>If true, a user chooses the attachment in the Note card. If false, a user chooses the attachment in the Feeder card.</documentation>
+                </parameter>
+                <parameter name="filename" type="sap.ui.core/string">
+                    <documentation>A name of the attached file.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="cards" type="sap.suite.ui.commons/NoteTakerCard" cardinality="0..n">
+            <documentation>This aggregation allows you to add note cards to the Note Taker and remove them from the Note Taker.</documentation>
+        </aggregation>
+        <aggregation name="carousel" type="sap.ui.commons/Carousel" cardinality="0..1" visibility="hidden">
+            <documentation>A slideable container for the NoteTaker cards and Feeder card.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

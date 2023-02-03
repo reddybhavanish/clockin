@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowConnectionLabel</name>
+    <derived/>
+    <documentation>This control is used inside the ProcessFlow control providing information on connections. Using this control, you need to take care of the lifetime handling instance as instances of this control are not destroyed automatically.</documentation>
+    <baseType>sap.m/Button</baseType>
+    <properties>
+        <property name="priority" type="sap.ui.core/int" defaultValue="0" group="Misc">
+            <documentation>Priority is used to define which label is visible if the state of multiple labels is equal. Assuming there are multiple labels with equal state (e.g. Negative state appears twice), the priority decides which one needs to be selected.</documentation>
+        </property>
+        <property name="state" type="sap.suite.ui.commons/ProcessFlowConnectionLabelState" defaultValue="Neutral" group="Appearance">
+            <documentation>Specifies the state of the connection label. If multiple labels are available for one connection, the label will be selected by state based on the following order: Neutral -&gt; Positive -&gt; Critical -&gt; Negative.</documentation>
+        </property>
+    </properties>
+</control>

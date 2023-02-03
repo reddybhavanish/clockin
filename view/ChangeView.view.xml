@@ -1,0 +1,77 @@
+<!--
+
+    Copyright (C) 2009-2018 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="edu.weill.Timeevents.controller.ChangeView" xmlns:semantic="sap.m.semantic" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+	<!--	<pages>-->
+	<!--		<Page title="{i18n>appTitle}" navButtonPress="onNavBack">-->
+	<!--			<content>-->
+	<semantic:FullscreenPage navButtonPress="onNavBack" id="page" floatingFooter="true">
+		<semantic:content>
+			<f:Form id="FormDisplay354" editable="true" class="isReadonly">
+				<f:title>
+					<core:Title text="{i18n>changeTimeEvent}"/>
+				</f:title>
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="{i18n>eventType}">
+								<f:fields>
+									<ComboBox id="idTimeEventType" showSecondaryValues="true" items="{timeEventType>/}" selectionChange="onSelectionChange">
+										<core:ListItem key="{timeEventType>TimeType}" text="{timeEventType>TimeTypeText}" additionalText="{timeEventType>TimeType}"/>
+									</ComboBox>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>date}">
+								<f:fields>
+									<Input enabled="false" id="CICO_DATE_PICKER"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>time}">
+								<f:fields>
+									<TimePicker id="CICO_TIME"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement id="approverLableId" label="{i18n>approver}">
+								<f:fields>
+									<Input id="approver" value="{ApproverName}" showValueHelp="true" valueHelpOnly="true" valueHelpRequest="onApproverHelpRequest"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement id="commentsLableId" label="{i18n>comments}">
+								<f:fields>
+									<TextArea id="comments" maxLength="300" rows="3"/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+					<f:FormContainer id="ADDFIELDS">
+						<f:formElements></f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+		</semantic:content>
+		<semantic:messagesIndicator>
+			<semantic:MessagesIndicator id="messageInd" press="handleMessagePopover"/>
+		</semantic:messagesIndicator>
+		<!--</content>-->
+		<semantic:customFooterContent>
+			<Toolbar>
+				<!--<Button id="messageList" icon="sap-icon://message-popup" visible="false" press="handleMessagePopover"/>-->
+				<ToolbarSpacer/>
+				<Button id="save" text="{i18n>save}" type="Emphasized" visible="true" press="onSave"/>
+				<Button id="delete" text="{i18n>delete}" visible="true" press="onDelete"/>
+				<Button id="cancel" text="{i18n>cancel}" visible="true" press="onCancel"/>
+				<core:ExtensionPoint name="ChangeViewFooterExtension"/>
+			</Toolbar>
+		</semantic:customFooterContent>
+	</semantic:FullscreenPage>
+	<!--		</Page>-->
+	<!--	</pages>-->
+	<!--</App>-->
+</mvc:View>

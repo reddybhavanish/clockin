@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/appfinder/AppBox</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/appfinder/AppBox</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="title" type="sap.ui.core/string" group="Misc"/>
+        <property name="subtitle" type="sap.ui.core/string" group="Misc"/>
+        <property name="icon" type="sap.ui.core/string" group="Misc"/>
+        <property name="url" type="sap.ui.core/string" group="Misc"/>
+        <property name="navigationMode" type="sap.ui.core/string" group="Misc"/>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false"/>
+        <event name="afterRendering" allowPreventDefault="false"/>
+    </events>
+    <aggregations>
+        <aggregation name="pinButton" type="sap.m/Button" cardinality="0..1"/>
+    </aggregations>
+</control>

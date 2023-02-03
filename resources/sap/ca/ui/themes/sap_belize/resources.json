@@ -1,0 +1,118 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "Chart.less",
+			"size": 6445,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ChartToolBar.less",
+			"size": 1032,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ClusterListItem.less",
+			"size": 1104,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "DatePicker.less",
+			"size": 227,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "FileUpload.less",
+			"size": 872,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "HierarchyItem.less",
+			"size": 424,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "InPlaceEdit.less",
+			"size": 735,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "OverflowContainer.less",
+			"size": 1989,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "OverviewTile.less",
+			"size": 770,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "PictureTile.less",
+			"size": 177,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 7457,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 88353,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 47601,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 3302,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 44823,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 44818,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.css",
+			"size": 47596,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.less",
+			"size": 14790,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.source.less",
+			"size": 568,
+			"designtime": true,
+			"theme": "sap_belize"
+		}
+	]
+}

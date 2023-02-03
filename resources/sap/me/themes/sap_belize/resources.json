@@ -1,0 +1,98 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "Calendar.css",
+			"size": 10102,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "CalendarLegend.css",
+			"size": 2627,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "OverlapCalendar.css",
+			"size": 9906,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "ProgressIndicator.css",
+			"size": 3854,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "TabContainer.css",
+			"size": 2908,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 388,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 82962,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "img-RTL/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "img/bg_white_transparent.png",
+			"size": 91,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 57943,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 42,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 64128,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 63763,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.css",
+			"size": 57578,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.less",
+			"size": 30143,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.source.less",
+			"size": 461,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "shared.css",
+			"size": 0,
+			"theme": "sap_belize"
+		}
+	]
+}

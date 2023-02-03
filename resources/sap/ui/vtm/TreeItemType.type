@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TreeItemType</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying the type(s) of tree item to match during tree traversal.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Included">
+            <documentation>A tree item that can be shown in the tree.
+A tree item is an included tree item when it is a root tree item or is included in the &lt;code&gt;includedChildren&lt;/code&gt; collection of its parent.</documentation>
+        </value>
+        <value name="Excluded">
+            <documentation>A tree item that is in the object hierarchy of the tree model, but cannot be shown in the tree.
+A tree item is an excluded tree item when any ancestor of the tree item is included in the &lt;code&gt;excludedChildren&lt;/code&gt; collection of its parent.</documentation>
+        </value>
+        <value name="IncludedOrExcluded">
+            <documentation>Matches either included or excluded tree items.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/GroupHeaderActions</name>
+    <derived/>
+    <documentation>Add your documentation for the new ui/launchpad/GroupHeaderActions</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="isOverflow" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="tileActionModeActive" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..n"/>
+    </aggregations>
+</control>

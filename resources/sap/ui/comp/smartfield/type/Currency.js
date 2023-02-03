@@ -1,0 +1,7 @@
+/*
+ * SAPUI5
+
+		(c) Copyright 2009-2020 SAP SE. All rights reserved
+	
+ */
+sap.ui.define(["sap/ui/core/Core","sap/ui/model/type/Currency","sap/ui/model/ValidateException"],function(C,a,V){"use strict";var _=/^([-]?)(\d+)(?:\.(\d+))?$/;var b=a.extend("sap.ui.comp.smartfield.type.Currency",{constructor:function(f,o){a.apply(this,arguments);this.bParseWithValues=true;this.sName="Currency";}});b.prototype.parseValue=function(v,i,d){var e=a.prototype.parseValue.apply(this,arguments),I,f,m=Array.isArray(e)&&e[0]&&c(e[0]);if(Array.isArray(m)){I=m[1]+m[2];f=m[3];if(Number.parseInt(f)===0){e[0]=I;}}if(e[1]===undefined){e[1]=d[1];}return e;};b.prototype.validateValue=function(v){var m,s=v[0],n=s===null;if(this.oConstraints.nullable&&(n||(s===this.oFormatOptions.emptyString))){return;}m=c(s);if((typeof s!=="string")||(m===null)){throw new V(g("EnterNumber"));}var i=m[2].length,f=(m[3]||"").length,p=this.oConstraints.precision||Infinity,d=v[1],S=this.oOutputFormat.oLocaleData.getCurrencyDigits(d),e=Math.min(this.oConstraints.scale||0,S);if(f>e){if(e===0){throw new V(g("EnterInt"));}if((i+e)>p){throw new V(g("EnterNumberIntegerFraction",[p-e,e]));}throw new V(g("EnterNumberFraction",[e]));}if(i>(p-e)){throw new V(g("EnterNumberInteger",[p-e]));}};function c(v){return _.exec(v);}function g(k,p){return C.getLibraryResourceBundle().getText(k,p);}b.prototype.getName=function(){return"sap.ui.comp.smartfield.type.Currency";};return b;});

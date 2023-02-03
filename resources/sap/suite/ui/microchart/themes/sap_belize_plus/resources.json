@@ -1,0 +1,94 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "AreaMicroChart.less",
+			"size": 290,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "InteractiveBarChart.less",
+			"size": 828,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "InteractiveDonutChart.less",
+			"size": 1120,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "InteractiveLineChart.less",
+			"size": 1416,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "SharedStyles.less",
+			"size": 357,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "StackedBarMicroChart.less",
+			"size": 371,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 8850,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 87874,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 105965,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 3914,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 110251,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 110237,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library.css",
+			"size": 105951,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library.less",
+			"size": 5250,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "library.source.less",
+			"size": 477,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		}
+	]
+}

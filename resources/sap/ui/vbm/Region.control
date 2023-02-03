@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Region</name>
+    <derived/>
+    <documentation>Region properties.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="color" type="sap.ui.core/CSSColor" group="Appearance">
+            <documentation>The color, this must be provided in the rgba(r,g,b,a) format.</documentation>
+        </property>
+        <property name="code" type="sap.ui.core/string" group="Misc">
+            <documentation>The region code.</documentation>
+        </property>
+        <property name="select" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>set to true if the element is selected</documentation>
+        </property>
+        <property name="labelText" type="sap.ui.core/string" group="Misc"/>
+        <property name="labelType" type="sap.ui.vbm/SemanticType" defaultValue="None" group="Behavior">
+            <documentation>Type for semantic labels. A given semantic type will overrule color settings and add an icon.</documentation>
+        </property>
+        <property name="labelBgColor" type="sap.ui.core/string" defaultValue="RGB(255;255;255)" group="Misc"/>
+        <property name="labelBorderColor" type="sap.ui.core/string" group="Misc"/>
+        <property name="labelArrow" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>The visual objects label arrow. For left/right/top/bottom aligned labels an additional arrow points to the label's object.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a region.</documentation>
+            <parameters>
+                <parameter name="code" type="sap.ui.core/string">
+                    <documentation>The region code.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on a region.</documentation>
+            <parameters>
+                <parameter name="code" type="sap.ui.core/string">
+                    <documentation>The region code.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <methods>
+        <method name="getInfo" type="sap.ui.core/object">
+            <documentation>Returns Infos for the Region like name, bounding box and midpoint</documentation>
+        </method>
+    </methods>
+</control>

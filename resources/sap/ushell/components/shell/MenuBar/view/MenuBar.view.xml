@@ -1,0 +1,17 @@
+<View xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    controllerName="sap.ushell.components.shell.MenuBar.controller.MenuBar"
+    displayBlock="true">
+    <IconTabHeader mode="Inline" showOverflowSelectList="true" items="{menu>/}" selectedKey="{viewConfiguration>/selectedKey}" select=".onMenuItemSelection">
+        <items>
+            <IconTabFilter
+                text="{menu>title}"
+                key="{menu>uid}"
+                enabled="{viewConfiguration>/enableMenuBarNavigation}"
+                items="{
+                    path: 'menu>menuEntries',
+                    factory: '._menuFactory'
+                }"/>
+        </items>
+    </IconTabHeader>
+</View>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>imageeditor/ImageEditorResponsiveContainer</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>This control acts as a wrapper around the {@link sap.suite.ui.commons.imageeditor.ImageEditor} control.
+It provides additional image editing capabilities for the convenience of your users.
+&lt;br&gt;This container is responsive and is rendered as a button on mobile devices.</documentation>
+    <since>1.68.0</since>
+    <baseType>sap.suite.ui.commons/imageeditor/ImageEditorContainer</baseType>
+</control>

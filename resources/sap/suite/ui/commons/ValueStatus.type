@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ValueStatus</name>
+    <derived/>
+    <author>SAP AG</author>
+    <documentation>Marker for the key value status.</documentation>
+    <deprecation since="1.32">Deprecated. Numeric content or any other standard Fiori control should be used instead.</deprecation>
+    <enumeration>
+        <value name="Good">
+            <documentation>Good value.</documentation>
+        </value>
+        <value name="Neutral">
+            <documentation>Positive value.</documentation>
+        </value>
+        <value name="Critical">
+            <documentation>Critical value.</documentation>
+        </value>
+        <value name="Bad">
+            <documentation>Bad value.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

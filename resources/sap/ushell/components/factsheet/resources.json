@@ -1,0 +1,135 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 1999,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 967
+		},
+		{
+			"name": "annotation/Mapping-dbg.js",
+			"size": 32689,
+			"isDebug": true
+		},
+		{
+			"name": "annotation/Mapping.js",
+			"size": 9450
+		},
+		{
+			"name": "controls/PictureTile-dbg.js",
+			"size": 5522,
+			"isDebug": true
+		},
+		{
+			"name": "controls/PictureTile.control",
+			"size": 1211,
+			"designtime": true
+		},
+		{
+			"name": "controls/PictureTile.js",
+			"size": 1822
+		},
+		{
+			"name": "controls/PictureTileRenderer-dbg.js",
+			"size": 1453,
+			"isDebug": true
+		},
+		{
+			"name": "controls/PictureTileRenderer.js",
+			"size": 701
+		},
+		{
+			"name": "controls/PictureViewer-dbg.js",
+			"size": 17727,
+			"isDebug": true
+		},
+		{
+			"name": "controls/PictureViewer.control",
+			"size": 1382,
+			"designtime": true
+		},
+		{
+			"name": "controls/PictureViewer.js",
+			"size": 6056
+		},
+		{
+			"name": "controls/PictureViewerItem-dbg.js",
+			"size": 2923,
+			"isDebug": true
+		},
+		{
+			"name": "controls/PictureViewerItem.control",
+			"size": 952,
+			"designtime": true
+		},
+		{
+			"name": "controls/PictureViewerItem.js",
+			"size": 611
+		},
+		{
+			"name": "controls/PictureViewerRenderer-dbg.js",
+			"size": 985,
+			"isDebug": true
+		},
+		{
+			"name": "controls/PictureViewerRenderer.js",
+			"size": 339
+		},
+		{
+			"name": "css/custom.css",
+			"size": 5516
+		},
+		{
+			"name": "factory/ThingInspector-dbg.js",
+			"size": 190165,
+			"isDebug": true
+		},
+		{
+			"name": "factory/ThingInspector.js",
+			"size": 66579
+		},
+		{
+			"name": "tools/ODataUrlTemplating-dbg.js",
+			"size": 1867,
+			"isDebug": true
+		},
+		{
+			"name": "tools/ODataUrlTemplating.js",
+			"size": 713
+		},
+		{
+			"name": "views/ThingViewer-dbg.controller.js",
+			"size": 350,
+			"isDebug": true
+		},
+		{
+			"name": "views/ThingViewer-dbg.view.js",
+			"size": 4383,
+			"isDebug": true
+		},
+		{
+			"name": "views/ThingViewer.controller.js",
+			"size": 264
+		},
+		{
+			"name": "views/ThingViewer.view.js",
+			"size": 1409
+		},
+		{
+			"name": "vocabularies/Common.xml",
+			"size": 12970
+		},
+		{
+			"name": "vocabularies/Communication.xml",
+			"size": 8607
+		},
+		{
+			"name": "vocabularies/UI.xml",
+			"size": 17652
+		}
+	]
+}

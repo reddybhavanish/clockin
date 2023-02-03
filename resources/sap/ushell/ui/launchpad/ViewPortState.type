@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/ViewPortState</name>
+    <derived/>
+    <documentation>Denotes states for control parts and translates into standard SAP color codes</documentation>
+    <enumeration>
+        <value name="Left">
+            <documentation>indicates state when only left content is in the viewport</documentation>
+        </value>
+        <value name="Center">
+            <documentation>Indicates a state that is neutral, e.g. for standard display (Grey color)</documentation>
+        </value>
+        <value name="Right">
+            <documentation>Alias for "Error"</documentation>
+        </value>
+        <value name="LeftCenter">
+            <documentation>Indicates a state that is negative, e.g. marking an element that has to get attention urgently or indicates negative values (Red color)</documentation>
+        </value>
+        <value name="CenterLeft">
+            <documentation>Alias for "Success"</documentation>
+        </value>
+        <value name="RightCenter">
+            <documentation>Indicates a state that is positive, e.g. marking a task successfully executed or a state where all is good (Green color)</documentation>
+        </value>
+        <value name="CenterRight">
+            <documentation>Alias for "Warning"</documentation>
+        </value>
+    </enumeration>
+</simple-type>

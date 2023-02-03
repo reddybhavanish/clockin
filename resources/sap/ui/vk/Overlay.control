@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Overlay</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Constructor for a new Overlay.</documentation>
+    <since>1.32.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="zoomOnResize" type="sap.ui.core/boolean" defaultValue="true" group="Behavior"/>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>Raised when the Control is clicked.</documentation>
+            <parameters>
+                <parameter name="clientX" type="sap.ui.core/int">
+                    <documentation>Client coordinate X</documentation>
+                </parameter>
+                <parameter name="clientY" type="sap.ui.core/int">
+                    <documentation>Client coordinate Y</documentation>
+                </parameter>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Coordinates of click position in format "x;y;0"</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>Raised when the Control is right clicked/longPress(tap and hold).</documentation>
+            <parameters>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Coordinates of click position in format "x;y;0"</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="areas" type="sap.ui.vk/OverlayArea" cardinality="0..n">
+            <documentation>Aggregation of Highlight Areas.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association name="target" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>Aggregation of Highlight Areas.</documentation>
+        </association>
+    </associations>
+    <methods>
+        <method name="getPositionInteractive" type="sap.ui.core/boolean">
+            <documentation>Trigger the interactive creation mode to get a position or position array.</documentation>
+            <parameters>
+                <parameter name="posArray" type="sap.ui.core/boolean">
+                    <documentation>Indicator if a single position or an array is requested</documentation>
+                </parameter>
+                <parameter name="callback" type="sap.ui.core/any">
+                    <documentation>Callback function func( sPosArray ) to be called when done. Position(array) sPosArray is provided in format</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>open the context menu</documentation>
+            <parameters>
+                <parameter name="menu" type="sap.ui.core/object">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="setPanAndZoom" type="sap.ui.core/void">
+            <documentation>Pan and Zoom for the Overlay. The offsets &lt;i&gt;&lt;code&gt;nDeltaX&lt;/code&gt;&lt;/i&gt; and &lt;i&gt;&lt;code&gt;nDeltaY&lt;/code&gt;&lt;/i&gt; are applied to the current center
+position. If zooming is involved as well the offsets are applied after the zooming.</documentation>
+            <parameters>
+                <parameter name="nDeltaX" type="sap.ui.core/int">
+                    <documentation>the move of the center in x-direction in pixels</documentation>
+                </parameter>
+                <parameter name="nDeltaY" type="sap.ui.core/int">
+                    <documentation>the move of the center in y-direction in pixels</documentation>
+                </parameter>
+                <parameter name="zoom" type="sap.ui.core/float">
+                    <documentation>the zoom factor to apply to the current state</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="reset" type="sap.ui.vk/Overlay">
+            <documentation>Reset the Overlay to its initial size and position.</documentation>
+        </method>
+    </methods>
+</control>

@@ -1,0 +1,113 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 11653,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 4105
+		},
+		{
+			"name": "app/App-dbg.controller.js",
+			"size": 13236,
+			"isDebug": true
+		},
+		{
+			"name": "app/App-dbg.view.js",
+			"size": 1373,
+			"isDebug": true
+		},
+		{
+			"name": "app/App.controller.js",
+			"size": 5532
+		},
+		{
+			"name": "app/App.view.js",
+			"size": 475
+		},
+		{
+			"name": "commons/Detail-dbg.controller.js",
+			"size": 4393,
+			"isDebug": true
+		},
+		{
+			"name": "commons/Detail-dbg.view.js",
+			"size": 1854,
+			"isDebug": true
+		},
+		{
+			"name": "commons/Detail.controller.js",
+			"size": 1978
+		},
+		{
+			"name": "commons/Detail.view.js",
+			"size": 767
+		},
+		{
+			"name": "dialog/Component-dbg.js",
+			"size": 24975,
+			"isDebug": true
+		},
+		{
+			"name": "dialog/Component.js",
+			"size": 8636
+		},
+		{
+			"name": "splitApp/FeedTypeMaster-dbg.controller.js",
+			"size": 4882,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/FeedTypeMaster-dbg.view.js",
+			"size": 2954,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/FeedTypeMaster.controller.js",
+			"size": 1845
+		},
+		{
+			"name": "splitApp/FeedTypeMaster.view.js",
+			"size": 1302
+		},
+		{
+			"name": "splitApp/GroupMaster-dbg.controller.js",
+			"size": 5210,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/GroupMaster-dbg.view.js",
+			"size": 1677,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/GroupMaster.controller.js",
+			"size": 2633
+		},
+		{
+			"name": "splitApp/GroupMaster.view.js",
+			"size": 702
+		},
+		{
+			"name": "splitApp/SplitApp-dbg.controller.js",
+			"size": 5980,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/SplitApp-dbg.view.js",
+			"size": 1503,
+			"isDebug": true
+		},
+		{
+			"name": "splitApp/SplitApp.controller.js",
+			"size": 2553
+		},
+		{
+			"name": "splitApp/SplitApp.view.js",
+			"size": 515
+		}
+	]
+}

@@ -1,0 +1,246 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "Annotation.less",
+			"size": 25214,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ContainerBase.less",
+			"size": 1017,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DrawerToolbar.less",
+			"size": 1791,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FlexibleControl.less",
+			"size": 302,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "LegendItem.less",
+			"size": 934,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ListPanel.less",
+			"size": 1071,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ListPanelStack.less",
+			"size": 832,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MapContainer.less",
+			"size": 5476,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "NativeViewport.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Notifications.less",
+			"size": 445,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Overlay.less",
+			"size": 517,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RedlineDesign.less",
+			"size": 392,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RedlineSurface.less",
+			"size": 115,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RedlineTool.less",
+			"size": 300,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SafeArea.less",
+			"size": 181,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SceneOrientationGizmo.less",
+			"size": 223,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SceneTree.less",
+			"size": 524,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "StepNavigation.less",
+			"size": 945,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Tooltip.less",
+			"size": 284,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "TransformationTool.less",
+			"size": 557,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ViewGallery.less",
+			"size": 4986,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Viewer.less",
+			"size": 935,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Viewport.less",
+			"size": 525,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 157,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 79815,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/map-container.eot",
+			"size": 2376,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/map-container.svg",
+			"size": 2168,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/map-container.ttf",
+			"size": 2160,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/map-container.woff",
+			"size": 1456,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/vk-icons.ttf",
+			"size": 8096,
+			"theme": "base"
+		},
+		{
+			"name": "fonts/vk-icons.woff",
+			"size": 5692,
+			"theme": "base"
+		},
+		{
+			"name": "images/vk-orbit.svg",
+			"size": 1268,
+			"theme": "base"
+		},
+		{
+			"name": "images/vk-pan.svg",
+			"size": 900,
+			"theme": "base"
+		},
+		{
+			"name": "images/vk-turntable.svg",
+			"size": 823,
+			"theme": "base"
+		},
+		{
+			"name": "images/vk-zoom.svg",
+			"size": 1073,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 34676,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 35011,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 34999,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 34664,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 49743,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 908,
+			"designtime": true,
+			"theme": "base"
+		}
+	]
+}

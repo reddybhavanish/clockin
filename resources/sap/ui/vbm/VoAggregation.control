@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>VoAggregation</name>
+    <derived/>
+    <documentation>Abstract VO aggregation container. This element implements the common part for all specific VO aggregations with selection
+       cardinatities. It must not be used directly, but is the base for further extension.</documentation>
+    <baseType>sap.ui.vbm/VoAbstract</baseType>
+    <properties>
+        <property name="minSel" type="sap.ui.core/string" defaultValue="0" group="Misc">
+            <documentation>Selection cardinality: minimum selected elements ("0" or "1" )</documentation>
+        </property>
+        <property name="maxSel" type="sap.ui.core/string" defaultValue="n" group="Misc">
+            <documentation>Selection cardinality: maximum selectable elements ( valid values are "0", "1", and "n" )</documentation>
+        </property>
+        <property name="customProperties" type="sap.ui.core/string[]" group="Misc">
+            <documentation>If you want to add custom data to VO instances and make the GeoMap control aware of it, e.g. for basing clustering rules on it, you
+can provide an array of property names specifying the keys to consider.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="handleMoved" allowPreventDefault="false">
+            <documentation>This event is raised when a Design handle is moved.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/VoBase">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="handle" type="sap.ui.core/int">
+                    <documentation>The number of the handle where the click occured. Handles are numbered zero based.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="handleContextMenu" allowPreventDefault="false">
+            <documentation>This event is raised when a Design handle is right clicked.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/VoBase">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+                <parameter name="handle" type="sap.ui.core/int">
+                    <documentation>The number of the handle where the click occured. Handles are numbered zero based.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="handleClick" allowPreventDefault="false">
+            <documentation>This event is raised when a Design handle is clicked.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/VoBase">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="handle" type="sap.ui.core/int">
+                    <documentation>The number of the handle where the click occured. Handles are numbered zero based.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="select" allowPreventDefault="false">
+            <documentation>This event is raised when aggregated elements get selected</documentation>
+            <parameters>
+                <parameter name="selected" type="any">
+                    <documentation>Array of selected VOs</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="deselect" allowPreventDefault="false">
+            <documentation>This event is raised when aggregated elements get deselected</documentation>
+            <parameters>
+                <parameter name="deselected" type="any">
+                    <documentation>Array of deselected VOs</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a VO.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/VoBase">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on a VO.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/VoBase">
+                    <documentation>Clicked instance</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu to open</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="drop" allowPreventDefault="false">
+            <documentation>The event is raised when something is dropped on a VO.</documentation>
+            <parameters>
+                <parameter name="instance" type="sap.ui.vbm/Spot">
+                    <documentation>Drop target instance</documentation>
+                </parameter>
+                <parameter name="dragSource" type="sap.ui.vbm/VoBase">
+                    <documentation>Dragged instance</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <methods>
+        <method name="openDetailWindow" type="sap.ui.core/void">
+            <documentation>Open a Detail Window</documentation>
+            <parameters>
+                <parameter name="voInst" type="sap.ui.vbm/VoBase">
+                    <documentation>VO instance for which the Detail Window should be opened</documentation>
+                </parameter>
+                <parameter name="params" type="sap.ui.core/object">
+                    <documentation>Parameter object</documentation>
+                </parameter>
+                <parameter name="params.caption" type="sap.ui.core/string">
+                    <documentation>Text for Detail Window caption</documentation>
+                </parameter>
+                <parameter name="params.offsetX" type="sap.ui.core/string">
+                    <documentation>position offset in x-direction from the anchor point</documentation>
+                </parameter>
+                <parameter name="params.offsetY" type="sap.ui.core/string">
+                    <documentation>position offset in y-direction from the anchor point</documentation>
+                </parameter>
+                <parameter name="useClickPos" type="sap.ui.core/boolean">
+                    <documentation>Indicates whether the Detail Window should be located at the click position or object position</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

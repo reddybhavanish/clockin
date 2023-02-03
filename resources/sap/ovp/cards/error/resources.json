@@ -1,0 +1,27 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 1010,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 403
+		},
+		{
+			"name": "Error-dbg.controller.js",
+			"size": 2396,
+			"isDebug": true
+		},
+		{
+			"name": "Error.controller.js",
+			"size": 1133
+		},
+		{
+			"name": "Error.fragment.xml",
+			"size": 428
+		}
+	]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>components/factsheet/controls/PictureViewer</name>
+    <derived/>
+    <documentation>Picture viewer control relying on the TileContainer control</documentation>
+    <deprecation since="1.22">PictureViewer was replacing the Carousel as it wasn't supporting some versions of MS Internet Explorer.
+  Now, the sap.m.Carousel is fully functional, please use sap.m.Carousel instead.
+  This control will not be supported anymore.</deprecation>
+    <baseType>sap.m/TileContainer</baseType>
+    <properties>
+        <property name="tileScaling" type="sap.ui.core/float" defaultValue="0.95" group="Misc">
+            <documentation>Percentage of the space occupied by the image in the picture viewer control.
+Please note that if the factor is too close to 1, the navigation arrows usually displayed in desktop mode will not be available</documentation>
+        </property>
+        <property name="removable" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+    </properties>
+    <events>
+        <event name="pictureDeleted" allowPreventDefault="false"/>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ushell/components/factsheet/controls/PictureViewerItem" cardinality="0..n"/>
+    </aggregations>
+</control>

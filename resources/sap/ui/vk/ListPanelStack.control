@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ListPanelStack</name>
+    <derived/>
+    <documentation>ListPanelStack control</documentation>
+    <developmentState state="experimental" since="1.38.0">This class is experimental and might be modified or removed in future versions.</developmentState>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="100%" group="Misc">
+            <documentation>Control width</documentation>
+        </property>
+        <property name="expanded" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Expansion state</documentation>
+        </property>
+        <property name="expandAnimation" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Expand animation</documentation>
+        </property>
+        <property name="collapsible" type="sap.ui.core/boolean" defaultValue="true" group="Misc">
+            <documentation>Ability to collapse</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.vk/ListPanel" cardinality="0..n"/>
+        <aggregation name="layout" type="sap.ui.layout/VerticalLayout" cardinality="0..1" visibility="hidden">
+            <documentation>hidden layout aggregation needed for binding</documentation>
+        </aggregation>
+    </aggregations>
+</control>

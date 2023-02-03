@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/fe/core/designtime/library-preload.designtime.js",
+"sourceroot":".",
+"sources":["AppComponent-dbg.designtime.js"],
+"names":["oElement","mWhiteList"],
+"mappings":";AAAA,gBAAa,kDACZ,GACA,UAAW,CACV,aAEA,MAAO,CACN,QAAS,gBACT,aAAc,CACb,YAAa,CACZ,QAAS,gBACT,kBAAmB,SAASA,CAAQ,CAAE,CAErC,IAAIC,CAAW,CAAE,CAEhB,mCAAoC,KACpC,iCAAkC,IACnC,EAEA,EAAG,CAACA,CAAU,CAACD,CAAQ,0BAA2B,CACjD,MAAO,GACR,CAAE,IAAK,CACN,MAAO,CACN,QAAS,eACV,EACD,CACD,CACD,CACD,CACD,EACD,EACA,KACD;",
+"x_com_sap_openui5_sections":[67,454]
+}

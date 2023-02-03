@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RuleBuilder</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The &lt;code&gt;sap.rules.ui.RuleBuilder&lt;/code&gt; control allows business users to create rules using a business language.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="types" type="sap.rules.ui/RuleType[]" defaultValue="[DecisionTable,TextRule]">
+            <documentation>Available types that can be created using the &lt;code&gt;sap.rules.ui.RuleBuilder&lt;/code&gt; control.
+If empty, all rule types will be available for selection.
+If only one type exists, the Rule Builder will open it automatically.</documentation>
+        </property>
+        <property name="bindingContextPath" type="sap.ui.core/string" group="Misc">
+            <documentation>Path to a Rule object in the model data, which is used for the definition of relative context bindings inside the RuleBuilder control (mandatory).
+Example: "/Rules(Id='0050569181751ED683EFEEC6AA2B73C5',Version='000001')"</documentation>
+        </property>
+        <property name="editable" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Indicates whether or not the controls of the RuleBuilder are editable.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="_ruleTypeSelector" type="sap.m/ComboBox" cardinality="0..1" visibility="hidden">
+            <documentation>Provides a combo box from which the user selects the rule type for the new rule. Only relevant if &lt;b&gt;types&lt;/b&gt; contains more than one value.</documentation>
+        </aggregation>
+        <aggregation name="_rule" type="sap.rules.ui/RuleBase" cardinality="0..1" visibility="hidden">
+            <documentation>Rule created by the Rule Builder.</documentation>
+        </aggregation>
+        <aggregation name="decisionTableConfiguration" type="sap.rules.ui/DecisionTableConfiguration" cardinality="0..1">
+            <documentation>Configuration for rule of type 'decision table'.</documentation>
+        </aggregation>
+        <aggregation name="textRuleConfiguration" type="sap.rules.ui/TextRuleConfiguration" cardinality="0..1">
+            <documentation>Configuration for rule of type 'Text Rule'.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association name="expressionLanguage" type="sap.rules.ui/services/ExpressionLanguage" cardinality="0..1">
+            <documentation>Expression language to model English like expressions. Should not be used when sap.rules.ui.services.AstExpressionLanguage is used.</documentation>
+        </association>
+        <association name="astExpressionLanguage" type="sap.rules.ui/services/AstExpressionLanguage" cardinality="0..1">
+            <documentation>Expression language to use DMN SFEEL for modelling expressions. Should not be used when sap.rules.ui.services.ExpressionLanguage is used.</documentation>
+        </association>
+    </associations>
+</control>

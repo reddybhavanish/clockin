@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>legend/ListLegendItemCheckbox</name>
+    <derived/>
+    <documentation>CheckBox Value of ListLegend Item.</documentation>
+    <enumeration>
+        <value name="NoShow" value="noShow">
+            <documentation>The list legend item has no checkbox.</documentation>
+        </value>
+        <value name="Checked" value="checked">
+            <documentation>The list legend item has a checked checkbox.</documentation>
+        </value>
+        <value name="Unchecked" value="unchecked">
+            <documentation>The list legend item has a unchecked checkbox.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

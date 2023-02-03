@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+>
+	<Link
+		core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime'}"
+		text="{dataField>Value@@MODEL.format}"
+		press="{= 'FieldRuntime.onDataFieldWithNavigationPath(${$source>/}, $controller, \'' + ${dataField>Target/$NavigationPropertyPath} + '\')' }"
+	/>
+</core:FragmentDefinition>

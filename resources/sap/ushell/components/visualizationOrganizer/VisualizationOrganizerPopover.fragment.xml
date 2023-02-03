@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Popover
+        id="sapUshellVisualizationOrganizerPopover"
+        class="sapContrastPlus"
+        placement="VerticalPreferredBottom"
+        titleAlignment="Center"
+        title="{i18n>VisualizationOrganizer.Title}">
+        <content>
+            <SearchField
+                id="sapUshellVisualizationOrganizerSearch"
+                class="sapUiTinyMarginBeginEnd"
+                tooltip="{i18n>VisualizationOrganizer.SearchField.Tooltip}"
+                search="._onSearch"
+                width="auto"/>
+            <List
+                id="sapUshellVisualizationOrganizerSpacesList"
+                mode="MultiSelect"
+                items="{
+                    path: '/pages',
+                    sorter: {
+                        path: 'space',
+                        group: true
+                    }
+                }"
+                noDataText="{i18n>VisualizationOrganizer.SpacesList.NoDataText}"
+                showSeparators="None">
+                <items>
+                    <StandardListItem
+                        title="{title}"
+                        type="Active"
+                        selected="{selected}"
+                        press=".pagePressed" />
+                </items>
+            </List>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        id="sapUshellVisualizationOrganizerCloseButton"
+                        text="{i18n>closeBtn}"
+                        press=".close" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Popover>
+</core:FragmentDefinition>

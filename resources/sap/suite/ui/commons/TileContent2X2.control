@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>TileContent2X2</name>
+    <derived/>
+    <documentation>This control serves a universal container for different types of content and footer.</documentation>
+    <deprecation since="1.34">Deprecated.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="footer" type="sap.ui.core/string" group="Appearance">
+            <documentation>The footer text of the tile.</documentation>
+        </property>
+        <property name="size" type="sap.suite.ui.commons/InfoTileSize" defaultValue="Auto" group="Misc">
+            <documentation>Updates the size of the tile. If not set then the default size is applied based on the device tile.</documentation>
+        </property>
+        <property name="unit" type="sap.ui.core/string" group="Misc">
+            <documentation>The percent sign, the currency symbol, or the unit of measure.</documentation>
+        </property>
+        <property name="disabled" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Disables control if true.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>The switchable view that depends on the tile type.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

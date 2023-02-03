@@ -1,0 +1,238 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "AboutDialog.less",
+			"size": 56,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ActionMode.less",
+			"size": 638,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "AddBookmarkButton.less",
+			"size": 458,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "AnchorItem.less",
+			"size": 2289,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "AnchorNavigationBar.less",
+			"size": 609,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ApplicationContainer.less",
+			"size": 448,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Catalog.less",
+			"size": 2106,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ContactSupport.less",
+			"size": 611,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "DynamicTile.less",
+			"size": 2488,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "EndUserFeedback.less",
+			"size": 464,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "GroupList.less",
+			"size": 2920,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "HistoryScreen.less",
+			"size": 419,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "LoadingDialog.less",
+			"size": 624,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "MeArea.less",
+			"size": 395,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "PictureTile.less",
+			"size": 328,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "PlusTile.less",
+			"size": 1077,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "SearchFacet.less",
+			"size": 1,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "SearchFieldGroup.less",
+			"size": 357,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "SearchPieChart.less",
+			"size": 1600,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "SearchTileContainer.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ShellFloatingAction.less",
+			"size": 979,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ShellHeader.less",
+			"size": 5685,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ShellLayout.less",
+			"size": 178,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "SplitContainer.less",
+			"size": 64,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Tile.less",
+			"size": 3495,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "TileBase.less",
+			"size": 2122,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "TileContainer.less",
+			"size": 6153,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "TileState.less",
+			"size": 584,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "UserPreferencesButton.less",
+			"size": 320,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 26218,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 100118,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "flower-standalone.less",
+			"size": 1021,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 217681,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 11046,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 221831,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 221727,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 217576,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 40640,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 1055,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

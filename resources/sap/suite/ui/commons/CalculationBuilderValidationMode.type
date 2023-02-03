@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>CalculationBuilderValidationMode</name>
+    <derived/>
+    <documentation>Types of expression validation that define when the expression entered into the {@link sap.suite.ui.commons.CalculationBuilder} is validated.</documentation>
+    <enumeration>
+        <value name="FocusOut">
+            <documentation>The expression is validated when the user presses Enter or moves the focus outside of the expression input field.</documentation>
+        </value>
+        <value name="LiveChange">
+            <documentation>The expression is validated, as the user types new characters into the input field.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

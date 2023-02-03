@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DeltaMicroChart</name>
+    <derived/>
+    <documentation>This control displays a delta of two values as a chart.</documentation>
+    <deprecation since="1.34">Deprecated. sap.suite.ui.microchart.DeltaMicroChart should be used.</deprecation>
+    <baseType>sap.suite.ui.microchart/DeltaMicroChart</baseType>
+</control>

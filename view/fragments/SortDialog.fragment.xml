@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm=".onSortDialogConfirm" id="sortDialog">
+		<sortItems>
+        <ViewSettingsItem text="{i18n>eventTime}" key="timeDate"/>
+			<ViewSettingsItem text="{i18n>eventType}" key="eventType"/> 
+			<ViewSettingsItem text="Sync Status" key="Sync Status"/> 
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>PredefinedView</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying predefined views.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Top">
+            <documentation>The view from the top.</documentation>
+        </value>
+        <value name="Bottom">
+            <documentation>The view from the bottom.</documentation>
+        </value>
+        <value name="Front">
+            <documentation>The view from the front.</documentation>
+        </value>
+        <value name="Back">
+            <documentation>The view from the back.</documentation>
+        </value>
+        <value name="Left">
+            <documentation>The view from the left.</documentation>
+        </value>
+        <value name="Right">
+            <documentation>The view from the right.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

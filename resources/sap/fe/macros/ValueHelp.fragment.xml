@@ -1,0 +1,91 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:mdcField="sap.ui.mdc.field"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+		COMMON: 'sap/fe/macros/CommonHelper',
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		FIELD: 'sap/fe/macros/field/FieldHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper'
+	}"
+>
+	<template:with path="property>" var="originalProperty">
+	<template:with path="property>" helper="FIELD.valueHelpProperty" var="property">
+	<template:with path="entitySet>@sapui.name" var="esName">
+		<template:if
+					test="{=
+					${property>@com.sap.vocabularies.Common.v1.ValueListReferences} ||
+					${property>@com.sap.vocabularies.Common.v1.ValueListMapping} ||
+					${property>@com.sap.vocabularies.Common.v1.ValueList}
+				}"
+				>
+			<!-- Value Help -->
+				<template:then>
+					<mdcField:FieldValueHelp
+							core:require="{ValueListHelper: 'sap/fe/core/helpers/ValueListHelper'}"
+							unittest:id="a"
+							delegate="{=
+								'{name:\'sap/fe/macros/FieldValueHelpDelegate\', payload: {propertyPath: \'/'
+								+ ${esName>}
+								+ '/'
+								+ ${property>@@FIELD.propertyName}
+								+ '\', conditionModel: \'' + ${this>conditionModel}
+								+ '\'}}'
+							}"
+							log:sourcePath="/{esName>}{this>navigationPrefix}/{property>@@FIELD.propertyName}"
+							id="{= ID.generate([
+								${this>idPrefix},
+							 	(
+									(${originalProperty>@@FIELD.propertyName} !== ${property>@@FIELD.propertyName}) ?
+							  		(
+										${originalProperty>@@FIELD.propertyName}
+								  		+ '::'
+								  		+ ${property>@@FIELD.propertyName}
+									) : ${property>@@FIELD.propertyName})]
+								)
+							}"
+							showConditionPanel="{= !${originalProperty>@@FIELD.isFilterRestrictedToOnlySingleOrMultiValue}}"
+							noDialog="{= ${property>@@MODEL.getValueListType} === 'Fixed'}"
+							validateInput="{=
+								(
+									${originalProperty>$Path@Org.OData.Measures.V1.ISOCurrency} ||
+									${originalProperty>$Path@Org.OData.Measures.V1.Unit} ||
+									${this>filterFieldValueHelp}
+								) ? 'true' : 'false'
+ 							}"
+						>
+					<mdcField:FieldValueHelpMTableWrapper />
+					</mdcField:FieldValueHelp>
+				</template:then>
+			<!-- Date and DateTime Filters or the display of the Value Help is forced -->
+				<template:elseif test="{=
+						['Edm.Date','Edm.DateTime','Edm.DateTimeOffset'].indexOf(${property>$Type}) &gt; -1 || ${this>forceValueHelp}
+					}">
+					<mdcField:FieldValueHelp
+							unittest:id="b"
+							id="{=
+								ID.generate([
+								${this>idPrefix},
+									(
+										(${originalProperty>@@FIELD.propertyName} !== ${property>@@FIELD.propertyName}) ?
+											(
+												${originalProperty>@@FIELD.propertyName}
+												+ '::' + ${property>@@FIELD.propertyName}
+											) :
+											${property>@@FIELD.propertyName}
+									)
+								])
+							}"
+							showConditionPanel="true"
+							title="{property>@com.sap.vocabularies.Common.v1.Label}"
+						>
+					</mdcField:FieldValueHelp>
+				</template:elseif>
+		</template:if>
+	</template:with>
+	</template:with>
+	</template:with>
+</core:FragmentDefinition>

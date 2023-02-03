@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:uxap="sap.uxap"
+	xmlns:macro="sap.fe.macros"
+	xmlns:core="sap.ui.core"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper'
+	}"
+>
+	<!--
+	For form container labels there are two scenarios, when:
+	1. parentFacet has Facets : then labels for the form containers should be shown.
+	2. parentFacet does not have Facets : then labels for the form containers should not be shown.
+	 -->
+	<macro:Form
+		id="{= ID.generate(['fe', 'Form', ${facet>id}, (${this>partOfPreview} === 'true' ? 'Content': 'MoreContent')]) }"
+		facet="{facet>annotationPath}"
+		entitySet="{facet>entitySet}"
+		editMode="{ui>/editMode}"
+		createMode="{localUI>/createMode}"
+		useFormContainerLabels="{= ${facet>useFormContainerLabels}}"
+		partOfPreview="{this>partOfPreview}"
+		onChange=".handlers.onFieldValueChange"
+	/>
+</core:FragmentDefinition>

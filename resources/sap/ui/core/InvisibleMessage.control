@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>InvisibleMessage</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The InvisibleMessage provides a way to programmaticaly expose dynamic content changes in a way that can be announced by screen readers.
+
+&lt;h3&gt;Overview&lt;/h3&gt;
+This class is a singleton. The class instance can be retrieved via the static method &lt;code&gt;sap.ui.core.InvisibleMessage.getInstance()&lt;/code&gt;.
+
+Note: Keep in mind that according to the ARIA standard, the live regions should be presented and should be empty.
+Thus, we recommend to instantiate &lt;code&gt; InvisibleMessage&lt;/code&gt; via &lt;code&gt;sap.ui.core.InvisibleMessage.getInstance()&lt;/code&gt; as early as possible in the application logic – with the Component initialization, with the main Controller initialization, after Core initialization, ect.
+Then, you should specify the text, that has to be announced by the screen reader, and the live region’s mode using the &lt;code&gt;announce&lt;/code&gt; method.</documentation>
+    <since>1.78</since>
+    <developmentState state="experimental" since="1.78">This class is experimental and the API might be changed in future.</developmentState>
+</control>

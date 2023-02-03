@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ChildCollectionType</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying which tree item child collections an operation should apply to.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="None">
+            <documentation>The operation should not apply to either the &lt;code&gt;includedChildren&lt;/code&gt; or &lt;code&gt;excludedChildren&lt;/code&gt; collection of the tree item.</documentation>
+        </value>
+        <value name="Included">
+            <documentation>The operation should apply to the &lt;code&gt;includedChildren&lt;/code&gt; collection of the tree item only.</documentation>
+        </value>
+        <value name="Excluded">
+            <documentation>The operation should apply to the &lt;code&gt;excludedChildren&lt;/code&gt; collection of the tree item only.</documentation>
+        </value>
+        <value name="IncludedAndExcluded">
+            <documentation>The operation should apply to the &lt;code&gt;includedChildren&lt;/code&gt; and the &lt;code&gt;excludedChildren&lt;/code&gt; collection of the tree item.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

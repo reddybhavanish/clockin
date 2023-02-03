@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>VoAbstract</name>
+    <derived/>
+    <documentation>Abstract VO aggregation container. This element implements the common part for VOs. It must not be used
+       directly, but is the base for further extension.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <methods>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>Open a context menu</documentation>
+            <parameters>
+                <parameter name="type" type="sap.ui.core/string">
+                    <documentation>Type of VO</documentation>
+                </parameter>
+                <parameter name="voInst" type="sap.ui.vbm/VoBase">
+                    <documentation>VO instance for which the Context Menu should be opened</documentation>
+                </parameter>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

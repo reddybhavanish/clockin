@@ -1,0 +1,57 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		CORE: 'sap/fe/core/AnnotationHelper',
+		TABLE: 'sap/fe/macros/table/TableHelper'
+	}"
+	core:require="{TableRuntime: 'sap/fe/macros/table/TableRuntime'}"
+>
+    <template:with path="this>quickFilter" helper="TABLE.getQuickFilter" var="selections">
+        <template:with path="selections>paths" var="selectionPaths">
+            <template:if test="{= ${selectionPaths>}.length > 3 }">
+                <template:then>
+                    <Select
+						id="{= ID.generate([${this>id}, 'QuickFilter'])}"
+						autoAdjustWidth="true"
+						forceSelection="true"
+						change="TableRuntime.onSelectionChange"
+						customData:batchGroupId="{this>groupId}"
+						customData:showCounts="{selections>showCounts}"
+					>
+                        <items>
+                            <template:repeat list="{selectionPaths>}" var="selection">
+                                <core:Item
+									text="{ parts: [ {path:'selection>annotationPath'}, {path:'collection>@@COMMON.getMetaPath'}], formatter: 'CORE.getQuickFilterText' }"
+									key="{= ${path: 'selection>annotationPath'} }"
+								>
+                                </core:Item>
+                            </template:repeat>
+                        </items>
+                    </Select>
+                </template:then>
+                <template:else>
+                    <SegmentedButton
+						id="{= ID.generate([${this>id}, 'QuickFilter'])}"
+						selectionChange="TableRuntime.onSelectionChange"
+						customData:batchGroupId="{this>groupId}"
+						customData:showCounts="{selections>showCounts}"
+					>   
+                        <items>
+                            <template:repeat list="{selectionPaths>}" var="selection">
+                                <SegmentedButtonItem
+									text="{ parts: [ {path:'selection>annotationPath'}, {path:'collection>@@COMMON.getMetaPath'}], formatter: 'CORE.getQuickFilterText' }"
+									key="{= ${path: 'selection>annotationPath'} }"
+								>                                       
+                                </SegmentedButtonItem>
+                            </template:repeat>			
+                        </items>								
+                    </SegmentedButton>
+                </template:else>			
+            </template:if>
+        </template:with>
+    </template:with>
+</core:FragmentDefinition>

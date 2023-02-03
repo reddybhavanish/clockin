@@ -1,0 +1,64 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 90,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 1255,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 81099,
+			"designtime": true,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "empty.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 13653,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 509,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 13159,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 13137,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library.css",
+			"size": 13631,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library.less",
+			"size": 270,
+			"designtime": true,
+			"theme": "sap_mvi"
+		},
+		{
+			"name": "library.source.less",
+			"size": 139,
+			"designtime": true,
+			"theme": "sap_mvi"
+		}
+	]
+}

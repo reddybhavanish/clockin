@@ -1,0 +1,83 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Action.fragment.xml",
+			"size": 2015
+		},
+		{
+			"name": "ActionsFooter.fragment.xml",
+			"size": 2430
+		},
+		{
+			"name": "Card-dbg.controller.js",
+			"size": 99235,
+			"isDebug": true
+		},
+		{
+			"name": "Card.controller.js",
+			"size": 30004
+		},
+		{
+			"name": "Card.view.xml",
+			"size": 1886
+		},
+		{
+			"name": "Component-dbg.js",
+			"size": 27990,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 7940
+		},
+		{
+			"name": "ContactDetails.fragment.xml",
+			"size": 412
+		},
+		{
+			"name": "ContactDetailsQuickViewGroup.fragment.xml",
+			"size": 3225
+		},
+		{
+			"name": "ContentMiddle.fragment.xml",
+			"size": 2991
+		},
+		{
+			"name": "ContentRight.fragment.xml",
+			"size": 1034
+		},
+		{
+			"name": "CountFooter.fragment.xml",
+			"size": 301
+		},
+		{
+			"name": "CountHeader.fragment.xml",
+			"size": 411
+		},
+		{
+			"name": "Header.fragment.xml",
+			"size": 3850
+		},
+		{
+			"name": "KPIHeader.fragment.xml",
+			"size": 12724
+		},
+		{
+			"name": "LineItemDetails.fragment.xml",
+			"size": 411
+		},
+		{
+			"name": "LineItemDetailsQuickViewGroup.fragment.xml",
+			"size": 9419
+		},
+		{
+			"name": "SubTitle.fragment.xml",
+			"size": 6627
+		},
+		{
+			"name": "Title.fragment.xml",
+			"size": 3946
+		}
+	]
+}

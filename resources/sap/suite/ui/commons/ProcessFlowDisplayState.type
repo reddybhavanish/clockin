@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ProcessFlowDisplayState</name>
+    <derived/>
+    <documentation>The ProcessFlow calculates the ProcessFlowDisplayState based on the 'focused' and 'highlighted' properties of each node.</documentation>
+    <enumeration>
+        <value name="Regular">
+            <documentation>The control is in the regular display state</documentation>
+        </value>
+        <value name="RegularFocused">
+            <documentation>The control is in the combination of regular and focused display state</documentation>
+        </value>
+        <value name="Highlighted">
+            <documentation>The control is in highlighted display state</documentation>
+        </value>
+        <value name="HighlightedFocused">
+            <documentation>The control is in the combination of highlighted and focused display state</documentation>
+        </value>
+        <value name="Dimmed">
+            <documentation>The control is in the dimmed state</documentation>
+        </value>
+        <value name="DimmedFocused">
+            <documentation>The control is in the combination of dimmed and focused display state</documentation>
+        </value>
+        <value name="Selected">
+            <documentation>The control is in the selected display state</documentation>
+        </value>
+        <value name="SelectedHighlighted">
+            <documentation>The control is in the combination of selected and highlighted display state</documentation>
+        </value>
+        <value name="SelectedHighlightedFocused">
+            <documentation>The control is in the combination of selected, highlighted and focused display state</documentation>
+        </value>
+        <value name="SelectedFocused">
+            <documentation>The control is in the combination of selected and focused display state</documentation>
+        </value>
+    </enumeration>
+</simple-type>

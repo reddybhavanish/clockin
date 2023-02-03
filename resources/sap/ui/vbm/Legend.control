@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Legend</name>
+    <derived/>
+    <documentation>The Legend is a window in the GeoMap or AnalyticMap control wich can be used to display color/icon-text pairs on a map.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="caption" type="sap.ui.core/string" defaultValue="sap.ui.getCore().getLibraryResourceBundle(&quot;sap.ui.vbm.i18n&quot;).getText(&quot;CAPTION_LEGEND&quot;)" group="Misc">
+            <documentation>The caption of the legend.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a legend.</documentation>
+            <parameters>
+                <parameter name="data" type="sap.ui.core/object">
+                    <documentation>Event data object</documentation>
+                </parameter>
+                <parameter name="row" type="sap.ui.core/int">
+                    <documentation>The row number where the click occurred</documentation>
+                </parameter>
+                <parameter name="ctrlKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Ctrl pressed</documentation>
+                </parameter>
+                <parameter name="shiftKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Shift pressed</documentation>
+                </parameter>
+                <parameter name="metaKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Meta pressed</documentation>
+                </parameter>
+                <parameter name="altKey" type="sap.ui.core/boolean">
+                    <documentation>key modifier Alt pressed</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/LegendItem" cardinality="0..n">
+            <documentation>LegendItem object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

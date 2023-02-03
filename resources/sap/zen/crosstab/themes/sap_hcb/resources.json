@@ -1,0 +1,76 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "Chart.less",
+			"size": 415,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "ChartTypeSwitch.less",
+			"size": 4186,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "InfoFeeding.less",
+			"size": 1846,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 369,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 71317,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 33036,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 2,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 35324,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 35263,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 32975,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 6881,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 267,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

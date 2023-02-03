@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Feature</name>
+    <derived/>
+    <documentation>The Feature element can be added to the &lt;i&gt;items&lt;/i&gt; aggregation of a &lt;i&gt;FeatureCollection&lt;/i&gt;. By matching the id it allows to
+       redefine the color of a GeoJSON feature and adds interactivity.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="color" type="sap.ui.core/CSSColor" group="Appearance">
+            <documentation>The color, this should be provided in the rgba(r,g,b,a) format.</documentation>
+        </property>
+        <property name="featureId" type="sap.ui.core/string" group="Misc">
+            <documentation>The Feature ID. Used to match with the feature in the GeoJSON given to the parent (FeatureCollection).</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="click" allowPreventDefault="false">
+            <documentation>The event is raised when there is a click action on a Feature.</documentation>
+        </event>
+        <event name="contextMenu" allowPreventDefault="false">
+            <documentation>The event is raised when there is a right click or a tap and hold action on a Feature.</documentation>
+            <parameters>
+                <parameter name="menu" type="sap.ui.unified/Menu">
+                    <documentation>Menu object to be used with openContextMenu().</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <methods>
+        <method name="openDetailWindow" type="sap.ui.core/void">
+            <documentation>Open a Detail Window for the Feature at click position</documentation>
+            <parameters>
+                <parameter name="caption" type="sap.ui.core/string">
+                    <documentation>caption of detail window</documentation>
+                </parameter>
+                <parameter name="offsetX" type="sap.ui.core/string">
+                    <documentation>position offset in x-direction from the anchor point</documentation>
+                </parameter>
+                <parameter name="offsetY" type="sap.ui.core/string">
+                    <documentation>position offset in y-direction from the anchor point</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="openContextMenu" type="sap.ui.core/void">
+            <documentation>Open the context menu</documentation>
+            <parameters>
+                <parameter name="menu" type="sap.ui.core/object">
+                    <documentation>the context menu to be opened</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

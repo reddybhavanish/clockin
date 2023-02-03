@@ -1,0 +1,67 @@
+<Dialog
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    id="copyPageDialog"
+    class="sapContrastPlus"
+    title="{i18n>CopyDialog.Title}"
+    beforeOpen=".onBeforeOpen"
+    afterClose=".destroy"
+    core:require="{
+        formatMessage: 'sap/base/strings/formatMessage'
+    }">
+    <content>
+        <form:SimpleForm id="copyForm" editable="true">
+            <Text id="copyMessage" text="{
+                parts: ['i18n>CopyDialog.Message', '/sourceId'],
+                formatter: 'formatMessage'
+            }" />
+            <Label id="copyPageIdLabel" text="{i18n>Label.PageID}" labelFor="copyId" />
+            <Input
+                id="copyPageIdInput"
+                maxLength="35"
+                required="true"
+                placeholder="{
+                    parts: ['i18n>Placeholder.CopyPageTitle', '/sourceId'],
+                    formatter: 'formatMessage'
+                }"
+                change=".onPageIDChange"
+                liveChange=".onPageIDLiveChange"
+                valueLiveUpdate="true"
+                value="{/targetId}" />
+            <Label id="copyPageDescriptionLabel" text="{i18n>Label.Description}" labelFor="copyDescriptionInput" />
+            <Input
+                id="copyDescriptionInput"
+                maxLength="100"
+                required="true"
+                placeholder="{i18n>Placeholder.Description}"
+                liveChange=".onDescriptionLiveChange"
+                valueLiveUpdate="true"
+                valueStateText="{i18n>Message.EmptyDescription}"
+                value="{/description}" />
+            <Label id="copyTitleLabel" text="{i18n>Label.PageTitle}" labelFor="copyTitle" />
+            <Input
+                id="copyTitle"
+                required="true"
+                maxLength="100"
+                value="{/title}"
+                liveChange=".onTitleLiveChange"
+                valueLiveUpdate="true"
+                valueStateText="{i18n>Message.EmptyTitle}"
+                placeholder="{i18n>Placeholder.PageTitle}"
+            />
+        </form:SimpleForm>
+        <core:ComponentContainer id="transportContainer" lifecycle="Application"/>
+    </content>
+    <beginButton>
+        <Button
+            id="copyPageSaveButton"
+            type="Emphasized"
+            text="{i18n>Button.Copy}"
+            press=".onConfirm"
+            enabled="{ path: '/validation', formatter: '.validate' }" />
+    </beginButton>
+    <endButton>
+        <Button id="copyPageCancelButton" text="{i18n>Button.Cancel}" press=".onCancel" />
+    </endButton>
+</Dialog>

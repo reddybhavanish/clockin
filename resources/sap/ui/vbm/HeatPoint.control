@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HeatPoint</name>
+    <derived/>
+    <documentation>Specific Visual Object element for a &lt;i&gt;HeatPoint&lt;/i&gt;.</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" group="Misc">
+            <documentation>The position of a sample element of the heatmap. Should be bound. The format is "lon;lat;0"</documentation>
+        </property>
+        <property name="value" type="sap.ui.core/string" group="Misc">
+            <documentation>Heat Value of the sample element of the heatmap. May be bound.</documentation>
+        </property>
+        <property name="radius" type="sap.ui.core/string" defaultValue="5" group="Misc">
+            <documentation>Radius of the sample values. May be bound</documentation>
+        </property>
+    </properties>
+</control>

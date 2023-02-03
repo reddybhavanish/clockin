@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>InternalColumnDescriptor</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying descriptors for {@link sap.ui.vtm.Column} objects of type {@link sap.ui.vtm.ColumnType.Internal}.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Tree">
+            <documentation>The column that contains the tree item name and the tree type icon.
+This must always be the first column.</documentation>
+        </value>
+        <value name="MessageStatus">
+            <documentation>The column that is used to provide an indication of the messages that apply to the tree item and its descendants.</documentation>
+        </value>
+        <value name="Visibility">
+            <documentation>The column that is used to indicate and control visibility of the scene nodes associated with the tree item.</documentation>
+        </value>
+        <value name="TreeItemId">
+            <documentation>A column containing the &lt;code&gt;id&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+        <value name="AbsoluteMatrix">
+            <documentation>A column showing the &lt;code&gt;absoluteMatrix&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+        <value name="RelativeMatrix">
+            <documentation>A column showing the &lt;code&gt;relativeMatrix&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+        <value name="SceneNodeIds">
+            <documentation>A column showing the &lt;code&gt;sceneNodeIds&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+        <value name="Opacity">
+            <documentation>A column showing the &lt;code&gt;opacity&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+        <value name="HighlightColor">
+            <documentation>A column showing the &lt;code&gt;highlightColor&lt;/code&gt; field of the tree item.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

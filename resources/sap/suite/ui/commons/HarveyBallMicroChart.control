@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HarveyBallMicroChart</name>
+    <derived/>
+    <documentation>This chart shows the part comparative to total.</documentation>
+    <deprecation since="1.34">this control is a mere wrapper for sap.suite.ui.microchart.HarveyBallMicroChart.</deprecation>
+    <baseType>sap.suite.ui.microchart/HarveyBallMicroChart</baseType>
+</control>

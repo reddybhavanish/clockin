@@ -1,0 +1,2853 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1488
+		},
+		{
+			"name": ".theming",
+			"size": 89
+		},
+		{
+			"name": "AreaMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChart.js",
+			"size": 43871,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "AreaMicroChart.control",
+			"size": 8248,
+			"designtime": true
+		},
+		{
+			"name": "AreaMicroChart.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChart.js",
+			"size": 19512,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartItem-dbg.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartItem.js",
+			"size": 1663,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartItem.control",
+			"size": 1083,
+			"designtime": true
+		},
+		{
+			"name": "AreaMicroChartItem.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartItem.js",
+			"size": 625,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartLabel-dbg.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartLabel.js",
+			"size": 1290,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartLabel.control",
+			"size": 773,
+			"designtime": true
+		},
+		{
+			"name": "AreaMicroChartLabel.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartLabel.js",
+			"size": 405,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartPoint-dbg.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartPoint.js",
+			"size": 2650,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartPoint.control",
+			"size": 691,
+			"designtime": true
+		},
+		{
+			"name": "AreaMicroChartPoint.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartPoint.js",
+			"size": 1004,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+			"size": 6727,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+			"size": 4041,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js"
+			]
+		},
+		{
+			"name": "AreaMicroChartViewType.type",
+			"size": 636,
+			"designtime": true
+		},
+		{
+			"name": "BulletMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChart.js",
+			"size": 25926,
+			"isDebug": true,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "BulletMicroChart.control",
+			"size": 7464,
+			"designtime": true
+		},
+		{
+			"name": "BulletMicroChart.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChart.js",
+			"size": 12414,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "BulletMicroChartData-dbg.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChartData.js",
+			"size": 1848,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "BulletMicroChartData.control",
+			"size": 708,
+			"designtime": true
+		},
+		{
+			"name": "BulletMicroChartData.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChartData.js",
+			"size": 821,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "BulletMicroChartModeType.type",
+			"size": 685,
+			"designtime": true
+		},
+		{
+			"name": "BulletMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+			"size": 11681,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js"
+			]
+		},
+		{
+			"name": "BulletMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+			"size": 6467,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChart.js",
+			"size": 21029,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/dom/jquery/Selectors.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChart.control",
+			"size": 4689,
+			"designtime": true
+		},
+		{
+			"name": "ColumnMicroChart.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChart.js",
+			"size": 10231,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/dom/jquery/Selectors.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartData-dbg.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartData.js",
+			"size": 2381,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartData.control",
+			"size": 1368,
+			"designtime": true
+		},
+		{
+			"name": "ColumnMicroChartData.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartData.js",
+			"size": 939,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartLabel-dbg.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartLabel.js",
+			"size": 1345,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartLabel.control",
+			"size": 721,
+			"designtime": true
+		},
+		{
+			"name": "ColumnMicroChartLabel.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartLabel.js",
+			"size": 407,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+			"size": 9596,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "ColumnMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+			"size": 5511,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "CommonBackgroundType.type",
+			"size": 1418,
+			"designtime": true
+		},
+		{
+			"name": "ComparisonMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChart.js",
+			"size": 29083,
+			"isDebug": true,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChart.control",
+			"size": 4709,
+			"designtime": true
+		},
+		{
+			"name": "ComparisonMicroChart.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChart.js",
+			"size": 13531,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChartData-dbg.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChartData.js",
+			"size": 3021,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChartData.control",
+			"size": 1343,
+			"designtime": true
+		},
+		{
+			"name": "ComparisonMicroChartData.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChartData.js",
+			"size": 1382,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+			"size": 8374,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+			"size": 4751,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "ComparisonMicroChartViewType.type",
+			"size": 956,
+			"designtime": true
+		},
+		{
+			"name": "DeltaMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/DeltaMicroChart.js",
+			"size": 14516,
+			"isDebug": true,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "DeltaMicroChart.control",
+			"size": 4393,
+			"designtime": true
+		},
+		{
+			"name": "DeltaMicroChart.js",
+			"module": "sap/suite/ui/microchart/DeltaMicroChart.js",
+			"size": 7119,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "DeltaMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+			"size": 9960,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "DeltaMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+			"size": 6286,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "DeltaMicroChartViewType.type",
+			"size": 913,
+			"designtime": true
+		},
+		{
+			"name": "HarveyBallMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChart.js",
+			"size": 17218,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "HarveyBallMicroChart.control",
+			"size": 5735,
+			"designtime": true
+		},
+		{
+			"name": "HarveyBallMicroChart.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChart.js",
+			"size": 7477,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "HarveyBallMicroChartItem-dbg.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChartItem.js",
+			"size": 2822,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "HarveyBallMicroChartItem.control",
+			"size": 2365,
+			"designtime": true
+		},
+		{
+			"name": "HarveyBallMicroChartItem.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChartItem.js",
+			"size": 641,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "HarveyBallMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+			"size": 9831,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "HarveyBallMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+			"size": 5393,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "HorizontalAlignmentType.type",
+			"size": 644,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveBarChart-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChart.js",
+			"size": 38181,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveBarChart.control",
+			"size": 3462,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveBarChart.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChart.js",
+			"size": 15969,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveBarChartBar-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChartBar.js",
+			"size": 4056,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveBarChartBar.control",
+			"size": 1358,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveBarChartBar.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChartBar.js",
+			"size": 1624,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveBarChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+			"size": 11168,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveBarChartRenderer.js",
+			"module": "sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+			"size": 4369,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChart-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChart.js",
+			"size": 30160,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChart.control",
+			"size": 2888,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveDonutChart.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChart.js",
+			"size": 13147,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+			"size": 21221,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChartRenderer.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+			"size": 7999,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChartSegment-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChartSegment.js",
+			"size": 4407,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveDonutChartSegment.control",
+			"size": 1334,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveDonutChartSegment.js",
+			"module": "sap/suite/ui/microchart/InteractiveDonutChartSegment.js",
+			"size": 1752,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChart-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChart.js",
+			"size": 25627,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+				"sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChart.control",
+			"size": 3364,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveLineChart.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChart.js",
+			"size": 11370,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+				"sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChartPoint-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+			"size": 4540,
+			"isDebug": true,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChartPoint.control",
+			"size": 1576,
+			"designtime": true
+		},
+		{
+			"name": "InteractiveLineChartPoint.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+			"size": 1781,
+			"required": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+			"size": 14029,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "InteractiveLineChartRenderer.js",
+			"module": "sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+			"size": 6410,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "LineMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/LineMicroChart.js",
+			"size": 26908,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/LineMicroChartLine.js",
+				"sap/suite/ui/microchart/LineMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "LineMicroChart.control",
+			"size": 8904,
+			"designtime": true
+		},
+		{
+			"name": "LineMicroChart.js",
+			"module": "sap/suite/ui/microchart/LineMicroChart.js",
+			"size": 12048,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/LineMicroChartLine.js",
+				"sap/suite/ui/microchart/LineMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "LineMicroChartEmphasizedPoint-dbg.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+			"size": 1947,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/LineMicroChartPoint.js"
+			]
+		},
+		{
+			"name": "LineMicroChartEmphasizedPoint.control",
+			"size": 1015,
+			"designtime": true
+		},
+		{
+			"name": "LineMicroChartEmphasizedPoint.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+			"size": 533,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/LineMicroChartPoint.js"
+			]
+		},
+		{
+			"name": "LineMicroChartLine-dbg.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartLine.js",
+			"size": 7640,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "LineMicroChartLine.control",
+			"size": 3268,
+			"designtime": true
+		},
+		{
+			"name": "LineMicroChartLine.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartLine.js",
+			"size": 2845,
+			"required": [
+				"sap/base/Log.js",
+				"sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "LineMicroChartPoint-dbg.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartPoint.js",
+			"size": 1225,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "LineMicroChartPoint.control",
+			"size": 716,
+			"designtime": true
+		},
+		{
+			"name": "LineMicroChartPoint.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartPoint.js",
+			"size": 325,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "LineMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartRenderer.js",
+			"size": 23036,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "LineMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/LineMicroChartRenderer.js",
+			"size": 9568,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "LineType.type",
+			"size": 604,
+			"designtime": true
+		},
+		{
+			"name": "MicroChartRenderUtils-dbg.js",
+			"module": "sap/suite/ui/microchart/MicroChartRenderUtils.js",
+			"size": 1249,
+			"isDebug": true
+		},
+		{
+			"name": "MicroChartRenderUtils.js",
+			"module": "sap/suite/ui/microchart/MicroChartRenderUtils.js",
+			"size": 757
+		},
+		{
+			"name": "MicroChartUtils-dbg.js",
+			"module": "sap/suite/ui/microchart/MicroChartUtils.js",
+			"size": 5862,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "MicroChartUtils.js",
+			"module": "sap/suite/ui/microchart/MicroChartUtils.js",
+			"size": 2009,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "RadialMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/RadialMicroChart.js",
+			"size": 16425,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "RadialMicroChart.control",
+			"size": 3253,
+			"designtime": true
+		},
+		{
+			"name": "RadialMicroChart.js",
+			"module": "sap/suite/ui/microchart/RadialMicroChart.js",
+			"size": 7133,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "RadialMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+			"size": 20686,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/m/ValueColor.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "RadialMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+			"size": 8060,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/m/ValueColor.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChart-dbg.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChart.js",
+			"size": 18275,
+			"isDebug": true,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChart.control",
+			"size": 4289,
+			"designtime": true
+		},
+		{
+			"name": "StackedBarMicroChart.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChart.js",
+			"size": 6816,
+			"required": [
+				"sap/m/FlexBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChartBar-dbg.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChartBar.js",
+			"size": 2558,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChartBar.control",
+			"size": 981,
+			"designtime": true
+		},
+		{
+			"name": "StackedBarMicroChartBar.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChartBar.js",
+			"size": 856,
+			"required": [
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChartRenderer-dbg.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+			"size": 11061,
+			"isDebug": true,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "StackedBarMicroChartRenderer.js",
+			"module": "sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+			"size": 6035,
+			"required": [
+				"sap/base/security/encodeXML.js",
+				"sap/m/library.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/ui/core/theming/Parameters.js"
+			]
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/suite/ui/microchart/library.js",
+			"size": 11216,
+			"isDebug": true,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/core/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/suite/ui/microchart/library-h2-preload.js",
+			"size": 16883,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/ValueColor.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/dom/jquery/Selectors.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			],
+			"included": [
+				"sap/suite/ui/microchart/library.js",
+				"sap/suite/ui/microchart/manifest.json",
+				"sap/suite/ui/microchart/AreaMicroChart.js",
+				"sap/suite/ui/microchart/AreaMicroChartItem.js",
+				"sap/suite/ui/microchart/AreaMicroChartLabel.js",
+				"sap/suite/ui/microchart/AreaMicroChartPoint.js",
+				"sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/BulletMicroChart.js",
+				"sap/suite/ui/microchart/BulletMicroChartData.js",
+				"sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+				"sap/suite/ui/microchart/ColumnMicroChart.js",
+				"sap/suite/ui/microchart/ColumnMicroChartData.js",
+				"sap/suite/ui/microchart/ColumnMicroChartLabel.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/ComparisonMicroChart.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartData.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+				"sap/suite/ui/microchart/DeltaMicroChart.js",
+				"sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChart.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartItem.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveBarChart.js",
+				"sap/suite/ui/microchart/InteractiveBarChartBar.js",
+				"sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveDonutChart.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartSegment.js",
+				"sap/suite/ui/microchart/InteractiveLineChart.js",
+				"sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+				"sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+				"sap/suite/ui/microchart/LineMicroChart.js",
+				"sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+				"sap/suite/ui/microchart/LineMicroChartLine.js",
+				"sap/suite/ui/microchart/LineMicroChartPoint.js",
+				"sap/suite/ui/microchart/LineMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/RadialMicroChart.js",
+				"sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+				"sap/suite/ui/microchart/StackedBarMicroChart.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartBar.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartRenderer.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 2431,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/suite/ui/microchart/library-preload.js",
+			"size": 237946,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/security/encodeXML.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Size.js",
+				"sap/m/ValueColor.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/ResizeHandler.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/theming/Parameters.js",
+				"sap/ui/dom/jquery/Selectors.js",
+				"sap/ui/events/KeyCodes.js",
+				"sap/ui/thirdparty/jquery.js"
+			],
+			"included": [
+				"sap/suite/ui/microchart/AreaMicroChart.js",
+				"sap/suite/ui/microchart/AreaMicroChartItem.js",
+				"sap/suite/ui/microchart/AreaMicroChartLabel.js",
+				"sap/suite/ui/microchart/AreaMicroChartPoint.js",
+				"sap/suite/ui/microchart/AreaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/BulletMicroChart.js",
+				"sap/suite/ui/microchart/BulletMicroChartData.js",
+				"sap/suite/ui/microchart/BulletMicroChartRenderer.js",
+				"sap/suite/ui/microchart/ColumnMicroChart.js",
+				"sap/suite/ui/microchart/ColumnMicroChartData.js",
+				"sap/suite/ui/microchart/ColumnMicroChartLabel.js",
+				"sap/suite/ui/microchart/ColumnMicroChartRenderer.js",
+				"sap/suite/ui/microchart/ComparisonMicroChart.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartData.js",
+				"sap/suite/ui/microchart/ComparisonMicroChartRenderer.js",
+				"sap/suite/ui/microchart/DeltaMicroChart.js",
+				"sap/suite/ui/microchart/DeltaMicroChartRenderer.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChart.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartItem.js",
+				"sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveBarChart.js",
+				"sap/suite/ui/microchart/InteractiveBarChartBar.js",
+				"sap/suite/ui/microchart/InteractiveBarChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveDonutChart.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartRenderer.js",
+				"sap/suite/ui/microchart/InteractiveDonutChartSegment.js",
+				"sap/suite/ui/microchart/InteractiveLineChart.js",
+				"sap/suite/ui/microchart/InteractiveLineChartPoint.js",
+				"sap/suite/ui/microchart/InteractiveLineChartRenderer.js",
+				"sap/suite/ui/microchart/LineMicroChart.js",
+				"sap/suite/ui/microchart/LineMicroChartEmphasizedPoint.js",
+				"sap/suite/ui/microchart/LineMicroChartLine.js",
+				"sap/suite/ui/microchart/LineMicroChartPoint.js",
+				"sap/suite/ui/microchart/LineMicroChartRenderer.js",
+				"sap/suite/ui/microchart/MicroChartRenderUtils.js",
+				"sap/suite/ui/microchart/MicroChartUtils.js",
+				"sap/suite/ui/microchart/RadialMicroChart.js",
+				"sap/suite/ui/microchart/RadialMicroChartRenderer.js",
+				"sap/suite/ui/microchart/StackedBarMicroChart.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartBar.js",
+				"sap/suite/ui/microchart/StackedBarMicroChartRenderer.js",
+				"sap/suite/ui/microchart/library.js",
+				"sap/suite/ui/microchart/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 229901,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/suite/ui/microchart/library.js",
+			"size": 4796,
+			"required": [
+				"sap/m/library.js",
+				"sap/ui/core/library.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/suite/ui/microchart/manifest.json",
+			"size": 3939
+		},
+		{
+			"name": "messagebundle.properties",
+			"module": "sap/suite/ui/microchart/messagebundle.properties",
+			"size": 4255,
+			"locale": "",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ar.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ar.properties",
+			"size": 6265,
+			"locale": "ar",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_bg.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_bg.properties",
+			"size": 8193,
+			"locale": "bg",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ca.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ca.properties",
+			"size": 4557,
+			"locale": "ca",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_cs.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_cs.properties",
+			"size": 4596,
+			"locale": "cs",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_da.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_da.properties",
+			"size": 4383,
+			"locale": "da",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_de.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_de.properties",
+			"size": 4265,
+			"locale": "de",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_el.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_el.properties",
+			"size": 7407,
+			"locale": "el",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_en.properties",
+			"size": 4188,
+			"locale": "en",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_sappsd.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_en_US_sappsd.properties",
+			"size": 8677,
+			"locale": "en_US_sappsd",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_saptrc.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_en_US_saptrc.properties",
+			"size": 5275,
+			"locale": "en_US_saptrc",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_es.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_es.properties",
+			"size": 4598,
+			"locale": "es",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_et.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_et.properties",
+			"size": 4361,
+			"locale": "et",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fi.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_fi.properties",
+			"size": 4314,
+			"locale": "fi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fr.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_fr.properties",
+			"size": 4452,
+			"locale": "fr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hi.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_hi.properties",
+			"size": 7319,
+			"locale": "hi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hr.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_hr.properties",
+			"size": 4488,
+			"locale": "hr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hu.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_hu.properties",
+			"size": 4648,
+			"locale": "hu",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_it.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_it.properties",
+			"size": 4367,
+			"locale": "it",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_iw.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_iw.properties",
+			"size": 6680,
+			"locale": "iw",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ja.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ja.properties",
+			"size": 5360,
+			"locale": "ja",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_kk.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_kk.properties",
+			"size": 7921,
+			"locale": "kk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ko.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ko.properties",
+			"size": 4977,
+			"locale": "ko",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lt.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_lt.properties",
+			"size": 4649,
+			"locale": "lt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lv.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_lv.properties",
+			"size": 4574,
+			"locale": "lv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ms.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ms.properties",
+			"size": 4218,
+			"locale": "ms",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_nl.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_nl.properties",
+			"size": 4326,
+			"locale": "nl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_no.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_no.properties",
+			"size": 4308,
+			"locale": "no",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pl.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_pl.properties",
+			"size": 4494,
+			"locale": "pl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pt.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_pt.properties",
+			"size": 4578,
+			"locale": "pt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ro.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ro.properties",
+			"size": 4538,
+			"locale": "ro",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ru.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_ru.properties",
+			"size": 8205,
+			"locale": "ru",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sh.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_sh.properties",
+			"size": 4478,
+			"locale": "sh",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sk.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_sk.properties",
+			"size": 4735,
+			"locale": "sk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sl.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_sl.properties",
+			"size": 4470,
+			"locale": "sl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sv.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_sv.properties",
+			"size": 4330,
+			"locale": "sv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_th.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_th.properties",
+			"size": 7259,
+			"locale": "th",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_tr.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_tr.properties",
+			"size": 4609,
+			"locale": "tr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_uk.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_uk.properties",
+			"size": 8001,
+			"locale": "uk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_vi.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_vi.properties",
+			"size": 5522,
+			"locale": "vi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_CN.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_zh_CN.properties",
+			"size": 4625,
+			"locale": "zh_CN",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_TW.properties",
+			"module": "sap/suite/ui/microchart/messagebundle_zh_TW.properties",
+			"size": 4630,
+			"locale": "zh_TW",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "resources.json",
+			"size": 24734
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/AreaMicroChart.less",
+			"size": 5983,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/BulletMicroChart.less",
+			"size": 7450,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/ColumnMicroChart.less",
+			"size": 5255,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/ComparisonMicroChart.less",
+			"size": 6222,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/DeltaMicroChart.less",
+			"size": 7874,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/HarveyBallMicroChart.less",
+			"size": 4719,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InteractiveBarChart.less",
+			"size": 7122,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InteractiveDonutChart.less",
+			"size": 7236,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InteractiveLineChart.less",
+			"size": 8189,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/LineMicroChart.less",
+			"size": 6246,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/RadialMicroChart.less",
+			"size": 3494,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/SharedStyles.less",
+			"size": 626,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/StackedBarMicroChart.less",
+			"size": 2457,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.css",
+			"size": 4401,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.source.less",
+			"size": 84827,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/stripes.png",
+			"size": 113,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/stripes.png",
+			"size": 961,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 59670,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"size": 1918,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton-RTL.css",
+			"size": 63724,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton.css",
+			"size": 63711,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 59657,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 74189,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 646,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/AreaMicroChart.less",
+			"size": 392,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/BulletMicroChart.less",
+			"size": 1093,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/ComparisonMicroChart.less",
+			"size": 548,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/DeltaMicroChart.less",
+			"size": 421,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/HarveyBallMicroChart.less",
+			"size": 345,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/SharedStyles.less",
+			"size": 357,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/StackedBarMicroChart.less",
+			"size": 692,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.css",
+			"size": 8842,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.source.less",
+			"size": 87874,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 103476,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"size": 3910,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton-RTL.css",
+			"size": 107861,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton.css",
+			"size": 107846,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 103461,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 4757,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 489,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_hcb/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/AreaMicroChart.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/BulletMicroChart.less",
+			"size": 1389,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/ColumnMicroChart.less",
+			"size": 545,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/ComparisonMicroChart.less",
+			"size": 963,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/DeltaMicroChart.less",
+			"size": 427,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/HarveyBallMicroChart.less",
+			"size": 547,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/InteractiveBarChart.less",
+			"size": 2423,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/InteractiveDonutChart.less",
+			"size": 2975,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/InteractiveLineChart.less",
+			"size": 2741,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/LineMicroChart.less",
+			"size": 332,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/RadialMicroChart.less",
+			"size": 888,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/SharedStyles.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/StackedBarMicroChart.less",
+			"size": 346,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css-variables.css",
+			"size": 4445,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css-variables.source.less",
+			"size": 86250,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-RTL.css",
+			"size": 69829,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-parameters.json",
+			"size": 1907,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-skeleton-RTL.css",
+			"size": 75978,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-skeleton.css",
+			"size": 75965,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.css",
+			"size": 69816,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.less",
+			"size": 15655,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.source.less",
+			"size": 705,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcw/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/AreaMicroChart.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/BulletMicroChart.less",
+			"size": 1389,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/ColumnMicroChart.less",
+			"size": 545,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/ComparisonMicroChart.less",
+			"size": 963,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/DeltaMicroChart.less",
+			"size": 427,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/HarveyBallMicroChart.less",
+			"size": 547,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/InteractiveBarChart.less",
+			"size": 2335,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/InteractiveDonutChart.less",
+			"size": 2976,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/InteractiveLineChart.less",
+			"size": 2741,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/LineMicroChart.less",
+			"size": 332,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/RadialMicroChart.less",
+			"size": 906,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/SharedStyles.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/StackedBarMicroChart.less",
+			"size": 350,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css-variables.css",
+			"size": 4509,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css-variables.source.less",
+			"size": 86309,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-RTL.css",
+			"size": 69843,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-parameters.json",
+			"size": 1939,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-skeleton-RTL.css",
+			"size": 75877,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-skeleton.css",
+			"size": 75865,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.css",
+			"size": 69831,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.less",
+			"size": 15590,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.source.less",
+			"size": 705,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/AreaMicroChart.less",
+			"size": 290,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/InteractiveBarChart.less",
+			"size": 828,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/InteractiveDonutChart.less",
+			"size": 1120,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/InteractiveLineChart.less",
+			"size": 1416,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/SharedStyles.less",
+			"size": 357,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/StackedBarMicroChart.less",
+			"size": 371,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.css",
+			"size": 8850,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.source.less",
+			"size": 87874,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 105965,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"size": 3914,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton-RTL.css",
+			"size": 110251,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton.css",
+			"size": 110237,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 105951,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 5250,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 477,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_bluecrystal/.theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/AreaMicroChart.less",
+			"size": 288,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/BulletMicroChart.less",
+			"size": 2568,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/ComparisonMicroChart.less",
+			"size": 1631,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/DeltaMicroChart.less",
+			"size": 408,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/HarveyBallMicroChart.less",
+			"size": 573,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/RadialMicroChart.less",
+			"size": 453,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.css",
+			"size": 4528,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.source.less",
+			"size": 103067,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL.css",
+			"size": 63093,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-parameters.json",
+			"size": 1926,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton-RTL.css",
+			"size": 68103,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton.css",
+			"size": 68088,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.css",
+			"size": 63078,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.less",
+			"size": 6771,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.source.less",
+			"size": 464,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_fiori_3/.theming",
+			"size": 90,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css-variables.css",
+			"size": 4399,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css-variables.source.less",
+			"size": 88385,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-RTL.css",
+			"size": 59971,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-parameters.json",
+			"size": 1920,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-skeleton-RTL.css",
+			"size": 63794,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-skeleton.css",
+			"size": 63781,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.css",
+			"size": 59958,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.less",
+			"size": 396,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/.theming",
+			"size": 95,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css-variables.css",
+			"size": 4481,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css-variables.source.less",
+			"size": 88360,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-RTL.css",
+			"size": 60071,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-parameters.json",
+			"size": 1958,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-skeleton-RTL.css",
+			"size": 63794,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-skeleton.css",
+			"size": 63781,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.css",
+			"size": 60058,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.less",
+			"size": 411,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.source.less",
+			"size": 263,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/AreaMicroChart.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/BulletMicroChart.less",
+			"size": 1389,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/ColumnMicroChart.less",
+			"size": 545,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/ComparisonMicroChart.less",
+			"size": 963,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/DeltaMicroChart.less",
+			"size": 427,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/HarveyBallMicroChart.less",
+			"size": 547,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/InteractiveBarChart.less",
+			"size": 2423,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/InteractiveDonutChart.less",
+			"size": 2975,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/InteractiveLineChart.less",
+			"size": 3032,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/LineMicroChart.less",
+			"size": 332,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/RadialMicroChart.less",
+			"size": 888,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/SharedStyles.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/StackedBarMicroChart.less",
+			"size": 346,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css-variables.css",
+			"size": 4449,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css-variables.source.less",
+			"size": 86342,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-RTL.css",
+			"size": 69815,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-parameters.json",
+			"size": 1890,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-skeleton-RTL.css",
+			"size": 76048,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-skeleton.css",
+			"size": 76035,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.css",
+			"size": 69802,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.less",
+			"size": 15949,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.source.less",
+			"size": 707,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/AreaMicroChart.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/BulletMicroChart.less",
+			"size": 1389,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/ColumnMicroChart.less",
+			"size": 545,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/ComparisonMicroChart.less",
+			"size": 963,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/DeltaMicroChart.less",
+			"size": 427,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/HarveyBallMicroChart.less",
+			"size": 547,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/InteractiveBarChart.less",
+			"size": 2423,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/InteractiveDonutChart.less",
+			"size": 2975,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/InteractiveLineChart.less",
+			"size": 3032,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/LineMicroChart.less",
+			"size": 332,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/RadialMicroChart.less",
+			"size": 888,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/SharedStyles.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/StackedBarMicroChart.less",
+			"size": 346,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css-variables.css",
+			"size": 4509,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css-variables.source.less",
+			"size": 86405,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-RTL.css",
+			"size": 69960,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-parameters.json",
+			"size": 1920,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-skeleton-RTL.css",
+			"size": 76048,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-skeleton.css",
+			"size": 76035,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.css",
+			"size": 69947,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.less",
+			"size": 15949,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.source.less",
+			"size": 707,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/AreaMicroChart.less",
+			"size": 288,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/BulletMicroChart.less",
+			"size": 2862,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/ComparisonMicroChart.less",
+			"size": 841,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/DeltaMicroChart.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/HarveyBallMicroChart.less",
+			"size": 428,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/InteractiveBarChart.less",
+			"size": 2837,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/InteractiveDonutChart.less",
+			"size": 3105,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/InteractiveLineChart.less",
+			"size": 2954,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/RadialMicroChart.less",
+			"size": 721,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.css",
+			"size": 4491,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.source.less",
+			"size": 76132,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"size": 71400,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"size": 1907,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton-RTL.css",
+			"size": 77339,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton.css",
+			"size": 77328,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"size": 71389,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"size": 15283,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"size": 494,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

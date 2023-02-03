@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>BulletChartMode</name>
+    <derived/>
+    <documentation>Enumeration of possible BulletChart display modes.</documentation>
+    <deprecation since="1.34">Deprecated. sap.suite.ui.microchart.BulletMicroChartModeType should be used.</deprecation>
+    <enumeration>
+        <value name="Actual">
+            <documentation>Displays the Actual value.</documentation>
+        </value>
+        <value name="Delta">
+            <documentation>Displays delta between the Actual and Threshold values.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

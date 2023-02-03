@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/Tile</name>
+    <derived/>
+    <documentation>A tile to be displayed in the tile container. This tile acts as container for specialized tile implementations.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="long" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="uuid" type="sap.ui.core/string" group="Misc"/>
+        <property name="tileCatalogId" type="sap.ui.core/string" group="Misc"/>
+        <property name="isCustomTile" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="target" type="sap.ui.core/string" group="Misc"/>
+        <property name="debugInfo" type="sap.ui.core/string" group="Misc"/>
+        <property name="rgba" type="sap.ui.core/string" group="Misc"/>
+        <property name="animationRendered" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="isLocked" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="showActionsIcon" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="tileActionModeActive" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="ieHtml5DnD" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+        <property name="navigationMode" type="sap.ui.core/string" group="Misc"/>
+        <property name="isDraggedInTabBarToSourceGroup" type="sap.ui.core/boolean" defaultValue="false" group="Misc"/>
+    </properties>
+    <events>
+        <event name="press" allowPreventDefault="false"/>
+        <event name="coverDivPress" allowPreventDefault="false"/>
+        <event name="afterRendering" allowPreventDefault="false"/>
+        <event name="showActions" allowPreventDefault="false"/>
+        <event name="deletePress" allowPreventDefault="false"/>
+    </events>
+    <aggregations>
+        <aggregation name="tileViews" type="sap.ui.core/Control" cardinality="0..n"/>
+        <aggregation name="pinButton" type="sap.ui.core/Control" cardinality="0..n"/>
+    </aggregations>
+</control>

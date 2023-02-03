@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/AnchorNavigationBar</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/launchpad/AnchorNavigationBar</documentation>
+    <baseType>sap.m/Bar</baseType>
+    <properties>
+        <property name="accessibilityLabel" type="sap.ui.core/string"/>
+        <property name="selectedItemIndex" type="sap.ui.core/int" defaultValue="0" group="Misc"/>
+        <property name="overflowEnabled" type="sap.ui.core/boolean" defaultValue="true" group="Misc"/>
+    </properties>
+    <events>
+        <event name="afterRendering" allowPreventDefault="false"/>
+        <event name="itemPress" allowPreventDefault="false"/>
+    </events>
+    <aggregations>
+        <aggregation name="groups" type="sap.ushell/ui/launchpad/AnchorItem" cardinality="0..n"/>
+    </aggregations>
+</control>

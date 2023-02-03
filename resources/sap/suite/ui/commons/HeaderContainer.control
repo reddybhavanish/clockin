@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HeaderContainer</name>
+    <derived/>
+    <documentation>The container that provides a horizontal layout. It provides a horizontal scroll on the tablet and phone. On the desktop, it provides scroll left and scroll right buttons. This control supports keyboard navigation. You can use left and right arrow keys to navigate through the inner content. The Home key puts focus on the first control and the End key puts focus on the last control. Use Enter or Space to choose the control.</documentation>
+    <deprecation since="1.44">This control is deprecated in this library since 1.44 and moved to sap.m library that is also part of openUI5.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="scrollStep" type="sap.ui.core/int" defaultValue="300" group="Misc">
+            <documentation>Number of pixels to scroll when the user chooses Next or Previous buttons. Relevant only for desktop.</documentation>
+        </property>
+        <property name="scrollTime" type="sap.ui.core/int" defaultValue="500" group="Misc">
+            <documentation>Scroll animation time in milliseconds.</documentation>
+        </property>
+        <property name="showDividers" type="sap.ui.core/boolean" defaultValue="true" group="Misc" since="1.25">
+            <documentation>If set to true, shows dividers between scrollable items.</documentation>
+        </property>
+        <property name="view" type="sap.suite.ui.commons/HeaderContainerView" defaultValue="Horizontal" group="Misc" since="1.25">
+            <documentation>The view of the HeaderContainer. There are two view modes: horizontal and vertical. In horizontal mode the content controls are displayed next to each other, in vertical mode the content controls are displayed on top of each other.</documentation>
+        </property>
+        <property name="backgroundDesign" type="sap.m/BackgroundDesign" defaultValue="Transparent" group="Misc" since="1.38">
+            <documentation>Specifies the background color of the content. The visualization of the different options depends on the used theme.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="scrollContainer" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Scroll container for smooth scrolling on different platforms.</documentation>
+        </aggregation>
+        <aggregation name="items" type="sap.ui.core/Control" cardinality="0..n">
+            <documentation>Items to add to HeaderContainer.</documentation>
+        </aggregation>
+        <aggregation name="buttonPrev" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Button that allows to scroll to previous section.</documentation>
+        </aggregation>
+        <aggregation name="buttonNext" type="sap.ui.core/Control" cardinality="0..1" visibility="hidden">
+            <documentation>Button that allows to scroll to next section.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

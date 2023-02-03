@@ -1,0 +1,27 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"size": 1347,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"size": 599
+		},
+		{
+			"name": "Quickview-dbg.controller.js",
+			"size": 5689,
+			"isDebug": true
+		},
+		{
+			"name": "Quickview.controller.js",
+			"size": 1841
+		},
+		{
+			"name": "Quickview.fragment.xml",
+			"size": 9496
+		}
+	]
+}

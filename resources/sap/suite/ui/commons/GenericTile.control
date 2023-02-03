@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>GenericTile</name>
+    <derived/>
+    <documentation>The tile control that displays the title, description, and customizable main area.</documentation>
+    <deprecation since="1.34">Deprecated. Moved to openui5.</deprecation>
+    <baseType>sap.m/GenericTile</baseType>
+</control>

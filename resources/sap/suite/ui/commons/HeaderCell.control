@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>HeaderCell</name>
+    <derived/>
+    <documentation>This control contains 4 cells (West, North, East, South). It can display one or more controls in different layouts. Each aggregation must contain only one instance of HeaderCellItem.</documentation>
+    <deprecation since="1.44.0">HeaderCell control is no longer used. Please use other container controls instead (like sap.m.VBox or sap.m.HBox).</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="heigth" type="sap.ui.core/CSSSize" defaultValue="100px" group="Misc">
+            <documentation>Height of the HeaderCell control.</documentation>
+            <deprecation since="1.20.2">Wrong property name</deprecation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" defaultValue="106px" group="Misc">
+            <documentation>Height of the HeaderCell control.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="west" type="sap.suite.ui.commons/HeaderCellItem" cardinality="0..1">
+            <documentation>Object that contains control to render in west area of the HeaderCell.</documentation>
+        </aggregation>
+        <aggregation name="north" type="sap.suite.ui.commons/HeaderCellItem" cardinality="0..1">
+            <documentation>Object that contains control to render in north area of the HeaderCell.</documentation>
+        </aggregation>
+        <aggregation name="east" type="sap.suite.ui.commons/HeaderCellItem" cardinality="0..1">
+            <documentation>Object that contains control to render in east area of the HeaderCell.</documentation>
+        </aggregation>
+        <aggregation name="south" type="sap.suite.ui.commons/HeaderCellItem" cardinality="0..1">
+            <documentation>Object that contains control to render in south area of the HeaderCell.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

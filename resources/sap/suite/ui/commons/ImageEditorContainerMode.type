@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ImageEditorContainerMode</name>
+    <derived/>
+    <documentation>Mode types for {@link sap.suite.ui.commons.imageeditor.ImageEditorContainer}.</documentation>
+    <enumeration>
+        <value name="Transform">
+            <documentation>Mode with resize, rotate, and flip options.</documentation>
+        </value>
+        <value name="Crop">
+            <documentation>Mode with rectangular and circular/oval crop options.</documentation>
+        </value>
+        <value name="Filter">
+            <documentation>Mode with filter options, including grayscale, sepia, brightness, contrast, saturation, and some other.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

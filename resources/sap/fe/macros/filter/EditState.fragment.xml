@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:core="sap.ui.core"
+	template:require="{
+							ID: 'sap/fe/core/helpers/StableIdHelper',
+							EDITSTATE: 'sap/fe/core/model/DraftEditState'
+						}"
+>
+	<mdc:FilterField
+		label="{this.i18n>filterbar.EDITING_STATUS}"
+		maxConditions="1"
+		id="{= ID.generate([${this>id}, 'FilterField', 'DraftEditingStatus' ]) }"
+		operators="DRAFT_EDIT_STATE"
+		dataType="Edm.String"
+		conditions="{$filters>/conditions/$editState}"
+	>
+		<mdc:contentEdit>
+			<Select
+				selectedKey="{path: '$field>/conditions', type: 'sap.ui.mdc.field.ConditionsType', formatOptions: { operators: ['DRAFT_EDIT_STATE'] } }"
+				items="\{{this>draftEditStateModelName}>/editStates\}"
+				width="100%"
+			>
+				<core:Item key="\{{this>draftEditStateModelName}>id\}" text="\{{this>draftEditStateModelName}>name\}" />
+			</Select>
+		</mdc:contentEdit>
+	</mdc:FilterField>
+</core:FragmentDefinition>

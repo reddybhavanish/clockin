@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>MicroAreaChartLabel</name>
+    <derived/>
+    <documentation>This element contains data for a label in MicroAreaChart control.</documentation>
+    <deprecation since="1.34">this control is a mere wrapper for sap.suite.ui.microchart.AreaMicroChartLabel.</deprecation>
+    <baseType>sap.suite.ui.microchart/AreaMicroChartLabel</baseType>
+</control>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/footerbar/SendAsEmailButton</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/footerbar/SendAsEmailButton</documentation>
+    <baseType>sap.m/Button</baseType>
+    <properties>
+        <property name="beforePressHandler" type="sap.ui.core/any" group="Misc"/>
+        <property name="afterPressHandler" type="sap.ui.core/any" group="Misc"/>
+    </properties>
+</control>

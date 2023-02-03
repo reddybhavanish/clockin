@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>VBI</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The VBI control. This is the Visual Business base control, which is mainly intended to communicate directly with the Visual Business
+       Backend API in a proprietary JSON format. This control should not be used directly in a client side application. For this the control
+       extension &lt;a href="sap.ui.vbm.GeoMap.html"&gt;sap.ui.vbm.GeoMap&lt;/a&gt; is recommended.&lt;br&gt;
+       The main or high level API of the VBI control is made of
+       &lt;ul&gt;
+       &lt;li&gt;method &lt;i&gt;load&lt;/i&gt; for sending JSON to the control for processing, and&lt;/li&gt;
+       &lt;li&gt;event &lt;i&gt;submit&lt;/i&gt; returning a result JSON as parameter data containing actual event information and changed data.&lt;/li&gt;
+       &lt;/ul&gt;
+       Further the high level API provides the thumbnail support.&lt;br&gt;
+       Additionally the control offers a low level API made of several events, like render, zoom, move and so on, which allow to render
+       application specific content directly on the controls canvas.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="800px" group="Misc">
+            <documentation>Set the width of the control.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" defaultValue="600px" group="Misc">
+            <documentation>Set the height of the control.</documentation>
+        </property>
+        <property name="config" type="sap.ui.core/object" group="Misc">
+            <deprecation>This property should not longer be used. Its functionality is covered by method &lt;code&gt;load&lt;/code&gt;.</deprecation>
+        </property>
+        <property name="plugin" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>When true, the ActiveX plugin version of Visual Business will be used for rendering. For that the plugin needs to be installed on
+the client. Default (false) the control renders on canvas.</documentation>
+        </property>
+        <property name="rectangularSelection" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether the rectangular selection mode is active or not</documentation>
+        </property>
+        <property name="lassoSelection" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether the lasso selection mode is active or not</documentation>
+        </property>
+        <property name="rectZoom" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether the rectangular zoom mode is active or not</documentation>
+        </property>
+        <property name="allowKeyEventRepeat" type="sap.ui.core/boolean" defaultValue="true" group="Behavior">
+            <documentation>Allow repeating of keyboard events when key is pressed and hold.</documentation>
+        </property>
+        <property name="keyEventDelay" type="sap.ui.core/int" defaultValue="250" group="Behavior">
+            <documentation>Miminum delay between keyboard events. Used to reduce frequency of keyboard events.</documentation>
+        </property>
+        <property name="enableOverlappingTest" type="sap.ui.core/boolean" defaultValue="true" group="Behavior">
+            <documentation>Enable Test for Overlapped Objects for selection and context menu</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="submit" allowPreventDefault="false">
+            <documentation>High level API. Submit event is raised.</documentation>
+            <parameters>
+                <parameter name="data" type="sap.ui.core/string">
+                    <documentation>JSON (or possibly XML and case the plugin is used) string describing the delta state of Visual Business and the information
+about the event.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="thumbnailClick" allowPreventDefault="false">
+            <documentation>High level API. ThumbnailClick event is raised.</documentation>
+            <parameters>
+                <parameter name="pos" type="sap.ui.core/string">
+                    <documentation>Geo coordinates in format "lon;lat;0"</documentation>
+                </parameter>
+                <parameter name="zoomLevel" type="sap.ui.core/int">
+                    <documentation>Level of detail.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="render" allowPreventDefault="false">
+            <documentation>Low level API. Rendering of the canvas content is reqested. This event can be used to do custom rendering into the Visual Business
+overlay canvas. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="canvas" type="sap.ui.core/object">
+                    <documentation>Canvas object to render into.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="changeTrackingMode" allowPreventDefault="false">
+            <documentation>Low level API. Tracking mode is set or reset. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="mode" type="sap.ui.core/int">
+                    <documentation>tracking mode to set or reset</documentation>
+                </parameter>
+                <parameter name="bSet" type="sap.ui.core/boolean">
+                    <documentation>set or reset the mode</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="zoom" allowPreventDefault="false">
+            <documentation>Low level API. The canvas is zoomed. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="canvas" type="sap.ui.core/object">
+                    <documentation>Canvas object to render into</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="move" allowPreventDefault="false">
+            <documentation>Low level API. The canvas was moved. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="canvas" type="sap.ui.core/object">
+                    <documentation>Canvas object to render into.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="openWindow" allowPreventDefault="false">
+            <documentation>The event is raised before a Visual Business window is opened. It is intended to be used to place arbitrary content in e.g. a
+Detail Window. This event is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="contentarea" type="sap.ui.core/object">
+                    <documentation>DomRef of placeholder Div to render into.</documentation>
+                </parameter>
+                <parameter name="id" type="sap.ui.core/string">
+                    <documentation>ID of the window that is opened.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="closeWindow" allowPreventDefault="false">
+            <documentation>The event is raised before a Visual Business window is closed. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="contentarea" type="sap.ui.core/object">
+                    <documentation>DomRef of placeholder Div for content.</documentation>
+                </parameter>
+                <parameter name="id" type="sap.ui.core/string">
+                    <documentation>ID of the window that is closed.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="containerCreated" allowPreventDefault="false">
+            <documentation>The event is raised when a Visual Business container VO instance is created. It is intended to be used to place arbitrary content
+in e.g. other controls. This event is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="contentarea" type="sap.ui.core/object">
+                    <documentation>DomRef of placeholder Div to render into.</documentation>
+                </parameter>
+                <parameter name="id" type="sap.ui.core/string">
+                    <documentation>ID of the container that was created.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="containerDestroyed" allowPreventDefault="false">
+            <documentation>The event is raised before a Visual Business container VO instance is destroyed. This function is not supported in plugin mode.</documentation>
+            <parameters>
+                <parameter name="contentarea" type="sap.ui.core/object">
+                    <documentation>DomRef of placeholder Div of content.</documentation>
+                </parameter>
+                <parameter name="id" type="sap.ui.core/string">
+                    <documentation>ID of the container that is destroyed.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <methods>
+        <method name="load" type="sap.ui.core/void">
+            <documentation>High level load function. The function accepts a json string or an already parsed json object. This can be a Visual Business application, any
+delta operations on the application or other hierachical data that can be mapped by the Visual Business data provider to the inner Visual
+Business data context.</documentation>
+            <parameters>
+                <parameter name="dat" type="sap.ui.core/string">
+                    <documentation>Application JSON to process</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getPicOfOverlay" type="sap.ui.core/string">
+            <documentation>Returns a Screenshot of the Overlay. Please note that the map cannot be included due to browser restrictions. Function returns the visible part
+of the Canvas excluding map, copyright info, navigation control, scaler, legend, detail windows, container elements. Analytic Maps are returned
+as they are not treated as "maps" internally. Modes 2 &amp; 3 are experimental, trying to load the map (this may work on inhouse servers with
+adapted settings, standard configurations should fail)</documentation>
+            <parameters>
+                <parameter name="mode" type="sap.ui.core/int">
+                    <documentation>0: Overlay only; 1 (default) and 3: include Labels; 2 and 3: try to include maps (will return "" if not possible)</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="minimize" type="sap.ui.core/void">
+            <documentation>Minimize to Thumbnail.</documentation>
+            <parameters>
+                <parameter name="newWidth" type="sap.ui.core/int">
+                    <documentation>Width of the thumbnail</documentation>
+                </parameter>
+                <parameter name="newHeight" type="sap.ui.core/int">
+                    <documentation>Height of the thumbnail</documentation>
+                </parameter>
+                <parameter name="fullWidth" type="sap.ui.core/int">
+                    <documentation>Width of the underlying VBI control. If ommitted or zero, current width is taken</documentation>
+                </parameter>
+                <parameter name="fullHeight" type="sap.ui.core/int">
+                    <documentation>Height of the underlying control. If ommitted or zero, current width is taken</documentation>
+                </parameter>
+                <parameter name="font" type="sap.ui.core/string">
+                    <documentation>Font to be used for text added to the thumbnail</documentation>
+                </parameter>
+                <parameter name="fontCol" type="sap.ui.core/string">
+                    <documentation>Color for the thumbnailtext</documentation>
+                </parameter>
+                <parameter name="fontPos" type="sap.ui.core/int">
+                    <documentation>Position (0 - 8) of the text within the thumbnail</documentation>
+                </parameter>
+                <parameter name="text" type="sap.ui.core/string">
+                    <documentation>text to be shown</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="maximize" type="sap.ui.core/void">
+            <documentation>Maximize from Thumbnail.</documentation>
+            <parameters>
+                <parameter name="fullWidth" type="sap.ui.core/int">
+                    <documentation>Width of the underlying VBI control. If ommitted current width is taken</documentation>
+                </parameter>
+                <parameter name="fullHeight" type="sap.ui.core/int">
+                    <documentation>Height of the underlying control. If ommitted current width is taken</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="zoomToGeoPosition" type="sap.ui.core/void">
+            <documentation>Zoom to one or multiple geo positions. This function works only for the main geo scene in the Visual Business control.</documentation>
+            <parameters>
+                <parameter name="lon" type="sap.ui.core/float">
+                    <documentation>Longitude in degrees. This can also be an array of longitude values.</documentation>
+                </parameter>
+                <parameter name="lat" type="sap.ui.core/float">
+                    <documentation>Latitude in degrees. This can also be an array of latitude values.</documentation>
+                </parameter>
+                <parameter name="lod" type="sap.ui.core/int">
+                    <documentation>Level of detail, usually between 0 and 20. This will be limited by the map provider capabilities.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="zoomToAreas" type="sap.ui.core/void">
+            <documentation>Zoom to one or multiple Areas. This function works only for the main geo scene in the Visual Business control.</documentation>
+            <parameters>
+                <parameter name="areaList" type="any">
+                    <documentation>List of Area Ids to zoom to.</documentation>
+                </parameter>
+                <parameter name="corr" type="sap.ui.core/float">
+                    <documentation>. This correction factor deals with the space which is reserved to the div borders. The Correction factor can be expressed</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getInfoForCluster" type="any">
+            <documentation>Retrieve information on a specific cluster object.
+
+Type : 
+&lt;ul&gt;
+&lt;li&gt;0 : contained VOs&lt;/li&gt; 
+&lt;li&gt;1 : child clusters (tree clustering only)&lt;/li&gt; 
+&lt;li&gt;2 : parent Node (tree clustering only)&lt;/li&gt; 
+&lt;li&gt;10 : Information on Node&lt;/li&gt; 
+&lt;li&gt;11 : Edges of the Voronoi Area (tree clustering only, not merged with rectangle)&lt;/li&gt;
+&lt;/ul&gt;</documentation>
+            <parameters>
+                <parameter name="ident" type="sap.ui.core/string">
+                    <documentation>Cluster Id</documentation>
+                </parameter>
+                <parameter name="type" type="sap.ui.vbm/ClusterInfoType">
+                    <documentation>Type of information which should be returned</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

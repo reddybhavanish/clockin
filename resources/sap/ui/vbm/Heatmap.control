@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Heatmap</name>
+    <derived/>
+    <documentation>Type specific Visual Object aggregation for &lt;i&gt;HeatPoint&lt;/i&gt; instances.</documentation>
+    <baseType>sap.ui.vbm/VoAbstract</baseType>
+    <properties>
+        <property name="gradient" type="any" group="Misc">
+            <documentation>Gradient Definition. Can be either provided as Ressource - then it is type string.&lt;br&gt;
+Or as Array [n0,c0,n1,c1,...,nk,ck] (ni &gt; ni-1; ci respective colors) with an arbitrary number of color stops as in the following&lt;br&gt;
+Example: [0,'rgba(0,255,0,1)',220,'rgba(255,255,0,1)',255,'rgba(255,0,0,1)']</documentation>
+        </property>
+        <property name="opacity" type="sap.ui.core/string" defaultValue="0.5" group="Misc">
+            <documentation>Opacity of the heatmap.</documentation>
+        </property>
+        <property name="behavior" type="sap.ui.core/string" defaultValue="2" group="Misc">
+            <documentation>Behavior of the HeatPoint, 0 Density Map, 2: Heat Map, 1: Intermediate.</documentation>
+        </property>
+        <property name="valueScale" type="sap.ui.core/string" defaultValue="1.0" group="Misc">
+            <documentation>Scaling factor for the sample values.</documentation>
+        </property>
+        <property name="radiusScale" type="sap.ui.core/string" defaultValue="1.0" group="Misc">
+            <documentation>Scaling factor for the sample radiuses.</documentation>
+        </property>
+        <property name="alphaExponent" type="sap.ui.core/string" defaultValue="1.0" group="Misc">
+            <documentation>Exponent for the alphaChannel&lt;br&gt;
+aE = 1 : alpha Channel remains linear&lt;br&gt;
+0 &lt; aE &lt; 1 : (e.g. aE=0.5 "square root") sub linear alpha channeling (lower value colors remain longer visible; range appears wider)&lt;br&gt;
+aE &gt; 1 (e.g. aE=2: "squared") above linear alpha channeling ( lower value colors remain shortly visible; range appears chopped)&lt;br&gt;</documentation>
+        </property>
+        <property name="colorExponent" type="sap.ui.core/string" defaultValue="1.0" group="Misc">
+            <documentation>Exponent for the color&lt;br&gt;
+aE = 1 : Linear Gradient&lt;br&gt;
+0 &lt; aE &lt; 1 : Sublinear Gradient; i.E. with cE=0.5 point values are square rooted before usage [share of lower value cols will decrease]&lt;br&gt;
+aE &gt; 1 : Higher Level Gradient; i.E. with cE=2 point values are squared before usage [share of lower value cols will increase]</documentation>
+        </property>
+    </properties>
+    <aggregations default="items">
+        <aggregation name="items" type="sap.ui.vbm/HeatPoint" cardinality="0..n">
+            <documentation>HeatPoint object aggregation</documentation>
+        </aggregation>
+    </aggregations>
+</control>

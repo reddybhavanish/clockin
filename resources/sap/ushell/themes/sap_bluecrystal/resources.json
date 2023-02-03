@@ -1,0 +1,262 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "AboutDialog.less",
+			"size": 51,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ActionMode.less",
+			"size": 1055,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "AnchorItem.less",
+			"size": 1679,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "AnchorNavigationBar.less",
+			"size": 2138,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "Catalog.less",
+			"size": 986,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ContactSupport.less",
+			"size": 602,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "DynamicTile.less",
+			"size": 2537,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "EndUserFeedback.less",
+			"size": 1216,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "Factsheet.less",
+			"size": 821,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "FloatingContainer.less",
+			"size": 226,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "GroupList.less",
+			"size": 2173,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "HistoryScreen.less",
+			"size": 419,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "LoadingDialog.less",
+			"size": 1320,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "MeArea.less",
+			"size": 1222,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "NavTree.less",
+			"size": 2283,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "PictureTile.less",
+			"size": 278,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "PlusTile.less",
+			"size": 1120,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchBarChart.less",
+			"size": 715,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchFacet.less",
+			"size": 268,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchFacetTabBar.less",
+			"size": 117,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchFieldGroup.less",
+			"size": 1017,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchResultListItem.less",
+			"size": 487,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SearchTileContainer.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ShellFloatingAction.less",
+			"size": 1381,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ShellHeader.less",
+			"size": 2621,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ShellLayout.less",
+			"size": 320,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "SplitContainer.less",
+			"size": 64,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "Tile.less",
+			"size": 4445,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "TileBase.less",
+			"size": 2698,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "TileContainer.less",
+			"size": 9962,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "TileState.less",
+			"size": 360,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "ToolAreaItem.less",
+			"size": 1246,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "UserPreferencesButton.less",
+			"size": 383,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 28251,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 129834,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "flower-standalone.less",
+			"size": 753,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 226236,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 11762,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 230839,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 230734,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.css",
+			"size": 226130,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.less",
+			"size": 49526,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "library.source.less",
+			"size": 1245,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+        (c) Copyright 2009-2015 SAP SE. All rights reserved
+    
+ */
+sap.ui.define(["sap/ui/core/Control","sap/ui/vk/SafeAreaRenderer"],function(C,S){"use strict";var a=C.extend("sap.ui.vk.SafeArea",{metadata:{aggregations:{settingsControl:{type:"sap.ui.core.Control",multiple:false}}},constructor:function(i,s){C.apply(this,arguments);}});a.prototype.onAfterRendering=function(){this.resize();};a.prototype.resize=function(){var s=this.getDomRef();var v=this.getParent();if(!s||!v){return;}var b=v.getDomRef().getBoundingClientRect();var c=b.width/b.height;var d=c;var e=v.getCurrentView();if(e&&e.getAspectRatio()&&e.getAspectRatio()>0&&e.getAspectRatio()<25){d=e.getAspectRatio();}var h=b.height;var w=b.width;if(c>d){s.style.height=(h-4)+"px";s.style.width=(h*d-4)+"px";s.style.left=(w-(h*d-4))/2+"px";s.style.top="";}else if(c<d){s.style.height=(w/d-4)+"px";s.style.width=(w-4)+"px";s.style.top=(h-(w/d-4))/2+"px";s.style.left="";}else{s.style.height=(h-4)+"px";s.style.width=(w-4)+"px";}if(this.getSettingsControl()){var f=this.getSettingsControl().getDomRef();var g=window.getComputedStyle(document.getElementById(this.getSettingsControl().sId));var i=g.height;f.style.position="absolute";if(c<d&&((h-parseFloat(s.style.height))/2)>parseFloat(i)){f.style.bottom=(parseFloat(s.style.height)+2)+"px";f.style.left="-2px";f.style.top="";}else{f.style.top="0px";f.style.left="0px";f.style.bottom="";}}};return a;});

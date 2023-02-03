@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/SimpleShape</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A simple shape that consists of a single SVG shape.</documentation>
+    <since>1.50</since>
+    <abstract/>
+    <baseType>sap.suite.ui.commons/statusindicator/Shape</baseType>
+    <properties>
+        <property name="strokeWidth" type="sap.ui.core/float" defaultValue="0.25">
+            <documentation>Specifies the width of the shape's outline.</documentation>
+        </property>
+        <property name="strokeColor" type="sap.m/ValueCSSColor" defaultValue="Neutral">
+            <documentation>Specifies the color of the shape's outline.</documentation>
+        </property>
+    </properties>
+</control>

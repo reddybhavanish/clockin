@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Container</name>
+    <derived/>
+    <documentation>Specific Visual Object element acting as a container for other controls. A Container is positioned at the given position on the map. It
+       can aggregate other controls, which will then move with the map.&lt;br&gt;
+       &lt;b&gt;Since a Container is not a real visual object most features borrowed from &lt;i&gt;VoBase&lt;/i&gt; will not work. There is no label, no edit
+       mode, and no drop support. Events like click will only be fired if the aggregated control is not handling them.&lt;/b&gt;</documentation>
+    <baseType>sap.ui.vbm/VoBase</baseType>
+    <properties>
+        <property name="position" type="sap.ui.core/string" group="Misc">
+            <documentation>The position for the Container. The format is "lon;lat;0".</documentation>
+        </property>
+        <property name="alignment" type="sap.ui.core/string" defaultValue="0" group="Misc">
+            <documentation>Alignment of the container to its position:
+&lt;ul&gt;
+&lt;li&gt;0: center
+&lt;li&gt;1: top center
+&lt;li&gt;2: top right
+&lt;li&gt;3: center right
+&lt;li&gt;4: bottom right
+&lt;li&gt;5: bottom center
+&lt;li&gt;6: bottom left
+&lt;li&gt;7: center left
+&lt;li&gt;8: top left
+&lt;/ul&gt;</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="item" type="sap.ui.core/Control" cardinality="0..1">
+            <documentation>The control that should be placed in the container.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

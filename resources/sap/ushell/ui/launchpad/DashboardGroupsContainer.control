@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/DashboardGroupsContainer</name>
+    <derived/>
+    <documentation>Add your documentation for the newui/launchpad/DashboardGroupsContainer</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="accessibilityLabel" type="sap.ui.core/string">
+            <documentation>An value for an optional accessibility label</documentation>
+        </property>
+        <property name="displayMode" type="sap.ui.core/string"/>
+        <property name="_gridEnabled" type="sap.ui.core/boolean" defaultValue="false"/>
+    </properties>
+    <events>
+        <event name="afterRendering" allowPreventDefault="false"/>
+    </events>
+    <aggregations>
+        <aggregation name="groups" type="sap.ui.core/Control" cardinality="0..n"/>
+    </aggregations>
+</control>

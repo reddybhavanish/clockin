@@ -1,0 +1,470 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/Component.js",
+			"size": 20927,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Component.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"size": 378,
+			"merged": true,
+			"required": [
+				"sap/ui/Device.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			],
+			"included": [
+				"sap/ushell_abap/plugins/fcc-transport-ui/Component.js",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ar.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_bg.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ca.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_cs.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_da.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_de.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_el.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_sappsd.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_saptrc.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_es.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_et.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hu.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_it.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_iw.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ja.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_kk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ko.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lt.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lv.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ms.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_nl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_no.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pt.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ro.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ru.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sh.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sv.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_th.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_tr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_uk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_vi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_CN.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_TW.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/manifest.json",
+				"sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"size": 126338,
+			"merged": true,
+			"required": [
+				"sap/ui/Device.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			],
+			"included": [
+				"sap/ushell_abap/plugins/fcc-transport-ui/Component.js",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ar.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_bg.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ca.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_cs.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_da.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_de.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_el.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_sappsd.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_saptrc.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_es.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_et.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hu.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_it.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_iw.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ja.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_kk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ko.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lt.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lv.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ms.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_nl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_no.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pt.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ro.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ru.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sh.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sl.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sv.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_th.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_tr.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_uk.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_vi.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_CN.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_TW.properties",
+				"sap/ushell_abap/plugins/fcc-transport-ui/manifest.json",
+				"sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/Component.js",
+			"size": 6731,
+			"required": [
+				"sap/ui/core/Component.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ushell_abap/plugins/fcc-transport-ui/model/models.js"
+			]
+		},
+		{
+			"name": "css/style.css",
+			"size": 35
+		},
+		{
+			"name": "i18n/i18n.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n.properties",
+			"size": 1659,
+			"locale": "",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ar.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ar.properties",
+			"size": 3183,
+			"locale": "ar",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_bg.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_bg.properties",
+			"size": 3669,
+			"locale": "bg",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ca.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ca.properties",
+			"size": 1723,
+			"locale": "ca",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_cs.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_cs.properties",
+			"size": 1736,
+			"locale": "cs",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_da.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_da.properties",
+			"size": 1552,
+			"locale": "da",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_de.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_de.properties",
+			"size": 1631,
+			"locale": "de",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_el.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_el.properties",
+			"size": 4031,
+			"locale": "el",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en.properties",
+			"size": 1571,
+			"locale": "en",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en_US_sappsd.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_sappsd.properties",
+			"size": 4586,
+			"locale": "en_US_sappsd",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_en_US_saptrc.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_en_US_saptrc.properties",
+			"size": 1984,
+			"locale": "en_US_saptrc",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_es.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_es.properties",
+			"size": 1725,
+			"locale": "es",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_et.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_et.properties",
+			"size": 1587,
+			"locale": "et",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_fi.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fi.properties",
+			"size": 1624,
+			"locale": "fi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_fr.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_fr.properties",
+			"size": 1756,
+			"locale": "fr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hi.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hi.properties",
+			"size": 3447,
+			"locale": "hi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hr.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hr.properties",
+			"size": 1634,
+			"locale": "hr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_hu.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_hu.properties",
+			"size": 1755,
+			"locale": "hu",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_it.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_it.properties",
+			"size": 1635,
+			"locale": "it",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_iw.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_iw.properties",
+			"size": 3113,
+			"locale": "iw",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ja.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ja.properties",
+			"size": 2437,
+			"locale": "ja",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_kk.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_kk.properties",
+			"size": 3524,
+			"locale": "kk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ko.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ko.properties",
+			"size": 2230,
+			"locale": "ko",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_lt.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lt.properties",
+			"size": 1705,
+			"locale": "lt",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_lv.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_lv.properties",
+			"size": 1851,
+			"locale": "lv",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ms.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ms.properties",
+			"size": 1594,
+			"locale": "ms",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_nl.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_nl.properties",
+			"size": 1554,
+			"locale": "nl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_no.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_no.properties",
+			"size": 1590,
+			"locale": "no",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_pl.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pl.properties",
+			"size": 1766,
+			"locale": "pl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_pt.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_pt.properties",
+			"size": 1727,
+			"locale": "pt",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ro.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ro.properties",
+			"size": 1698,
+			"locale": "ro",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_ru.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_ru.properties",
+			"size": 3516,
+			"locale": "ru",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sh.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sh.properties",
+			"size": 1611,
+			"locale": "sh",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sk.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sk.properties",
+			"size": 1754,
+			"locale": "sk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sl.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sl.properties",
+			"size": 1618,
+			"locale": "sl",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_sv.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_sv.properties",
+			"size": 1581,
+			"locale": "sv",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_th.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_th.properties",
+			"size": 3751,
+			"locale": "th",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_tr.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_tr.properties",
+			"size": 1780,
+			"locale": "tr",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_uk.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_uk.properties",
+			"size": 3636,
+			"locale": "uk",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_vi.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_vi.properties",
+			"size": 2401,
+			"locale": "vi",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_zh_CN.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_CN.properties",
+			"size": 1892,
+			"locale": "zh_CN",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "i18n/i18n_zh_TW.properties",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/i18n/i18n_zh_TW.properties",
+			"size": 1908,
+			"locale": "zh_TW",
+			"raw": "i18n/i18n.properties"
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/manifest.json",
+			"size": 1157
+		},
+		{
+			"name": "model/models-dbg.js",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/model/models.js",
+			"size": 273,
+			"isDebug": true,
+			"required": [
+				"sap/ui/Device.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "model/models.js",
+			"module": "sap/ushell_abap/plugins/fcc-transport-ui/model/models.js",
+			"size": 190,
+			"required": [
+				"sap/ui/Device.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "resources.json",
+			"size": 13359
+		}
+	]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ThingCollection</name>
+    <derived/>
+    <documentation>This control contains a collection of the sap.ui.ux3.ThingViewer controls or descendants of sap.ui.ux3.ThingViewer. It allows you to navigate through them as well as delete them from the collection.</documentation>
+    <deprecation since="1.32">Deprecated. Object page should be used instead.</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/CSSSize" defaultValue="100%" group="Misc">
+            <documentation>The width of the control.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" defaultValue="100%" group="Misc">
+            <documentation>The height of the control.</documentation>
+        </property>
+        <property name="minWidth" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>The minimal width of the control.</documentation>
+        </property>
+        <property name="minHeight" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>The minimal height of the control.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="content" type="sap.ui.ux3/ThingViewer" cardinality="0..n">
+            <documentation>Contains a collection of sap.ui.ux3.ThingViewer controls or descendants of sap.ui.ux3.ThingViewer.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

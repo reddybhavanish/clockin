@@ -1,0 +1,37 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "SAPWebAnalyticsFLPPlugin",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"i18n": "i18n/i18n.properties",
+		"title": "{{APP_TITLE}}",
+		"description": "{{APP_DESCRIPTION}}"
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.71.0",
+			"libs": {
+				"sap.ui.core": {}
+			}
+		},
+		"contentDensities": {
+			"compact": false,
+			"cozy": false
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

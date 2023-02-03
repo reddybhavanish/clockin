@@ -1,0 +1,901 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 973
+		},
+		{
+			"name": ".theming",
+			"size": 81
+		},
+		{
+			"name": "layout/AbsoluteLayout-dbg.js",
+			"module": "sap/zen/commons/layout/AbsoluteLayout.js",
+			"size": 16623,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Control.js",
+				"sap/zen/commons/layout/PositionContainer.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/AbsoluteLayout.control",
+			"size": 6336,
+			"designtime": true
+		},
+		{
+			"name": "layout/AbsoluteLayout.js",
+			"module": "sap/zen/commons/layout/AbsoluteLayout.js",
+			"size": 5647,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Control.js",
+				"sap/zen/commons/layout/PositionContainer.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/AbsoluteLayoutRenderer-dbg.js",
+			"module": "sap/zen/commons/layout/AbsoluteLayoutRenderer.js",
+			"size": 5638,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js"
+			]
+		},
+		{
+			"name": "layout/AbsoluteLayoutRenderer.js",
+			"module": "sap/zen/commons/layout/AbsoluteLayoutRenderer.js",
+			"size": 2470,
+			"required": [
+				"jquery.sap.global.js"
+			]
+		},
+		{
+			"name": "layout/BackgroundDesign.type",
+			"size": 1252,
+			"designtime": true
+		},
+		{
+			"name": "layout/HAlign.type",
+			"size": 1187,
+			"designtime": true
+		},
+		{
+			"name": "layout/MatrixLayout-dbg.js",
+			"module": "sap/zen/commons/layout/MatrixLayout.js",
+			"size": 6288,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/EnabledPropagator.js",
+				"sap/zen/commons/layout/MatrixLayoutCell.js",
+				"sap/zen/commons/layout/MatrixLayoutRow.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayout.control",
+			"size": 3614,
+			"designtime": true
+		},
+		{
+			"name": "layout/MatrixLayout.js",
+			"module": "sap/zen/commons/layout/MatrixLayout.js",
+			"size": 1577,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/EnabledPropagator.js",
+				"sap/zen/commons/layout/MatrixLayoutCell.js",
+				"sap/zen/commons/layout/MatrixLayoutRow.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutCell-dbg.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutCell.js",
+			"size": 6299,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutCell.control",
+			"size": 5604,
+			"designtime": true
+		},
+		{
+			"name": "layout/MatrixLayoutCell.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutCell.js",
+			"size": 1087,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutRenderer-dbg.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutRenderer.js",
+			"size": 20424,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutRenderer.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutRenderer.js",
+			"size": 7945,
+			"required": [
+				"jquery.sap.global.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutRow-dbg.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutRow.js",
+			"size": 4541,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/MatrixLayoutRow.control",
+			"size": 3615,
+			"designtime": true
+		},
+		{
+			"name": "layout/MatrixLayoutRow.js",
+			"module": "sap/zen/commons/layout/MatrixLayoutRow.js",
+			"size": 727,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/Padding.type",
+			"size": 1475,
+			"designtime": true
+		},
+		{
+			"name": "layout/PositionContainer-dbg.js",
+			"module": "sap/zen/commons/layout/PositionContainer.js",
+			"size": 12814,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/PositionContainer.control",
+			"size": 2746,
+			"designtime": true
+		},
+		{
+			"name": "layout/PositionContainer.js",
+			"module": "sap/zen/commons/layout/PositionContainer.js",
+			"size": 5194,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/core/Element.js",
+				"sap/zen/commons/library.js"
+			]
+		},
+		{
+			"name": "layout/Separation.type",
+			"size": 1476,
+			"designtime": true
+		},
+		{
+			"name": "layout/VAlign.type",
+			"size": 659,
+			"designtime": true
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/zen/commons/library.js",
+			"size": 6806,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/library.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/zen/commons/library-h2-preload.js",
+			"size": 3950,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/EnabledPropagator.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/library.js"
+			],
+			"included": [
+				"sap/zen/commons/library.js",
+				"sap/zen/commons/manifest.json",
+				"sap/zen/commons/layout/AbsoluteLayout.js",
+				"sap/zen/commons/layout/AbsoluteLayoutRenderer.js",
+				"sap/zen/commons/layout/MatrixLayout.js",
+				"sap/zen/commons/layout/MatrixLayoutCell.js",
+				"sap/zen/commons/layout/MatrixLayoutRenderer.js",
+				"sap/zen/commons/layout/MatrixLayoutRow.js",
+				"sap/zen/commons/layout/PositionContainer.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"size": 1062,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/zen/commons/library-preload.js",
+			"size": 26622,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/CustomStyleClassSupport.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/EnabledPropagator.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/library.js"
+			],
+			"included": [
+				"sap/zen/commons/layout/AbsoluteLayout.js",
+				"sap/zen/commons/layout/AbsoluteLayoutRenderer.js",
+				"sap/zen/commons/layout/MatrixLayout.js",
+				"sap/zen/commons/layout/MatrixLayoutCell.js",
+				"sap/zen/commons/layout/MatrixLayoutRenderer.js",
+				"sap/zen/commons/layout/MatrixLayoutRow.js",
+				"sap/zen/commons/layout/PositionContainer.js",
+				"sap/zen/commons/library.js",
+				"sap/zen/commons/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 30376,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/zen/commons/library.js",
+			"size": 1436,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/library.js"
+			]
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/zen/commons/manifest.json",
+			"size": 1558
+		},
+		{
+			"name": "resources.json",
+			"size": 3620
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/AbsoluteLayout.less",
+			"size": 832,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.css",
+			"size": 119,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css-variables.source.less",
+			"size": 79704,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_flat_0_aaaaaa_40x100.png",
+			"size": 149,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_flat_75_ffffff_40x100.png",
+			"size": 146,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_glass_55_fbf9ee_1x400.png",
+			"size": 117,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_glass_65_ffffff_1x400.png",
+			"size": 95,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_glass_75_dadada_1x400.png",
+			"size": 133,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_glass_75_e6e6e6_1x400.png",
+			"size": 120,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_glass_95_fef1ec_1x400.png",
+			"size": 122,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-bg_highlight-soft_75_cccccc_1x100.png",
+			"size": 141,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-icons_222222_256x240.png",
+			"size": 6127,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-icons_2e83ff_256x240.png",
+			"size": 6127,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-icons_454545_256x240.png",
+			"size": 6127,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-icons_888888_256x240.png",
+			"size": 6127,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/jQuery/ui-icons_cd0a0a_256x240.png",
+			"size": 6127,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/layout/separationLarge.gif",
+			"size": 46,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/layout/separationMedium.gif",
+			"size": 45,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img-RTL/layout/separationSmall.gif",
+			"size": 44,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_flat_0_aaaaaa_40x100.png",
+			"size": 180,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_flat_75_ffffff_40x100.png",
+			"size": 178,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_glass_55_fbf9ee_1x400.png",
+			"size": 120,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_glass_65_ffffff_1x400.png",
+			"size": 105,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_glass_75_dadada_1x400.png",
+			"size": 111,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_glass_75_e6e6e6_1x400.png",
+			"size": 110,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_glass_95_fef1ec_1x400.png",
+			"size": 119,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-bg_highlight-soft_75_cccccc_1x100.png",
+			"size": 101,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-icons_222222_256x240.png",
+			"size": 4369,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-icons_2e83ff_256x240.png",
+			"size": 4369,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-icons_454545_256x240.png",
+			"size": 4369,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-icons_888888_256x240.png",
+			"size": 4369,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/jQuery/ui-icons_cd0a0a_256x240.png",
+			"size": 4369,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/layout/separationLarge.gif",
+			"size": 46,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/layout/separationMedium.gif",
+			"size": 45,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/img/layout/separationSmall.gif",
+			"size": 44,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/jQueryUiBase.less",
+			"size": 18835,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/layout.less",
+			"size": 2160,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 17719,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton-RTL.css",
+			"size": 17718,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-skeleton.css",
+			"size": 17631,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 17632,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 22373,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 288,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.css",
+			"size": 192,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css-variables.source.less",
+			"size": 82574,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 44080,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"size": 42,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton-RTL.css",
+			"size": 44094,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-skeleton.css",
+			"size": 43924,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 43910,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 439,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 250,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_hcb/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css-variables.css",
+			"size": 119,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css-variables.source.less",
+			"size": 80934,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-RTL.css",
+			"size": 17799,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-skeleton-RTL.css",
+			"size": 17786,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-skeleton.css",
+			"size": 17699,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.css",
+			"size": 17712,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.less",
+			"size": 451,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.source.less",
+			"size": 258,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcw/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css-variables.css",
+			"size": 119,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css-variables.source.less",
+			"size": 80993,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-RTL.css",
+			"size": 17799,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-skeleton-RTL.css",
+			"size": 17786,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-skeleton.css",
+			"size": 17699,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.css",
+			"size": 17712,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.less",
+			"size": 451,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.source.less",
+			"size": 258,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.css",
+			"size": 196,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css-variables.source.less",
+			"size": 82574,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 46133,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"size": 46,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton-RTL.css",
+			"size": 46143,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-skeleton.css",
+			"size": 45973,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 45963,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 460,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 266,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_bluecrystal/.theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.css",
+			"size": 119,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css-variables.source.less",
+			"size": 97590,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL.css",
+			"size": 17782,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-parameters.json",
+			"size": 2,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton-RTL.css",
+			"size": 17786,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-skeleton.css",
+			"size": 17699,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.css",
+			"size": 17695,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.less",
+			"size": 454,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.source.less",
+			"size": 260,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/AbsoluteLayout.less",
+			"size": 301,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.css",
+			"size": 119,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css-variables.source.less",
+			"size": 70665,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/layout/separationLarge.gif",
+			"size": 46,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/layout/separationMedium.gif",
+			"size": 45,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img-RTL/layout/separationSmall.gif",
+			"size": 44,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/layout/separationLarge.gif",
+			"size": 46,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/layout/separationMedium.gif",
+			"size": 45,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/img/layout/separationSmall.gif",
+			"size": 44,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/layout.less",
+			"size": 279,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"size": 17963,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton-RTL.css",
+			"size": 18036,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-skeleton.css",
+			"size": 17949,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"size": 17876,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"size": 952,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"size": 242,
+			"designtime": true,
+			"theme": "sap_hcb"
+		}
+	]
+}

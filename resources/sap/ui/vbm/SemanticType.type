@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>SemanticType</name>
+    <derived/>
+    <documentation>Semantic type with pre-defined display properties, like colors, icon, pin image, and so on. Semantic types enforce to fiori guidelines.</documentation>
+    <enumeration>
+        <value name="None">
+            <documentation>Type indicating no state</documentation>
+        </value>
+        <value name="Error">
+            <documentation>Type indicating an Error state</documentation>
+        </value>
+        <value name="Warning">
+            <documentation>Type indicating a Warning state</documentation>
+        </value>
+        <value name="Success">
+            <documentation>Type indicating a Success/Positive state</documentation>
+        </value>
+        <value name="Default">
+            <documentation>Type indicating the Default state</documentation>
+        </value>
+        <value name="Inactive">
+            <documentation>Type indicating an Inactive state</documentation>
+        </value>
+        <value name="Hidden">
+            <documentation>Type indicating a Hidden state</documentation>
+        </value>
+    </enumeration>
+</simple-type>

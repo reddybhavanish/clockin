@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ViewableLoadStatus</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying the download/load status of a {@link sap.ui.vtm.Viewable}.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Downloading">
+            <documentation>The {@link sap.ui.vtm.Viewable} is being downloaded.</documentation>
+        </value>
+        <value name="Downloaded">
+            <documentation>The {@link sap.ui.vtm.Viewable} was downloaded successfully.</documentation>
+        </value>
+        <value name="DownloadFailed">
+            <documentation>The attempt to download the {@link sap.ui.vtm.Viewable} failed.</documentation>
+        </value>
+        <value name="Loading">
+            <documentation>The {@link sap.ui.vtm.Viewable} is being loaded.</documentation>
+        </value>
+        <value name="Loaded">
+            <documentation>The {@link sap.ui.vtm.Viewable} was loaded successfully.</documentation>
+        </value>
+        <value name="LoadFailed">
+            <documentation>The attempt to load the {@link sap.ui.vtm.Viewable} failed.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

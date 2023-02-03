@@ -1,0 +1,141 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell_abap/transport/Component.js",
+			"size": 10243,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"size": 756,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/layout/form/SimpleForm.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"included": [
+				"sap/ushell_abap/transport/Component.js",
+				"sap/ushell_abap/transport/controller/TransportInformation.controller.js",
+				"sap/ushell_abap/transport/i18n/i18n.properties",
+				"sap/ushell_abap/transport/manifest.json",
+				"sap/ushell_abap/transport/view/TransportInformation.view.xml"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"size": 19130,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/layout/form/SimpleForm.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"included": [
+				"sap/ushell_abap/transport/Component.js",
+				"sap/ushell_abap/transport/controller/TransportInformation.controller.js",
+				"sap/ushell_abap/transport/i18n/i18n.properties",
+				"sap/ushell_abap/transport/manifest.json",
+				"sap/ushell_abap/transport/view/TransportInformation.view.xml"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell_abap/transport/Component.js",
+			"size": 4071,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controller/TransportInformation-dbg.controller.js",
+			"module": "sap/ushell_abap/transport/controller/TransportInformation.controller.js",
+			"size": 3928,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Item.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controller/TransportInformation.controller.js",
+			"module": "sap/ushell_abap/transport/controller/TransportInformation.controller.js",
+			"size": 1616,
+			"required": [
+				"sap/ui/core/Item.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "i18n/i18n.properties",
+			"module": "sap/ushell_abap/transport/i18n/i18n.properties",
+			"size": 797
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ushell_abap/transport/manifest.json",
+			"size": 1874
+		},
+		{
+			"name": "resources.json",
+			"size": 2833
+		},
+		{
+			"name": "view/TransportInformation.view.xml",
+			"module": "sap/ushell_abap/transport/view/TransportInformation.view.xml",
+			"size": 1748,
+			"required": [
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/ui/core/mvc/XMLView.js",
+				"sap/ui/layout/form/SimpleForm.js",
+				"sap/ushell_abap/transport/controller/TransportInformation.controller.js"
+			]
+		}
+	]
+}

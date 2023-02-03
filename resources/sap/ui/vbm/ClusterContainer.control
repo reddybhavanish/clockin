@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ClusterContainer</name>
+    <derived/>
+    <documentation>Specific Visual Object element acting as a container for cluster visualization objects. A ClusterContainer is positioned at a calculated position on the map. It
+       aggregates a visualization controls, which will then move with the map.&lt;br&gt;
+       &lt;b&gt;Since a ClusterContainer is not a real visual object most features borrowed from &lt;i&gt;VoBase&lt;/i&gt; and event &lt;i&gt;Container&lt;/i&gt; will not work. There is no label, no edit
+       mode, and no drop support. Events like click may only be fired if the aggregated control is not handling them. The properties are not changeable as well as the aggregated
+       item. Only read access is possible&lt;/b&gt;</documentation>
+    <baseType>sap.ui.vbm/Container</baseType>
+</control>

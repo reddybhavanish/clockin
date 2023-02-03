@@ -1,0 +1,154 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "AvatarGroup.less",
+			"size": 3794,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Card.less",
+			"size": 8306,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CardLoading.less",
+			"size": 4253,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DynamicPage.less",
+			"size": 7435,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DynamicPageHeader.less",
+			"size": 1215,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DynamicPageTitle.less",
+			"size": 8644,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FlexibleColumnLayout.less",
+			"size": 3210,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GridContainer.less",
+			"size": 1519,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GridDragAndDrop.less",
+			"size": 159,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GridList.less",
+			"size": 1285,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "GridListItem.less",
+			"size": 2363,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "PlanningCalendarInCard.less",
+			"size": 5313,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProductSwitch.less",
+			"size": 74,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ProductSwitchItem.less",
+			"size": 3086,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "SemanticPage.less",
+			"size": 740,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ShellBar.less",
+			"size": 7776,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 3120,
+			"theme": "base"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 83154,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 61842,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 1253,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 63210,
+			"theme": "base"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 63209,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 61843,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 60690,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 751,
+			"designtime": true,
+			"theme": "base"
+		}
+	]
+}

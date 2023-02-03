@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>taccount/TAccount</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The T account control displays debit and credit entries on a general ledger account.
+It can be used to visualize the flow of transactions through the accounts where these transactions are stored.</documentation>
+    <since>1.58.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="measureOfUnit" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>Unit of measurement. Can be set to a currency or any other applicable unit of measurement.&lt;br&gt;
+Please note that if multi-currency accounts are used, the T account control will not
+convert the values to the currency defined in this property.</documentation>
+        </property>
+        <property name="collapsed" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Defines whether the T account should appear as collapsed.&lt;br&gt;By default, it appears as expanded.</documentation>
+        </property>
+        <property name="title" type="sap.ui.core/string" group="Misc">
+            <documentation>Title of the T account.</documentation>
+        </property>
+        <property name="subtitle" type="sap.ui.core/string" group="Misc">
+            <documentation>Subtitle of the T account.</documentation>
+        </property>
+        <property name="orderBy" type="sap.ui.core/string" defaultValue="" group="Misc">
+            <documentation>TAccount property's key, which is used for ordering. If not set, order mode is not enabled. Only supports &lt;code&gt;DateTime&lt;/code&gt; properties.</documentation>
+        </property>
+        <property name="opening" type="sap.ui.core/boolean" defaultValue="false" group="Misc">
+            <documentation>Mode with opening and closing balance of the T account.</documentation>
+        </property>
+        <property name="openingDebit" type="sap.ui.core/float" defaultValue="0" group="Misc">
+            <documentation>Opening debit balance of the T account.</documentation>
+        </property>
+        <property name="openingCredit" type="sap.ui.core/float" defaultValue="0" group="Misc">
+            <documentation>Opening credit balance of the T account.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation name="debit" type="sap.suite.ui.commons/taccount/TAccountItem" cardinality="0..n">
+            <documentation>Debit entries.</documentation>
+        </aggregation>
+        <aggregation name="credit" type="sap.suite.ui.commons/taccount/TAccountItem" cardinality="0..n">
+            <documentation>Credit entries.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

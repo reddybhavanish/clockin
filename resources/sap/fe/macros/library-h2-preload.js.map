@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"sap/fe/macros/library-h2-preload.js",
+"sourceroot":".",
+"sources":["library-dbg.js","manifest.json"],
+"names":[],
+"mappings":";;;;;;AAgBA,gBAAa,yBACZ,GACA,UAAW,CACV,aAoBA,8BACC,KAAM,gBACN,aAAc,gBACd,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,QAAS,SACT,aAAc,IACf,GAEA,OAAO,cACR,EACe,KAChB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+"x_com_sap_openui5_sections":[50,436,492,1446]
+}

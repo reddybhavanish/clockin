@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>networkgraph/RenderType</name>
+    <derived/>
+    <documentation>Determines how nodes are rendered. For optimal performance and usability, it is recommended that you use HTML,
+which allows you to avoid dealing with SVG limitations.</documentation>
+    <enumeration>
+        <value name="Html">
+            <documentation>Nodes are rendered as classic HTML.</documentation>
+        </value>
+        <value name="Svg">
+            <documentation>Nodes are rendered as SVG.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

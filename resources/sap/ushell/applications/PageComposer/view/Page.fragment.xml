@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+    xmlns="sap.ushell.ui.launchpad"
+    xmlns:core="sap.ui.core"
+    xmlns:dnd="sap.ui.core.dnd"
+    id="pageFragment">
+    <Page
+        id="page"
+        edit="{/edit}"
+        enableSectionReordering="{/edit}"
+        sections="{/page/sections}"
+        sectionDrop=".Page.moveSection"
+        addSectionButtonPressed=".Page.addSection">
+        <sections>
+            <Section
+                id="pageSection"
+                class="sapContrastPlus"
+                editable="{/edit}"
+                default="false"
+                enableAddButton="false"
+                enableGridBreakpoints="{= !${/edit}}"
+                enableGridContainerQuery="false"
+                enableResetButton="false"
+                enableShowHideButton="false"
+                enableVisualizationReordering="{/edit}"
+                title="{title}"
+                showNoVisualizationsText="true"
+                sizeBehavior="{viewSettings>/sizeBehavior}"
+                visualizations="{
+                    path: 'viz',
+                    factory: '.Page.visualizationFactory',
+                    key: 'catalogTileId'
+                }"
+                delete=".Page.deleteSection"
+                titleChange=".onSectionTitleChange"
+                visualizationDrop=".Page.moveVisualization" />
+        </sections>
+        <dragDropConfig>
+            <dnd:DropInfo
+                groupName="Section"
+                targetAggregation="sections"
+                drop=".Page.addVisualization" />
+        </dragDropConfig>
+    </Page>
+</core:FragmentDefinition>

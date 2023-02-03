@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>SelectionMode</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Enumeration specifying row selection modes for a {@link sap.ui.vtm.Tree}.</documentation>
+    <developmentState state="experimental" since="1.50.0">This type is experimental and might be modified or removed in future versions.</developmentState>
+    <enumeration>
+        <value name="Single">
+            <documentation>Single selection mode.</documentation>
+        </value>
+        <value name="MultiToggle">
+            <documentation>A multiple selection mode that toggles the selection state of a row when it is clicked.</documentation>
+        </value>
+        <value name="MultiToggleWithSingleSelect">
+            <documentation>A multiple selection mode in which:
+- Single selection occurs when a row is clicked somewhere other than in the checkbox selection area.
+- Multiple rows can be selected by using the checkboxes</documentation>
+        </value>
+    </enumeration>
+</simple-type>

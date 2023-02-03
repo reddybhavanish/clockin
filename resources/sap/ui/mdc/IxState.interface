@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<interface xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>IxState</name>
+    <derived/>
+    <documentation>Interface for controls or entities which support the appliance of an externalized state representation.
+The controls or entities have to implement the following APIs: &lt;code&gt;getCurrentState&lt;/code&gt; &amp; &lt;code&gt;waitForInitialization&lt;/code&gt; methods.</documentation>
+    <since>1.75</since>
+</interface>

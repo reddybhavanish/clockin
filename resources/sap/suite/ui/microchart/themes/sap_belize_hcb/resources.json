@@ -1,0 +1,136 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "AreaMicroChart.less",
+			"size": 377,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "BulletMicroChart.less",
+			"size": 1389,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ColumnMicroChart.less",
+			"size": 545,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "ComparisonMicroChart.less",
+			"size": 963,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "DeltaMicroChart.less",
+			"size": 427,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "HarveyBallMicroChart.less",
+			"size": 547,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "InteractiveBarChart.less",
+			"size": 2423,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "InteractiveDonutChart.less",
+			"size": 2975,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "InteractiveLineChart.less",
+			"size": 2741,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "LineMicroChart.less",
+			"size": 332,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "RadialMicroChart.less",
+			"size": 888,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "SharedStyles.less",
+			"size": 329,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "StackedBarMicroChart.less",
+			"size": 346,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.css",
+			"size": 4445,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "css-variables.source.less",
+			"size": 86250,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 69829,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 1907,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton-RTL.css",
+			"size": 75978,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library-skeleton.css",
+			"size": 75965,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.css",
+			"size": 69816,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.less",
+			"size": 15655,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "library.source.less",
+			"size": 705,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		}
+	]
+}

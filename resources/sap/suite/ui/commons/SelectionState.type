@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>SelectionState</name>
+    <derived/>
+    <documentation>SelectionState</documentation>
+    <deprecation since="1.48">This Enumeration is deprecated as it is not used anywhere.</deprecation>
+    <enumeration>
+        <value name="Selected">
+            <documentation>Selected</documentation>
+        </value>
+        <value name="NotSelected">
+            <documentation>Not Selected</documentation>
+        </value>
+        <value name="Semantic">
+            <documentation>Semantic</documentation>
+        </value>
+    </enumeration>
+</simple-type>

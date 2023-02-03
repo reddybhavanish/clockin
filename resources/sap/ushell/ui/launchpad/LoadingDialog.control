@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui/launchpad/LoadingDialog</name>
+    <derived/>
+    <documentation>Displays a loading dialog with an indicator that an app is loading</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="iconUri" type="sap.ui.core/URI" group="Appearance"/>
+        <property name="text" type="sap.ui.core/URI" group="Appearance"/>
+        <property name="loadAnimationWithInterval" type="sap.ui.core/boolean" defaultValue="true" group="Appearance"/>
+    </properties>
+</control>

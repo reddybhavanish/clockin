@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>statusindicator/Circle</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Status indicator shape in the form of a circle.</documentation>
+    <since>1.50</since>
+    <baseType>sap.suite.ui.commons/statusindicator/SimpleShape</baseType>
+    <properties>
+        <property name="cx" type="sap.ui.core/float" defaultValue="0">
+            <documentation>Defines the x coordinate of the center of the circle with respect to its parent status
+indicator.</documentation>
+        </property>
+        <property name="cy" type="sap.ui.core/float" defaultValue="0">
+            <documentation>Defines the y coordinate of the center of the circle with respect to its parent status
+indicator.</documentation>
+        </property>
+        <property name="r" type="sap.ui.core/float" defaultValue="0">
+            <documentation>Defines the radius of the circle.</documentation>
+        </property>
+    </properties>
+</control>

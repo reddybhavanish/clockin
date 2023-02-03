@@ -1,0 +1,4 @@
+:root{--_sap_ovp_Card_lines-to-show:3;--_sap_ovp_Card_lines-to-show-in-title:2;--_sap_ovp_Card_lines-to-show-in-table:2;--_sap_ovp_Card_lines-to-show-in-title-counter-header:3;--_sap_ovp_Card_height-of-lines-to-show-in-titleIE:2.8em;--_sap_ovp_function_fade1344:rgba(135,135,135,0.5);--_sap_ovp_function_lighten1344:#666;--_sap_ovp_function_darken1358:#000}.sapContrast{--_sap_ovp_function_fade1344:rgba(151,170,187,0.5);--_sap_ovp_function_lighten1344:#fff;}
+
+/* Inline theming parameters */
+#sap-ui-theme-sap\.ovp{background-image:url('data:text/plain;utf-8,%7B%22default%22%3A%7B%22_sap_ovp_Card_lines-to-show%22%3A%223%22%2C%22_sap_ovp_Card_lines-to-show-in-title%22%3A%222%22%2C%22_sap_ovp_Card_lines-to-show-in-table%22%3A%222%22%2C%22_sap_ovp_Card_lines-to-show-in-title-counter-header%22%3A%223%22%2C%22_sap_ovp_Card_height-of-lines-to-show-in-titleIE%22%3A%222.8em%22%7D%2C%22scopes%22%3A%7B%22sapContrast%22%3A%7B%7D%7D%7D')}
