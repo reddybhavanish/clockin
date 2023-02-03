@@ -1,3 +1,0 @@
-<View xmlns="sap.m" displayBlock="true" height="100%" controllerName="sap.fe.templates.RootContainer.controller.NavContainer">
-	<NavContainer id="appContent" />
-</View>

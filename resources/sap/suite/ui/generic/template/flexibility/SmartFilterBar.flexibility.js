@@ -1,1 +1,0 @@
-sap.ui.define(["sap/suite/ui/generic/template/changeHandler/RemoveFilterItem","sap/suite/ui/generic/template/changeHandler/MoveFilterItems","sap/suite/ui/generic/template/changeHandler/AddFilterItem"],function(R,M,A){"use strict";return{"moveFilterItems":M,"addFilterItem":A,"removeFilterItem":R};},true);

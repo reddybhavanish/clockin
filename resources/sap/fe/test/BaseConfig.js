@@ -1,1 +1,0 @@
-sap.ui.define(["./BaseArrangements","./BaseActions","./BaseAssertions"],function(B,a,b){"use strict";return{actions:new a(),assertions:new b(),arrangements:new B(),viewNamespace:"sap.fe.templates",autoWait:true,timeout:60,logLevel:"ERROR",asyncPolling:true};});

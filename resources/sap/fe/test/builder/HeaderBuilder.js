@@ -1,1 +1,0 @@
-sap.ui.define(["./FEBuilder","sap/ui/test/OpaBuilder"],function(F,O){"use strict";var H=function(){return F.apply(this,arguments);};H.create=function(o){return new H(o);};H.prototype=Object.create(F.prototype);H.prototype.constructor=H;return H;});

@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/model/odata/AnnotationHelper","sap/ui/Global"],function(A){"use strict";var r={setRowNavigated:function(b){var c=this.getBindingContext()||this.getParent().getBindingContext();var p=c&&c.getPath();return!!p&&(p===b);}};return r;},true);

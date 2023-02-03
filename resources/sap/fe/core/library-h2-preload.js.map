@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"sap/fe/core/library-h2-preload.js",
-"sourceroot":".",
-"sources":["library-dbg.js","manifest.json"],
-"names":["TemplatedViewServiceFactory","ResourceModelServiceFactory","CacheHandlerServiceFactory","DraftModelService","NavigationService","RoutingServiceFactory","ServiceFactoryRegistry"],
-"mappings":";;;;;;AAgBA,gBAAa,uBACZ,CACC,mDACA,mDACA,kDACA,gDACA,gDACA,6CACA,4CACD,EACA,SACCA,CAA2B,CAC3BC,CAA2B,CAC3BC,CAA0B,CAC1BC,CAAiB,CACjBC,CAAiB,CACjBC,CAAqB,CACrBC,CAED,CAAE,CACD,aA6CA,8BACC,KAAM,cACN,aAAc,eAAgB,qBAC9B,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,QAAS,SACT,aAAc,IACf,GAUA,wBAAyB,CAAE,CAQ1B,QAAS,UAQT,KAAM,OAQN,MAAO,QAQP,SAAU,WAQV,OAAQ,SAQR,YAAa,aACd,EAEAA,CAAsB,sDAAuD,IAAIN,CAA2B,IAC5GM,CAAsB,sDAAuD,IAAIL,CAA2B,IAC5GK,CAAsB,qDAAsD,IAAIJ,CAA0B,IAC1GI,CAAsB,mDAAoD,IAAIH,CAAiB,IAC/FG,CAAsB,mDAAoD,IAAIF,CAAiB,IAC/FE,CAAsB,gDAAiD,IAAID,CAAqB,IAEhG,OAAO,YACR,EACe,KAChB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
-"x_com_sap_openui5_sections":[48,1302,1356,2440]
-}

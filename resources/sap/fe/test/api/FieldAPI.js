@@ -1,1 +1,0 @@
-sap.ui.define(["./BaseAPI","sap/fe/test/Utils","sap/fe/test/builder/FieldBuilder"],function(B,U,F){"use strict";var a=function(f,v){if(!U.isOfType(f,F)){throw new Error("oFieldBuilder parameter must be a FieldBuilder instance");}return B.call(this,f,v);};a.prototype=Object.create(B.prototype);a.prototype.constructor=a;return a;});

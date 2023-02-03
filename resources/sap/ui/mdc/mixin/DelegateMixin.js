@@ -1,7 +1,0 @@
-/*!
- * SAPUI5
-
-		(c) Copyright 2009-2020 SAP SE. All rights reserved
-	
- */
-sap.ui.define([],function(){"use strict";var i=function(I){return function(){this.oDelegatePromise=new Promise(function(r,a){this.fnResolveDelegate=r;this.fnRejectDelegate=a;}.bind(this));this._bLoading=false;I.apply(this,arguments);};};var _=function(){delete this.fnResolveDelegate;delete this.fnRejectDelegate;};var l=function(){var d=this.getDelegate();if(!d||!d.name){throw new Error("Delegate configuration invalid");}if(this._sDelegatePath&&this._sDelegatePath!=d.name){throw new Error("Delegate configuration changes are not allowed");}if(this.DELEGATE){return this.oDelegatePromise;}if(!this._bLoading){this.DELEGATE=sap.ui.require(d.name);if(this.DELEGATE){this._sDelegatePath=d.name;this.fnResolveDelegate(this.DELEGATE);_.apply(this);}else{this._bLoading=true;this._sDelegatePath=d.name;sap.ui.require([d.name],function(o){this.DELEGATE=o;this.fnResolveDelegate(o);_.apply(this);this._bLoading=false;}.bind(this),function(){this.fnRejectDelegate("Module '"+d.name+"' not found control is not ready to use");_.apply(this);this._bLoading=false;}.bind(this));}}return this.oDelegatePromise;};var e=function(E){return function(){this.oDelegatePromise=undefined;this.DELEGATE=undefined;E.apply(this,arguments);};};var D=function(){this.init=i(this.init);this.loadDelegateModule=l;this.exit=e(this.exit);};return D;},true);

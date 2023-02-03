@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"sap/fe/navigation/library-h2-preload.js",
-"sourceroot":".",
-"sources":["library-dbg.js","manifest.json"],
-"names":[],
-"mappings":";;;;;;AAgBA,gBAAa,6BACZ,GACA,UAAW,CACV,aAYA,8BACC,KAAM,oBACN,QAAS,SACT,aAAc,gBACd,MAAO,6BAA8B,sCAAuC,yCAC5E,WAAY,GACZ,SAAU,GACV,SAAU,GACV,aAAc,IACf,GAUA,mCAAoC,CAAE,CAMrC,WAAY,aASZ,aAAc,eAOd,eAAgB,gBACjB,EASA,yBAA0B,CAAE,CAM3B,QAAS,UAOT,UAAW,YAOX,UAAW,YAOX,UAAW,WACZ,EAaA,qCAAsC,CAAE,CAOvC,SAAU,EAQV,kBAAmB,EAOnB,iBAAkB,EAOlB,sBAAuB,CACxB,EAEA,OAAO,kBACR,EACe,KAChB;;;;;;;;;;;;",
-"x_com_sap_openui5_sections":[54,905,965,1624]
-}

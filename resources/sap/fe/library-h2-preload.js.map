@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"sap/fe/library-h2-preload.js",
-"sourceroot":".",
-"sources":["library-dbg.js","manifest.json"],
-"names":["Dialog","Text","Button","oDialog"],
-"mappings":";;;;;;AAgBA,gBAAa,kBACZ,gBAAiB,aAAc,gBAC/B,SAASA,CAAM,CAAEC,CAAI,CAAEC,CAAM,CAAE,CAC9B,aAaA,8BACC,KAAM,SACN,aAAc,eAAgB,oBAC9B,MAAO,GACP,WAAY,GACZ,SAAU,GACV,SAAU,GACV,QAAS,SACT,aAAc,IACf,GAEA,IAAIC,CAAQ,CAAE,IAAIH,CAAM,EACvB,MAAO,sBACP,KAAM,UACN,QAAS,IAAIC,CAAI,EAChB,KAAM,yGACP,GACA,YAAa,IAAIC,CAAM,EACtB,KAAM,aACN,KAAM,KACN,MAAO,UAAW,CACjBC,CAAO,SACR,CACD,GACA,WAAY,UAAW,CACtBA,CAAO,WACR,CACD,GACAA,CAAO,QAEP,OAAO,OACR,EACe,KAChB;;;;;;;;;",
-"x_com_sap_openui5_sections":[43,783,832,1676]
-}

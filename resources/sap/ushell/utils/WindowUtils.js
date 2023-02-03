@@ -1,2 +1,0 @@
-// Copyright (c) 2009-2020 SAP SE, All Rights Reserved
-sap.ui.define(["sap/base/Log"],function(L){"use strict";var W={};W.hasInvalidProtocol=function(U){var u=document.createElement("a");u.setAttribute("href",U);if(u.protocol==="javascript:"){return true;}return false;};W.openURL=function(U,w,a,s){var S=(s===undefined)?true:s;if(S&&this.hasInvalidProtocol(U)){L.fatal("Tried to open a URL with an invalid protocol");throw new Error("Tried to open a URL with an invalid protocol");}return window.open(U,w,a);};return W;});

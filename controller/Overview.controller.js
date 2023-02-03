@@ -11,7 +11,11 @@ sap.ui.define([
 	"sap/ui/Device",
 	"sap/ui/model/json/JSONModel",
 	"sap/ui/core/routing/History",
-], function (BaseController, MessagePopover, MessagePopoverItem, Device, JSONModel, History) {
+	"sap/ui/core/Fragment",
+	"sap/ui/model/Filter",
+	"sap/ui/model/FilterOperator",
+	"sap/ui/model/Sorter",
+], function (BaseController, MessagePopover, MessagePopoverItem, Device, JSONModel, History,Fragment,Sorter,oColumn, comparator,Filter,FilterOperator) {
 	"use strict";
 	/**
 	 * Sets the error state of controls that use a data type.
@@ -19,6 +23,212 @@ sap.ui.define([
 	 * @param {object} oEvent
 	 *   the event raised by UI5 when validation occurs.
 	 */
+	//var oTable;
+	//var oTable = new sap.ui.table();
+	// oTable.addColumn(new sap.ui.table.Column({    
+	// 	label: new sap.ui.commons.Label({text: "Event Type"}),    
+	// 	template: new sap.ui.commons.TextView().bindProperty("text", "Event Type"),    
+	// 	sortProperty: "Event Type",    
+	// 	filterProperty: "Event Type",    
+	// 	width: "200px"
+	// }));
+	
+	// function addColumnSorterAndFilter(oColumn, comparator) {
+	// 	var oTable = oColumn.getParent();
+	// 	var oCustomMenu = new sap.ui.commons.Menu();
+		 
+	// 	  oCustomMenu.addItem(new sap.ui.commons.MenuItem({
+	// 				  text: 'Sort ascending',
+	// 				  icon:"/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_sort_asc.gif",
+	// 				  select:function() {
+	// 				   var oSorter = new sap.ui.model.Sorter(oColumn.getSortProperty(), false);
+	// 				   oSorter.fnCompare=comparator;
+	// 				   oTable.getBinding("rows").sort(oSorter);
+					  
+	// 				   for (var i=0;i<oTable.getColumns().length; i++) oTable.getColumns()[i].setSorted(false);                
+	// 				   oColumn.setSorted(true);
+	// 				   oColumn.setSortOrder(sap.ui.table.SortOrder.Ascending);
+	// 				  }
+	// 	  }));
+	// 	  oCustomMenu.addItem(new sap.ui.commons.MenuItem({
+	// 	   text: 'Sort descending',
+	// 		  icon:"/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_sort_desc.gif",
+	// 		  select:function(oControlEvent) {
+	// 			   var oSorter = new sap.ui.model.Sorter(oColumn.getSortProperty(), true);
+	// 			   oSorter.fnCompare=comparator;
+	// 			   oTable.getBinding("rows").sort(oSorter);
+					  
+	// 			   for (var i=0;i<oTable.getColumns().length; i++) oTable.getColumns()[i].setSorted(false);
+				  
+	// 			   oColumn.setSorted(true);
+	// 			   oColumn.setSortOrder(sap.ui.table.SortOrder.Descending);
+	// 		  }
+	// 	  }));
+		 
+	// 	  oCustomMenu.addItem(new sap.ui.commons.MenuTextFieldItem({
+	// 	text: 'Filter',
+	// 	icon: '/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_filter.gif',
+	// 	select: function(oControlEvent) {
+	// 		var filterValue = oControlEvent.getParameters().item.getValue();
+	// 		var filterProperty = oControlEvent.getSource().getParent().getParent().mProperties.sortProperty;
+	// 		var filters = [];
+	// 		if (filterValue.trim() != '') {
+	// 		var oFilter1 = new sap.ui.model.Filter(filterProperty, sap.ui.model.FilterOperator.EQ, filterValue);
+	// 		filters = [oFilter1];   
+	// 		}
+	// 		oTable.getBinding("rows").filter(filters, sap.ui.model.FilterType.Application);
+	// 	}
+	// 	  }));
+		 
+	// 	  oColumn.setMenu(oCustomMenu);
+	// 	  return oColumn;
+	//   }
+	//   function compareIntegers(value1, value2) {
+	// 	if ((value1 == null || value1 == undefined || value1 == '') &&
+	// 	(value2 == null || value2 == undefined || value2 == '')) return 0;
+	// 	if ((value1 == null || value1 == undefined || value1 == '')) return -1;
+	// 	if ((value2 == null || value2 == undefined || value2 == '')) return 1;
+	// 	if(parseInt(value1) < parseInt(value2)) return -1;
+	// 	if(parseInt(value1) == parseInt(value2)) return 0;
+	// 	if(parseInt(value1) > parseInt(value2)) return 1;           
+	//   };
+	//   var oColumn = new sap.ui.table.Column({
+	// 	label: new sap.ui.commons.Label({text: "Event Type"}),
+	// 	template: new sap.ui.commons.TextView().bindProperty("text", "Event Type"),
+	// 	sortProperty: "Event Type",
+	// 	filterProperty: "Event Type"
+	// 	});
+	// 	oTable.addColumn(oColumn);
+	//   addColumnSorterAndFilter(oColumn, compareIntegers);
+	
+// 	sap.ui.getCore().attachInit(function() {
+//         //Define some sample data
+//         var formatRowNumber = function(val) {
+//             if(!this.getBindingContext()) return null;
+//             var index = this.getBindingContext().getPath().split("/")[2];
+//             // (an example of path value here is "/modelData/0")
+//             return parseInt(index) + 1;
+//         };
+		
+// 	var oTable = new sap.ui.table.Table({
+// 		visibleRowCount: 4,
+// 		firstVisibleRow: 4
+// 	});
+// 	oTable.addColumn(new sap.ui.table.Column({
+// 		label: new sap.ui.commons.Label({text: "Index"}),
+// 		template: new sap.ui.commons.TextView().bindProperty("text", {path: '', formatter:formatRowNumber}),
+// 		width: "200px"
+// 	}));
+// 	oTable.addColumn(new sap.ui.table.Column({
+// 		label: new sap.ui.commons.Label({text: "{i18n>eventType}"}),
+// 		template: new sap.ui.commons.TextView().bindProperty("text", "{i18n>eventType}"),
+// 		width: "200px"
+// 	}));
+
+// 	oTable.addColumn(new sap.ui.table.Column({
+// 		label: new sap.ui.commons.Label({text: "{i18n>timeDate}"}),
+// 		template: new sap.ui.commons.TextField().bindProperty("value", "{i18n>timeDate}"),
+// 		width: "200px"
+// 	}));
+
+// 	//Create a model and bind the table rows to this model
+// 	var oModel = new sap.ui.model.json.JSONModel();
+// 	oModel.setData({modelData: aData});
+// 	oTable.setModel(oModel);
+// 	oTable.bindRows("/modelData");
+// 	//Initially sort the table
+// 	oTable.sort(oTable.getColumns()[0]);
+// 	//Bring the table onto the UI
+// 	oTable.placeAt("content");
+
+
+
+// });
+
+
+
+	// var oTable = oColumn.getParent();
+	// var oCustomMenu = new sap.ui.commons.Menu();
+	 
+	//   oCustomMenu.addItem(new sap.ui.commons.MenuItem({
+	// 			  text: 'Sort ascending',
+	// 			  icon:"/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_sort_asc.gif",
+	// 			  select:function() {
+	// 			   var oSorter = new sap.ui.model.Sorter(oColumn.getSortProperty(), false);
+	// 			   oSorter.fnCompare=comparator;
+	// 			   oTable.getBinding("rows").sort(oSorter);
+				  
+	// 			   for (var i=0;i<oTable.getColumns().length; i++) oTable.getColumns()[i].setSorted(false);                
+	// 			   oColumn.setSorted(true);
+	// 			   oColumn.setSortOrder(sap.ui.table.SortOrder.Ascending);
+	// 			  }
+	//   }));
+	//   oCustomMenu.addItem(new sap.ui.commons.MenuItem({
+	//    text: 'Sort descending',
+	// 	  icon:"/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_sort_desc.gif",
+	// 	  select:function(oControlEvent) {
+	// 		   var oSorter = new sap.ui.model.Sorter(oColumn.getSortProperty(), true);
+	// 		   oSorter.fnCompare=comparator;
+	// 		   oTable.getBinding("rows").sort(oSorter);
+				  
+	// 		   for (var i=0;i<oTable.getColumns().length; i++) oTable.getColumns()[i].setSorted(false);
+			  
+	// 		   oColumn.setSorted(true);
+	// 		   oColumn.setSortOrder(sap.ui.table.SortOrder.Descending);
+	// 	  }
+	//   }));
+	 
+	//   oCustomMenu.addItem(new sap.ui.commons.MenuTextFieldItem({
+	// text: 'Filter',
+	// icon: '/com.sap.scn.demo/resources/sap/ui/table/themes/sap_goldreflection/img/ico12_filter.gif',
+	// select: function(oControlEvent) {
+	// 	var filterValue = oControlEvent.getParameters().item.getValue();
+	// 	var filterProperty = oControlEvent.getSource().getParent().getParent().mProperties.sortProperty;
+	// 	var filters = [];
+	// 	if (filterValue.trim() != '') {
+	// 	var oFilter1 = new sap.ui.model.Filter(filterProperty, sap.ui.model.FilterOperator.EQ, filterValue);
+	// 	filters = [oFilter1];   
+	// 	}
+	// 	oTable.getBinding("rows").filter(filters, sap.ui.model.FilterType.Application);
+	// }
+	//   }));
+	 
+	//   oColumn.setMenu(oCustomMenu);
+	//   return oColumn;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// oTable.addColumn(new sap.ui.table.Column({    
+	// 	label: new sap.ui.commons.Label({text:"Sync Status"}),    
+	// 	template: new sap.ui.commons.TextView().bindProperty("text", "Sync Status"),    
+	// 	sortProperty: "Sync Status",    
+	// 	filterProperty: "Sync Status",    
+	// 	width: "200px"
+	// }));
+
+
+
+
+
+
+
 	function controlErrorHandler(oEvent) {
 		var oControl = oEvent.getParameter("element");
 		var sErrorMessage = oEvent.getParameter("message");
@@ -1626,6 +1836,7 @@ sap.ui.define([
 			this.getEvents(this.dateFrom);
 
 		},
+	
 		/* =========================================================== */
 		/* functions used by application                               */
 		/* =========================================================== */
@@ -1756,10 +1967,15 @@ sap.ui.define([
 										t1 = (t1.substring(0, t1.indexOf(":")) == '0' ? '12' : t1.substring(0, t1.indexOf(":"))) + t1.substring(t1.indexOf(":"), t1.length)
 										t1 = t1 + " AM";
 									}
+								
 									a.results[i].EventTime = t1;
+						
+									a.results[i].colorCode = a.results[i].isSynced ? 'Synced' : 'Not Synced';
+						console.log(a.results[0], 'Sample Result Object');
+									
 									a.results[i].timerforsort = parseInt((hours * 60 * 60) + (mins * 60) + seconds)
 								} else {
-									// a.results[i].EventTime = "";
+							       // a.results[i].EventTime = "";
 								}
 							}
 							a.results[i].type = "Inactive";
@@ -1813,6 +2029,8 @@ sap.ui.define([
 		 * @public
 		 */
 
+
+		
 		initCalendarLegend: function () {
 			this.logMainMsg('initCalendarLegend function start', 'info');
 			if (this.legend) {
@@ -1925,6 +2143,147 @@ sap.ui.define([
 		 * Called when application is busy in loading data.
 		 * @public
 		 */
+
+//         onSort:function(){
+// 			var oView=this.getView();
+// // console.log("hello");
+
+// 			if(! this.byId("sortDialog")){
+// 			Fragment.load({
+//                 id:oView.getId(),
+// 				name:"edu.weill.Timeevents.view.fragments.SortDialog",
+// 				controller:this
+// 			}).then(function (oDialog) {
+// 				oView.addDependent(oDialog);
+// 				oDialog.open();
+			
+// 			});
+// 		}else {
+// 			this.byId("sortDialog").open();
+// 		}
+// 		},
+// 		onSortDialogConfirm:function(oEvent){
+// 			var oView = this.getView();
+//         var oList = oView.byId("idEventsTable");
+//         var oBinding = oList.getBinding("{i18n>timeDate}");
+
+//         var SORTKEY = "{i18n>timeDate}";
+//         var DESCENDING = true;
+//         var GROUP = false;
+//         var aSorters = [];
+
+//         aSorters.push(new sap.ui.model.Sorter(SORTKEY, DESCENDING, GROUP));
+//         oBinding.sort(aSorters);
+// 		var oModel = this.getView().getModel();
+// oModel.refresh();
+// 	},
+
+// onSort:function(){
+// 		var oView = this.getView();
+//         var oList = oView.byId("idEventsTable");
+//         var oBinding = oList.getBinding("{i18n>timeDate}");
+
+//         var SORTKEY = "{i18n>timeDate}";
+//         var DESCENDING = true;
+//         var GROUP = false;
+//         var aSorter = [];
+
+//         aSorter.push(new sap.ui.model.Sorter(SORTKEY, DESCENDING, GROUP));
+//         oBinding.sort(aSorter);
+// 		var oModel = this.getView().getModel();
+// oModel.refresh();
+// 	},
+
+ 
+// onSearch:function(oEvent){
+// 	// console.log("searching function");
+// 	var aFilters=[];
+// 	var sQuery=oEvent.getParameter("query");
+// 	if(sQuery){
+// 		aFilters.push(new sap.ui.model.Filter("{i18n>eventType}",sap.ui.model.FilterOperator.Contains,sQuery));
+
+// 	}
+// 	var oTable=this.byId("idEventsTable1");
+// 	var oBinding=oTable.getBinding("items");
+// 	oBinding.filter(aFilters);
+// },
+
+
+
+
+
+onSort:function(){
+	
+	var oView=this.getView();
+// console.log("hello");
+
+	if(! this.byId("sortDialog")){
+	Fragment.load({
+		id:oView.getId(),
+		name:"edu.weill.Timeevents.view.fragments.SortDialog",
+		controller:this
+	}).then(function (oDialog) {
+		oView.addDependent(oDialog);
+		oDialog.open();
+	
+	});
+}else {
+	this.byId("sortDialog").open();
+}
+},
+onSortDialogConfirm:function(oEvent){
+	// var oSortItem=oEvent.getParameter("sortItem");
+	// var sColumnPath="{i18n>EventTime}";
+	// var bDescending=oEvent.getParameter("sortDescending");
+	// var aSorters= [];
+	// if (oSortItem){
+	// 	sColumnPath=oSortItem.getKey();
+	// }
+	//  //aSorters.push(new Sorter(sColumnPath.bDescending));
+	// // var oBindingPath = oEvent.getSource().getBindingContext().sPath; 
+	//  var oTable=this.byId("idEventsTable1");
+	//  var oBinding=oTable.getBinding("items");
+	//  //var Sorter = new sap.ui.model.Sorter(oBindingPath, bDescending);
+	//  oBinding.sort(aSorters);
+	//  oBinding.sort(bDescending);
+
+
+
+
+
+	var oView = this.getView();
+	var oTable = oView.byId("idEventsTable1");
+	var mParams = oEvent.getParameters();
+	var oBinding = oTable.getBinding("items");
+	// apply grouping 
+	var aSorters = [];
+	if (mParams.groupItem) {
+	  var sPath = mParams.groupItem.getKey();
+	  var bDescending = mParams.groupDescending;
+	  aSorters.push(new sap.ui.model.Sorter(sPath, bDescending));
+  }
+  // apply sorter 
+  var sPath = mParams.sortItem.getKey();
+  var bDescending = mParams.sortDescending;
+  aSorters.push(new sap.ui.model.Sorter(sPath, bDescending));
+  oBinding.sort(aSorters);
+},
+
+// 	var oTable = this.byId("idEventsTable1"),
+// 				mParams = oEvent.getParameters(),
+// 				oBinding = oTable.getBinding("items"),
+// 				sPath,
+// 				bDescending,
+// 				aSorters = [];
+				
+// 			sPath = mParams.sortItem.getKey();
+// 			bDescending = mParams.sortDescending;
+// 			aSorters.push(new Sorter(sPath, bDescending));
+
+// 			// apply the selected sort and group settings
+// 			oBinding.sort(aSorters);
+
+// },
 
 		showBusy: function () {
 			this._nCounter++;
@@ -2829,6 +3188,7 @@ sap.ui.define([
 						let updateLocalDbRecordsArray = [];
 						if (offlinerecordstoupdate.length) {
 							for (let record of offlinerecordstoupdate) {
+
 								updateLocalDbRecordsArray.push(this.updateRecordStatusInLocalDb(record, record.CUSTOMER06, 'CUSTOMER06'))
 							}
 						}
@@ -2942,6 +3302,7 @@ sap.ui.define([
 
 		},
 
+	
 		/**
 		 * @description Function to sync all the offline records apart from the current day
 		 * @param {*} fromDate -Optional fromDate Parameter
